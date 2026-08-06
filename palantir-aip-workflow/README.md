@@ -14,7 +14,7 @@
 ## 流水线
 
 ```
-paip-init → paip-source → paip-infer → paip-model → paip-entity → paip-visualize → paip-review
+paip-init → paip-source → paip-infer → paip-model → paip-entity → paip-visualize → paip-review → paip-exec
 ```
 
 | Skill | 职责 | 对应 Palantir |
@@ -26,12 +26,14 @@ paip-init → paip-source → paip-infer → paip-model → paip-entity → paip
 | `paip-entity` | LLM 跨源实体消解（≥0.9 置信度） | Entity Resolution |
 | `paip-visualize` | 渲染实体关系图（draw.io MCP） | Object Explorer / 语义图 |
 | `paip-review` | 人工审查 → approved + 审计日志 | Human validation / audit |
+| `paip-exec` | 执行已批准规则 → 物化 output/ + 审计 | Pipeline 执行（规则跑在数据上） |
 
 ## 三条铁律（流水线纪律）
 
 1. **AI 出提案，人做审查**：LLM 产物只进 `staging/`，必须经 `paip-review` 人工裁决才进 `approved/`
-2. **逻辑是确定性工具**：转换/合并是规则（正则/映射/join），不是 LLM 判断——可审计、可重放、不随模型漂移
+2. **逻辑是确定性工具**：转换/合并是规则（正则/映射/键映射替换），不是 LLM 判断——可审计、可重放、不随模型漂移
 3. **全量审计**：每个动作写 `audit/audit.jsonl`，拒绝项也保留（`status: "rejected"`），杜绝删改
+4. **执行铁律：失败中止、数据不动、状态不推进**——`bin/exec.js` 内部强制先校验，非法规则被拒且零副作用
 
 ## 项目结构
 
@@ -43,6 +45,7 @@ paip-init → paip-source → paip-infer → paip-model → paip-entity → paip
 ├── schemas/           # schema 推断结果
 ├── staging/           # 待审查的 LLM 建议
 ├── approved/          # 已批准的正式版本（不可变）
+├── output/            # exec 物化产物（output/<规则id>.csv，不覆盖原数据）
 ├── audit/audit.jsonl  # 审计轨迹
 └── data/              # （可选）演示数据
 ```
@@ -69,10 +72,24 @@ paip-init → paip-source → paip-infer → paip-model → paip-entity → paip
 
 | 工具 | 用途 |
 |---|---|
-| `bin/schema-infer.js` | 确定性 schema 推断（CSV/JSON/JSONL → 列类型/样本/空值率/去重） |
-| `bin/audit.js` | 状态机校验 + 审计事件追加（log/state/step/check） |
+| `bin/schema-infer.js` | 确定性 schema 推断（CSV/JSON/JSONL → 列类型/样本/空值率/去重计数） |
+| `bin/csv.js` | 公共 CSV 库（RFC 4180 解析/序列化，BOM/转义引号/内嵌换行） |
+| `bin/validate.js` | 产物格式校验器（objects/links/transforms/merges + 源注册/列存在） |
+| `bin/exec.js` | 确定性执行引擎（9 种规则行级执行 + 合并 + 统一写盘 + 审计） |
+| `bin/audit.js` | 状态机校验 + 审计事件追加（log/state/step/exec/check） |
 
 零依赖，Node 18+，直接 `node bin/<tool>.js` 调用。
+
+### 执行引擎用法
+
+```
+node bin/validate.js <项目目录> [--stage]     # 校验已批准（或 staging）产物
+node bin/exec.js <项目目录>                    # 执行全部已批准转换/合并
+node bin/exec.js <项目目录> --transform <id>  # 只执行指定转换
+node bin/audit.js check <项目目录>             # 项目完整性检查
+```
+
+执行铁律：**失败中止、数据不动、状态不推进**；产物统一写盘到 `output/`，成功一次性记录审计事件。
 
 ## LLM 通道
 
@@ -81,4 +98,7 @@ paip-init → paip-source → paip-infer → paip-model → paip-entity → paip
 
 ## 验证
 
-`node bin/audit.js check <项目目录>` 校验项目完整性；`scripts/` 下有端到端演示脚本（示例数据集走完六步）。
+- `node --test tests/` — L1 单元（csv/validate/exec/audit/plugin）+ L2 端到端（demo 项目全流水线）+ L3 破坏性（非法规则零副作用）共 50+ 用例
+- `node bin/audit.js check <项目目录>` 校验项目完整性
+- 设计可行性实验见 `experiment/`（csv-parse-edge-cases / transform-rules-semantics / merge-semantics / scale-benchmark）
+- 工程办法提炼见 `docs/engineering-principles.md`
