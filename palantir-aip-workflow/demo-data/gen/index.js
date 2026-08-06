@@ -8,7 +8,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { TABLES, mulberry32 } = require('./tables.js');
+const { TABLES, buildDuplicateCustomers, SUPPLIER_NAMES, mulberry32 } = require('./tables.js');
 const { stringify } = require('../../bin/csv.js');
 
 const SEED = 20260806;
@@ -87,14 +87,25 @@ function generate(projectDir, scale = 1.0) {
   const ctx = makeCtx(scale);
   const generated = [];
 
+  // 跨源重复种子（spec §4.1）：先于表生成，供各板块 customers/suppliers 引用
+  ctx.duplicates = {
+    customers: buildDuplicateCustomers(ctx.rng),
+  };
+
   for (const t of TABLES) {
     const n = Math.max(1, Math.ceil(t.rows * scale));
     const rows = [];
     const dataDir = path.join(abs, 'data', t.dir);
     fs.mkdirSync(dataDir, { recursive: true });
+    // 种子行（跨源变体）优先：前 seed().length 行直接用种子对象
+    const seeds = t.seed ? t.seed(ctx) : [];
     for (let r = 0; r < n; r++) {
       const row = {};
-      for (const c of t.cols) row[c.name] = String(c.gen(r, ctx));
+      if (r < seeds.length) {
+        Object.assign(row, seeds[r]);
+      } else {
+        for (const c of t.cols) row[c.name] = String(c.gen(r, ctx));
+      }
       if (t.fks) {
         for (const f of t.fks) row[f.col] = ctx.fk(f.ref, f.key);
       }

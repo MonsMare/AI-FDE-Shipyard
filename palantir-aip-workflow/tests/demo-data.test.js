@@ -61,10 +61,70 @@ test('集团层 10 表生成且行数符合 scale 缩放', () => {
 test('sources 注册与 data 文件一一对应', () => {
   const dir = genTmp(0.1);
   const sources = fs.readdirSync(path.join(dir, 'sources')).filter((f) => f.endsWith('.json'));
-  assert.strictEqual(sources.length, 10, '集团层应有 10 个 source 注册');
+  const dataFiles = [];
+  const walk = (d) => {
+    for (const f of fs.readdirSync(d)) {
+      const full = path.join(d, f);
+      if (fs.statSync(full).isDirectory()) walk(full);
+      else if (f.endsWith('.csv')) dataFiles.push(f);
+    }
+  };
+  walk(path.join(dir, 'data'));
+  assert.strictEqual(sources.length, dataFiles.length, `sources(${sources.length}) 与 data 文件(${dataFiles.length})应一一对应`);
   for (const f of sources) {
     const src = JSON.parse(fs.readFileSync(path.join(dir, 'sources', f), 'utf8'));
     assert.ok(src.id, `${f} 缺 id`);
     assert.ok(fs.existsSync(src.path), `${f} 的 path 指向不存在: ${src.path}`);
+    assert.ok(dataFiles.includes(`${src.id}`), `data 缺 ${src.id}`);
   }
+});
+
+// ==================== Task 2: 零售板块 ====================
+
+const { readCsvFile } = require('../bin/csv.js');
+
+function load(dir, name) {
+  return readCsvFile(path.join(dir, 'data', 'retail', `${name}.csv`));
+}
+
+test('零售：order_items 外键全部存在于 orders_retail', () => {
+  const dir = genTmp(0.1);
+  const orders = load(dir, 'orders_retail');
+  const orderIds = new Set(orders.rows.map((r) => r[0]));
+  const items = load(dir, 'order_items');
+  const orderIdx = items.cols.indexOf('order_id');
+  for (const r of items.rows) {
+    assert.ok(orderIds.has(r[orderIdx]), `孤儿 order_id: ${r[orderIdx]}`);
+  }
+});
+
+test('零售：orders 孤儿 customer_id 率 ≈1%（0.5%-1.5%）', () => {
+  const dir = genTmp(0.1);
+  const orders = load(dir, 'orders_retail');
+  const custIdx = orders.cols.indexOf('customer_id');
+  const orphan = orders.rows.filter((r) => r[custIdx] === 'CUST-99999').length;
+  const rate = orphan / orders.rows.length;
+  assert.ok(rate >= 0.005 && rate <= 0.015, `孤儿率异常: ${(rate * 100).toFixed(2)}%`);
+});
+
+test('零售：150 个跨源种子客户全部在 customers_retail（按归一化邮箱匹配）', () => {
+  const dir = genTmp(0.1);
+  const customers = load(dir, 'customers_retail');
+  const emailIdx = customers.cols.indexOf('email');
+  const emails = new Set(customers.rows.map((r) => String(r[emailIdx]).trim().toLowerCase()));
+  const { buildDuplicateCustomers, mulberry32 } = require('../demo-data/gen/tables.js');
+  const seeds = buildDuplicateCustomers(mulberry32(20260806));
+  let matched = 0;
+  for (const s of seeds) {
+    if (emails.has(s.baseEmail)) matched++;
+  }
+  assert.strictEqual(matched, 150, `种子客户匹配 ${matched}/150`);
+});
+
+test('零售：库存积压病症存在（stock 极端值子集）', () => {
+  const dir = genTmp(0.1);
+  const inv = load(dir, 'inventory_retail');
+  const stockIdx = inv.cols.indexOf('stock');
+  const bloated = inv.rows.filter((r) => Number(r[stockIdx]) > 5000).length;
+  assert.ok(bloated > 0, '应存在库存积压记录');
 });
