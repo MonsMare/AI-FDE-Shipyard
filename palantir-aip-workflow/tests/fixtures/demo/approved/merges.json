@@ -1,0 +1,12 @@
+{
+  "merges": [
+    {
+      "id": "merge-001",
+      "left": { "source": "customers.csv", "key": "customerId", "value": "c1" },
+      "right": { "source": "orders.csv", "key": "customerId", "value": "X1" },
+      "confidence": 0.93,
+      "rationale": "邮箱一致，姓名相似",
+      "status": "approved"
+    }
+  ]
+}

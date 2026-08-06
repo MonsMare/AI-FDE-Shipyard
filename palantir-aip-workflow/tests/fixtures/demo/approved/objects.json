@@ -1,0 +1,29 @@
+{
+  "objects": [
+    {
+      "id": "Customer",
+      "displayName": "客户",
+      "description": "购买产品的个人或组织",
+      "backingSource": "customers.csv",
+      "properties": [
+        { "id": "customerId", "type": "string", "title": "客户 ID", "primaryKey": true },
+        { "id": "name", "type": "string", "title": "姓名" },
+        { "id": "email", "type": "string", "title": "邮箱" },
+        { "id": "age", "type": "integer", "title": "年龄" }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "Order",
+      "displayName": "订单",
+      "description": "客户下的订单",
+      "backingSource": "orders.csv",
+      "properties": [
+        { "id": "orderId", "type": "string", "title": "订单 ID", "primaryKey": true },
+        { "id": "customerId", "type": "string", "title": "客户 ID" },
+        { "id": "amount", "type": "number", "title": "金额" }
+      ],
+      "status": "approved"
+    }
+  ]
+}

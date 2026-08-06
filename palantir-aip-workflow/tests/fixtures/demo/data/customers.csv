@@ -1,0 +1,5 @@
+customerId,name,email,age,status
+c1,  Alice  ,ALICE@X.COM,17,active
+c2,Bob,bob@x.com,19,pending
+c3,  Carol  ,carol@x.com,9,active
+c4,Dave,dave@x.com,65,closed

@@ -1,0 +1,7 @@
+{
+  "id": "customers.csv",
+  "path": "REPLACE_ME/customers.csv",
+  "format": "csv",
+  "description": "客户主数据（演示）",
+  "copied": true
+}

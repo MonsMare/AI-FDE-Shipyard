@@ -1,0 +1,49 @@
+{
+  "transforms": [
+    {
+      "id": "trim_name",
+      "source": "customers.csv",
+      "target": "清洗姓名空白（描述性）",
+      "type": "trim",
+      "rule": { "column": "name" },
+      "description": "去除姓名首尾空白",
+      "status": "approved"
+    },
+    {
+      "id": "lower_email",
+      "source": "customers.csv",
+      "target": "邮箱小写化（描述性）",
+      "type": "lower",
+      "rule": { "column": "email" },
+      "description": "邮箱统一小写",
+      "status": "approved"
+    },
+    {
+      "id": "cast_age",
+      "source": "customers.csv",
+      "target": "年龄规范化（描述性）",
+      "type": "cast",
+      "rule": { "column": "age", "targetType": "integer" },
+      "description": "年龄转整数",
+      "status": "approved"
+    },
+    {
+      "id": "full_name",
+      "source": "customers.csv",
+      "target": "全名拼接（描述性）",
+      "type": "concat",
+      "rule": { "columns": ["name", "email"], "targetColumn": "full", "separator": " <" },
+      "description": "链式：拼接 trim/lower 后的 name 与 email",
+      "status": "approved"
+    },
+    {
+      "id": "active_only",
+      "source": "customers.csv",
+      "target": "过滤活跃客户（描述性）",
+      "type": "filter",
+      "rule": { "condition": { "column": "status", "op": "eq", "value": "active" } },
+      "description": "只保留 active 客户",
+      "status": "approved"
+    }
+  ]
+}

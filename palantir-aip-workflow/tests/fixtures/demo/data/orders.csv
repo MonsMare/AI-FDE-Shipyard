@@ -1,0 +1,5 @@
+orderId,customerId,name,amount
+o1,c1,ALICE,10.5
+o2,X1,ALICE-v2,20.0
+o3,c2,BOB,5.5
+o4,c9,ghost,99.0

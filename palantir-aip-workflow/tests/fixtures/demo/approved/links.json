@@ -1,0 +1,5 @@
+{
+  "links": [
+    { "id": "Customer_orders", "source": "Customer", "target": "Order", "cardinality": "1:N", "status": "approved" }
+  ]
+}

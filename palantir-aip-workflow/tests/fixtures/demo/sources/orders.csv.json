@@ -1,0 +1,7 @@
+{
+  "id": "orders.csv",
+  "path": "REPLACE_ME/orders.csv",
+  "format": "csv",
+  "description": "订单数据（演示）",
+  "copied": true
+}

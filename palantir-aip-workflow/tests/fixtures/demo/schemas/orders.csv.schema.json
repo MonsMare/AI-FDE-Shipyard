@@ -1,0 +1,10 @@
+{
+  "file": "orders.csv",
+  "rows": 4,
+  "columns": [
+    { "name": "orderId", "inferredType": "string" },
+    { "name": "customerId", "inferredType": "string" },
+    { "name": "name", "inferredType": "string" },
+    { "name": "amount", "inferredType": "number" }
+  ]
+}

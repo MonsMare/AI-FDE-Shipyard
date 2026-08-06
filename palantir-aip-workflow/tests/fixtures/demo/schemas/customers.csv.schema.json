@@ -1,0 +1,11 @@
+{
+  "file": "customers.csv",
+  "rows": 4,
+  "columns": [
+    { "name": "customerId", "inferredType": "string" },
+    { "name": "name", "inferredType": "string" },
+    { "name": "email", "inferredType": "email" },
+    { "name": "age", "inferredType": "integer" },
+    { "name": "status", "inferredType": "string" }
+  ]
+}
