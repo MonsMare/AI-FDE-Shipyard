@@ -176,3 +176,69 @@ test('制造：customers_mfg 含 80 个跨源种子客户变体', () => {
   for (const s of mfgSeeds) if (emails.has(s.baseEmail)) matched++;
   assert.strictEqual(matched, mfgSeeds.length, `制造种子客户匹配 ${matched}/${mfgSeeds.length}`);
 });
+
+// ==================== Task 4: SaaS 板块 ====================
+
+function loadSaas(dir, name) {
+  return readCsvFile(path.join(dir, 'data', 'saas', `${name}.csv`));
+}
+
+test('SaaS：subscriptions 外键全部存在于 customers_saas', () => {
+  const dir = genTmp(0.1);
+  const customers = loadSaas(dir, 'customers_saas');
+  const custIds = new Set(customers.rows.map((r) => r[0]));
+  const subs = loadSaas(dir, 'subscriptions');
+  const custIdx = subs.cols.indexOf('customer_id');
+  for (const r of subs.rows) {
+    assert.ok(custIds.has(r[custIdx]), `孤儿 customer_id: ${r[custIdx]}`);
+  }
+});
+
+test('SaaS：churn 前兆存在（churn 订阅用量尾部均值 < 头部 50%）', () => {
+  const dir = genTmp(0.1);
+  const churn = loadSaas(dir, 'churn_events');
+  const subIdx = churn.cols.indexOf('subscription_id');
+  const churnSubs = new Set(churn.rows.map((r) => r[subIdx]));
+  assert.ok(churnSubs.size > 0, 'churn_events 应非空');
+  const usage = loadSaas(dir, 'usage_metrics');
+  const uSubIdx = usage.cols.indexOf('subscription_id');
+  const uValIdx = usage.cols.indexOf('value');
+  // 按订阅分组，比较前半/后半均值
+  const bySub = new Map();
+  for (const r of usage.rows) {
+    const s = r[uSubIdx];
+    if (!churnSubs.has(s)) continue;
+    if (!bySub.has(s)) bySub.set(s, []);
+    bySub.get(s).push(Number(r[uValIdx]));
+  }
+  let confirmed = 0;
+  for (const [sub, vals] of bySub) {
+    if (vals.length < 8) continue;
+    const half = Math.floor(vals.length / 2);
+    const head = vals.slice(0, half).reduce((a, b) => a + b, 0) / half;
+    const tail = vals.slice(half).reduce((a, b) => a + b, 0) / (vals.length - half);
+    if (head > 0 && tail < head * 0.5) confirmed++;
+  }
+  assert.ok(confirmed > 0, `应存在用量骤降的 churn 订阅（确认 ${confirmed} 个）`);
+});
+
+test('SaaS：overdue 发票存在（欠费信号）', () => {
+  const dir = genTmp(0.1);
+  const invoices = loadSaas(dir, 'invoices_saas');
+  const statusIdx = invoices.cols.indexOf('status');
+  const overdue = invoices.rows.filter((r) => String(r[statusIdx]).toLowerCase() === 'overdue').length;
+  assert.ok(overdue > 0, '应存在 overdue 发票');
+});
+
+test('SaaS：customers_saas 含 110 个跨源种子客户变体', () => {
+  const dir = genTmp(0.1);
+  const customers = loadSaas(dir, 'customers_saas');
+  const emailIdx = customers.cols.indexOf('email');
+  const emails = new Set(customers.rows.map((r) => String(r[emailIdx]).trim().toLowerCase()));
+  const { buildDuplicateCustomers, mulberry32 } = require('../demo-data/gen/tables.js');
+  const seeds = buildDuplicateCustomers(mulberry32(20260806));
+  const saasSeeds = seeds.filter((s) => s.variants.saas);
+  let matched = 0;
+  for (const s of saasSeeds) if (emails.has(s.baseEmail)) matched++;
+  assert.strictEqual(matched, saasSeeds.length, `SaaS 种子客户匹配 ${matched}/${saasSeeds.length}`);
+});

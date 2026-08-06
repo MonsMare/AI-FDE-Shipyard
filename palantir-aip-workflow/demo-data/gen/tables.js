@@ -615,6 +615,199 @@ const TABLES = [
       }
     },
   },
+
+  // ============ SaaS 板块（15 表） ============
+  {
+    id: 'plans', dir: 'saas', rows: 6,
+    cols: [
+      { name: 'plan_id', gen: (r) => `PLAN-${r + 1}` },
+      { name: 'name', gen: (r, ctx) => ctx.pick(['Free', 'Starter', 'Pro', 'Business', 'Enterprise', 'Ultimate']) },
+      { name: 'monthly_price', gen: (r, ctx) => ctx.moneyFmt([0, 99, 299, 799, 1999, 4999][r]) },
+      { name: 'seats_included', gen: (r) => String([1, 5, 10, 50, 200, 1000][r]) },
+    ],
+  },
+  {
+    id: 'channels', dir: 'saas', rows: 8,
+    cols: [
+      { name: 'channel_id', gen: (r) => `CH-${r + 1}` },
+      { name: 'name', gen: (r, ctx) => ctx.pick(['自然搜索', '付费广告', '内容营销', '合作伙伴', '老客推荐', '社交媒体', '线下活动', '渠道代理']) },
+      { name: 'cost_per_lead', gen: (r, ctx) => ctx.moneyFmt(ctx.randInt(10, 800)) },
+    ],
+  },
+  {
+    id: 'customers_saas', dir: 'saas', rows: 3000,
+    cols: [
+      { name: 'customer_id', gen: (r) => `SC-${r + 1}` },
+      { name: 'company_name', gen: (r, ctx) => ctx.dirtyStr(`${ctx.pick(COMPANIES)} CLOUD#${r % 83}`) },
+      { name: 'email', gen: (r, ctx) => ctx.dirtyStr(`saas${r}@${ctx.pick(['cloud.io', 'tech.com', 'digital.net'])}`) },
+      { name: 'contact_name', gen: (r, ctx) => ctx.dirtyStr(`${ctx.pick(NAMES)} ${ctx.pick(NAMES)}`) },
+      { name: 'signup_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2021, 2026)) },
+      { name: 'tier', gen: (r, ctx) => ctx.pick(['free', 'FREE', 'paid', 'PAID']) },
+    ],
+    // 前 110 行 = 跨源种子客户 SaaS 变体（variants.saas 非空的 110 个）
+    seed: (ctx) => ctx.duplicates.customers.filter((c) => c.variants.saas).map((c) => ({
+      customer_id: `SC-${c.id + 1}`,
+      company_name: c.variants.saas,
+      email: c.baseEmail,
+      contact_name: `${NAMES[c.id % NAMES.length]} ${NAMES[(c.id + 7) % NAMES.length]}`,
+      signup_date: `2022-01-15`,
+      tier: 'paid',
+    })),
+  },
+  {
+    id: 'accounts', dir: 'saas', rows: 900,
+    cols: [
+      { name: 'account_id', gen: (r) => `AC-${r + 1}` },
+      { name: 'customer_id', gen: (r, ctx) => ctx.fk('customers_saas', 'customer_id') },
+      { name: 'account_name', gen: (r, ctx) => `${ctx.pick(COMPANIES)}-${r}` },
+      { name: 'billing_email', gen: (r, ctx) => `billing${r}@${ctx.pick(['cloud.io', 'tech.com'])}` },
+    ],
+  },
+  {
+    id: 'contacts', dir: 'saas', rows: 2400,
+    cols: [
+      { name: 'contact_id', gen: (r) => `CT-${r + 1}` },
+      { name: 'account_id', gen: (r, ctx) => ctx.fk('accounts', 'account_id') },
+      { name: 'name', gen: (r, ctx) => ctx.dirtyStr(`${ctx.pick(NAMES)} ${ctx.pick(NAMES)}`) },
+      { name: 'email', gen: (r, ctx) => ctx.dirtyStr(`user${r}@${ctx.pick(['cloud.io', 'tech.com'])}`) },
+      { name: 'phone', gen: (r, ctx) => ctx.pick([`021-${ctx.randInt(10000000, 99999999)}`, `+86 138 ${ctx.randInt(1000, 9999)} ${ctx.randInt(1000, 9999)}`, `138${ctx.randInt(10000000, 99999999)}`]) },
+    ],
+  },
+  {
+    id: 'subscriptions', dir: 'saas', rows: 6000,
+    cols: [
+      { name: 'subscription_id', gen: (r) => `SUB-${r + 1}` },
+      { name: 'customer_id', gen: (r, ctx) => ctx.fk('customers_saas', 'customer_id') },
+      { name: 'account_id', gen: (r, ctx) => ctx.fk('accounts', 'account_id') },
+      { name: 'plan_id', gen: (r, ctx) => ctx.fk('plans', 'plan_id') },
+      { name: 'start_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2021, 2026)) },
+      { name: 'status', gen: (r, ctx) => ctx.pick(['active', 'ACTIVE', 'cancelled', 'CANCELLED', 'trial']) },
+      { name: 'will_churn', gen: (r, ctx) => (ctx.rng() < 0.15 ? '1' : '0') }, // 900 个将流失
+    ],
+  },
+  {
+    id: 'usage_metrics', dir: 'saas', rows: 60000,
+    cols: [
+      { name: 'usage_id', gen: (r) => `US-${r + 1}` },
+      { name: 'subscription_id', gen: (r, ctx) => ctx.fk('subscriptions', 'subscription_id') },
+      { name: 'week', gen: (r, ctx) => String(ctx.randInt(1, 40)) },
+      { name: 'value', gen: (r, ctx) => String(ctx.randInt(50, 1000)) },
+    ],
+    after: (rows, ctx) => {
+      // churn 前兆（spec §4.3-5）：will_churn 订阅的后半程用量骤降
+      const subs = ctx.tables.get('subscriptions');
+      const churnSubs = new Set(subs.rows.filter((s) => s.will_churn === '1').map((s) => s.subscription_id));
+      const bySub = new Map();
+      for (const row of rows) {
+        if (!bySub.has(row.subscription_id)) bySub.set(row.subscription_id, []);
+        bySub.get(row.subscription_id).push(row);
+      }
+      for (const [sub, subRows] of bySub) {
+        if (!churnSubs.has(sub)) continue;
+        subRows.sort((a, b) => Number(a.week) - Number(b.week));
+        const half = Math.floor(subRows.length / 2);
+        for (let i = half; i < subRows.length; i++) {
+          subRows[i].value = String(Math.max(5, Math.floor(Number(subRows[i].value) * 0.15)));
+        }
+      }
+    },
+  },
+  {
+    id: 'invoices_saas', dir: 'saas', rows: 6000,
+    cols: [
+      { name: 'invoice_id', gen: (r) => `SI-${r + 1}` },
+      { name: 'subscription_id', gen: (r, ctx) => ctx.fk('subscriptions', 'subscription_id') },
+      { name: 'invoice_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'amount', gen: (r, ctx) => ctx.moneyFmt(ctx.randInt(99, 5000)) },
+      { name: 'status', gen: (r, ctx) => ctx.pick(['paid', 'PAID', 'pending', 'overdue', 'OVERDUE']) },
+    ],
+    after: (rows) => {
+      // 欠费信号（spec §4.3）：20% overdue
+      const count = Math.floor(rows.length * 0.2);
+      for (let i = 0; i < count; i++) rows[(i * 17) % rows.length].status = 'overdue';
+    },
+  },
+  {
+    id: 'payments_saas', dir: 'saas', rows: 5500,
+    cols: [
+      { name: 'payment_id', gen: (r) => `SP-${r + 1}` },
+      { name: 'invoice_id', gen: (r, ctx) => ctx.fk('invoices_saas', 'invoice_id') },
+      { name: 'amount', gen: (r, ctx) => ctx.moneyFmt(ctx.randInt(99, 5000)) },
+      { name: 'method', gen: (r, ctx) => ctx.pick(['card', 'alipay', 'bank_transfer', 'wechat']) },
+      { name: 'status', gen: (r, ctx) => (ctx.rng() < 0.08 ? 'failed' : ctx.pick(['success', 'SUCCESS', 'pending'])) },
+      { name: 'paid_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+    ],
+  },
+  {
+    id: 'support_tickets', dir: 'saas', rows: 4000,
+    cols: [
+      { name: 'ticket_id', gen: (r) => `ST-${r + 1}` },
+      { name: 'customer_id', gen: (r, ctx) => ctx.fk('customers_saas', 'customer_id') },
+      { name: 'subscription_id', gen: (r, ctx) => ctx.fk('subscriptions', 'subscription_id') },
+      { name: 'priority', gen: (r, ctx) => ctx.pick(['low', 'LOW', 'medium', 'high', 'urgent']) },
+      { name: 'status', gen: (r, ctx) => ctx.pick(['open', 'OPEN', 'closed', 'resolved', 'waiting']) },
+      { name: 'created_at', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2025, 2026)) },
+    ],
+    after: (rows) => {
+      // 工单积压（spec §4.3）：15% open 且 created_at 早于 2026-06（积压）
+      const count = Math.floor(rows.length * 0.15);
+      for (let i = 0; i < count; i++) {
+        const row = rows[(i * 23) % rows.length];
+        row.status = 'open';
+        row.created_at = `2026-0${1 + (i % 5)}-10`;
+      }
+    },
+  },
+  {
+    id: 'ticket_escalations', dir: 'saas', rows: 600,
+    cols: [
+      { name: 'escalation_id', gen: (r) => `ES-${r + 1}` },
+      { name: 'ticket_id', gen: (r, ctx) => ctx.fk('support_tickets', 'ticket_id') },
+      { name: 'escalated_at', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2025, 2026)) },
+      { name: 'reason', gen: (r, ctx) => ctx.pick(['客户投诉', 'SLA 超时', '技术疑难', '客户经理要求']) },
+    ],
+  },
+  {
+    id: 'feature_requests', dir: 'saas', rows: 800,
+    cols: [
+      { name: 'request_id', gen: (r) => `FR-${r + 1}` },
+      { name: 'customer_id', gen: (r, ctx) => ctx.fk('customers_saas', 'customer_id') },
+      { name: 'title', gen: (r, ctx) => ctx.pick(['API 增强', '报表导出', '多语言', 'SSO', '移动端', '批量操作', '审计日志']) },
+      { name: 'votes', gen: (r, ctx) => String(ctx.randInt(1, 200)) },
+      { name: 'created_at', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2025, 2026)) },
+    ],
+  },
+  {
+    id: 'churn_events', dir: 'saas', rows: 900,
+    cols: [
+      { name: 'event_id', gen: (r) => `CE-${r + 1}` },
+      { name: 'customer_id', gen: (r, ctx) => ctx.fk('customers_saas', 'customer_id') },
+      { name: 'subscription_id', gen: (r, ctx) => ctx.fkWhere('subscriptions', 'subscription_id', (row) => row.will_churn === '1') },
+      { name: 'churn_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2025, 2026)) },
+      { name: 'cancel_reason', gen: (r, ctx) => ctx.pick(['价格太贵', '功能不足', '迁移竞品', '预算削减', '未说明', '使用率低']) },
+    ],
+  },
+  {
+    id: 'marketing_leads', dir: 'saas', rows: 5000,
+    cols: [
+      { name: 'lead_id', gen: (r) => `LD-${r + 1}` },
+      { name: 'channel_id', gen: (r, ctx) => ctx.fk('channels', 'channel_id') },
+      { name: 'company', gen: (r, ctx) => ctx.dirtyStr(`${ctx.pick(COMPANIES)} lead${r % 71}`) },
+      { name: 'email', gen: (r, ctx) => ctx.dirtyStr(`lead${r}@${ctx.pick(['leads.io', 'prospect.com', 'sales.net'])}`) },
+      { name: 'created_at', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2025, 2026)) },
+      { name: 'quality', gen: (r, ctx) => ctx.pick(['hot', 'warm', 'cold', 'HOT']) },
+    ],
+  },
+  {
+    id: 'lead_conversions', dir: 'saas', rows: 1200,
+    cols: [
+      { name: 'conversion_id', gen: (r) => `LC-${r + 1}` },
+      { name: 'lead_id', gen: (r, ctx) => ctx.fk('marketing_leads', 'lead_id') },
+      { name: 'customer_id', gen: (r, ctx) => ctx.fk('customers_saas', 'customer_id') },
+      { name: 'converted_at', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2025, 2026)) },
+      { name: 'days_to_convert', gen: (r, ctx) => String(ctx.randInt(1, 90)) },
+    ],
+  },
 ];
 
 module.exports = { TABLES, buildDuplicateCustomers, SUPPLIER_NAMES, mulberry32 };
