@@ -1,6 +1,6 @@
 # paip 流水线重构设计 Spec
 
-- 日期：2026-08-05（修订 v2：经细节完整性审查 15 条 + 合理性审查 5 项 + 3 个可行性实验后修订）
+- 日期：2026-08-05（修订 v2：经细节完整性审查 15 条 + 合理性审查 5 项 + 3 个可行性实验后修订；2026-08-06 增补 4 个设计可行性实验，见 §11）
 - 主题：提炼 Palantir AIP 各环节根本性工程办法 → Skill 化改造 + 确定性执行引擎
 - 关联：`palantir-like-workflow/` 调研报告、`palantir-aip-workflow/` 现有插件
 
@@ -130,6 +130,14 @@
 
 **权威枚举（v2 收敛）**：regex_replace / regex_extract / map / filter / concat / split / cast / lower / upper / trim（9 种，删去 format_date——date 格式统一由 cast 处理）。validate 与 paip-model 提示词共用此表。L1 测试覆盖全部 9 种。
 
+**执行细则（2026-08-06 实验 transform-rules-semantics 实测确认，正式实现照此）**：
+- 单元格一律为字符串（CSV 语义）；`cast` 输出**规范化字符串**：integer 去前导零（`007`→`7`）、number 去尾零、boolean 归一为 `true`/`false`（接受 `TRUE`/`1`/`FALSE`/`0`）、date 校验 `YYYY-MM-DD` 前缀格式；**转换失败置 null**（写盘为空串）
+- `filter` 的 `gt/lt`：两侧可解析为数字时**按数值比较**（否则 `'9'` 会错误地大于 `'18'`），否则字符串序；`eq/neq` 数值可解析时同规则，否则精确字符串；`contains` 为子串匹配
+- `regex_extract` 无匹配 → null（不报错）
+- `split` 目标列不足时补空串，多余目标列保留空串
+- 空值单元格参与变换：concat 按空串拼接、cast 空值 → null、regex 类按空串处理
+- `cast date` 仅校验前缀格式，**不校验日历合法性**（`2026-13-99` 会通过）——可接受的取舍
+
 ---
 
 ## 4. 数据流
@@ -152,10 +160,14 @@
 - merge 是 **pair 级声明**（left/right 各一条记录）→ 执行 = 构建**键映射表**（`右键 → 左键`）→ 行级主键替换
 - 产物形态：`output/<merge-id>.csv` = 合并后表（主键已替换为 canonical）+ `output/<merge-id>-mapping.csv` = 主键映射表
 - 冲突策略（写死）：**左表（left.source）优先，右表仅补齐缺失字段**
-- fan-out 防护：join 前校验键唯一性，不唯一则中止（报 warning 级别错误）
+- fan-out 防护：join 前校验键唯一性，不唯一则中止（报错列出重复键，无产物、状态不推进；2026-08-06 实验实测确认）
 - 同名列冲突：左侧优先，右列后缀 `_right`
 - 合并仅限二元（3+ 源传递链不在本次范围，未来扩展）
 - 语义修正：合并作用于**实例数据行**（不是 objects.json 的类型级 schema——概念错位修正）
+- **合并补充语义（2026-08-06 实验 merge-semantics 实测确认，正式实现照此）**：
+  - 右表独有键行：**不并入合并表**，计入 `rightOnly`（mapping 表 + rightOnly 报告可追溯，数据不静默丢失）
+  - 无重叠键：合并表 = 左表原样 + mapping 空 + rightOnly 全量；列头只声明**实际出现值**的右表列（避免空 `_right` 列）
+  - 键列冲突：主键一律用左表值（右表键列不并入）
 
 ---
 
@@ -321,3 +333,27 @@ demo 数据（customers.csv + orders.csv，各 4 行）走完整流水线：
 - OAG 核心 = 语义模型 + 查询 + 来源引用（embedding/图遍历是增强不是核心）；我们的 objects.json + output/ + 查询脚本已还原大部分价值
 - Evals 在确定性规则域比 Palantir 更简单（精确匹配不需要 LLM 判定器）
 - 处理：§8 从"不做"改为"后续阶段 v2.1（evals-lite）/ v2.2（OAG-lite），定义明确的增量"；§9 补对应文件清单
+
+---
+
+## 11. 实验验证记录（2026-08-06，v2.0 设计可行性实测）
+
+对 v2.0 核心设计做了 4 组实验性验证（均在 `palantir-aip-workflow/experiment/`，脚本可复现），全部假设成立，另补 6 处执行细则（已写入 §3.6/§4/§5）：
+
+| 实验 | 验证内容 | 结论 | 对设计的影响 |
+|---|---|---|---|
+| `csv-parse-edge-cases` | 现有 parseCsv 缺陷（H1a）+ 修复方案（H1b） | 成立：现有实现 5/6 用例错；RFC 4180 状态机修复版 6/6 + 往返 2/2 过 | §3.3 bin/csv.js 方案确认 |
+| `transform-rules-semantics` | 9 种规则语义（H2a）+ 链式（H2b）+ 失败零副作用（H2c） | 成立：17/17 规则用例、链式 1/1、破坏性 3/3（无产物、state 不推进） | §3.6 执行细则补充（cast/filter/regex_extract/split/空值/date） |
+| `merge-semantics` | 键映射/左优先/fan-out/实例级（H3a-d） | 成立：4/4 用例 | §4 补充 3 条合并语义（rightOnly、无重叠键、键列冲突） |
+| `scale-benchmark` | 纯 JS 内存执行规模边界（H4a/H4b） | 成立：100K 行 310ms/202MB；1M 行 3.25s/905MB 不崩溃 | §2 规模论证从"拍脑袋"升级为实测；建议外接 DB 触发线 ≥1M 行或 ≥512MB 峰值 RSS |
+
+**规模实测数据（7 列 × 固定种子，规则=regex_replace+trim+cast）**：
+
+| 行数 | 总耗时 | 峰值 RSS | 解析占比 | 序列化占比 |
+|---|---|---|---|---|
+| 10K | 36ms | 69MB | 41% | 35% |
+| 100K | 310ms | 202MB | 43% | 28% |
+| 1M | 3250ms | 905MB | 43% | 29% |
+
+- 执行（行级变换）仅占总耗时 ~19-22%，瓶颈是 CSV 文本往返（解析+序列化）——未来优化方向是流式处理，不是执行器
+- 峰值 RSS 近似线性：1M 行 ≈ 905MB；推算 500 万行 ≈ 4.5GB 逼近开发机内存边界
