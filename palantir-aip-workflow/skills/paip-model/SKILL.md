@@ -34,14 +34,29 @@ description: 用 LLM 生成确定性数据转换逻辑（对应 Palantir Pipelin
     "id": "<camelCase>",
     "source": "<输入文件>",
     "target": "<输出文件或 same>",
-    "type": "regex_replace | regex_extract | map | filter | concat | split | format_date | lower | upper | trim | cast",
-    "rule": { <与 type 匹配的参数> },
-    "column": "<目标列>",
+    "type": "regex_replace | regex_extract | map | filter | concat | split | cast | lower | upper | trim",
+    "rule": { <与 type 匹配的参数，见下方参数表> },
     "description": "<一句话>"
   }
 ]
 只输出 JSON，不输出解释。规则必须确定性（无随机、无 LLM 依赖）。
 ```
+
+**规则 type 权威枚举（9 种，与 bin/validate.js 一致）**：
+
+| type | rule 参数 | 行为（确定性） |
+|---|---|---|
+| `regex_replace` | `pattern`, `replacement`, `column` | 正则全局替换（JS RegExp，g 标志） |
+| `regex_extract` | `pattern`, `column` | 提取首个匹配组（无组则全匹配；无匹配置空） |
+| `map` | `mappings`（对象：旧值→新值）, `column` | 精确值映射；未命中保持原值 |
+| `filter` | `condition`（`{column, op, value}`，op∈`eq/neq/gt/lt/contains`） | 保留满足条件的行（gt/lt 数值比较） |
+| `concat` | `columns`（数组）, `targetColumn`, `separator` | 列拼接为新列 |
+| `split` | `column`, `separator`, `targetColumns` | 拆分为多列（不足补空串） |
+| `cast` | `column`, `targetType`（string/integer/number/boolean/date） | 规范化字符串；失败置空 |
+| `lower` / `upper` / `trim` | `column` | 字符串变换 |
+
+- `target` 字段仅描述性（不控制输出路径）；输出按规则 id 命名 `output/<id>.csv`
+- 单元格一律为字符串；cast 失败/无匹配的结果为空串（写盘语义）
 
 ### 3. 校验与落盘
 - 校验：type 合法、rule 参数齐全、column 存在

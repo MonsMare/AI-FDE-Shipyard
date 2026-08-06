@@ -37,6 +37,11 @@
       "name": "paip-visualize",
       "description": "把 Ontology（对象/链接/属性）渲染为可视化实体关系图，通过 draw.io MCP 打开编辑器。当用户说「可视化」「画图」「画个 ER 图」时使用。",
       "path": "skills/paip-visualize/SKILL.md"
+    },
+    {
+      "name": "paip-exec",
+      "description": "执行已批准的数据转换与实体合并（物化环节：规则真的跑在数据上，产出 output/ 物化 CSV 与审计事件）。当用户说「执行转换」「跑流水线」「materialize」「生成 output 产物」「执行已批准的规则」时使用。",
+      "path": "skills/paip-exec/SKILL.md"
     }
   ]
 }

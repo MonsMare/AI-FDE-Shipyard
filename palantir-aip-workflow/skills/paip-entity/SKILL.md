@@ -58,8 +58,8 @@ node <插件根>/bin/audit.js log <项目目录> entity merges_proposed staging/
 
 ### 5. 报告
 - 合并建议表：左/右记录、置信度、依据
-- 说明合并的执行方式（确定性 join）与后果（合并后主键归并到 approved 对象）
-- 提示：合并建议需 paip-review 确认
+- 说明合并的执行方式：**键映射替换**（exec.js 构建 右键值→左键值 映射表 → 行级主键替换，左表优先，右表独有列补齐、同名列进 `_right`）
+- 提示：合并建议需 paip-review 确认，确认后由 paip-exec 执行
 
 ## Boundaries
 - 只产出**建议**（置信度 + 依据），不直接改任何数据

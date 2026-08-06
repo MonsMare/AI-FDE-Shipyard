@@ -52,7 +52,7 @@ node <插件根>/bin/audit.js log <项目目录> review transform_rejected norma
 - 批准/拒绝/修改统计表
 - `approved/` 产出的完整清单
 - 审计轨迹路径（`audit/audit.jsonl`），提示用户可复查
-- 后续选项：新一轮迭代（回到 source 注册更多源，再 infer）或项目收尾
+- 后续选项：**批准后执行**（`paip:paip-exec`——approved 规则跑 `node <插件根>/bin/exec.js <项目目录>` 物化 output/）、新一轮迭代（回到 source 注册更多源，再 infer）或项目收尾
 
 ## Boundaries
 - 批准是**用户**的决定——本 skill 不替用户做判断，只组织呈现
