@@ -1,0 +1,91 @@
+{
+  "file": "support_tickets.csv",
+  "rows": 4000,
+  "columns": [
+    {
+      "name": "ticket_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "ST-1",
+        "ST-2",
+        "ST-3",
+        "ST-4",
+        "ST-5"
+      ],
+      "distinct": 4000
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "SC-1216",
+        "SC-669",
+        "SC-2234",
+        "SC-2314",
+        "SC-2920"
+      ],
+      "distinct": 2208
+    },
+    {
+      "name": "subscription_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "SUB-3240",
+        "SUB-4792",
+        "SUB-4736",
+        "SUB-5159",
+        "SUB-3371"
+      ],
+      "distinct": 2897
+    },
+    {
+      "name": "priority",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "high",
+        "low",
+        "medium",
+        "LOW",
+        "urgent"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "open",
+        "OPEN",
+        "waiting",
+        "resolved",
+        "closed"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "created_at",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "2026-01-10",
+        "16-07-2025",
+        "2026-05-10",
+        "16-05-2025",
+        "2026-04-10"
+      ],
+      "distinct": 1559
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:18.348Z"
+}

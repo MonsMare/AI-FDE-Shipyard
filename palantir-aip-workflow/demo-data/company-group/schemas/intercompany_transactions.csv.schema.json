@@ -1,0 +1,87 @@
+{
+  "file": "intercompany_transactions.csv",
+  "rows": 200,
+  "columns": [
+    {
+      "name": "txn_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "IT-1",
+        "IT-2",
+        "IT-3",
+        "IT-4",
+        "IT-5"
+      ],
+      "distinct": 200
+    },
+    {
+      "name": "from_subsidiary",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "retail",
+        "mfg",
+        "saas"
+      ],
+      "distinct": 3
+    },
+    {
+      "name": "to_subsidiary",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "saas",
+        "retail",
+        "mfg"
+      ],
+      "distinct": 3
+    },
+    {
+      "name": "amount",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "$1,140,606.00",
+        "$169,651.00",
+        "1 108 434,00",
+        "510675",
+        "877879"
+      ],
+      "distinct": 200
+    },
+    {
+      "name": "date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "04/26/2025",
+        "2025-11-21",
+        "25-07-2025",
+        "09-06-2025",
+        "07/05/2025"
+      ],
+      "distinct": 190
+    },
+    {
+      "name": "description",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "物流费",
+        "IT 支持费",
+        "租金结算",
+        "内部采购",
+        "服务费分摊"
+      ],
+      "distinct": 5
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.631Z"
+}

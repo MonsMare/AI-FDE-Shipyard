@@ -1,0 +1,77 @@
+{
+  "file": "raw_materials.csv",
+  "rows": 120,
+  "columns": [
+    {
+      "name": "material_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "RM-1",
+        "RM-2",
+        "RM-3",
+        "RM-4",
+        "RM-5"
+      ],
+      "distinct": 120
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "铜线",
+        "齿轮",
+        "塑料粒子",
+        "密封圈",
+        "电机"
+      ],
+      "distinct": 10
+    },
+    {
+      "name": "supplier_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "SM-38",
+        "SM-2",
+        "SM-14",
+        "SM-34",
+        "SM-4"
+      ],
+      "distinct": 38
+    },
+    {
+      "name": "unit",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "g",
+        "件",
+        "套",
+        "kg",
+        "米"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "unit_cost",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "4415",
+        "3240",
+        "$2,193.00",
+        "45,00",
+        "3428"
+      ],
+      "distinct": 119
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.432Z"
+}

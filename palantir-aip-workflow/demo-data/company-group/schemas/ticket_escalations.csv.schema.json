@@ -1,0 +1,62 @@
+{
+  "file": "ticket_escalations.csv",
+  "rows": 600,
+  "columns": [
+    {
+      "name": "escalation_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 600,
+      "sample": [
+        "ES-1",
+        "ES-2",
+        "ES-3",
+        "ES-4",
+        "ES-5"
+      ],
+      "distinct": 600
+    },
+    {
+      "name": "ticket_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 600,
+      "sample": [
+        "ST-2263",
+        "ST-3518",
+        "ST-104",
+        "ST-358",
+        "ST-3168"
+      ],
+      "distinct": 559
+    },
+    {
+      "name": "escalated_at",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 600,
+      "sample": [
+        "2026-12-21",
+        "09/28/2026",
+        "2025-03-01",
+        "08/07/2025",
+        "01-03-2025"
+      ],
+      "distinct": 500
+    },
+    {
+      "name": "reason",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 600,
+      "sample": [
+        "技术疑难",
+        "SLA 超时",
+        "客户投诉",
+        "客户经理要求"
+      ],
+      "distinct": 4
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:18.407Z"
+}

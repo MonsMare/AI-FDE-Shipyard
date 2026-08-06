@@ -1,0 +1,77 @@
+{
+  "file": "supplier_evaluations.csv",
+  "rows": 120,
+  "columns": [
+    {
+      "name": "eval_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "EV-1",
+        "EV-2",
+        "EV-3",
+        "EV-4",
+        "EV-5"
+      ],
+      "distinct": 120
+    },
+    {
+      "name": "supplier_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "SM-12",
+        "SM-11",
+        "SM-29",
+        "SM-38",
+        "SM-27"
+      ],
+      "distinct": 37
+    },
+    {
+      "name": "eval_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "04/25/2026",
+        "06/08/2026",
+        "06/23/2025",
+        "2025-06-09",
+        "01/13/2026"
+      ],
+      "distinct": 117
+    },
+    {
+      "name": "score",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "50",
+        "62",
+        "98",
+        "96",
+        "66"
+      ],
+      "distinct": 42
+    },
+    {
+      "name": "comment",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "需改进",
+        "次品偏高",
+        "合格",
+        "交期不稳",
+        "价格偏高"
+      ],
+      "distinct": 6
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.759Z"
+}

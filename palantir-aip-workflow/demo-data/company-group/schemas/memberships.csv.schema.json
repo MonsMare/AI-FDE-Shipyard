@@ -1,0 +1,63 @@
+{
+  "file": "memberships.csv",
+  "rows": 1200,
+  "columns": [
+    {
+      "name": "membership_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "M-1",
+        "M-2",
+        "M-3",
+        "M-4",
+        "M-5"
+      ],
+      "distinct": 1200
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "CUST-4692",
+        "CUST-1623",
+        "CUST-4877",
+        "CUST-3553",
+        "CUST-2873"
+      ],
+      "distinct": 1075
+    },
+    {
+      "name": "level",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "silver",
+        "SILVER",
+        "GOLD",
+        "bronze",
+        "gold"
+      ],
+      "distinct": 6
+    },
+    {
+      "name": "points",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "22865",
+        "35779",
+        "4980",
+        "23265",
+        "39579"
+      ],
+      "distinct": 1185
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.995Z"
+}

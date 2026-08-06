@@ -1,0 +1,63 @@
+{
+  "file": "products_mfg.csv",
+  "rows": 300,
+  "columns": [
+    {
+      "name": "product_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 300,
+      "sample": [
+        "M-1000",
+        "M-1001",
+        "M-1002",
+        "M-1003",
+        "M-1004"
+      ],
+      "distinct": 300
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 300,
+      "sample": [
+        "定制泵体-0",
+        "精密轴承座-1",
+        "重型法兰-2",
+        "标准齿轮箱-3",
+        "标准法兰-4"
+      ],
+      "distinct": 270
+    },
+    {
+      "name": "supplier_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 300,
+      "sample": [
+        "SM-21",
+        "SM-15",
+        "SM-14",
+        "SM-32",
+        "SM-19"
+      ],
+      "distinct": 40
+    },
+    {
+      "name": "unit_price",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 300,
+      "sample": [
+        "20 011",
+        "6371",
+        "10645",
+        "$15,990.00",
+        "55 725,00"
+      ],
+      "distinct": 299
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.488Z"
+}

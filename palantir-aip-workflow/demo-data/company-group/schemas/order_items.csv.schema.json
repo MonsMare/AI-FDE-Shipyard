@@ -1,0 +1,91 @@
+{
+  "file": "order_items.csv",
+  "rows": 45000,
+  "columns": [
+    {
+      "name": "item_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 45000,
+      "sample": [
+        "OI-1",
+        "OI-2",
+        "OI-3",
+        "OI-4",
+        "OI-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "order_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 45000,
+      "sample": [
+        "ORD-3480",
+        "ORD-7593",
+        "ORD-6664",
+        "ORD-11020",
+        "ORD-11299"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "product_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 45000,
+      "sample": [
+        "REF-1511",
+        "R-1078",
+        "SKU1265",
+        "SKU1254",
+        "MD-1553"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "quantity",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 45000,
+      "sample": [
+        "-1",
+        "2",
+        "9",
+        "10",
+        "7"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "unit_price",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 45000,
+      "sample": [
+        "5120",
+        "2331",
+        "1361",
+        "2014",
+        "1 890,00"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "subtotal",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 45000,
+      "sample": [
+        "$19,361.00",
+        "21677",
+        "18961",
+        "34 633",
+        "799"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:15.547Z"
+}

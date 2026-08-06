@@ -1,0 +1,77 @@
+{
+  "file": "products_retail.csv",
+  "rows": 800,
+  "columns": [
+    {
+      "name": "product_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "R-1000",
+        "R-1001",
+        "SKU1002",
+        "R-1003",
+        "MD-1004"
+      ],
+      "distinct": 800
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "标准耳机-0",
+        "智能台灯-1",
+        "mini耳机-2",
+        "智能音箱-3",
+        "便携背包-4"
+      ],
+      "distinct": 680
+    },
+    {
+      "name": "category_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "CAT-15",
+        "CAT-3",
+        "CAT-5",
+        "CAT-26",
+        "CAT-18"
+      ],
+      "distinct": 30
+    },
+    {
+      "name": "supplier_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "SR-58",
+        "SR-42",
+        "SR-77",
+        "SR-31",
+        "SR-70"
+      ],
+      "distinct": 80
+    },
+    {
+      "name": "unit_price",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "4998",
+        "1 405,00",
+        "$2,693.00",
+        "$3,406.00",
+        "$3,105.00"
+      ],
+      "distinct": 785
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.793Z"
+}

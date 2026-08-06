@@ -1,0 +1,63 @@
+{
+  "file": "positions.csv",
+  "rows": 120,
+  "columns": [
+    {
+      "name": "position_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "P-1",
+        "P-2",
+        "P-3",
+        "P-4",
+        "P-5"
+      ],
+      "distinct": 120
+    },
+    {
+      "name": "title",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "主管顾问",
+        "初级销售",
+        "高级专员",
+        "主管销售",
+        "初级分析师"
+      ],
+      "distinct": 36
+    },
+    {
+      "name": "grade",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "5",
+        "1",
+        "7",
+        "9",
+        "4"
+      ],
+      "distinct": 9
+    },
+    {
+      "name": "base_salary_range",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 120,
+      "sample": [
+        "11k-51k",
+        "6k-20k",
+        "7k-19k",
+        "15k-51k",
+        "6k-32k"
+      ],
+      "distinct": 106
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.143Z"
+}

@@ -1,0 +1,103 @@
+{
+  "file": "group_finance.csv",
+  "rows": 72,
+  "columns": [
+    {
+      "name": "subsidiary",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 72,
+      "sample": [
+        "mfg",
+        "retail",
+        "saas"
+      ],
+      "distinct": 3
+    },
+    {
+      "name": "month",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 72,
+      "sample": [
+        "2026-09",
+        "2025-12",
+        "2025-10",
+        "02/2026",
+        "2026-08"
+      ],
+      "distinct": 40
+    },
+    {
+      "name": "revenue",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 72,
+      "sample": [
+        "3 156 169,00",
+        "26014491",
+        "27651799",
+        "10323408",
+        "$6,857,676.00"
+      ],
+      "distinct": 72
+    },
+    {
+      "name": "receivable",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 72,
+      "sample": [
+        "$9,015,935.00",
+        "4788493",
+        "$9,661,415.00",
+        "4526732",
+        "769605"
+      ],
+      "distinct": 72
+    },
+    {
+      "name": "days_sales_outstanding",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 72,
+      "sample": [
+        "124",
+        "97",
+        "74",
+        "106",
+        "92"
+      ],
+      "distinct": 54
+    },
+    {
+      "name": "inventory_value",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 72,
+      "sample": [
+        "498 807",
+        "3 045 505,00",
+        "7 421 430",
+        "7635297",
+        "1081670"
+      ],
+      "distinct": 72
+    },
+    {
+      "name": "headcount",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 72,
+      "sample": [
+        "131",
+        "261",
+        "1152",
+        "944",
+        "386"
+      ],
+      "distinct": 62
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.576Z"
+}

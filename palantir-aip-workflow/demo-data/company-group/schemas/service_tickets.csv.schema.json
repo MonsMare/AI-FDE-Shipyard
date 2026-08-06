@@ -1,0 +1,91 @@
+{
+  "file": "service_tickets.csv",
+  "rows": 2000,
+  "columns": [
+    {
+      "name": "ticket_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "TK-1",
+        "TK-2",
+        "TK-3",
+        "TK-4",
+        "TK-5"
+      ],
+      "distinct": 2000
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "CUST-1782",
+        "CUST-4909",
+        "CUST-3807",
+        "CUST-2835",
+        "CUST-4318"
+      ],
+      "distinct": 1635
+    },
+    {
+      "name": "subject",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "投诉",
+        "退换货",
+        "发票问题",
+        "物流查询",
+        "售后维修"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "closed",
+        "resolved",
+        "open",
+        "OPEN",
+        "pending"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "created_at",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "15-05-2025",
+        "08/11/2026",
+        "2026-12-21",
+        "11-10-2026",
+        "02/08/2026"
+      ],
+      "distinct": 1205
+    },
+    {
+      "name": "closed_at",
+      "inferredType": "mixed",
+      "nullCount": 431,
+      "total": 2000,
+      "sample": [
+        "04/21/2025",
+        "2026-04-05",
+        "2026-02-17",
+        "09/11/2025",
+        "06/01/2025"
+      ],
+      "distinct": 1056
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.318Z"
+}

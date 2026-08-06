@@ -1,0 +1,20 @@
+{
+  "project": {
+    "name": "company-group",
+    "description": "Meridian 控股集团演示数据集",
+    "created": "2026-08-06",
+    "version": "1.0.0"
+  },
+  "state": {
+    "currentStep": "review",
+    "steps": {
+      "init": "done",
+      "source": "done",
+      "infer": "done",
+      "model": "done",
+      "entity": "done",
+      "review": "in_progress",
+      "exec": "pending"
+    }
+  }
+}

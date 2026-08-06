@@ -1,0 +1,75 @@
+{
+  "file": "cost_centers.csv",
+  "rows": 60,
+  "columns": [
+    {
+      "name": "cost_center_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 60,
+      "sample": [
+        "CC-1",
+        "CC-2",
+        "CC-3",
+        "CC-4",
+        "CC-5"
+      ],
+      "distinct": 60
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 60,
+      "sample": [
+        "广州工厂中心",
+        "成都门店中心",
+        "北京事业部中心",
+        "杭州研发中心",
+        "苏州客服中心"
+      ],
+      "distinct": 44
+    },
+    {
+      "name": "subsidiary",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 60,
+      "sample": [
+        "saas",
+        "mfg",
+        "retail"
+      ],
+      "distinct": 3
+    },
+    {
+      "name": "budget",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 60,
+      "sample": [
+        "$30,203,680.00",
+        "11160365",
+        "$16,491,825.00",
+        "46676081",
+        "$37,853,687.00"
+      ],
+      "distinct": 60
+    },
+    {
+      "name": "spent",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 60,
+      "sample": [
+        "$18,401,524.00",
+        "$45,643,953.00",
+        "16 869 360,00",
+        "21982603",
+        "12735102"
+      ],
+      "distinct": 60
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.034Z"
+}

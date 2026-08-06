@@ -1,0 +1,76 @@
+{
+  "file": "quality_checks.csv",
+  "rows": 8000,
+  "columns": [
+    {
+      "name": "check_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "QC-1",
+        "QC-2",
+        "QC-3",
+        "QC-4",
+        "QC-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "batch_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "BATCH-7028",
+        "BATCH-7459",
+        "BATCH-2360",
+        "BATCH-112",
+        "BATCH-3478"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "check_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "2024-06-26",
+        "09/04/2025",
+        "2026-01-03",
+        "20-05-2026",
+        "2026-10-24"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "result",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "pass",
+        "Pass",
+        "fail",
+        "PASS"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "defect_count",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "0",
+        "10",
+        "4",
+        "7",
+        "5"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:17.304Z"
+}

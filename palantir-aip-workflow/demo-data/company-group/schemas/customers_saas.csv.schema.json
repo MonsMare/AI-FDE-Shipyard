@@ -1,0 +1,90 @@
+{
+  "file": "customers_saas.csv",
+  "rows": 3000,
+  "columns": [
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "SC-1",
+        "SC-2",
+        "SC-3",
+        "SC-4",
+        "SC-5"
+      ],
+      "distinct": 3000
+    },
+    {
+      "name": "company_name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "CYBERDYNE (-100)",
+        "BLACK MESA (-101)",
+        "OSCORP (-102)",
+        "ACME CORP (-103)",
+        "APERTURE (-104)"
+      ],
+      "distinct": 2339
+    },
+    {
+      "name": "email",
+      "inferredType": "email",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "acct100@example.com",
+        "acct101@corp.net",
+        "acct102@biz.org",
+        "acct103@example.com",
+        "acct104@corp.net"
+      ],
+      "distinct": 3000
+    },
+    {
+      "name": "contact_name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "Alice Henry",
+        "Bob Ivy",
+        "Carol Jack",
+        "David Karen",
+        "Eve Leo"
+      ],
+      "distinct": 2130
+    },
+    {
+      "name": "signup_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "2022-01-15",
+        "2026-07-01",
+        "2023-08-14",
+        "02-06-2022",
+        "06/22/2021"
+      ],
+      "distinct": 2225
+    },
+    {
+      "name": "tier",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "paid",
+        "FREE",
+        "PAID",
+        "free"
+      ],
+      "distinct": 4
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:17.752Z"
+}

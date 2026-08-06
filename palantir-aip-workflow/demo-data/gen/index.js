@@ -158,7 +158,7 @@ function generateSchemas(abs, generated) {
   for (const t of generated) {
     const file = TABLES.find((x) => x.id === t.id);
     const realPath = path.join(abs, 'data', file.dir, `${t.id}.csv`);
-    const r = spawnSync(process.execPath, [schemaInfer, realPath, '--sample', '0'], { encoding: 'utf8' });
+    const r = spawnSync(process.execPath, [schemaInfer, realPath], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
     if (r.status !== 0) throw new Error(`schema-infer 失败: ${t.id}: ${r.stderr || r.stdout}`);
     const schema = JSON.parse(r.stdout);
     fs.writeFileSync(path.join(schemasDir, `${t.id}.csv.schema.json`), JSON.stringify(schema, null, 2) + '\n');

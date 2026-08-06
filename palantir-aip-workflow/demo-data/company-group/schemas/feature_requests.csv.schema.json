@@ -1,0 +1,77 @@
+{
+  "file": "feature_requests.csv",
+  "rows": 800,
+  "columns": [
+    {
+      "name": "request_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "FR-1",
+        "FR-2",
+        "FR-3",
+        "FR-4",
+        "FR-5"
+      ],
+      "distinct": 800
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "SC-2216",
+        "SC-1609",
+        "SC-2702",
+        "SC-562",
+        "SC-1051"
+      ],
+      "distinct": 712
+    },
+    {
+      "name": "title",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "批量操作",
+        "SSO",
+        "移动端",
+        "审计日志",
+        "API 增强"
+      ],
+      "distinct": 7
+    },
+    {
+      "name": "votes",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "183",
+        "148",
+        "100",
+        "136",
+        "28"
+      ],
+      "distinct": 196
+    },
+    {
+      "name": "created_at",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "03-11-2026",
+        "2025-01-27",
+        "2025-03-05",
+        "07/18/2026",
+        "02/25/2026"
+      ],
+      "distinct": 635
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:18.469Z"
+}

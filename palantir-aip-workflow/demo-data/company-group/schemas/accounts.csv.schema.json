@@ -1,0 +1,63 @@
+{
+  "file": "accounts.csv",
+  "rows": 900,
+  "columns": [
+    {
+      "name": "account_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 900,
+      "sample": [
+        "AC-1",
+        "AC-2",
+        "AC-3",
+        "AC-4",
+        "AC-5"
+      ],
+      "distinct": 900
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 900,
+      "sample": [
+        "SC-2222",
+        "SC-1887",
+        "SC-506",
+        "SC-1975",
+        "SC-1090"
+      ],
+      "distinct": 791
+    },
+    {
+      "name": "account_name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 900,
+      "sample": [
+        "LexCorp-0",
+        "Aperture-1",
+        "Hooli-2",
+        "Wayne Enterprises-3",
+        "Umbrella Co-4"
+      ],
+      "distinct": 900
+    },
+    {
+      "name": "billing_email",
+      "inferredType": "email",
+      "nullCount": 0,
+      "total": 900,
+      "sample": [
+        "billing0@tech.com",
+        "billing1@cloud.io",
+        "billing2@cloud.io",
+        "billing3@tech.com",
+        "billing4@cloud.io"
+      ],
+      "distinct": 900
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:17.812Z"
+}

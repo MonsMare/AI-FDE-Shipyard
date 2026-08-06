@@ -1,0 +1,63 @@
+{
+  "file": "bills_of_materials.csv",
+  "rows": 1500,
+  "columns": [
+    {
+      "name": "bom_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1500,
+      "sample": [
+        "BOM-1",
+        "BOM-2",
+        "BOM-3",
+        "BOM-4",
+        "BOM-5"
+      ],
+      "distinct": 1500
+    },
+    {
+      "name": "product_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1500,
+      "sample": [
+        "M-1194",
+        "M-1210",
+        "M-1259",
+        "M-1289",
+        "M-1088"
+      ],
+      "distinct": 299
+    },
+    {
+      "name": "material_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1500,
+      "sample": [
+        "RM-69",
+        "RM-18",
+        "RM-99",
+        "RM-11",
+        "RM-80"
+      ],
+      "distinct": 120
+    },
+    {
+      "name": "quantity_per_unit",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 1500,
+      "sample": [
+        "2 件",
+        "1.2 m",
+        "500 g",
+        "0.5",
+        "0.5 kg"
+      ],
+      "distinct": 6
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.634Z"
+}

@@ -1,0 +1,91 @@
+{
+  "file": "returns.csv",
+  "rows": 1200,
+  "columns": [
+    {
+      "name": "return_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "RT-1",
+        "RT-2",
+        "RT-3",
+        "RT-4",
+        "RT-5"
+      ],
+      "distinct": 1200
+    },
+    {
+      "name": "order_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "ORD-5071",
+        "ORD-9714",
+        "ORD-7533",
+        "ORD-9359",
+        "ORD-2506"
+      ],
+      "distinct": 1159
+    },
+    {
+      "name": "product_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "MD-1679",
+        "SKU1231",
+        "SKU1445",
+        "R-1590",
+        "R-1078"
+      ],
+      "distinct": 615
+    },
+    {
+      "name": "return_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "2025-02-21",
+        "2026-09-02",
+        "08/16/2024",
+        "2025-06-28",
+        "12/11/2026"
+      ],
+      "distinct": 977
+    },
+    {
+      "name": "reason",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "尺寸不符",
+        "质量问题",
+        "发错货",
+        "破损",
+        "不喜欢"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "refund_amount",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "2896",
+        "4028",
+        "2090",
+        "842",
+        "4523"
+      ],
+      "distinct": 1156
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:15.838Z"
+}

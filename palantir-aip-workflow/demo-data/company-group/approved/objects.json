@@ -1,0 +1,184 @@
+{
+  "objects": [
+    {
+      "id": "Customer",
+      "displayName": "零售客户",
+      "description": "零售板块客户",
+      "backingSource": "customers_retail.csv",
+      "properties": [
+        {
+          "id": "customer_id",
+          "type": "string",
+          "title": "客户 ID",
+          "primaryKey": true
+        },
+        {
+          "id": "company_name",
+          "type": "string",
+          "title": "公司名"
+        },
+        {
+          "id": "email",
+          "type": "string",
+          "title": "邮箱"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "RetailOrder",
+      "displayName": "零售订单",
+      "description": "零售板块订单",
+      "backingSource": "orders_retail.csv",
+      "properties": [
+        {
+          "id": "order_id",
+          "type": "string",
+          "title": "订单 ID",
+          "primaryKey": true
+        },
+        {
+          "id": "customer_id",
+          "type": "string",
+          "title": "客户 ID"
+        },
+        {
+          "id": "status",
+          "type": "string",
+          "title": "状态"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "Product",
+      "displayName": "零售商品",
+      "description": "零售板块商品",
+      "backingSource": "products_retail.csv",
+      "properties": [
+        {
+          "id": "product_id",
+          "type": "string",
+          "title": "商品 ID",
+          "primaryKey": true
+        },
+        {
+          "id": "name",
+          "type": "string",
+          "title": "名称"
+        },
+        {
+          "id": "supplier_id",
+          "type": "string",
+          "title": "供应商 ID"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "Supplier",
+      "displayName": "供应商",
+      "description": "零售板块供应商",
+      "backingSource": "suppliers_retail.csv",
+      "properties": [
+        {
+          "id": "supplier_id",
+          "type": "string",
+          "title": "供应商 ID",
+          "primaryKey": true
+        },
+        {
+          "id": "name",
+          "type": "string",
+          "title": "名称"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "MfgProduct",
+      "displayName": "制造产品",
+      "description": "制造板块成品",
+      "backingSource": "products_mfg.csv",
+      "properties": [
+        {
+          "id": "product_id",
+          "type": "string",
+          "title": "产品 ID",
+          "primaryKey": true
+        },
+        {
+          "id": "name",
+          "type": "string",
+          "title": "名称"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "Subscription",
+      "displayName": "订阅",
+      "description": "SaaS 订阅",
+      "backingSource": "subscriptions.csv",
+      "properties": [
+        {
+          "id": "subscription_id",
+          "type": "string",
+          "title": "订阅 ID",
+          "primaryKey": true
+        },
+        {
+          "id": "customer_id",
+          "type": "string",
+          "title": "客户 ID"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "Employee",
+      "displayName": "员工",
+      "description": "集团员工",
+      "backingSource": "employees.csv",
+      "properties": [
+        {
+          "id": "employee_id",
+          "type": "string",
+          "title": "员工 ID",
+          "primaryKey": true
+        },
+        {
+          "id": "name",
+          "type": "string",
+          "title": "姓名"
+        },
+        {
+          "id": "salary",
+          "type": "number",
+          "title": "薪资"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ProductionBatch",
+      "displayName": "生产批次",
+      "description": "制造生产批次",
+      "backingSource": "production_batches.csv",
+      "properties": [
+        {
+          "id": "batch_id",
+          "type": "string",
+          "title": "批次 ID",
+          "primaryKey": true
+        },
+        {
+          "id": "order_id",
+          "type": "string",
+          "title": "工单 ID"
+        }
+      ],
+      "status": "approved"
+    }
+  ]
+}

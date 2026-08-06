@@ -1,0 +1,76 @@
+{
+  "file": "machine_maintenance.csv",
+  "rows": 300,
+  "columns": [
+    {
+      "name": "maintenance_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 300,
+      "sample": [
+        "MT-1",
+        "MT-2",
+        "MT-3",
+        "MT-4",
+        "MT-5"
+      ],
+      "distinct": 300
+    },
+    {
+      "name": "machine_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 300,
+      "sample": [
+        "WC-9",
+        "WC-3",
+        "WC-12",
+        "WC-5",
+        "WC-1"
+      ],
+      "distinct": 13
+    },
+    {
+      "name": "maintenance_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 300,
+      "sample": [
+        "2025-09-01",
+        "03/27/2026",
+        "2024-03-16",
+        "2026-06-27",
+        "2025-12-01"
+      ],
+      "distinct": 287
+    },
+    {
+      "name": "type",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 300,
+      "sample": [
+        "日常保养",
+        "大修",
+        "故障维修",
+        "预防性"
+      ],
+      "distinct": 4
+    },
+    {
+      "name": "cost",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 300,
+      "sample": [
+        "12249",
+        "$23,013.00",
+        "40 826,00",
+        "9 918,00",
+        "546"
+      ],
+      "distinct": 299
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:17.222Z"
+}

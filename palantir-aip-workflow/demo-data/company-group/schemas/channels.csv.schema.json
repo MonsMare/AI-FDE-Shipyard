@@ -1,0 +1,49 @@
+{
+  "file": "channels.csv",
+  "rows": 8,
+  "columns": [
+    {
+      "name": "channel_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8,
+      "sample": [
+        "CH-1",
+        "CH-2",
+        "CH-3",
+        "CH-4",
+        "CH-5"
+      ],
+      "distinct": 8
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8,
+      "sample": [
+        "渠道代理",
+        "社交媒体",
+        "内容营销",
+        "合作伙伴",
+        "自然搜索"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "cost_per_lead",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 8,
+      "sample": [
+        "736",
+        "484",
+        "114",
+        "508",
+        "731"
+      ],
+      "distinct": 8
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:17.681Z"
+}

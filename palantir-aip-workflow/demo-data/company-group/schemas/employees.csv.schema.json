@@ -1,0 +1,128 @@
+{
+  "file": "employees.csv",
+  "rows": 2600,
+  "columns": [
+    {
+      "name": "employee_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2600,
+      "sample": [
+        "E-1001",
+        "E-1002",
+        "E-1003",
+        "E-1004",
+        "E-1005"
+      ],
+      "distinct": 2600
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2600,
+      "sample": [
+        "Carol Leo",
+        "Jack David",
+        "PAUL CAROL",
+        "  Xu Grace  ",
+        "Xu Nick"
+      ],
+      "distinct": 1975
+    },
+    {
+      "name": "department_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2600,
+      "sample": [
+        "D-27",
+        "D-33",
+        "D-4",
+        "D-34",
+        "D-39"
+      ],
+      "distinct": 40
+    },
+    {
+      "name": "position_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2600,
+      "sample": [
+        "P-94",
+        "P-38",
+        "P-70",
+        "P-110",
+        "P-60"
+      ],
+      "distinct": 120
+    },
+    {
+      "name": "subsidiary",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2600,
+      "sample": [
+        "saas",
+        "retail",
+        "mfg"
+      ],
+      "distinct": 3
+    },
+    {
+      "name": "hire_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 2600,
+      "sample": [
+        "2021-06-20",
+        "27-03-2023",
+        "12/11/2021",
+        "09/01/2017",
+        "2018-07-09"
+      ],
+      "distinct": 2319
+    },
+    {
+      "name": "salary",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 2600,
+      "sample": [
+        "25861",
+        "$31,807.00",
+        "51024",
+        "52 162",
+        "15491"
+      ],
+      "distinct": 2575
+    },
+    {
+      "name": "email",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 2600,
+      "sample": [
+        "EMP1001@MERIDIAN.COM",
+        "emp1002@meridian.com",
+        "emp1003@meridian.com",
+        "emp1004@meridian.com",
+        "  emp1005@meridian. co  "
+      ],
+      "distinct": 2600
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2600,
+      "sample": [
+        "active",
+        "left"
+      ],
+      "distinct": 2
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.220Z"
+}

@@ -1,0 +1,63 @@
+{
+  "file": "coupons.csv",
+  "rows": 200,
+  "columns": [
+    {
+      "name": "coupon_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "CP-1",
+        "CP-2",
+        "CP-3",
+        "CP-4",
+        "CP-5"
+      ],
+      "distinct": 200
+    },
+    {
+      "name": "code",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "SAVE1000",
+        "SAVE1001",
+        "SAVE1002",
+        "SAVE1003",
+        "SAVE1004"
+      ],
+      "distinct": 200
+    },
+    {
+      "name": "discount_rate",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "0.2",
+        "20%",
+        "0.3",
+        "10%",
+        "0.15"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "expires",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "2026-01-20",
+        "2026-05-03",
+        "09/15/2026",
+        "2026-05-08",
+        "08/06/2026"
+      ],
+      "distinct": 182
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:15.190Z"
+}

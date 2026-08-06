@@ -1,0 +1,77 @@
+{
+  "file": "material_inventory.csv",
+  "rows": 800,
+  "columns": [
+    {
+      "name": "inv_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "MI-1",
+        "MI-2",
+        "MI-3",
+        "MI-4",
+        "MI-5"
+      ],
+      "distinct": 800
+    },
+    {
+      "name": "material_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "RM-11",
+        "RM-19",
+        "RM-30",
+        "RM-93",
+        "RM-33"
+      ],
+      "distinct": 120
+    },
+    {
+      "name": "quantity",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "3686",
+        "36809",
+        "25851",
+        "29589",
+        "45866"
+      ],
+      "distinct": 792
+    },
+    {
+      "name": "location",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "A2-24",
+        "A8-7",
+        "A5-3",
+        "A6-10",
+        "A6-2"
+      ],
+      "distinct": 254
+    },
+    {
+      "name": "last_count_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 800,
+      "sample": [
+        "04/06/2025",
+        "08/26/2026",
+        "2026-04-07",
+        "2026-05-10",
+        "2025-08-01"
+      ],
+      "distinct": 663
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.693Z"
+}

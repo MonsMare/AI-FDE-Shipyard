@@ -1,0 +1,222 @@
+{
+  "transforms": [
+    {
+      "id": "date_md_to_iso",
+      "source": "attendance.csv",
+      "target": "日期格式统一（描述性）",
+      "type": "regex_replace",
+      "rule": {
+        "pattern": "(\\d{2})/(\\d{2})/(\\d{4})",
+        "replacement": "$3-$1-$2",
+        "column": "date"
+      },
+      "description": "MM/DD/YYYY → YYYY-MM-DD",
+      "status": "approved"
+    },
+    {
+      "id": "date_dmy_to_iso",
+      "source": "attendance.csv",
+      "target": "日期格式统一（描述性）",
+      "type": "regex_replace",
+      "rule": {
+        "pattern": "(\\d{2})-(\\d{2})-(\\d{4})",
+        "replacement": "$3-$1-$2",
+        "column": "date"
+      },
+      "description": "DD-MM-YYYY → YYYY-MM-DD（依赖上一条先转 MM/DD）",
+      "status": "approved"
+    },
+    {
+      "id": "money_strip_symbols",
+      "source": "salary_records.csv",
+      "target": "金额清洗（描述性）",
+      "type": "regex_replace",
+      "rule": {
+        "pattern": "[$,]",
+        "replacement": "",
+        "column": "base_salary"
+      },
+      "description": "去货币符与千分位",
+      "status": "approved"
+    },
+    {
+      "id": "money_cast_number",
+      "source": "salary_records.csv",
+      "target": "金额规范化（描述性）",
+      "type": "cast",
+      "rule": {
+        "column": "base_salary",
+        "targetType": "number"
+      },
+      "description": "链式：cast 上一条清洗后的金额",
+      "status": "approved"
+    },
+    {
+      "id": "email_lower_retail",
+      "source": "customers_retail.csv",
+      "target": "邮箱小写（描述性）",
+      "type": "lower",
+      "rule": {
+        "column": "email"
+      },
+      "description": "邮箱统一小写",
+      "status": "approved"
+    },
+    {
+      "id": "company_trim",
+      "source": "customers_retail.csv",
+      "target": "公司名清洗（描述性）",
+      "type": "trim",
+      "rule": {
+        "column": "company_name"
+      },
+      "description": "去首尾空白",
+      "status": "approved"
+    },
+    {
+      "id": "sku_normalize",
+      "source": "products_retail.csv",
+      "target": "SKU 规范化（描述性）",
+      "type": "regex_replace",
+      "rule": {
+        "pattern": "^REF-",
+        "replacement": "SKU-",
+        "column": "product_id"
+      },
+      "description": "REF 前缀转 SKU",
+      "status": "approved"
+    },
+    {
+      "id": "payment_money_clean",
+      "source": "payments.csv",
+      "target": "金额清洗（描述性）",
+      "type": "regex_replace",
+      "rule": {
+        "pattern": "[$,]",
+        "replacement": "",
+        "column": "amount"
+      },
+      "description": "去货币符与千分位",
+      "status": "approved"
+    },
+    {
+      "id": "status_map_orders",
+      "source": "orders_retail.csv",
+      "target": "状态归一（描述性）",
+      "type": "map",
+      "rule": {
+        "mappings": {
+          "ACTIVE": "active",
+          " Active ": "active",
+          "CLOSED": "closed",
+          "PENDING": "pending"
+        },
+        "column": "status"
+      },
+      "description": "状态枚举归一",
+      "status": "approved"
+    },
+    {
+      "id": "status_map_mfg",
+      "source": "production_orders.csv",
+      "target": "状态归一（描述性）",
+      "type": "map",
+      "rule": {
+        "mappings": {
+          "OPEN": "open",
+          "RELEASED": "released",
+          "COMPLETED": "completed"
+        },
+        "column": "status"
+      },
+      "description": "状态枚举归一",
+      "status": "approved"
+    },
+    {
+      "id": "qty_abs",
+      "source": "order_items.csv",
+      "target": "负数量修正（描述性）",
+      "type": "map",
+      "rule": {
+        "mappings": {
+          "-1": "1",
+          "-2": "2",
+          "-3": "3",
+          "-4": "4",
+          "-5": "5"
+        },
+        "column": "quantity"
+      },
+      "description": "负数量转正",
+      "status": "approved"
+    },
+    {
+      "id": "bom_unit_extract",
+      "source": "bills_of_materials.csv",
+      "target": "BOM 用量数字提取（描述性）",
+      "type": "regex_replace",
+      "rule": {
+        "pattern": "^([\\d.]+).*$",
+        "replacement": "$1",
+        "column": "quantity_per_unit"
+      },
+      "description": "“0.5 kg” → “0.5”",
+      "status": "approved"
+    },
+    {
+      "id": "email_lower_saas",
+      "source": "customers_saas.csv",
+      "target": "邮箱小写（描述性）",
+      "type": "lower",
+      "rule": {
+        "column": "email"
+      },
+      "description": "邮箱统一小写",
+      "status": "approved"
+    },
+    {
+      "id": "level_map",
+      "source": "memberships.csv",
+      "target": "会员等级归一（描述性）",
+      "type": "map",
+      "rule": {
+        "mappings": {
+          "GOLD": "gold",
+          "Gold": "gold",
+          "SILVER": "silver"
+        },
+        "column": "level"
+      },
+      "description": "等级枚举归一",
+      "status": "approved"
+    },
+    {
+      "id": "batch_id_normalize",
+      "source": "production_batches.csv",
+      "target": "批次号规范化（描述性）",
+      "type": "regex_replace",
+      "rule": {
+        "pattern": "^BATCH-(\\d+)$",
+        "replacement": "B-$1",
+        "column": "batch_id"
+      },
+      "description": "批次号前缀统一",
+      "status": "approved"
+    },
+    {
+      "id": "active_orders_only",
+      "source": "orders_retail.csv",
+      "target": "活跃订单过滤（描述性）",
+      "type": "filter",
+      "rule": {
+        "condition": {
+          "column": "status",
+          "op": "eq",
+          "value": "active"
+        }
+      },
+      "description": "只保留 active 订单",
+      "status": "approved"
+    }
+  ]
+}

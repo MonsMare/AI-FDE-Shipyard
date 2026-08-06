@@ -1,0 +1,102 @@
+{
+  "file": "subscriptions.csv",
+  "rows": 6000,
+  "columns": [
+    {
+      "name": "subscription_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "SUB-1",
+        "SUB-2",
+        "SUB-3",
+        "SUB-4",
+        "SUB-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "SC-426",
+        "SC-392",
+        "SC-386",
+        "SC-275",
+        "SC-1063"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "account_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "AC-434",
+        "AC-156",
+        "AC-774",
+        "AC-311",
+        "AC-404"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "plan_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "PLAN-5",
+        "PLAN-4",
+        "PLAN-2",
+        "PLAN-6",
+        "PLAN-1"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "start_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "2026-06-24",
+        "06/04/2022",
+        "10/17/2022",
+        "2026-06-16",
+        "2022-04-01"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "ACTIVE",
+        "trial",
+        "cancelled",
+        "active",
+        "CANCELLED"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "will_churn",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "0",
+        "1"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:17.967Z"
+}

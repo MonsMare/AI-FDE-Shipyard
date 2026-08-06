@@ -1,0 +1,77 @@
+{
+  "file": "suppliers_retail.csv",
+  "rows": 80,
+  "columns": [
+    {
+      "name": "supplier_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 80,
+      "sample": [
+        "SR-1",
+        "SR-2",
+        "SR-3",
+        "SR-4",
+        "SR-5"
+      ],
+      "distinct": 80
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 80,
+      "sample": [
+        "华东金属",
+        "珠江五金",
+        "北方塑胶",
+        "联科电子",
+        "环球包装"
+      ],
+      "distinct": 10
+    },
+    {
+      "name": "region",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 80,
+      "sample": [
+        "北京",
+        "上海",
+        "广州",
+        "深圳",
+        "杭州"
+      ],
+      "distinct": 10
+    },
+    {
+      "name": "lead_time_days",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 80,
+      "sample": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "distinct": 37
+    },
+    {
+      "name": "rating",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 80,
+      "sample": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "distinct": 5
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.685Z"
+}

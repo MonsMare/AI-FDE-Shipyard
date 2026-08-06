@@ -1,0 +1,91 @@
+{
+  "file": "stock_movements.csv",
+  "rows": 20000,
+  "columns": [
+    {
+      "name": "movement_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 20000,
+      "sample": [
+        "MV-1",
+        "MV-2",
+        "MV-3",
+        "MV-4",
+        "MV-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "product_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 20000,
+      "sample": [
+        "SKU1575",
+        "MD-1225",
+        "SKU1623",
+        "MD-1538",
+        "REF-1054"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "store_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 20000,
+      "sample": [
+        "ST-19",
+        "ST-8",
+        "ST-16",
+        "ST-10",
+        "ST-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "quantity",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 20000,
+      "sample": [
+        "198",
+        "-137",
+        "-98",
+        "189",
+        "-119"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "movement_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 20000,
+      "sample": [
+        "23-09-2025",
+        "2025-12-21",
+        "2025-07-03",
+        "07/04/2025",
+        "24-02-2026"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "type",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 20000,
+      "sample": [
+        "in",
+        "In",
+        "adjust",
+        "ADJUST",
+        "OUT"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:15.671Z"
+}

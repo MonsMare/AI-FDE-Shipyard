@@ -1,0 +1,77 @@
+{
+  "file": "churn_events.csv",
+  "rows": 900,
+  "columns": [
+    {
+      "name": "event_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 900,
+      "sample": [
+        "CE-1",
+        "CE-2",
+        "CE-3",
+        "CE-4",
+        "CE-5"
+      ],
+      "distinct": 900
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 900,
+      "sample": [
+        "SC-2087",
+        "SC-2600",
+        "SC-1233",
+        "SC-2792",
+        "SC-1954"
+      ],
+      "distinct": 782
+    },
+    {
+      "name": "subscription_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 900,
+      "sample": [
+        "SUB-4726",
+        "SUB-118",
+        "SUB-1575",
+        "SUB-2573",
+        "SUB-3561"
+      ],
+      "distinct": 563
+    },
+    {
+      "name": "churn_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 900,
+      "sample": [
+        "2026-12-03",
+        "2025-03-19",
+        "2026-01-23",
+        "2026-09-11",
+        "2025-02-16"
+      ],
+      "distinct": 730
+    },
+    {
+      "name": "cancel_reason",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 900,
+      "sample": [
+        "迁移竞品",
+        "预算削减",
+        "价格太贵",
+        "未说明",
+        "使用率低"
+      ],
+      "distinct": 6
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:18.539Z"
+}

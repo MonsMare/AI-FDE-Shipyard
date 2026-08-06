@@ -1,0 +1,91 @@
+{
+  "file": "inventory_retail.csv",
+  "rows": 4000,
+  "columns": [
+    {
+      "name": "inventory_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "INV-1",
+        "INV-2",
+        "INV-3",
+        "INV-4",
+        "INV-5"
+      ],
+      "distinct": 4000
+    },
+    {
+      "name": "product_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "R-1330",
+        "MD-1516",
+        "REF-1137",
+        "REF-1256",
+        "REF-1786"
+      ],
+      "distinct": 796
+    },
+    {
+      "name": "store_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "ST-5",
+        "ST-3",
+        "ST-9",
+        "ST-21",
+        "ST-2"
+      ],
+      "distinct": 25
+    },
+    {
+      "name": "stock",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "8000",
+        "218",
+        "411",
+        "160",
+        "10"
+      ],
+      "distinct": 821
+    },
+    {
+      "name": "reorder_level",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "10",
+        "11",
+        "86",
+        "70",
+        "78"
+      ],
+      "distinct": 91
+    },
+    {
+      "name": "last_updated",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 4000,
+      "sample": [
+        "2025-10-04",
+        "2025-01-14",
+        "10-01-2025",
+        "12/15/2026",
+        "14-10-2025"
+      ],
+      "distinct": 1693
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:15.133Z"
+}

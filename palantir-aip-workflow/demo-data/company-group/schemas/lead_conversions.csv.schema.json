@@ -1,0 +1,77 @@
+{
+  "file": "lead_conversions.csv",
+  "rows": 1200,
+  "columns": [
+    {
+      "name": "conversion_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "LC-1",
+        "LC-2",
+        "LC-3",
+        "LC-4",
+        "LC-5"
+      ],
+      "distinct": 1200
+    },
+    {
+      "name": "lead_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "LD-3306",
+        "LD-3468",
+        "LD-4137",
+        "LD-2354",
+        "LD-147"
+      ],
+      "distinct": 1069
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "SC-671",
+        "SC-1357",
+        "SC-1362",
+        "SC-489",
+        "SC-1903"
+      ],
+      "distinct": 1002
+    },
+    {
+      "name": "converted_at",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "2026-10-06",
+        "05/09/2025",
+        "2026-10-14",
+        "2026-11-18",
+        "2026-04-12"
+      ],
+      "distinct": 887
+    },
+    {
+      "name": "days_to_convert",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "45",
+        "37",
+        "1",
+        "67",
+        "70"
+      ],
+      "distinct": 90
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:18.700Z"
+}

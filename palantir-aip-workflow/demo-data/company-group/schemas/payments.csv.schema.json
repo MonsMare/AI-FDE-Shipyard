@@ -1,0 +1,89 @@
+{
+  "file": "payments.csv",
+  "rows": 15000,
+  "columns": [
+    {
+      "name": "payment_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 15000,
+      "sample": [
+        "PAY-1",
+        "PAY-2",
+        "PAY-3",
+        "PAY-4",
+        "PAY-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "order_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 15000,
+      "sample": [
+        "ORD-3798",
+        "ORD-5098",
+        "ORD-13425",
+        "ORD-8287",
+        "ORD-7980"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "amount",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 15000,
+      "sample": [
+        "3472",
+        "15737",
+        "16 470",
+        "5056",
+        "14728"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "method",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 15000,
+      "sample": [
+        "COD",
+        "card",
+        "alipay",
+        "wechat"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 15000,
+      "sample": [
+        "SUCCESS",
+        "pending",
+        "success",
+        "failed"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "paid_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 15000,
+      "sample": [
+        "04-02-2026",
+        "2025-12-19",
+        "18-10-2026",
+        "07/02/2025",
+        "04/20/2025"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:15.944Z"
+}

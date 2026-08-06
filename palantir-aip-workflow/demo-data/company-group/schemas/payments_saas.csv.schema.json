@@ -1,0 +1,89 @@
+{
+  "file": "payments_saas.csv",
+  "rows": 5500,
+  "columns": [
+    {
+      "name": "payment_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5500,
+      "sample": [
+        "SP-1",
+        "SP-2",
+        "SP-3",
+        "SP-4",
+        "SP-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "invoice_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5500,
+      "sample": [
+        "SI-2673",
+        "SI-2891",
+        "SI-936",
+        "SI-2945",
+        "SI-459"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "amount",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 5500,
+      "sample": [
+        "4 670,00",
+        "3665",
+        "828",
+        "4 672,00",
+        "3371"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "method",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5500,
+      "sample": [
+        "card",
+        "alipay",
+        "wechat",
+        "bank_transfer"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5500,
+      "sample": [
+        "failed",
+        "pending",
+        "success",
+        "SUCCESS"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "paid_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 5500,
+      "sample": [
+        "2025-12-09",
+        "06/12/2026",
+        "12/21/2024",
+        "2024-03-21",
+        "2025-10-05"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:18.276Z"
+}

@@ -1,0 +1,77 @@
+{
+  "file": "attendance.csv",
+  "rows": 12000,
+  "columns": [
+    {
+      "name": "employee_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 12000,
+      "sample": [
+        "E-3143",
+        "E-2753",
+        "E-2219",
+        "E-2027",
+        "E-1956"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 12000,
+      "sample": [
+        "2025-08-03",
+        "12/01/2025",
+        "09/24/2026",
+        "2026-08-17",
+        "2025-10-04"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "hours",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 12000,
+      "sample": [
+        "9",
+        "6",
+        "11",
+        "7",
+        "8"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "overtime",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 12000,
+      "sample": [
+        "0",
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 12000,
+      "sample": [
+        "ACTIVE",
+        "PENDING",
+        "CLOSED",
+        "pending",
+        "active"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.447Z"
+}

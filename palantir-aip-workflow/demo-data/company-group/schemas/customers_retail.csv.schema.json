@@ -1,0 +1,91 @@
+{
+  "file": "customers_retail.csv",
+  "rows": 5000,
+  "columns": [
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "CUST-1",
+        "CUST-2",
+        "CUST-3",
+        "CUST-4",
+        "CUST-5"
+      ],
+      "distinct": 5000
+    },
+    {
+      "name": "company_name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "Cyberdyne-100",
+        "Black Mesa-101",
+        "Oscorp-102",
+        "Acme Corp-103",
+        "Aperture-104"
+      ],
+      "distinct": 3529
+    },
+    {
+      "name": "email",
+      "inferredType": "email",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "acct100@example.com",
+        "ACCT101@CORP.NET",
+        "acct102@biz.org",
+        "ACCT103@EXAMPLE.COM",
+        "acct104@corp.net"
+      ],
+      "distinct": 5000
+    },
+    {
+      "name": "phone",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "139-1000-0000",
+        "139-1001-0001",
+        "139-1002-0002",
+        "139-1003-0003",
+        "139-1004-0004"
+      ],
+      "distinct": 5000
+    },
+    {
+      "name": "region",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "北京",
+        "上海",
+        "广州",
+        "深圳",
+        "杭州"
+      ],
+      "distinct": 10
+    },
+    {
+      "name": "signup_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "2020-01-15",
+        "2020-02-15",
+        "2020-03-15",
+        "2020-04-15",
+        "2020-05-15"
+      ],
+      "distinct": 3418
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.927Z"
+}

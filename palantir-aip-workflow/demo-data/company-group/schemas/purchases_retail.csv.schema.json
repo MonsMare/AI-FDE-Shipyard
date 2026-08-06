@@ -1,0 +1,90 @@
+{
+  "file": "purchases_retail.csv",
+  "rows": 1500,
+  "columns": [
+    {
+      "name": "purchase_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1500,
+      "sample": [
+        "PC-1",
+        "PC-2",
+        "PC-3",
+        "PC-4",
+        "PC-5"
+      ],
+      "distinct": 1500
+    },
+    {
+      "name": "supplier_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1500,
+      "sample": [
+        "SR-50",
+        "SR-74",
+        "SR-35",
+        "SR-41",
+        "SR-7"
+      ],
+      "distinct": 80
+    },
+    {
+      "name": "order_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 1500,
+      "sample": [
+        "08/09/2025",
+        "05-01-2026",
+        "2025-09-19",
+        "08/13/2026",
+        "09/25/2026"
+      ],
+      "distinct": 1146
+    },
+    {
+      "name": "arrival_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 1500,
+      "sample": [
+        "2026-12-13",
+        "22-11-2025",
+        "2024-06-08",
+        "03/19/2025",
+        "05-11-2024"
+      ],
+      "distinct": 1150
+    },
+    {
+      "name": "lead_time_days",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 1500,
+      "sample": [
+        "7",
+        "9",
+        "16",
+        "14",
+        "2"
+      ],
+      "distinct": 80
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1500,
+      "sample": [
+        "received",
+        "overdue",
+        "pending",
+        "RECEIVED"
+      ],
+      "distinct": 4
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.167Z"
+}

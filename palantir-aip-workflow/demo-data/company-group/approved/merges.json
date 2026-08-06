@@ -1,0 +1,324 @@
+{
+  "merges": [
+    {
+      "id": "merge_cust_rs_1",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-1"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-1"
+      },
+      "confidence": 0.95,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rs_2",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-2"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-2"
+      },
+      "confidence": 0.93,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rs_3",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-3"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-3"
+      },
+      "confidence": 0.91,
+      "rationale": "名称相似",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rs_4",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-4"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-4"
+      },
+      "confidence": 0.97,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rs_5",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-5"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-5"
+      },
+      "confidence": 0.94,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rs_6",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-6"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-6"
+      },
+      "confidence": 0.92,
+      "rationale": "名称相似",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rs_7",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-7"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-7"
+      },
+      "confidence": 0.96,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rs_8",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-8"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-8"
+      },
+      "confidence": 0.9,
+      "rationale": "名称相似",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rm_1",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-111"
+      },
+      "right": {
+        "source": "customers_mfg.csv",
+        "key": "customer_id",
+        "value": "MC-111"
+      },
+      "confidence": 0.95,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rm_2",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-112"
+      },
+      "right": {
+        "source": "customers_mfg.csv",
+        "key": "customer_id",
+        "value": "MC-112"
+      },
+      "confidence": 0.93,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rm_3",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-113"
+      },
+      "right": {
+        "source": "customers_mfg.csv",
+        "key": "customer_id",
+        "value": "MC-113"
+      },
+      "confidence": 0.91,
+      "rationale": "名称相似",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_rm_4",
+      "left": {
+        "source": "customers_retail.csv",
+        "key": "customer_id",
+        "value": "CUST-114"
+      },
+      "right": {
+        "source": "customers_mfg.csv",
+        "key": "customer_id",
+        "value": "MC-114"
+      },
+      "confidence": 0.94,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_ms_1",
+      "left": {
+        "source": "customers_mfg.csv",
+        "key": "customer_id",
+        "value": "MC-1"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-1"
+      },
+      "confidence": 0.92,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_ms_2",
+      "left": {
+        "source": "customers_mfg.csv",
+        "key": "customer_id",
+        "value": "MC-2"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-2"
+      },
+      "confidence": 0.9,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_ms_3",
+      "left": {
+        "source": "customers_mfg.csv",
+        "key": "customer_id",
+        "value": "MC-3"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-3"
+      },
+      "confidence": 0.95,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_cust_ms_4",
+      "left": {
+        "source": "customers_mfg.csv",
+        "key": "customer_id",
+        "value": "MC-4"
+      },
+      "right": {
+        "source": "customers_saas.csv",
+        "key": "customer_id",
+        "value": "SC-4"
+      },
+      "confidence": 0.93,
+      "rationale": "邮箱一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_sup_1",
+      "left": {
+        "source": "suppliers_retail.csv",
+        "key": "supplier_id",
+        "value": "SR-1"
+      },
+      "right": {
+        "source": "suppliers_mfg.csv",
+        "key": "supplier_id",
+        "value": "SM-1"
+      },
+      "confidence": 0.96,
+      "rationale": "名称一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_sup_2",
+      "left": {
+        "source": "suppliers_retail.csv",
+        "key": "supplier_id",
+        "value": "SR-2"
+      },
+      "right": {
+        "source": "suppliers_mfg.csv",
+        "key": "supplier_id",
+        "value": "SM-2"
+      },
+      "confidence": 0.94,
+      "rationale": "名称一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_sup_3",
+      "left": {
+        "source": "suppliers_retail.csv",
+        "key": "supplier_id",
+        "value": "SR-3"
+      },
+      "right": {
+        "source": "suppliers_mfg.csv",
+        "key": "supplier_id",
+        "value": "SM-3"
+      },
+      "confidence": 0.95,
+      "rationale": "名称一致",
+      "status": "approved"
+    },
+    {
+      "id": "merge_sup_4",
+      "left": {
+        "source": "suppliers_retail.csv",
+        "key": "supplier_id",
+        "value": "SR-4"
+      },
+      "right": {
+        "source": "suppliers_mfg.csv",
+        "key": "supplier_id",
+        "value": "SM-4"
+      },
+      "confidence": 0.93,
+      "rationale": "名称一致",
+      "status": "approved"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "file": "campaign_redemptions.csv",
+  "rows": 8000,
+  "columns": [
+    {
+      "name": "redemption_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "RD-1",
+        "RD-2",
+        "RD-3",
+        "RD-4",
+        "RD-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "campaign_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "CM-58",
+        "CM-7",
+        "CM-22",
+        "CM-18",
+        "CM-43"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "coupon_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "CP-47",
+        "CP-116",
+        "CP-171",
+        "CP-138",
+        "CP-110"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "CUST-706",
+        "CUST-3440",
+        "CUST-1850",
+        "CUST-2789",
+        "CUST-4785"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "redeemed_at",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "2026-12-10",
+        "2026-09-09",
+        "08-09-2025",
+        "07/06/2025",
+        "19-12-2025"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.034Z"
+}

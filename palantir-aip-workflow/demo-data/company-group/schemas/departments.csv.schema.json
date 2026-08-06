@@ -1,0 +1,61 @@
+{
+  "file": "departments.csv",
+  "rows": 40,
+  "columns": [
+    {
+      "name": "department_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 40,
+      "sample": [
+        "D-1",
+        "D-2",
+        "D-3",
+        "D-4",
+        "D-5"
+      ],
+      "distinct": 40
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 40,
+      "sample": [
+        "仓储部",
+        "采购部",
+        "生产部",
+        "人事部",
+        "财务部"
+      ],
+      "distinct": 10
+    },
+    {
+      "name": "subsidiary",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 40,
+      "sample": [
+        "mfg",
+        "retail",
+        "saas"
+      ],
+      "distinct": 3
+    },
+    {
+      "name": "cost_center_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 40,
+      "sample": [
+        "CC-17",
+        "CC-39",
+        "CC-48",
+        "CC-44",
+        "CC-15"
+      ],
+      "distinct": 30
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.089Z"
+}

@@ -1,0 +1,91 @@
+{
+  "file": "shipments.csv",
+  "rows": 14000,
+  "columns": [
+    {
+      "name": "shipment_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 14000,
+      "sample": [
+        "SH-1",
+        "SH-2",
+        "SH-3",
+        "SH-4",
+        "SH-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "order_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 14000,
+      "sample": [
+        "ORD-12040",
+        "ORD-1654",
+        "ORD-1232",
+        "ORD-3859",
+        "ORD-11288"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "shipped_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 14000,
+      "sample": [
+        "2024-01-19",
+        "2025-12-08",
+        "2024-08-10",
+        "2026-04-25",
+        "2024-11-24"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "delivered_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 14000,
+      "sample": [
+        "23-03-2024",
+        "09-07-2026",
+        "09/08/2026",
+        "2024-09-08",
+        "2024-04-25"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "carrier",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 14000,
+      "sample": [
+        "京东物流",
+        "顺丰",
+        "中通",
+        "邮政",
+        "圆通"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "delivery_days",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 14000,
+      "sample": [
+        "3",
+        "1",
+        "4",
+        "5",
+        "7"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:15.773Z"
+}

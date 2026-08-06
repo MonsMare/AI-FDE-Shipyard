@@ -1,0 +1,77 @@
+{
+  "file": "purchase_orders_mfg.csv",
+  "rows": 2000,
+  "columns": [
+    {
+      "name": "po_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "PO-1",
+        "PO-2",
+        "PO-3",
+        "PO-4",
+        "PO-5"
+      ],
+      "distinct": 2000
+    },
+    {
+      "name": "supplier_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "SM-38",
+        "SM-31",
+        "SM-32",
+        "SM-14",
+        "SM-34"
+      ],
+      "distinct": 40
+    },
+    {
+      "name": "order_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "2025-10-11",
+        "04/11/2025",
+        "2025-07-10",
+        "2025-05-22",
+        "2024-11-12"
+      ],
+      "distinct": 1403
+    },
+    {
+      "name": "expected_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "2024-02-04",
+        "05-05-2025",
+        "2025-09-14",
+        "2026-04-02",
+        "25-06-2024"
+      ],
+      "distinct": 1435
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "open",
+        "PARTIAL",
+        "OPEN",
+        "partial",
+        "closed"
+      ],
+      "distinct": 5
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.902Z"
+}

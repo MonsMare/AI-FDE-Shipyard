@@ -1,0 +1,77 @@
+{
+  "file": "purchase_items_mfg.csv",
+  "rows": 5000,
+  "columns": [
+    {
+      "name": "po_item_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "PM-1",
+        "PM-2",
+        "PM-3",
+        "PM-4",
+        "PM-5"
+      ],
+      "distinct": 5000
+    },
+    {
+      "name": "po_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "PO-508",
+        "PO-1019",
+        "PO-1204",
+        "PO-1156",
+        "PO-947"
+      ],
+      "distinct": 1841
+    },
+    {
+      "name": "material_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "RM-8",
+        "RM-97",
+        "RM-107",
+        "RM-32",
+        "RM-112"
+      ],
+      "distinct": 120
+    },
+    {
+      "name": "quantity",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "8353",
+        "2489",
+        "8865",
+        "9129",
+        "1933"
+      ],
+      "distinct": 3883
+    },
+    {
+      "name": "unit_cost",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 5000,
+      "sample": [
+        "524,00",
+        "1 164,00",
+        "3190",
+        "2746",
+        "236"
+      ],
+      "distinct": 4013
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.992Z"
+}

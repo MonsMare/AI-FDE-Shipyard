@@ -1,0 +1,49 @@
+{
+  "file": "work_centers.csv",
+  "rows": 15,
+  "columns": [
+    {
+      "name": "work_center_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 15,
+      "sample": [
+        "WC-1",
+        "WC-2",
+        "WC-3",
+        "WC-4",
+        "WC-5"
+      ],
+      "distinct": 15
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 15,
+      "sample": [
+        "机加工线-0",
+        "装配线-1",
+        "喷涂线-2",
+        "喷涂线-3",
+        "装配线-4"
+      ],
+      "distinct": 12
+    },
+    {
+      "name": "capacity_per_day",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 15,
+      "sample": [
+        "101",
+        "59",
+        "439",
+        "282",
+        "317"
+      ],
+      "distinct": 15
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.827Z"
+}

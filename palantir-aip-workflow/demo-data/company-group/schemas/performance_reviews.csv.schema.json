@@ -1,0 +1,76 @@
+{
+  "file": "performance_reviews.csv",
+  "rows": 5200,
+  "columns": [
+    {
+      "name": "employee_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5200,
+      "sample": [
+        "E-1073",
+        "E-2849",
+        "E-1832",
+        "E-1833",
+        "E-1649"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "review_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 5200,
+      "sample": [
+        "2024-07-17",
+        "2025-12-17",
+        "12/18/2024",
+        "2025-04-18",
+        "2024-06-08"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "score",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 5200,
+      "sample": [
+        "3",
+        "4.5",
+        "A",
+        "C",
+        "3.5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "rating",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5200,
+      "sample": [
+        "需改进",
+        "优秀",
+        "良好",
+        "合格"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "notes",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 5200,
+      "sample": [
+        "表现稳定",
+        "需培训",
+        "业绩突出",
+        "晋升候选",
+        "沟通待加强"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.521Z"
+}

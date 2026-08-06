@@ -1,0 +1,77 @@
+{
+  "file": "purchase_items.csv",
+  "rows": 6000,
+  "columns": [
+    {
+      "name": "purchase_item_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "PI-1",
+        "PI-2",
+        "PI-3",
+        "PI-4",
+        "PI-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "purchase_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "PC-540",
+        "PC-697",
+        "PC-1347",
+        "PC-632",
+        "PC-1313"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "product_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "MD-1392",
+        "REF-1057",
+        "SKU1114",
+        "REF-1530",
+        "R-1014"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "quantity",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "1233",
+        "215",
+        "211",
+        "552",
+        "1834"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "unit_cost",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "826",
+        "1479",
+        "1159",
+        "2 566,00",
+        "2 919"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.246Z"
+}

@@ -1,0 +1,39 @@
+{
+  "links": [
+    {
+      "id": "Customer_orders",
+      "source": "Customer",
+      "target": "RetailOrder",
+      "cardinality": "1:N",
+      "status": "approved"
+    },
+    {
+      "id": "Order_items",
+      "source": "RetailOrder",
+      "target": "Product",
+      "cardinality": "N:M",
+      "status": "approved"
+    },
+    {
+      "id": "Supplier_products",
+      "source": "Supplier",
+      "target": "Product",
+      "cardinality": "1:N",
+      "status": "approved"
+    },
+    {
+      "id": "Customer_subscriptions",
+      "source": "Customer",
+      "target": "Subscription",
+      "cardinality": "1:N",
+      "status": "approved"
+    },
+    {
+      "id": "MfgProduct_batches",
+      "source": "MfgProduct",
+      "target": "ProductionBatch",
+      "cardinality": "1:N",
+      "status": "approved"
+    }
+  ]
+}

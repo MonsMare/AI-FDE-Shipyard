@@ -1,0 +1,77 @@
+{
+  "file": "contacts.csv",
+  "rows": 2400,
+  "columns": [
+    {
+      "name": "contact_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2400,
+      "sample": [
+        "CT-1",
+        "CT-2",
+        "CT-3",
+        "CT-4",
+        "CT-5"
+      ],
+      "distinct": 2400
+    },
+    {
+      "name": "account_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2400,
+      "sample": [
+        "AC-503",
+        "AC-705",
+        "AC-777",
+        "AC-107",
+        "AC-832"
+      ],
+      "distinct": 838
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2400,
+      "sample": [
+        "Xavier Mona",
+        "Karen Alice",
+        "  Jack Xavier  ",
+        "  Xavier Wang  ",
+        "FRANK CAROL"
+      ],
+      "distinct": 1854
+    },
+    {
+      "name": "email",
+      "inferredType": "email",
+      "nullCount": 0,
+      "total": 2400,
+      "sample": [
+        "user0@tech.com",
+        "USER1@CLOUD.IO",
+        "  user2@cloud.io  ",
+        "  user3@tech.com  ",
+        "user4@tech.com"
+      ],
+      "distinct": 2400
+    },
+    {
+      "name": "phone",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 2400,
+      "sample": [
+        "13834161014",
+        "13872230192",
+        "+86 138 7747 6297",
+        "13862010186",
+        "+86 138 8782 2264"
+      ],
+      "distinct": 2400
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:17.882Z"
+}

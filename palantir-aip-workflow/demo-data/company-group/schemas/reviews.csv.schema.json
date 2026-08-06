@@ -1,0 +1,91 @@
+{
+  "file": "reviews.csv",
+  "rows": 3000,
+  "columns": [
+    {
+      "name": "review_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "RV-1",
+        "RV-2",
+        "RV-3",
+        "RV-4",
+        "RV-5"
+      ],
+      "distinct": 3000
+    },
+    {
+      "name": "product_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "SKU1115",
+        "MD-1689",
+        "R-1448",
+        "R-1606",
+        "SKU1060"
+      ],
+      "distinct": 779
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "CUST-3226",
+        "CUST-848",
+        "CUST-4165",
+        "CUST-584",
+        "CUST-1017"
+      ],
+      "distinct": 2275
+    },
+    {
+      "name": "rating",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "★4",
+        "5",
+        "4",
+        "3",
+        "1"
+      ],
+      "distinct": 7
+    },
+    {
+      "name": "comment",
+      "inferredType": "string",
+      "nullCount": 1515,
+      "total": 3000,
+      "sample": [
+        "物流慢",
+        "性价比高",
+        "差评",
+        "很好",
+        "一般"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "review_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "2024-12-03",
+        "2024-03-03",
+        "09/02/2025",
+        "09/06/2024",
+        "02/28/2026"
+      ],
+      "distinct": 1848
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.100Z"
+}

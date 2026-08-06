@@ -1,0 +1,63 @@
+{
+  "file": "employee_exits.csv",
+  "rows": 400,
+  "columns": [
+    {
+      "name": "employee_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 400,
+      "sample": [
+        "E-1922",
+        "E-1079",
+        "E-2752",
+        "E-1753",
+        "E-3526"
+      ],
+      "distinct": 255
+    },
+    {
+      "name": "exit_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 400,
+      "sample": [
+        "12/03/2026",
+        "10/01/2024",
+        "2024-02-16",
+        "2026-11-26",
+        "02/12/2026"
+      ],
+      "distinct": 370
+    },
+    {
+      "name": "reason",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 400,
+      "sample": [
+        "健康原因",
+        "合同到期",
+        "被动优化",
+        "退休",
+        "主动离职"
+      ],
+      "distinct": 6
+    },
+    {
+      "name": "department_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 400,
+      "sample": [
+        "D-18",
+        "D-8",
+        "D-9",
+        "D-11",
+        "D-1"
+      ],
+      "distinct": 40
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.285Z"
+}

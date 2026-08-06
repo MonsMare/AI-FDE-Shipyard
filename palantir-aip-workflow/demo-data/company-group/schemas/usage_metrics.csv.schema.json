@@ -1,0 +1,63 @@
+{
+  "file": "usage_metrics.csv",
+  "rows": 60000,
+  "columns": [
+    {
+      "name": "usage_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 60000,
+      "sample": [
+        "US-1",
+        "US-2",
+        "US-3",
+        "US-4",
+        "US-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "subscription_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 60000,
+      "sample": [
+        "SUB-5485",
+        "SUB-2540",
+        "SUB-2719",
+        "SUB-173",
+        "SUB-88"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "week",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 60000,
+      "sample": [
+        "28",
+        "6",
+        "29",
+        "7",
+        "19"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "value",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 60000,
+      "sample": [
+        "780",
+        "571",
+        "739",
+        "971",
+        "440"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:18.119Z"
+}

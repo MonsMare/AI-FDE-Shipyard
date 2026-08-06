@@ -1,0 +1,91 @@
+{
+  "file": "customers_mfg.csv",
+  "rows": 1200,
+  "columns": [
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "MC-1",
+        "MC-2",
+        "MC-3",
+        "MC-4",
+        "MC-5"
+      ],
+      "distinct": 1200
+    },
+    {
+      "name": "company_name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "cyberdyne -100 inc",
+        "black mesa -101 inc",
+        "oscorp -102 inc",
+        "acme corp -103 inc",
+        "aperture -104 inc"
+      ],
+      "distinct": 1099
+    },
+    {
+      "name": "email",
+      "inferredType": "email",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "acct100@example.com",
+        "acct101@corp.net",
+        "acct102@biz.org",
+        "acct103@example.com",
+        "acct104@corp.net"
+      ],
+      "distinct": 1200
+    },
+    {
+      "name": "region",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "北京",
+        "上海",
+        "广州",
+        "深圳",
+        "杭州"
+      ],
+      "distinct": 10
+    },
+    {
+      "name": "credit_limit",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "500000",
+        "$3,006,509.00",
+        "$1,525,212.00",
+        "1386366",
+        "$3,617,576.00"
+      ],
+      "distinct": 1121
+    },
+    {
+      "name": "since",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "2018-01-01",
+        "15-02-2022",
+        "28-04-2017",
+        "2020-05-09",
+        "02/17/2018"
+      ],
+      "distinct": 1050
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:16.560Z"
+}

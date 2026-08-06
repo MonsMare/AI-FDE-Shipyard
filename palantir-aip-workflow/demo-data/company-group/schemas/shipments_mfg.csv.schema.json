@@ -1,0 +1,76 @@
+{
+  "file": "shipments_mfg.csv",
+  "rows": 3000,
+  "columns": [
+    {
+      "name": "shipment_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "MS-1",
+        "MS-2",
+        "MS-3",
+        "MS-4",
+        "MS-5"
+      ],
+      "distinct": 3000
+    },
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "MC-702",
+        "MC-598",
+        "MC-460",
+        "MC-692",
+        "MC-1191"
+      ],
+      "distinct": 1104
+    },
+    {
+      "name": "ship_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "12/24/2026",
+        "2025-10-08",
+        "2026-08-10",
+        "01/13/2024",
+        "2025-04-28"
+      ],
+      "distinct": 1821
+    },
+    {
+      "name": "weight_kg",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "18120",
+        "2991",
+        "14408",
+        "5667",
+        "10468"
+      ],
+      "distinct": 2782
+    },
+    {
+      "name": "carrier",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "自提",
+        "德邦",
+        "专线物流",
+        "顺丰重货"
+      ],
+      "distinct": 4
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:17.435Z"
+}

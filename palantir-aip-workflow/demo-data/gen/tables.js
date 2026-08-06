@@ -443,7 +443,8 @@ const TABLES = [
   {
     id: 'customers_mfg', dir: 'mfg', rows: 1200,
     cols: [
-      { name: 'customer_id', gen: (r) => `MC-${r + 1}` },
+      // 普通行 ID 从 MC-201 起（避开种子占用的 1-40/111-150 空间）
+      { name: 'customer_id', gen: (r) => `MC-${r + 201}` },
       { name: 'company_name', gen: (r, ctx) => ctx.dirtyStr(`${ctx.pick(COMPANIES)} MFG#${r % 89}`) },
       { name: 'email', gen: (r, ctx) => ctx.dirtyStr(`mfg${r}@${ctx.pick(['industry.com', 'plant.net', 'factory.org'])}`) },
       { name: 'region', gen: (r, ctx) => ctx.pick(CITIES) },

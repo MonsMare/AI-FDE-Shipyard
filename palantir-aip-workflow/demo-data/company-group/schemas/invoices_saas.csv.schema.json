@@ -1,0 +1,77 @@
+{
+  "file": "invoices_saas.csv",
+  "rows": 6000,
+  "columns": [
+    {
+      "name": "invoice_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "SI-1",
+        "SI-2",
+        "SI-3",
+        "SI-4",
+        "SI-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "subscription_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "SUB-3349",
+        "SUB-450",
+        "SUB-1512",
+        "SUB-5204",
+        "SUB-1103"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "invoice_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "2024-12-07",
+        "09/14/2026",
+        "01/05/2025",
+        "2025-09-17",
+        "12/06/2025"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "amount",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "4 260,00",
+        "3190",
+        "3554",
+        "$3,180.00",
+        "129"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 6000,
+      "sample": [
+        "overdue",
+        "paid",
+        "pending",
+        "PAID",
+        "OVERDUE"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:18.201Z"
+}

@@ -1,0 +1,62 @@
+{
+  "file": "stores.csv",
+  "rows": 25,
+  "columns": [
+    {
+      "name": "store_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 25,
+      "sample": [
+        "ST-1",
+        "ST-2",
+        "ST-3",
+        "ST-4",
+        "ST-5"
+      ],
+      "distinct": 25
+    },
+    {
+      "name": "name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 25,
+      "sample": [
+        "西安旗舰店",
+        "广州标准店",
+        "南京体验店",
+        "上海旗舰店",
+        "西安标准店"
+      ],
+      "distinct": 14
+    },
+    {
+      "name": "city",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 25,
+      "sample": [
+        "苏州",
+        "杭州",
+        "武汉",
+        "上海",
+        "广州"
+      ],
+      "distinct": 10
+    },
+    {
+      "name": "region",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 25,
+      "sample": [
+        "华南",
+        "西南",
+        "华东",
+        "华北"
+      ],
+      "distinct": 4
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:14.844Z"
+}

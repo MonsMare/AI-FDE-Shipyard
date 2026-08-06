@@ -1,0 +1,91 @@
+{
+  "file": "production_orders.csv",
+  "rows": 8000,
+  "columns": [
+    {
+      "name": "order_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "MO-1",
+        "MO-2",
+        "MO-3",
+        "MO-4",
+        "MO-5"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "product_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "M-1078",
+        "M-1190",
+        "M-1256",
+        "M-1003",
+        "M-1203"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "work_center_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "WC-12",
+        "WC-6",
+        "WC-4",
+        "WC-13",
+        "WC-10"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "planned_qty",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "2517",
+        "76",
+        "467",
+        "3731",
+        "1058"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "RELEASED",
+        "COMPLETED",
+        "released",
+        "completed",
+        "OPEN"
+      ],
+      "distinct": null
+    },
+    {
+      "name": "due_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 8000,
+      "sample": [
+        "2025-10-27",
+        "09/25/2025",
+        "07/06/2026",
+        "2025-06-06",
+        "06/10/2026"
+      ],
+      "distinct": null
+    }
+  ],
+  "generatedAt": "2026-08-06T10:13:17.072Z"
+}
