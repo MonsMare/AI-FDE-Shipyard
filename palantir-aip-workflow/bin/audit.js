@@ -15,7 +15,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const STEPS = ['init', 'source', 'infer', 'model', 'entity', 'review'];
+const STEPS = ['init', 'source', 'infer', 'model', 'entity', 'review', 'exec'];
 const FAIL = 1;
 
 function readJson(p) {
@@ -121,12 +121,47 @@ function cmdCheck(args) {
 
 const cmd = process.argv[2];
 const rest = process.argv.slice(3);
-switch (cmd) {
-  case 'log': cmdLog(rest); break;
-  case 'state': cmdState(rest); break;
-  case 'step': cmdStep(rest); break;
-  case 'check': cmdCheck(rest); break;
-  default:
-    console.error('用法: audit.js <log|state|step|check> ...');
-    process.exit(FAIL);
+
+// ==== 模块接口（供 exec.js 等引擎脚本复用，保证 lastEventId 递增一致） ====
+
+// 追加审计事件并更新 state.json。返回事件对象。
+function addEvent(projectDir, step, action, target, detail) {
+  const statePath = path.join(projectDir, 'state.json');
+  const state = readJson(statePath);
+  const evt = bumpState(projectDir, state, step, action, target || '', detail || '', false);
+  writeJson(statePath, state);
+  return evt;
 }
+
+// 推进状态机到 nextStep（严格顺序）。成功返回 true；不允许时返回 false 且不写任何东西。
+function stepTo(projectDir, nextStep) {
+  if (!STEPS.includes(nextStep)) return false;
+  const statePath = path.join(projectDir, 'state.json');
+  const state = readJson(statePath);
+  const curIdx = STEPS.indexOf(state.currentStep);
+  const nextIdx = STEPS.indexOf(nextStep);
+  if (nextIdx !== curIdx + 1) return false;
+  state.currentStep = nextStep;
+  state.steps[nextStep] = 'in_progress';
+  const evt = bumpState(projectDir, state, nextStep, 'step_entered', '', `进入 ${nextStep}`, false);
+  writeJson(statePath, state);
+  return evt ? true : false;
+}
+
+function main() {
+  const cmd = process.argv[2];
+  const rest = process.argv.slice(3);
+  switch (cmd) {
+    case 'log': cmdLog(rest); break;
+    case 'state': cmdState(rest); break;
+    case 'step': cmdStep(rest); break;
+    case 'check': cmdCheck(rest); break;
+    default:
+      console.error('用法: audit.js <log|state|step|check> ...');
+      process.exit(FAIL);
+  }
+}
+
+if (require.main === module) main();
+
+module.exports = { addEvent, stepTo, STEPS };
