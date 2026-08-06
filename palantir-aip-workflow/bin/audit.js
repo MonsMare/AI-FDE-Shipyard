@@ -148,6 +148,25 @@ function stepTo(projectDir, nextStep) {
   return evt ? true : false;
 }
 
+function cmdExec(args) {
+  const [projectDir, status, ...rest] = args;
+  if (!projectDir || !status) {
+    console.error('用法: audit.js exec <projectDir> <executed|failed> [detail]');
+    process.exit(FAIL);
+  }
+  const detail = rest.join(' ');
+  if (status === 'executed') {
+    addEvent(projectDir, 'exec', 'exec_completed', '', detail);
+    console.log(`✔ exec_completed 已记录${detail ? `（${detail}）` : ''}`);
+  } else if (status === 'failed') {
+    addEvent(projectDir, 'exec', 'exec_failed', '', detail);
+    console.log(`✔ exec_failed 已记录${detail ? `（${detail}）` : ''}`);
+  } else {
+    console.error(`未知 exec 状态: ${status}（可用: executed|failed）`);
+    process.exit(FAIL);
+  }
+}
+
 function main() {
   const cmd = process.argv[2];
   const rest = process.argv.slice(3);
@@ -155,9 +174,10 @@ function main() {
     case 'log': cmdLog(rest); break;
     case 'state': cmdState(rest); break;
     case 'step': cmdStep(rest); break;
+    case 'exec': cmdExec(rest); break;
     case 'check': cmdCheck(rest); break;
     default:
-      console.error('用法: audit.js <log|state|step|check> ...');
+      console.error('用法: audit.js <log|state|step|exec|check> ...');
       process.exit(FAIL);
   }
 }

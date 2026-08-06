@@ -9,6 +9,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const { parseCsv } = require('./csv.js');
+
 const USAGE = `用法: node schema-infer.js <file> [--sample N]
 支持格式: .csv / .json / .jsonl
 --sample N  每个字段最多采样 N 个样本值（默认 5，0 表示全部）`;
@@ -29,35 +31,6 @@ function typeOf(value) {
   if (/^[\w.+-]+@[\w-]+\.[\w.]+$/.test(s)) return 'email';
   if (/^-?\d{1,3}(\.\d{1,3}){3}$/.test(s)) return 'ipv4';
   return 'string';
-}
-
-function parseCsv(text) {
-  // 极简 CSV 解析：处理引号包裹与逗号分隔，不支持内嵌换行
-  const lines = text.split(/\r?\n/).filter((l) => l.trim() !== '');
-  if (lines.length < 2) fail('CSV 需要至少一行表头 + 一行数据');
-  const header = lines[0];
-  const cols = [];
-  let cur = '';
-  let inQ = false;
-  for (const ch of header) {
-    if (ch === '"') inQ = !inQ;
-    else if (ch === ',' && !inQ) { cols.push(cur); cur = ''; }
-    else cur += ch;
-  }
-  cols.push(cur);
-  const rows = [];
-  for (let i = 1; i < lines.length; i++) {
-    const cells = [];
-    cur = ''; inQ = false;
-    for (const ch of lines[i]) {
-      if (ch === '"') inQ = !inQ;
-      else if (ch === ',' && !inQ) { cells.push(cur); cur = ''; }
-      else cur += ch;
-    }
-    cells.push(cur);
-    rows.push(cells);
-  }
-  return { cols, rows };
 }
 
 function inferFromRows(cols, rows, sampleN) {
@@ -114,6 +87,7 @@ function main() {
 
   if (ext === '.csv') {
     ({ cols, rows } = parseCsv(raw));
+    if (rows.length === 0) fail('CSV 需要至少一行表头 + 一行数据');
   } else if (ext === '.json') {
     const arr = JSON.parse(raw);
     if (!Array.isArray(arr) || arr.length === 0) fail('JSON 需为非空数组');
