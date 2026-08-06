@@ -79,7 +79,7 @@ function makeCtx(scale) {
 }
 
 // ---------- 生成主流程 ----------
-function generate(projectDir, scale = 1.0) {
+function generate(projectDir, scale = 1.0, opts = {}) {
   const abs = path.resolve(projectDir);
   fs.mkdirSync(path.join(abs, 'data'), { recursive: true });
   fs.mkdirSync(path.join(abs, 'sources'), { recursive: true });
@@ -140,7 +140,44 @@ function generate(projectDir, scale = 1.0) {
     currentStep: 'review', steps: stateSteps, sources: [], lastEventId: 0, stats: {},
   }, null, 2) + '\n');
 
+  // schemas/：用 bin/schema-infer.js 真实推断（spec §5，非手写）
+  if (opts.schemas !== false) generateSchemas(abs, generated);
+
+  // approved/ 预置规则 + staging/ + output/.gitignore
+  writeRules(abs);
+
   return { tables: generated, bytes: generated.reduce((s, g) => s + g.bytes, 0) };
+}
+
+// 逐表调用 schema-infer.js，产物写 schemas/<id>.csv.schema.json（validate 的命名约定）
+function generateSchemas(abs, generated) {
+  const schemaInfer = path.join(__dirname, '..', '..', 'bin', 'schema-infer.js');
+  const { spawnSync } = require('child_process');
+  const schemasDir = path.join(abs, 'schemas');
+  fs.mkdirSync(schemasDir, { recursive: true });
+  for (const t of generated) {
+    const file = TABLES.find((x) => x.id === t.id);
+    const realPath = path.join(abs, 'data', file.dir, `${t.id}.csv`);
+    const r = spawnSync(process.execPath, [schemaInfer, realPath, '--sample', '0'], { encoding: 'utf8' });
+    if (r.status !== 0) throw new Error(`schema-infer 失败: ${t.id}: ${r.stderr || r.stdout}`);
+    const schema = JSON.parse(r.stdout);
+    fs.writeFileSync(path.join(schemasDir, `${t.id}.csv.schema.json`), JSON.stringify(schema, null, 2) + '\n');
+  }
+}
+
+// approved/ 规则 + staging/ + output 忽略（spec §6/§7）
+function writeRules(abs) {
+  const { OBJECTS, LINKS, TRANSFORMS, MERGES } = require('./rules.js');
+  const approvedDir = path.join(abs, 'approved');
+  fs.mkdirSync(approvedDir, { recursive: true });
+  fs.mkdirSync(path.join(abs, 'staging'), { recursive: true });
+  fs.mkdirSync(path.join(abs, 'output'), { recursive: true });
+  fs.writeFileSync(path.join(abs, 'output', '.gitignore'), '*\n');
+  const write = (name, obj) => fs.writeFileSync(path.join(approvedDir, name), JSON.stringify(obj, null, 2) + '\n');
+  write('objects.json', OBJECTS);
+  write('links.json', LINKS);
+  write('transforms.json', TRANSFORMS);
+  write('merges.json', MERGES);
 }
 
 // ---------- CLI ----------

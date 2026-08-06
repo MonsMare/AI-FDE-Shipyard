@@ -9,9 +9,9 @@ const fs = require('node:fs');
 
 const { generate } = require('../demo-data/gen/index.js');
 
-function genTmp(scale) {
+function genTmp(scale, opts) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-demo-'));
-  generate(dir, scale);
+  generate(dir, scale, Object.assign({ schemas: false }, opts));
   return dir;
 }
 
@@ -241,4 +241,16 @@ test('SaaS：customers_saas 含 110 个跨源种子客户变体', () => {
   let matched = 0;
   for (const s of saasSeeds) if (emails.has(s.baseEmail)) matched++;
   assert.strictEqual(matched, saasSeeds.length, `SaaS 种子客户匹配 ${matched}/${saasSeeds.length}`);
+});
+
+// ==================== Task 5: schema-infer + 规则集成 ====================
+
+const { validateProject } = require('../bin/validate.js');
+
+test('生成项目（含 schemas/规则）通过 validateProject', () => {
+  const dir = genTmp(0.05, { schemas: true }); // 完整生成含 schema-infer（缩小规模加速）
+  const schemas = fs.readdirSync(path.join(dir, 'schemas')).filter((f) => f.endsWith('.schema.json'));
+  assert.strictEqual(schemas.length, 64, `schemas 应有 64 个，实际 ${schemas.length}`);
+  const r = validateProject(dir);
+  assert.strictEqual(r.ok, true, r.problems.slice(0, 10).join('\n'));
 });
