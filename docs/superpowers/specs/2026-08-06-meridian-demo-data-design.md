@@ -196,7 +196,7 @@ palantir-aip-workflow/demo-data/
 │   └── tables.js          # 表定义（列/规模/外键/脏数据规则）——与 index.js 分离，便于扩展
 ├── company-group/         # 生成的开箱即用 paip 项目（提交入库）
 │   ├── config.json / state.json
-│   ├── data/              # 63 张 CSV（group/ retail/ mfg/ saas 四子目录）
+│   ├── data/              # 64 张 CSV（group/ retail/ mfg/ saas 四子目录）
 │   ├── sources/           # 63 个注册 JSON
 │   ├── schemas/           # schema-infer 真实推断产物（63 个）
 │   ├── approved/          # objects/links/transforms/merges
@@ -205,7 +205,7 @@ palantir-aip-workflow/demo-data/
 ```
 
 - **output/** 与 **audit/**：生成后由测试/演示产生，**不提交入库**（.gitignore）——保持仓库为"干净输入态"
-- 体积控制：63 张 CSV ~30MB 提交入库（用户已确认全量入库）
+- 体积控制：64 张 CSV ~30MB 提交入库（用户已确认全量入库）
 
 ## 8. 测试（tests/demo-data.test.js）
 
