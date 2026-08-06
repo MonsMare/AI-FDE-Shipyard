@@ -1,0 +1,42 @@
+{
+  "name": "palantir-aip-workflow",
+  "version": "0.2.0",
+  "description": "Palantir AIP 风格 Ontology 构建流水线：联邦数据源注册 → schema 推断 → LLM 语义建模 → 实体消解 → 人工审查 → 可视化 → 提交与审计。在 ADE 内直接调用各 skill 完成整套 Ontology 搭建。",
+  "skills": [
+    {
+      "name": "paip-init",
+      "description": "初始化一个新的 Ontology 项目（创建项目目录、配置、状态文件）。当用户说「开始搭建 Ontology」「新建本体项目」「paip init」时使用。",
+      "path": "skills/paip-init/SKILL.md"
+    },
+    {
+      "name": "paip-source",
+      "description": "注册数据源（联邦接入，不复制数据）并运行 schema 推断。当用户说「注册数据源」「接入数据」「推断 schema」时使用。",
+      "path": "skills/paip-source/SKILL.md"
+    },
+    {
+      "name": "paip-infer",
+      "description": "用 LLM 从 schema 推断对象类型、属性、链接与语义描述（Ontology 语义建模）。当用户说「生成对象类型」「建模」「推断本体」时使用。",
+      "path": "skills/paip-infer/SKILL.md"
+    },
+    {
+      "name": "paip-model",
+      "description": "用 LLM 生成数据转换逻辑（Pipeline Builder 式：自然语言 → 转换规则，转换逻辑作为确定性工具不进 prompt）。当用户说「生成转换」「清洗数据」「写管道」时使用。",
+      "path": "skills/paip-model/SKILL.md"
+    },
+    {
+      "name": "paip-entity",
+      "description": "用 LLM 做实体消解：跨源识别同一实体并合并去重（Entity Resolution）。当用户说「实体消解」「去重」「合并实体」时使用。",
+      "path": "skills/paip-entity/SKILL.md"
+    },
+    {
+      "name": "paip-review",
+      "description": "审查已生成的 Ontology 建议、提交为正式版本、生成审计日志。当用户说「审查」「提交」「审计」时使用。",
+      "path": "skills/paip-review/SKILL.md"
+    },
+    {
+      "name": "paip-visualize",
+      "description": "把 Ontology（对象/链接/属性）渲染为可视化实体关系图，通过 draw.io MCP 打开编辑器。当用户说「可视化」「画图」「画个 ER 图」时使用。",
+      "path": "skills/paip-visualize/SKILL.md"
+    }
+  ]
+}

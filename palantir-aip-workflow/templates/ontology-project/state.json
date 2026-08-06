@@ -1,0 +1,26 @@
+{
+  "currentStep": "init",
+  "steps": {
+    "init": "done",
+    "source": "pending",
+    "infer": "pending",
+    "model": "pending",
+    "entity": "pending",
+    "review": "pending"
+  },
+  "sources": [],
+  "objects": [],
+  "links": [],
+  "transforms": [],
+  "entityMerges": [],
+  "lastEventId": 0,
+  "stats": {
+    "sourcesRegistered": 0,
+    "objectsProposed": 0,
+    "objectsApproved": 0,
+    "transformsProposed": 0,
+    "transformsApproved": 0,
+    "mergesProposed": 0,
+    "mergesApproved": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "project": {
+    "name": "<项目名>",
+    "description": "<项目描述>",
+    "created": "<ISO 日期>",
+    "version": "0.1.0"
+  },
+  "state": {
+    "currentStep": "init",
+    "steps": {
+      "init": "done",
+      "source": "pending",
+      "infer": "pending",
+      "model": "pending",
+      "entity": "pending",
+      "review": "pending"
+    }
+  },
+  "llm": {
+    "preferredModel": "claude-sonnet-5",
+    "fallbackModel": "deepseek-v4-flash",
+    "batch": false,
+    "batchBaseUrl": "",
+    "batchApiKeyEnv": ""
+  },
+  "sources": [],
+  "defaults": {
+    "auditDir": "audit",
+    "stagingDir": "staging",
+    "approvedDir": "approved",
+    "sourcesDir": "sources"
+  }
+}

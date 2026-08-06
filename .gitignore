@@ -1,0 +1,11 @@
+# 敏感信息：含 GitHub token，禁止提交
+版本控制和管理.txt
+
+# Reasonix 工具内部状态
+.reasonix/
+
+# 依赖与产物
+node_modules/
+*.db
+*.sqlite
+*.sqlite3
