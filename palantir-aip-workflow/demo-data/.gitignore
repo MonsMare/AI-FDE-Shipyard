@@ -1,0 +1,3 @@
+# exec 产物与审计不提交（保持仓库为干净输入态）
+company-group/output/
+company-group/audit/

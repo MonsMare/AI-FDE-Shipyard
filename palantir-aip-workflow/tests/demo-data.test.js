@@ -254,3 +254,24 @@ test('生成项目（含 schemas/规则）通过 validateProject', () => {
   const r = validateProject(dir);
   assert.strictEqual(r.ok, true, r.problems.slice(0, 10).join('\n'));
 });
+
+// ==================== Task 6: paip 集成（exec） ====================
+
+const { execProject } = require('../bin/exec.js');
+
+test('execProject 全链执行：物化 CSV 按规则 id 命名 + 合并 mapping 产出', () => {
+  const dir = genTmp(0.05, { schemas: true });
+  const r = execProject(dir);
+  assert.strictEqual(r.ok, true, (r.problems || []).slice(0, 5).join('\n'));
+  const outDir = path.join(dir, 'output');
+  const outputs = fs.readdirSync(outDir).filter((f) => f.endsWith('.csv'));
+  // 16 转换 + 20 合并（各含 mapping 文件）
+  assert.strictEqual(outputs.length, 16 + 20 + 20, `output 应有 56 个 CSV，实际 ${outputs.length}`);
+  // 抽查：日期清洗产物存在、金额 cast 产物存在、合并 mapping 存在
+  assert.ok(outputs.includes('date_md_to_iso.csv'), '缺 date_md_to_iso.csv');
+  assert.ok(outputs.includes('money_cast_number.csv'), '缺 money_cast_number.csv');
+  assert.ok(outputs.includes('merge_cust_rs_1-mapping.csv'), '缺合并 mapping');
+  // 状态机推进到 exec
+  const state = JSON.parse(fs.readFileSync(path.join(dir, 'state.json'), 'utf8'));
+  assert.strictEqual(state.currentStep, 'exec');
+});
