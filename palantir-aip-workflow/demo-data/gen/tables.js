@@ -404,6 +404,217 @@ const TABLES = [
       { name: 'closed_at', gen: (r, ctx) => (ctx.rng() < 0.2 ? '' : ctx.dateFmt(ctx.randDate(2025, 2026))) },
     ],
   },
+
+  // ============ 制造板块（18 表） ============
+  {
+    id: 'suppliers_mfg', dir: 'mfg', rows: 40,
+    cols: [
+      { name: 'supplier_id', gen: (r) => `SM-${r + 1}` },
+      { name: 'name', gen: (r, ctx) => SUPPLIER_NAMES[Math.floor(r / 10) % SUPPLIER_NAMES.length] },
+      { name: 'region', gen: (r, ctx) => ctx.pick(CITIES) },
+      { name: 'lead_time_days', gen: (r, ctx) => String(ctx.randInt(5, 60)) },
+      { name: 'rating', gen: (r, ctx) => String(ctx.randInt(1, 5)) },
+    ],
+    // 前 30 行 = 跨源种子供应商（与零售共用，ID 不同；spec §4.1-2）
+    seed: (ctx) => SUPPLIER_NAMES.map((n, i) => ({
+      supplier_id: `SM-${i + 1}`, name: n, region: CITIES[(i + 3) % CITIES.length],
+      lead_time_days: String(8 + (i % 35)), rating: String(1 + ((i + 2) % 5)),
+    })),
+  },
+  {
+    id: 'raw_materials', dir: 'mfg', rows: 120,
+    cols: [
+      { name: 'material_id', gen: (r) => `RM-${r + 1}` },
+      { name: 'name', gen: (r, ctx) => ctx.pick(['钢板', '铝材', '塑料粒子', '铜线', '轴承', '螺丝组', '密封圈', '电路板', '电机', '齿轮']) },
+      { name: 'supplier_id', gen: (r, ctx) => ctx.fk('suppliers_mfg', 'supplier_id') },
+      { name: 'unit', gen: (r, ctx) => ctx.pick(['kg', 'g', '件', '米', '套']) },
+      { name: 'unit_cost', gen: (r, ctx) => ctx.moneyFmt(ctx.randInt(5, 5000)) },
+    ],
+  },
+  {
+    id: 'products_mfg', dir: 'mfg', rows: 300,
+    cols: [
+      { name: 'product_id', gen: (r) => `M-${1000 + r}` },
+      { name: 'name', gen: (r, ctx) => `${ctx.pick(['工业', '精密', '重型', '标准', '定制'])}${ctx.pick(['阀门', '泵体', '轴承座', '法兰', '齿轮箱', '联轴器'])}-${r % 40}` },
+      { name: 'supplier_id', gen: (r, ctx) => ctx.fk('suppliers_mfg', 'supplier_id') },
+      { name: 'unit_price', gen: (r, ctx) => ctx.moneyFmt(ctx.randInt(200, 80000)) },
+    ],
+  },
+  {
+    id: 'customers_mfg', dir: 'mfg', rows: 1200,
+    cols: [
+      { name: 'customer_id', gen: (r) => `MC-${r + 1}` },
+      { name: 'company_name', gen: (r, ctx) => ctx.dirtyStr(`${ctx.pick(COMPANIES)} MFG#${r % 89}`) },
+      { name: 'email', gen: (r, ctx) => ctx.dirtyStr(`mfg${r}@${ctx.pick(['industry.com', 'plant.net', 'factory.org'])}`) },
+      { name: 'region', gen: (r, ctx) => ctx.pick(CITIES) },
+      { name: 'credit_limit', gen: (r, ctx) => ctx.moneyFmt(ctx.randInt(50000, 5000000)) },
+      { name: 'since', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2015, 2026)) },
+    ],
+    // 前 80 行 = 跨源种子客户制造变体（variants.mfg 非空的 80 个）
+    seed: (ctx) => ctx.duplicates.customers.filter((c) => c.variants.mfg).map((c) => ({
+      customer_id: `MC-${c.id + 1}`,
+      company_name: c.variants.mfg,
+      email: c.baseEmail,
+      region: CITIES[c.id % CITIES.length],
+      credit_limit: `500000`,
+      since: `2018-01-01`,
+    })),
+  },
+  {
+    id: 'bills_of_materials', dir: 'mfg', rows: 1500,
+    cols: [
+      { name: 'bom_id', gen: (r) => `BOM-${r + 1}` },
+      { name: 'product_id', gen: (r, ctx) => ctx.fk('products_mfg', 'product_id') },
+      { name: 'material_id', gen: (r, ctx) => ctx.fk('raw_materials', 'material_id') },
+      { name: 'quantity_per_unit', gen: (r, ctx) => ctx.pick(['0.5 kg', '500 g', '0.5', '2 件', '1.2 m', '1.2']) }, // 单位混用脏数据
+    ],
+  },
+  {
+    id: 'material_inventory', dir: 'mfg', rows: 800,
+    cols: [
+      { name: 'inv_id', gen: (r) => `MI-${r + 1}` },
+      { name: 'material_id', gen: (r, ctx) => ctx.fk('raw_materials', 'material_id') },
+      { name: 'quantity', gen: (r, ctx) => String(ctx.randInt(0, 50000)) },
+      { name: 'location', gen: (r, ctx) => `A${ctx.randInt(1, 9)}-${ctx.randInt(1, 30)}` },
+      { name: 'last_count_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2025, 2026)) },
+    ],
+  },
+  {
+    id: 'supplier_evaluations', dir: 'mfg', rows: 120,
+    cols: [
+      { name: 'eval_id', gen: (r) => `EV-${r + 1}` },
+      { name: 'supplier_id', gen: (r, ctx) => ctx.fk('suppliers_mfg', 'supplier_id') },
+      { name: 'eval_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2025, 2026)) },
+      { name: 'score', gen: (r, ctx) => String(ctx.randInt(55, 98)) },
+      { name: 'comment', gen: (r, ctx) => ctx.pick(['合格', '交期不稳', '次品偏高', '优质', '需改进', '价格偏高']) },
+    ],
+    after: (rows) => {
+      // 低分供应商病症（spec §4.3-2）：5 家评分 ≤60（固定间隔）
+      for (let i = 0; i < 5; i++) rows[i * 19 % rows.length].score = String(50 + (i * 3));
+    },
+  },
+  {
+    id: 'work_centers', dir: 'mfg', rows: 15,
+    cols: [
+      { name: 'work_center_id', gen: (r) => `WC-${r + 1}` },
+      { name: 'name', gen: (r, ctx) => `${ctx.pick(['冲压', '焊接', '装配', '喷涂', '机加工'])}线-${r % 5}` },
+      { name: 'capacity_per_day', gen: (r, ctx) => String(ctx.randInt(50, 500)) },
+    ],
+  },
+  {
+    id: 'purchase_orders_mfg', dir: 'mfg', rows: 2000,
+    cols: [
+      { name: 'po_id', gen: (r) => `PO-${r + 1}` },
+      { name: 'supplier_id', gen: (r, ctx) => ctx.fk('suppliers_mfg', 'supplier_id') },
+      { name: 'order_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'expected_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'status', gen: (r, ctx) => ctx.pick(['open', 'OPEN', 'closed', 'partial', 'PARTIAL']) },
+    ],
+  },
+  {
+    id: 'purchase_items_mfg', dir: 'mfg', rows: 5000,
+    cols: [
+      { name: 'po_item_id', gen: (r) => `PM-${r + 1}` },
+      { name: 'po_id', gen: (r, ctx) => ctx.fk('purchase_orders_mfg', 'po_id') },
+      { name: 'material_id', gen: (r, ctx) => ctx.fk('raw_materials', 'material_id') },
+      { name: 'quantity', gen: (r, ctx) => String(ctx.randInt(50, 10000)) },
+      { name: 'unit_cost', gen: (r, ctx) => ctx.moneyFmt(ctx.randInt(5, 4000)) },
+    ],
+  },
+  {
+    id: 'production_orders', dir: 'mfg', rows: 8000,
+    cols: [
+      { name: 'order_id', gen: (r) => `MO-${r + 1}` },
+      { name: 'product_id', gen: (r, ctx) => ctx.fk('products_mfg', 'product_id') },
+      { name: 'work_center_id', gen: (r, ctx) => ctx.fk('work_centers', 'work_center_id') },
+      { name: 'planned_qty', gen: (r, ctx) => String(ctx.randInt(10, 5000)) },
+      { name: 'status', gen: (r, ctx) => ctx.pick(['open', 'OPEN', 'released', 'RELEASED', 'completed', 'COMPLETED']) },
+      { name: 'due_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+    ],
+  },
+  {
+    id: 'production_batches', dir: 'mfg', rows: 8000,
+    cols: [
+      { name: 'batch_id', gen: (r) => `BATCH-${r + 1}` },
+      { name: 'order_id', gen: (r, ctx) => ctx.fk('production_orders', 'order_id') },
+      { name: 'material_id', gen: (r, ctx) => ctx.fk('raw_materials', 'material_id') },
+      { name: 'start_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'output_qty', gen: (r, ctx) => String(ctx.randInt(5, 4800)) },
+    ],
+  },
+  {
+    id: 'machine_maintenance', dir: 'mfg', rows: 300,
+    cols: [
+      { name: 'maintenance_id', gen: (r) => `MT-${r + 1}` },
+      // 病症（spec §4.3-6）：WC-7/WC-11 两台机器无维护记录
+      { name: 'machine_id', gen: (r, ctx) => ctx.pick(['WC-1', 'WC-2', 'WC-3', 'WC-4', 'WC-5', 'WC-6', 'WC-8', 'WC-9', 'WC-10', 'WC-12', 'WC-13', 'WC-14', 'WC-15']) },
+      { name: 'maintenance_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'type', gen: (r, ctx) => ctx.pick(['预防性', '故障维修', '大修', '日常保养']) },
+      { name: 'cost', gen: (r, ctx) => ctx.moneyFmt(ctx.randInt(500, 50000)) },
+    ],
+  },
+  {
+    id: 'quality_checks', dir: 'mfg', rows: 8000,
+    cols: [
+      { name: 'check_id', gen: (r) => `QC-${r + 1}` },
+      { name: 'batch_id', gen: (r, ctx) => ctx.fk('production_batches', 'batch_id') },
+      { name: 'check_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'result', gen: (r, ctx) => (ctx.rng() < 0.06 ? 'fail' : ctx.pick(['pass', 'PASS', 'Pass'])) }, // 6% 次品
+      { name: 'defect_count', gen: (r, ctx) => (ctx.rng() < 0.06 ? String(ctx.randInt(1, 20)) : '0') },
+    ],
+  },
+  {
+    id: 'defects', dir: 'mfg', rows: 2000,
+    cols: [
+      { name: 'defect_id', gen: (r) => `DF-${r + 1}` },
+      { name: 'check_id', gen: (r, ctx) => ctx.fkWhere('quality_checks', 'check_id', (row) => row.result === 'fail') },
+      { name: 'batch_id', gen: (r, ctx) => ctx.fkWhere('production_batches', 'batch_id', () => true) },
+      { name: 'defect_code', gen: (r, ctx) => ctx.pick(['SCRATCH', 'DENT', 'DIM-ERR', 'COLOR-MISMATCH', 'THREAD-BAD', '未定义']) },
+      { name: 'quantity', gen: (r, ctx) => String(ctx.randInt(1, 50)) },
+    ],
+  },
+  {
+    id: 'shipments_mfg', dir: 'mfg', rows: 3000,
+    cols: [
+      { name: 'shipment_id', gen: (r) => `MS-${r + 1}` },
+      { name: 'customer_id', gen: (r, ctx) => ctx.fk('customers_mfg', 'customer_id') },
+      { name: 'ship_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'weight_kg', gen: (r, ctx) => String(ctx.randInt(50, 20000)) },
+      { name: 'carrier', gen: (r, ctx) => ctx.pick(['德邦', '顺丰重货', '专线物流', '自提']) },
+    ],
+  },
+  {
+    id: 'quotations', dir: 'mfg', rows: 1500,
+    cols: [
+      { name: 'quotation_id', gen: (r) => `Q-${r + 1}` },
+      { name: 'customer_id', gen: (r, ctx) => ctx.fk('customers_mfg', 'customer_id') },
+      { name: 'quote_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'valid_until', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'amount', gen: (r, ctx) => ctx.moneyFmt(ctx.randInt(10000, 2000000)) },
+      { name: 'status', gen: (r, ctx) => (ctx.rng() < 0.3 ? 'expired' : ctx.pick(['converted', 'CONVERTED', 'pending', 'rejected'])) }, // 30% 过期未转化
+    ],
+  },
+  {
+    id: 'invoices_mfg', dir: 'mfg', rows: 3500,
+    cols: [
+      { name: 'invoice_id', gen: (r) => `MI-${r + 1}` },
+      { name: 'customer_id', gen: (r, ctx) => ctx.fk('customers_mfg', 'customer_id') },
+      { name: 'quotation_id', gen: (r, ctx) => ctx.fk('quotations', 'quotation_id') },
+      { name: 'invoice_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'due_date', gen: (r, ctx) => ctx.dateFmt(ctx.randDate(2024, 2026)) },
+      { name: 'amount', gen: (r, ctx) => ctx.moneyFmt(ctx.randInt(10000, 2000000)) },
+      { name: 'status', gen: (r, ctx) => ctx.pick(['paid', 'PAID', 'overdue', 'OVERDUE', 'pending']) },
+    ],
+    after: (rows) => {
+      // 账期病症（spec §4.3-4）：30% 发票 due-invoice > 90 天（用 status=overdue + 大账期天数列近似）
+      let count = Math.floor(rows.length * 0.3);
+      for (let i = 0; i < count; i++) {
+        const row = rows[(i * 11) % rows.length];
+        row.status = 'overdue';
+        row.due_date = `2027-${String(1 + (i % 12)).padStart(2, '0')}-${String(1 + (i % 28)).padStart(2, '0')}`;
+      }
+    },
+  },
 ];
 
 module.exports = { TABLES, buildDuplicateCustomers, SUPPLIER_NAMES, mulberry32 };
