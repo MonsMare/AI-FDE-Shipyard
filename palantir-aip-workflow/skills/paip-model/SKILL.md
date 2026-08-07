@@ -63,7 +63,7 @@ description: 用 LLM 生成确定性数据转换逻辑（对应 Palantir Pipelin
   - `MM/DD/YYYY`：`pattern: ^(\d{2})/(\d{2})/(\d{4})$` → `replacement: $3-$1-$2`（$1=月、$2=日、$3=年）
   - `DD-MM-YYYY`：`pattern: ^(\d{2})-(\d{2})-(\d{4})$` → `replacement: $3-$2-$1`（$1=日、$2=月、$3=年）
   - 已是 `YYYY-MM-DD` 的列可直接 `cast`（可先 `trim` 去空白）
-- 金额：先用 `regex_replace` 去货币符号/千分位（如 `^[$¥€]?([\d,]+(?:\.\d+)?)$` → `$1`），再 `cast`（`targetType: number`）
+- 金额：先用 `regex_replace` 去货币符号/千分位（`pattern: [$¥€,]` → `replacement: ''`，一并清除 `$¥€` 与千分位逗号），再 `cast`（`targetType: number`）
 
 ### 3. 校验与落盘
 - 校验：type 合法、rule 参数齐全、column 存在；落盘前先跑 `--stage` 校验：

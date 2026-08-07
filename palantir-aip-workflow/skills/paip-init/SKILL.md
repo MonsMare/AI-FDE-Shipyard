@@ -6,7 +6,7 @@ description: 初始化一个新的 Ontology 项目——创建项目目录、con
 # paip-init: 初始化 Ontology 项目
 
 ## Overview
-把 Palantir AIP 风格的 Ontology 构建流水线落地到一个新项目目录。创建"文件即数据库"的项目骨架（config + state + 子目录），为后续 source → infer → model → entity → review 五步流水线建立起点。
+把 Palantir AIP 风格的 Ontology 构建流水线落地到一个新项目目录。创建"文件即数据库"的项目骨架（config + state + 子目录），为后续七步流水线（source → infer → model → entity → visualize → review → exec）建立起点。
 
 ## When to Use
 - 用户要求开始一套新的 Ontology 构建

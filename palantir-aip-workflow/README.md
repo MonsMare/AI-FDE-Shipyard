@@ -52,7 +52,7 @@ paip-init → paip-source → paip-infer → paip-model → paip-entity → paip
 
 文件格式规范见 `templates/ontology-project/README.md`。
 
-> **`state.json` 的 `sources` 字段已弃用**：数据源注册的权威记录是 `sources/*.json`（每个源一个文件：id/path/format）。`state.json` 的 `sources` 数组为历史遗留，demo-data 生成器与各 skill 不再写入；读取方（infer/entity/exec/validate）一律以 `sources/*.json` 为准。
+> **`state.json` 的 `sources` 字段已弃用**：数据源注册的权威记录是 `sources/*.json`（每个源一个文件：id/path/format）。`state.json` 的 `sources` 数组为历史遗留，demo-data 生成器与各 skill 不再写入注册信息（生成器仅保留空数组占位）；读取方（infer/entity/exec/validate）一律以 `sources/*.json` 为准。
 
 ## 安装
 

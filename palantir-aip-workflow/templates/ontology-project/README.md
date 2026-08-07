@@ -7,7 +7,7 @@
 ```
 <ontology-project>/
 ├── config.json          # 项目配置：状态机、LLM 偏好、目录默认值
-├── state.json           # 流水线状态：步骤进度、已注册源、已提交对象/链接/转换
+├── state.json           # 流水线状态：步骤进度、已提交对象/链接/转换（sources 字段已弃用）
 ├── sources/             # 数据源注册信息（每个源一个 .json）
 ├── schemas/             # schema 推断结果（每个源一个 .schema.json）
 ├── staging/             # 待审查的生成产物
