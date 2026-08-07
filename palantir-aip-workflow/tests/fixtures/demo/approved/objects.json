@@ -9,7 +9,8 @@
         { "id": "customerId", "type": "string", "title": "客户 ID", "primaryKey": true },
         { "id": "name", "type": "string", "title": "姓名" },
         { "id": "email", "type": "string", "title": "邮箱" },
-        { "id": "age", "type": "integer", "title": "年龄" }
+        { "id": "age", "type": "integer", "title": "年龄" },
+        { "id": "status", "type": "string", "title": "状态" }
       ],
       "status": "approved"
     },
@@ -21,6 +22,7 @@
       "properties": [
         { "id": "orderId", "type": "string", "title": "订单 ID", "primaryKey": true },
         { "id": "customerId", "type": "string", "title": "客户 ID" },
+        { "id": "name", "type": "string", "title": "姓名" },
         { "id": "amount", "type": "number", "title": "金额" }
       ],
       "status": "approved"

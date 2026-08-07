@@ -61,14 +61,26 @@ function loadSchemaColumns(projectDir, sourceId) {
   return schema.columns.map((c) => c.name);
 }
 
-function validateObjects(problems, objs, scope) {
+function validateObjects(problems, objs, scope, projectDir) {
   for (const o of objs || []) {
     if (!o.id) problems.push(`✘ [${scope}/objects] 对象缺 id`);
     if (!o.displayName) problems.push(`✘ [${scope}/objects] 对象 ${o.id || '?'} 缺 displayName`);
     if (!Array.isArray(o.properties) || o.properties.length === 0) {
       problems.push(`✘ [${scope}/objects] 对象 ${o.id || '?'} 缺 properties`);
-    } else if (!o.properties.some((p) => p.primaryKey === true)) {
-      problems.push(`✘ [${scope}/objects] 对象 ${o.id || '?'} 缺主键属性（properties 中需有 primaryKey: true）`);
+    } else {
+      if (!o.properties.some((p) => p.primaryKey === true)) {
+        problems.push(`✘ [${scope}/objects] 对象 ${o.id || '?'} 缺主键属性（properties 中需有 primaryKey: true）`);
+      }
+      // P8: 属性 id 集合须覆盖 backingSource 源 schema 的全部列（schema 缺失则跳过——推断时点快照取舍）
+      if (o.backingSource) {
+        const cols = loadSchemaColumns(projectDir, o.backingSource);
+        if (cols) {
+          const missing = cols.filter((c) => !o.properties.some((p) => p.id === c));
+          if (missing.length > 0) {
+            problems.push(`✘ [${scope}/objects] 对象 ${o.id || '?'} 的属性未映射源列: ${missing.join(', ')}`);
+          }
+        }
+      }
     }
   }
 }
@@ -163,7 +175,10 @@ function validateProject(projectDir, opts = {}) {
   const scope = opts.stage ? 'staging' : 'approved';
   const approvedDir = path.join(projectDir, 'approved');
   if (!fs.existsSync(approvedDir)) {
-    return { ok: false, problems: ['✘ [exec] approved/ 目录不存在'] };
+    // --stage 早期可用（P3）：无 approved/ 时不报错，只校验 staging 部分；非 stage 模式仍报错
+    if (!opts.stage) {
+      return { ok: false, problems: ['✘ [exec] approved/ 目录不存在'] };
+    }
   }
 
   const sources = loadSources(projectDir);
@@ -174,11 +189,11 @@ function validateProject(projectDir, opts = {}) {
   if (opts.stage) {
     const staging = readJson(path.join(projectDir, 'staging', 'objects.json'));
     if (staging && Array.isArray(staging.objects)) {
-      validateObjects(problems, staging.objects, 'staging');
+      validateObjects(problems, staging.objects, 'staging', projectDir);
       for (const o of staging.objects) objectIds.add(o.id);
     }
   }
-  validateObjects(problems, baseObjects.objects, 'approved');
+  validateObjects(problems, baseObjects.objects, 'approved', projectDir);
 
   const links = readJson(path.join(approvedDir, 'links.json'));
   if (links) validateLinks(problems, links.links, objectIds, 'approved');

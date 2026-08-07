@@ -46,7 +46,12 @@ description: 用 LLM 从 schema 推断 Ontology 语义模型——对象类型�
 - 校验失败：要求修正（只给校验错误，不给重写指令）
 
 ### 4. 写入 staging
-写 `staging/objects.json` 与 `staging/links.json`（格式见 templates/ontology-project/README.md），每个条目 `status: "staged"`、`proposedBy: "paip-infer"`。
+- 落盘前先跑 `--stage` 校验：
+```
+node <插件根>/bin/validate.js <项目目录> --stage
+```
+- 失败时展示全部 `✘` 问题，修复后重跑，通过后再写/更新 staging 产物
+- 写 `staging/objects.json` 与 `staging/links.json`（格式见 templates/ontology-project/README.md），每个条目 `status: "staged"`、`proposedBy: "paip-infer"`。
 
 ### 5. 更新状态与审计
 - `state.json`：`objects`/`links` 追加暂存条目（status=staged），`stats.objectsProposed` +N

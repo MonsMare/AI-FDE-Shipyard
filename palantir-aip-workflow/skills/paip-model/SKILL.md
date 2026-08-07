@@ -59,7 +59,11 @@ description: 用 LLM 生成确定性数据转换逻辑（对应 Palantir Pipelin
 - 单元格一律为字符串；cast 失败/无匹配的结果为空串（写盘语义）
 
 ### 3. 校验与落盘
-- 校验：type 合法、rule 参数齐全、column 存在
+- 校验：type 合法、rule 参数齐全、column 存在；落盘前先跑 `--stage` 校验：
+```
+node <插件根>/bin/validate.js <项目目录> --stage
+```
+- 失败时展示全部 `✘` 问题，修复后重跑，通过后再写/更新 staging 产物
 - 写 `staging/transforms.json`（追加），`status: "staged"`、`proposedBy: "paip-model"`
 - 对关键转换（如正则），用输入样本验证规则产出符合预期——在报告中给出验证结果
 

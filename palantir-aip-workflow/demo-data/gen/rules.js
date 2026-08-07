@@ -12,6 +12,9 @@ const OBJECTS = {
         { id: 'customer_id', type: 'string', title: '客户 ID', primaryKey: true },
         { id: 'company_name', type: 'string', title: '公司名' },
         { id: 'email', type: 'string', title: '邮箱' },
+        { id: 'phone', type: 'string', title: '电话' },
+        { id: 'region', type: 'string', title: '区域' },
+        { id: 'signup_date', type: 'string', title: '注册日期' },
       ], status: 'approved',
     },
     {
@@ -20,7 +23,11 @@ const OBJECTS = {
       properties: [
         { id: 'order_id', type: 'string', title: '订单 ID', primaryKey: true },
         { id: 'customer_id', type: 'string', title: '客户 ID' },
+        { id: 'store_id', type: 'string', title: '门店 ID' },
+        { id: 'coupon_id', type: 'string', title: '优惠券 ID' },
+        { id: 'order_date', type: 'string', title: '订单日期' },
         { id: 'status', type: 'string', title: '状态' },
+        { id: 'total_amount', type: 'string', title: '订单总额' },
       ], status: 'approved',
     },
     {
@@ -29,7 +36,9 @@ const OBJECTS = {
       properties: [
         { id: 'product_id', type: 'string', title: '商品 ID', primaryKey: true },
         { id: 'name', type: 'string', title: '名称' },
+        { id: 'category_id', type: 'string', title: '品类 ID' },
         { id: 'supplier_id', type: 'string', title: '供应商 ID' },
+        { id: 'unit_price', type: 'string', title: '单价' },
       ], status: 'approved',
     },
     {
@@ -38,6 +47,9 @@ const OBJECTS = {
       properties: [
         { id: 'supplier_id', type: 'string', title: '供应商 ID', primaryKey: true },
         { id: 'name', type: 'string', title: '名称' },
+        { id: 'region', type: 'string', title: '区域' },
+        { id: 'lead_time_days', type: 'integer', title: '交期天数' },
+        { id: 'rating', type: 'integer', title: '评级' },
       ], status: 'approved',
     },
     {
@@ -46,6 +58,8 @@ const OBJECTS = {
       properties: [
         { id: 'product_id', type: 'string', title: '产品 ID', primaryKey: true },
         { id: 'name', type: 'string', title: '名称' },
+        { id: 'supplier_id', type: 'string', title: '供应商 ID' },
+        { id: 'unit_price', type: 'string', title: '单价' },
       ], status: 'approved',
     },
     {
@@ -54,6 +68,11 @@ const OBJECTS = {
       properties: [
         { id: 'subscription_id', type: 'string', title: '订阅 ID', primaryKey: true },
         { id: 'customer_id', type: 'string', title: '客户 ID' },
+        { id: 'account_id', type: 'string', title: '账户 ID' },
+        { id: 'plan_id', type: 'string', title: '套餐 ID' },
+        { id: 'start_date', type: 'string', title: '开始日期' },
+        { id: 'status', type: 'string', title: '状态' },
+        { id: 'will_churn', type: 'integer', title: '是否流失' },
       ], status: 'approved',
     },
     {
@@ -62,7 +81,13 @@ const OBJECTS = {
       properties: [
         { id: 'employee_id', type: 'string', title: '员工 ID', primaryKey: true },
         { id: 'name', type: 'string', title: '姓名' },
+        { id: 'department_id', type: 'string', title: '部门 ID' },
+        { id: 'position_id', type: 'string', title: '岗位 ID' },
+        { id: 'subsidiary', type: 'string', title: '板块' },
+        { id: 'hire_date', type: 'string', title: '入职日期' },
         { id: 'salary', type: 'number', title: '薪资' },
+        { id: 'email', type: 'string', title: '邮箱' },
+        { id: 'status', type: 'string', title: '状态' },
       ], status: 'approved',
     },
     {
@@ -71,6 +96,9 @@ const OBJECTS = {
       properties: [
         { id: 'batch_id', type: 'string', title: '批次 ID', primaryKey: true },
         { id: 'order_id', type: 'string', title: '工单 ID' },
+        { id: 'material_id', type: 'string', title: '物料 ID' },
+        { id: 'start_date', type: 'string', title: '开始日期' },
+        { id: 'output_qty', type: 'integer', title: '产出数量' },
       ], status: 'approved',
     },
   ],

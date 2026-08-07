@@ -45,7 +45,11 @@ description: 用 LLM 做实体消解——跨数据源识别同一实体并生�
 ```
 
 ### 3. 校验与落盘
-- 校验：JSON 合法、left/right 指向已注册源、confidence 0-1
+- 校验：JSON 合法、left/right 指向已注册源、confidence 0-1；落盘前先跑 `--stage` 校验：
+```
+node <插件根>/bin/validate.js <项目目录> --stage
+```
+- 失败时展示全部 `✘` 问题，修复后重跑，通过后再写/更新 staging 产物
 - 写 `staging/merges.json`，`status: "staged"`、`proposedBy: "paip-entity"`
 - **低置信度（<0.9）或无法判定的一律不列入**——宁缺毋滥（Palantir 原则：false positives 比 false negatives 危险）
 

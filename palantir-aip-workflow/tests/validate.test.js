@@ -261,3 +261,28 @@ test('approved 目录不存在 → 报错', () => {
   assert.strictEqual(r.ok, false);
   assert.ok(r.problems.some((p) => p.includes('approved')));
 });
+
+test('P3: --stage 模式在无 approved/ 时可校验 staging', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-val-'));
+  fs.mkdirSync(path.join(dir, 'sources'), { recursive: true });
+  fs.mkdirSync(path.join(dir, 'schemas'), { recursive: true });
+  fs.writeFileSync(path.join(dir, 'sources', 'a.csv.json'), JSON.stringify({ id: 'a.csv', path: 'x', format: 'csv' }));
+  fs.writeFileSync(path.join(dir, 'schemas', 'a.csv.schema.json'), JSON.stringify({ file: 'a.csv', columns: [{ name: 'id' }, { name: 'name' }] }));
+  fs.mkdirSync(path.join(dir, 'staging'), { recursive: true });
+  fs.writeFileSync(path.join(dir, 'staging', 'objects.json'), JSON.stringify({
+    objects: [{
+      id: 'A', displayName: 'A', backingSource: 'a.csv',
+      properties: [{ id: 'id', type: 'string', title: 'ID', primaryKey: true }, { id: 'name', type: 'string', title: '名' }],
+      status: 'staged',
+    }],
+  }));
+  const r = validateProject(dir, { stage: true });
+  assert.strictEqual(r.ok, true, r.problems.join('; ')); // 无 approved 也应通过
+});
+
+test('P8: 对象属性覆盖 backingSource 全部列（缺列报错）', () => {
+  const dir = makeProject({ objects: { objects: [{ id: 'Customer', displayName: '客户', description: 'x', backingSource: 'customers.csv', properties: [{ id: 'customerId', type: 'string', title: 'ID', primaryKey: true }], status: 'approved' }] } });
+  const r = validateProject(dir);
+  assert.strictEqual(r.ok, false);
+  assert.ok(r.problems.some((p) => p.includes('列未映射') || p.includes('name')));
+});
