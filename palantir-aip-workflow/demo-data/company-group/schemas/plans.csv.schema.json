@@ -22,12 +22,13 @@
       "nullCount": 0,
       "total": 6,
       "sample": [
-        "Ultimate",
+        "Enterprise",
+        "Pro",
         "Free",
-        "Business",
-        "Starter"
+        "Starter",
+        "Business"
       ],
-      "distinct": 4
+      "distinct": 5
     },
     {
       "name": "monthly_price",
@@ -36,12 +37,17 @@
       "total": 6,
       "sample": [
         "0",
-        "$99.00",
+        "99.00",
         "299",
-        "799",
-        "$1,999.00"
+        "799.00",
+        "1999"
       ],
-      "distinct": 6
+      "distinct": 6,
+      "typeBreakdown": {
+        "string": 1,
+        "integer": 3,
+        "number": 2
+      }
     },
     {
       "name": "seats_included",
@@ -58,5 +64,5 @@
       "distinct": 6
     }
   ],
-  "generatedAt": "2026-08-06T10:13:17.630Z"
+  "generatedAt": "2026-08-07T09:56:02.811Z"
 }

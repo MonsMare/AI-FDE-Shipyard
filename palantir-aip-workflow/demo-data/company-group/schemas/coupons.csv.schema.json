@@ -36,13 +36,17 @@
       "nullCount": 0,
       "total": 200,
       "sample": [
-        "0.2",
+        "0.15",
         "20%",
+        "0.2",
         "0.3",
-        "10%",
-        "0.15"
+        "10%"
       ],
-      "distinct": 5
+      "distinct": 5,
+      "typeBreakdown": {
+        "string": 81,
+        "number": 119
+      }
     },
     {
       "name": "expires",
@@ -50,14 +54,21 @@
       "nullCount": 0,
       "total": 200,
       "sample": [
-        "2026-01-20",
-        "2026-05-03",
-        "09/15/2026",
-        "2026-05-08",
-        "08/06/2026"
+        "2026-12-27",
+        "2026-04-19",
+        "2026-06-10",
+        "09-05-2026",
+        "2026-04-08"
       ],
-      "distinct": 182
+      "distinct": 179,
+      "typeBreakdown": {
+        "string": 108,
+        "date": 92
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     }
   ],
-  "generatedAt": "2026-08-06T10:13:15.190Z"
+  "generatedAt": "2026-08-07T09:55:59.435Z"
 }

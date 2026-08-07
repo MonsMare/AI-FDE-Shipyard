@@ -22,11 +22,11 @@
       "nullCount": 0,
       "total": 8000,
       "sample": [
-        "CM-58",
-        "CM-7",
-        "CM-22",
-        "CM-18",
-        "CM-43"
+        "CM-32",
+        "CM-48",
+        "CM-21",
+        "CM-25",
+        "CM-49"
       ],
       "distinct": null
     },
@@ -36,11 +36,11 @@
       "nullCount": 0,
       "total": 8000,
       "sample": [
-        "CP-47",
-        "CP-116",
-        "CP-171",
-        "CP-138",
-        "CP-110"
+        "CP-18",
+        "CP-191",
+        "CP-44",
+        "CP-109",
+        "CP-113"
       ],
       "distinct": null
     },
@@ -50,11 +50,11 @@
       "nullCount": 0,
       "total": 8000,
       "sample": [
-        "CUST-706",
-        "CUST-3440",
-        "CUST-1850",
-        "CUST-2789",
-        "CUST-4785"
+        "CUST-2722",
+        "CUST-3236",
+        "CUST-2228",
+        "CUST-4299",
+        "CUST-3753"
       ],
       "distinct": null
     },
@@ -64,14 +64,21 @@
       "nullCount": 0,
       "total": 8000,
       "sample": [
-        "2026-12-10",
-        "2026-09-09",
-        "08-09-2025",
-        "07/06/2025",
-        "19-12-2025"
+        "03-05-2026",
+        "12/21/2026",
+        "08-11-2025",
+        "2026-09-03",
+        "12/13/2025"
       ],
-      "distinct": null
+      "distinct": null,
+      "typeBreakdown": {
+        "string": 4026,
+        "date": 3974
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     }
   ],
-  "generatedAt": "2026-08-06T10:13:16.034Z"
+  "generatedAt": "2026-08-07T09:56:00.684Z"
 }

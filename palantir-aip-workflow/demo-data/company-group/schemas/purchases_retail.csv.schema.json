@@ -22,11 +22,11 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "SR-50",
-        "SR-74",
-        "SR-35",
-        "SR-41",
-        "SR-7"
+        "SR-27",
+        "SR-15",
+        "SR-52",
+        "SR-24",
+        "SR-50"
       ],
       "distinct": 80
     },
@@ -36,13 +36,20 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "08/09/2025",
-        "05-01-2026",
-        "2025-09-19",
-        "08/13/2026",
-        "09/25/2026"
+        "2026-05-08",
+        "2026-10-16",
+        "05/20/2025",
+        "10-02-2026",
+        "2026-03-16"
       ],
-      "distinct": 1146
+      "distinct": 1167,
+      "typeBreakdown": {
+        "string": 786,
+        "date": 714
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     },
     {
       "name": "arrival_date",
@@ -50,13 +57,20 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "2026-12-13",
-        "22-11-2025",
-        "2024-06-08",
-        "03/19/2025",
-        "05-11-2024"
+        "2026-10-22",
+        "2025-07-20",
+        "2025-10-12",
+        "02/14/2026",
+        "2025-03-21"
       ],
-      "distinct": 1150
+      "distinct": 1164,
+      "typeBreakdown": {
+        "string": 782,
+        "date": 718
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     },
     {
       "name": "lead_time_days",
@@ -64,13 +78,13 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "7",
-        "9",
-        "16",
-        "14",
-        "2"
+        "12",
+        "3",
+        "8",
+        "60",
+        "9"
       ],
-      "distinct": 80
+      "distinct": 79
     },
     {
       "name": "status",
@@ -78,13 +92,13 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
+        "RECEIVED",
         "received",
         "overdue",
-        "pending",
-        "RECEIVED"
+        "pending"
       ],
       "distinct": 4
     }
   ],
-  "generatedAt": "2026-08-06T10:13:16.167Z"
+  "generatedAt": "2026-08-07T09:56:00.887Z"
 }

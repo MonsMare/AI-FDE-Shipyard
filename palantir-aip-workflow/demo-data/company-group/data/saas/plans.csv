@@ -1,7 +1,7 @@
 plan_id,name,monthly_price,seats_included
-PLAN-1,Ultimate,0,1
-PLAN-2,Free,$99.00,5
-PLAN-3,Business,299,10
-PLAN-4,Business,799,50
-PLAN-5,Starter,"$1,999.00",200
-PLAN-6,Ultimate,"4 999,00",1000
+PLAN-1,Enterprise,0,1
+PLAN-2,Pro,99.00,5
+PLAN-3,Enterprise,299,10
+PLAN-4,Free,799.00,50
+PLAN-5,Starter,1999,200
+PLAN-6,Business,"$4,999.00",1000

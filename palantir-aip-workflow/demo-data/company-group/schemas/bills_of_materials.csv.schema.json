@@ -22,13 +22,13 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "M-1194",
-        "M-1210",
-        "M-1259",
-        "M-1289",
-        "M-1088"
+        "M-1232",
+        "M-1239",
+        "M-1281",
+        "M-1170",
+        "M-1255"
       ],
-      "distinct": 299
+      "distinct": 300
     },
     {
       "name": "material_id",
@@ -36,11 +36,11 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "RM-69",
-        "RM-18",
-        "RM-99",
-        "RM-11",
-        "RM-80"
+        "RM-82",
+        "RM-64",
+        "RM-26",
+        "RM-89",
+        "RM-16"
       ],
       "distinct": 120
     },
@@ -50,14 +50,18 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "2 件",
-        "1.2 m",
+        "0.5 kg",
         "500 g",
-        "0.5",
-        "0.5 kg"
+        "1.2 m",
+        "1.2",
+        "0.5"
       ],
-      "distinct": 6
+      "distinct": 6,
+      "typeBreakdown": {
+        "string": 998,
+        "number": 502
+      }
     }
   ],
-  "generatedAt": "2026-08-06T10:13:16.634Z"
+  "generatedAt": "2026-08-07T09:56:01.473Z"
 }

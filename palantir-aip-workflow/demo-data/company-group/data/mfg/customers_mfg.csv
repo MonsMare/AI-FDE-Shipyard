@@ -79,1123 +79,1123 @@ MC-147,wonka -246 inc,acct246@biz.org,武汉,500000,2018-01-01
 MC-148,oscorp -247 inc,acct247@example.com,南京,500000,2018-01-01
 MC-149,cyberdyne -248 inc,acct248@corp.net,西安,500000,2018-01-01
 MC-150,lexcorp -249 inc,acct249@biz.org,苏州,500000,2018-01-01
-MC-281,wayne enterprises mfg#80,  mfg80@industry.com  ,上海,"$3,006,509.00",15-02-2022
-MC-282,Initech MFG#81,mfg81@industry.com,北京,"$1,525,212.00",28-04-2017
-MC-283,Aperture MFG#82,mfg82@industry.com,成都,1386366,2020-05-09
-MC-284,Weyland-Yutani MFG#83,MFG83@FACTORY.ORG,深圳,"$3,617,576.00",02/17/2018
-MC-285,weyland-yutani mfg#84,mfg84@industry.com,广州,4 950 446,12-12-2018
-MC-286,black mesa mfg#85,mfg85@industry.com,西安,"$1,884,292.00",11/25/2019
-MC-287,Acme Corp MFG#86,mfg86@plant.net,深圳,3 321 781,01-12-2026
-MC-288,Vandelay MFG#87,mfg87@plant.net,西安,"$2,321,744.00",2015-05-21
-MC-289,Umbrella Co MFG#88,mfg88@factory.org,北京,"4 952 025,00",10/07/2024
-MC-290,  Black Mesa MFG#0  ,  mfg89@plant.net  ,成都,4 321 307,2020-08-14
-MC-291,Globex MFG#1,mfg90@plant.net,成都,2541822,05-06-2018
-MC-292,BLUE SUN MFG#2,MFG91@PLANT.NET,杭州,2519943,2020-07-23
-MC-293,INITECH MFG#3,mfg92@plant.net,上海,"$3,554,070.00",2021-08-20
-MC-294,Cyberdyne MFG#4,MFG93@INDUSTRY.COM,成都,"$721,962.00",06/21/2025
-MC-295,Initech MFG#5,mfg94@factory.org,南京,"$1,923,805.00",2021-09-14
-MC-296,  Initech MFG#6  ,mfg95@factory.org,北京,1178742,01/24/2021
-MC-297,Aperture MFG#7,MFG96@PLANT.NET,上海,3238423,12/19/2016
-MC-298,Aperture MFG#8,MFG97@PLANT.NET,南京,2576165,17-12-2018
-MC-299,  Initech MFG#9  ,MFG98@INDUSTRY.COM,上海,"$3,439,988.00",2017-06-07
-MC-300,Stark Industries MFG#10,mfg99@industry.com,南京,"4 608 009,00",12/14/2019
-MC-301,BLACK MESA MFG#11,  mfg100@plant.net  ,杭州,1541768,24-10-2019
-MC-302,blue sun mfg#12,mfg101@factory.org,深圳,"$874,522.00",01-11-2025
-MC-303,HOOLI MFG#13,mfg102@plant.net,苏州,2565020,11/03/2024
-MC-304,MASSIVE DYNAMIC MFG#14,  mfg103@industry.com  ,杭州,3 907 900,12/13/2025
-MC-305,Blue Sun MFG#15,mfg104@plant.net,苏州,3982417,17-04-2019
-MC-306,BLUE SUN MFG#16,mfg105@factory.org,广州,"4 987 314,00",2018-09-02
-MC-307,OSCORP MFG#17,  mfg106@plant.net  ,苏州,"619 411,00",2026-07-15
-MC-308,LexCorp MFG#18,mfg107@industry.com,杭州,3176124,2019-07-01
-MC-309,WEYLAND-YUTANI MFG#19,  mfg108@factory.org  ,西安,2 632 251,25-08-2019
-MC-310,  Tyrell Corp MFG#20  ,  mfg109@industry.com  ,南京,86141,2023-06-26
-MC-311,  Vandelay MFG#21  ,mfg110@factory.org,上海,"$4,867,402.00",06/01/2016
-MC-312,Initech MFG#22,mfg111@plant.net,苏州,882969,02/07/2017
-MC-313,  Stark Industries MFG#23  ,  mfg112@industry.com  ,武汉,3521908,19-09-2019
-MC-314,Wonka MFG#24,MFG113@INDUSTRY.COM,苏州,4 934 077,2016-04-28
-MC-315,Blue Sun MFG#25,mfg114@plant.net,成都,1551929,2018-07-09
-MC-316,  Cyberdyne MFG#26  ,mfg115@factory.org,杭州,"$2,488,664.00",2017-08-10
-MC-317,Hooli MFG#27,  mfg116@factory.org  ,苏州,1261405,09/03/2015
-MC-318,Wayne Enterprises MFG#28,  mfg117@plant.net  ,深圳,"$1,256,679.00",2015-12-16
-MC-319,  Acme Corp MFG#29  ,mfg118@plant.net,南京,4 659 170,06/20/2022
-MC-320,  Pied Piper MFG#30  ,mfg119@industry.com,武汉,340 780,2015-01-03
-MC-321,  Umbrella Co MFG#31  ,mfg120@plant.net,西安,3982901,01/09/2021
-MC-322,Hooli MFG#32,mfg121@factory.org,北京,3155873,08/15/2022
-MC-323,LEXCORP MFG#33,  mfg122@factory.org  ,上海,4645253,25-05-2015
-MC-324,Weyland-Yutani MFG#34,  mfg123@industry.com  ,北京,"$4,782,643.00",08/07/2019
-MC-325,Initech MFG#35,mfg124@industry.com,广州,"$722,194.00",17-10-2020
-MC-326,UMBRELLA CO MFG#36,MFG125@INDUSTRY.COM,杭州,"$496,081.00",2015-08-09
-MC-327,Wayne Enterprises MFG#37,mfg126@factory.org,广州,"$4,078,820.00",2018-02-19
-MC-328,Massive Dynamic MFG#38,mfg127@plant.net,广州,748586,2017-05-24
-MC-329,Black Mesa MFG#39,  mfg128@industry.com  ,杭州,"$3,704,378.00",07-09-2020
-MC-330,Acme Corp MFG#40,  mfg129@factory.org  ,深圳,1 310 003,2017-02-14
-MC-331,Hooli MFG#41,  mfg130@factory.org  ,深圳,"$1,453,211.00",22-05-2018
-MC-332,Aperture MFG#42,MFG131@FACTORY.ORG,武汉,4215555,2016-12-15
-MC-333,  Tyrell Corp MFG#43  ,  mfg132@factory.org  ,深圳,3282759,2025-02-20
-MC-334,PIED PIPER MFG#44,MFG133@INDUSTRY.COM,上海,4 219 086,2018-04-13
-MC-335,Stark Industries MFG#45,MFG134@INDUSTRY.COM,深圳,2994125,05/13/2021
-MC-336,  Umbrella Co MFG#46  ,mfg135@industry.com,深圳,1736929,02/06/2015
-MC-337,OSCORP MFG#47,  mfg136@factory.org  ,深圳,1294193,2023-01-22
-MC-338,Umbrella Co MFG#48,mfg137@factory.org,武汉,"$3,279,395.00",2021-01-07
-MC-339,Blue Sun MFG#49,mfg138@factory.org,深圳,"$4,055,554.00",2016-11-01
-MC-340,Initech MFG#50,mfg139@industry.com,西安,777839,2020-05-25
-MC-341,Acme Corp MFG#51,mfg140@industry.com,西安,"$2,229,519.00",2015-05-05
-MC-342,  Oscorp MFG#52  ,  mfg141@factory.org  ,武汉,"$2,833,343.00",02/04/2024
-MC-343,WEYLAND-YUTANI MFG#53,mfg142@plant.net,深圳,"202 618,00",07-08-2024
-MC-344,GLOBEX MFG#54,  mfg143@industry.com  ,西安,3757748,2017-12-15
-MC-345,Blue Sun MFG#55,mfg144@industry.com,南京,1238442,2025-06-28
-MC-346,Massive Dynamic MFG#56,mfg145@plant.net,西安,2837001,11/20/2017
-MC-347,Globex MFG#57,mfg146@factory.org,苏州,2146992,2022-11-01
-MC-348,  Acme Corp MFG#58  ,mfg147@plant.net,西安,"$3,562,084.00",2023-12-10
-MC-349,INITECH MFG#59,mfg148@industry.com,武汉,1078857,12/23/2024
-MC-350,Aperture MFG#60,mfg149@factory.org,苏州,2950980,10/10/2024
-MC-351,Dunder Mifflin MFG#61,  mfg150@industry.com  ,广州,"212 570,00",10/19/2020
-MC-352,Wayne Enterprises MFG#62,MFG151@PLANT.NET,武汉,4775268,06/20/2016
-MC-353,PIED PIPER MFG#63,  mfg152@plant.net  ,深圳,2926876,2015-03-09
-MC-354,BLUE SUN MFG#64,mfg153@industry.com,成都,"1 599 555,00",2023-09-24
-MC-355,cyberdyne mfg#65,  mfg154@factory.org  ,上海,"$4,946,880.00",01/21/2026
-MC-356,WEYLAND-YUTANI MFG#66,mfg155@industry.com,上海,4393326,24-02-2016
-MC-357,UMBRELLA CO MFG#67,mfg156@industry.com,苏州,"$3,327,290.00",2021-08-28
-MC-358,Globex MFG#68,mfg157@factory.org,南京,"$3,740,130.00",06/05/2023
-MC-359,Vandelay MFG#69,mfg158@industry.com,南京,"4 200 198,00",08/17/2016
-MC-360,MASSIVE DYNAMIC MFG#70,mfg159@industry.com,武汉,"$697,660.00",04/19/2015
-MC-361,  Tyrell Corp MFG#71  ,mfg160@industry.com,深圳,707181,2020-05-14
-MC-362,BLUE SUN MFG#72,mfg161@plant.net,北京,"$702,983.00",04-08-2026
-MC-363,Wayne Enterprises MFG#73,mfg162@plant.net,上海,3 165 808,10-10-2025
-MC-364,Blue Sun MFG#74,mfg163@plant.net,苏州,4851758,2017-06-05
-MC-365,Blue Sun MFG#75,mfg164@plant.net,南京,3725644,28-05-2025
-MC-366,Pied Piper MFG#76,mfg165@industry.com,上海,996574,11/15/2026
-MC-367,BLUE SUN MFG#77,mfg166@industry.com,上海,"672 261,00",03/02/2015
-MC-368,Cyberdyne MFG#78,MFG167@FACTORY.ORG,深圳,1 119 701,05-06-2021
-MC-369,INITECH MFG#79,MFG168@PLANT.NET,北京,"$912,469.00",2018-07-21
-MC-370,aperture mfg#80,MFG169@INDUSTRY.COM,南京,"$989,635.00",09/18/2021
-MC-371,Umbrella Co MFG#81,mfg170@industry.com,西安,"$4,240,525.00",12/26/2019
-MC-372,Wonka MFG#82,mfg171@industry.com,西安,336059,03/24/2015
-MC-373,Cyberdyne MFG#83,MFG172@INDUSTRY.COM,上海,"$1,538,548.00",2015-08-10
-MC-374,  Tyrell Corp MFG#84  ,  mfg173@plant.net  ,武汉,4325180,2026-04-07
-MC-375,Wayne Enterprises MFG#85,  mfg174@plant.net  ,广州,"$3,926,079.00",2026-11-21
-MC-376,acme corp mfg#86,mfg175@plant.net,深圳,"$4,963,486.00",2021-05-06
-MC-377,Hooli MFG#87,mfg176@industry.com,北京,"$898,949.00",2018-08-27
-MC-378,  Black Mesa MFG#88  ,mfg177@industry.com,成都,"$4,368,257.00",2019-11-15
-MC-379,MASSIVE DYNAMIC MFG#0,  mfg178@industry.com  ,杭州,"$3,463,710.00",09/18/2021
-MC-380,wayne enterprises mfg#1,mfg179@factory.org,成都,"$2,306,291.00",2020-02-17
-MC-381,CYBERDYNE MFG#2,mfg180@plant.net,杭州,3514498,2015-09-13
-MC-382,TYRELL CORP MFG#3,MFG181@INDUSTRY.COM,广州,682666,2022-06-09
-MC-383,APERTURE MFG#4,MFG182@INDUSTRY.COM,广州,"$3,043,073.00",2026-07-12
-MC-384,Massive Dynamic MFG#5,mfg183@factory.org,上海,2 889 934,26-02-2019
-MC-385,Wayne Enterprises MFG#6,mfg184@factory.org,西安,504833,2016-02-04
-MC-386,Wayne Enterprises MFG#7,  mfg185@industry.com  ,杭州,1746710,24-09-2025
-MC-387,Umbrella Co MFG#8,mfg186@industry.com,北京,"1 706 741,00",2024-06-07
-MC-388,Pied Piper MFG#9,mfg187@industry.com,武汉,4580220,2016-09-10
-MC-389,lexcorp mfg#10,  mfg188@plant.net  ,成都,4144376,2016-05-11
-MC-390,CYBERDYNE MFG#11,mfg189@factory.org,武汉,"$130,098.00",10/12/2015
-MC-391,HOOLI MFG#12,mfg190@industry.com,苏州,4493539,2019-06-23
-MC-392,  Massive Dynamic MFG#13  ,MFG191@PLANT.NET,上海,731023,2016-04-04
-MC-393,massive dynamic mfg#14,mfg192@factory.org,北京,4149371,2023-05-06
-MC-394,Aperture MFG#15,mfg193@plant.net,苏州,3440644,2023-01-02
-MC-395,Massive Dynamic MFG#16,mfg194@plant.net,苏州,"$3,767,060.00",03/26/2016
-MC-396,STARK INDUSTRIES MFG#17,mfg195@industry.com,西安,"$4,263,771.00",10/04/2025
-MC-397,WONKA MFG#18,  mfg196@industry.com  ,西安,1274612,2023-06-06
-MC-398,initech mfg#19,  mfg197@industry.com  ,西安,4 603 718,2020-11-02
-MC-399,  Acme Corp MFG#20  ,mfg198@plant.net,杭州,4458776,2015-04-11
-MC-400,Aperture MFG#21,MFG199@INDUSTRY.COM,深圳,"$738,757.00",2015-04-10
-MC-401,UMBRELLA CO MFG#22,MFG200@INDUSTRY.COM,上海,1 522 950,08/13/2019
-MC-402,  Stark Industries MFG#23  ,mfg201@factory.org,西安,3423226,12/15/2022
-MC-403,black mesa mfg#24,mfg202@industry.com,北京,4585200,2024-09-09
-MC-404,Wonka MFG#25,mfg203@factory.org,上海,4679192,05/13/2025
-MC-405,APERTURE MFG#26,mfg204@plant.net,西安,"$548,176.00",10/18/2022
-MC-406,Stark Industries MFG#27,mfg205@industry.com,杭州,"4 429 688,00",04-07-2021
-MC-407,Pied Piper MFG#28,mfg206@plant.net,成都,2624013,04/10/2026
-MC-408,Aperture MFG#29,mfg207@industry.com,成都,"4 475 940,00",11/01/2019
-MC-409,  Acme Corp MFG#30  ,mfg208@factory.org,西安,721 852,07-01-2022
-MC-410,PIED PIPER MFG#31,  mfg209@industry.com  ,苏州,"$3,495,621.00",15-06-2023
-MC-411,Vandelay MFG#32,mfg210@factory.org,成都,2167673,2016-10-11
-MC-412,Globex MFG#33,mfg211@industry.com,苏州,4732643,2023-01-09
-MC-413,Weyland-Yutani MFG#34,mfg212@plant.net,广州,2064099,2022-07-21
-MC-414,Acme Corp MFG#35,mfg213@industry.com,北京,"$2,253,134.00",2023-01-10
-MC-415,lexcorp mfg#36,mfg214@industry.com,广州,3246634,08/16/2024
-MC-416,  Umbrella Co MFG#37  ,mfg215@factory.org,杭州,"$1,744,688.00",2015-12-08
-MC-417,DUNDER MIFFLIN MFG#38,  mfg216@plant.net  ,苏州,3701208,09/03/2019
-MC-418,  Wonka MFG#39  ,mfg217@factory.org,杭州,"$1,655,589.00",25-04-2021
-MC-419,VANDELAY MFG#40,MFG218@INDUSTRY.COM,南京,4 591 176,03/10/2020
-MC-420,VANDELAY MFG#41,mfg219@industry.com,杭州,1089681,2021-07-14
-MC-421,  Acme Corp MFG#42  ,mfg220@industry.com,深圳,1118963,05/04/2020
-MC-422,Initech MFG#43,mfg221@industry.com,广州,2243667,2016-05-23
-MC-423,Hooli MFG#44,mfg222@factory.org,成都,3274027,07/02/2024
-MC-424,dunder mifflin mfg#45,  mfg223@plant.net  ,苏州,1 995 115,2015-01-23
-MC-425,STARK INDUSTRIES MFG#46,MFG224@PLANT.NET,北京,1891605,2021-09-26
-MC-426,Blue Sun MFG#47,  mfg225@industry.com  ,成都,1 488 304,2015-10-15
-MC-427,CYBERDYNE MFG#48,mfg226@industry.com,武汉,2583831,10-09-2021
-MC-428,MASSIVE DYNAMIC MFG#49,  mfg227@industry.com  ,武汉,"$1,864,736.00",02/08/2022
-MC-429,  Weyland-Yutani MFG#50  ,mfg228@industry.com,深圳,4120120,11/16/2015
-MC-430,Wayne Enterprises MFG#51,mfg229@factory.org,西安,4745566,2019-02-17
-MC-431,Umbrella Co MFG#52,mfg230@plant.net,杭州,"$2,603,257.00",03/18/2023
-MC-432,  Tyrell Corp MFG#53  ,mfg231@plant.net,苏州,"1 830 823,00",2020-04-17
-MC-433,aperture mfg#54,  mfg232@factory.org  ,苏州,"2 782 636,00",03/26/2016
-MC-434,UMBRELLA CO MFG#55,mfg233@plant.net,武汉,4358313,11-09-2023
-MC-435,  Dunder Mifflin MFG#56  ,mfg234@industry.com,广州,"$308,156.00",05/23/2016
-MC-436,LexCorp MFG#57,  mfg235@factory.org  ,深圳,2048744,01-12-2022
-MC-437,Cyberdyne MFG#58,  mfg236@plant.net  ,上海,"$1,193,588.00",02/23/2018
-MC-438,Tyrell Corp MFG#59,mfg237@factory.org,上海,2019155,2025-05-21
-MC-439,Stark Industries MFG#60,mfg238@factory.org,南京,314583,01-09-2017
-MC-440,TYRELL CORP MFG#61,mfg239@factory.org,成都,1275647,11-06-2020
-MC-441,Weyland-Yutani MFG#62,  mfg240@factory.org  ,武汉,1913411,10-05-2026
-MC-442,Stark Industries MFG#63,  mfg241@industry.com  ,北京,"$4,348,222.00",02-09-2019
-MC-443,Weyland-Yutani MFG#64,mfg242@factory.org,成都,"$1,513,639.00",2022-05-22
-MC-444,WEYLAND-YUTANI MFG#65,mfg243@factory.org,苏州,3918449,21-05-2023
-MC-445,Wayne Enterprises MFG#66,mfg244@plant.net,南京,3 273 133,05/19/2016
-MC-446,  Black Mesa MFG#67  ,  mfg245@industry.com  ,上海,1318022,07/20/2018
-MC-447,  Umbrella Co MFG#68  ,  mfg246@industry.com  ,北京,"$4,348,759.00",12/06/2022
-MC-448,Weyland-Yutani MFG#69,  mfg247@factory.org  ,杭州,1815340,09/15/2025
-MC-449,Wonka MFG#70,mfg248@plant.net,广州,2566495,2018-12-12
-MC-450,  Wayne Enterprises MFG#71  ,mfg249@plant.net,广州,1338408,2024-01-01
-MC-451,Vandelay MFG#72,  mfg250@factory.org  ,广州,577530,26-02-2015
-MC-452,  Globex MFG#73  ,mfg251@industry.com,南京,4559437,05-11-2019
-MC-453,Wayne Enterprises MFG#74,mfg252@plant.net,北京,1824244,2015-01-20
-MC-454,acme corp mfg#75,  mfg253@factory.org  ,西安,3210693,03-12-2026
-MC-455,  Weyland-Yutani MFG#76  ,MFG254@PLANT.NET,武汉,1845171,09/07/2017
-MC-456,acme corp mfg#77,MFG255@FACTORY.ORG,上海,"$1,337,432.00",11/04/2015
-MC-457,  Pied Piper MFG#78  ,  mfg256@industry.com  ,成都,"$2,145,698.00",2016-06-03
-MC-458,Globex MFG#79,  mfg257@plant.net  ,西安,2710907,04/09/2016
-MC-459,  Umbrella Co MFG#80  ,mfg258@factory.org,南京,2728326,12/07/2021
-MC-460,weyland-yutani mfg#81,MFG259@FACTORY.ORG,西安,1234702,2021-01-07
-MC-461,STARK INDUSTRIES MFG#82,mfg260@plant.net,武汉,1133880,01/25/2018
-MC-462,Aperture MFG#83,mfg261@factory.org,深圳,4958420,2015-06-08
-MC-463,Wayne Enterprises MFG#84,mfg262@plant.net,成都,1179000,2023-04-23
-MC-464,WAYNE ENTERPRISES MFG#85,mfg263@factory.org,苏州,"$1,410,748.00",2026-12-22
-MC-465,Globex MFG#86,mfg264@industry.com,杭州,"4 583 446,00",2016-02-06
-MC-466,Black Mesa MFG#87,mfg265@industry.com,苏州,4812069,2015-06-15
-MC-467,INITECH MFG#88,MFG266@FACTORY.ORG,广州,1766746,07/03/2019
-MC-468,Globex MFG#0,mfg267@factory.org,杭州,"$465,669.00",20-03-2026
-MC-469,Wonka MFG#1,mfg268@factory.org,广州,4504870,11-01-2019
-MC-470,Oscorp MFG#2,mfg269@plant.net,苏州,1889897,2016-06-28
-MC-471,Massive Dynamic MFG#3,mfg270@plant.net,上海,"3 078 834,00",2023-05-06
-MC-472,Acme Corp MFG#4,MFG271@INDUSTRY.COM,成都,3026139,2015-03-23
-MC-473,wonka mfg#5,  mfg272@plant.net  ,南京,4753422,2025-12-06
-MC-474,weyland-yutani mfg#6,MFG273@PLANT.NET,南京,388 457,2020-07-18
-MC-475,  Umbrella Co MFG#7  ,mfg274@plant.net,北京,"$4,954,217.00",2017-10-08
-MC-476,Stark Industries MFG#8,  mfg275@plant.net  ,西安,2410428,07/19/2020
-MC-477,  Initech MFG#9  ,mfg276@factory.org,成都,4584447,26-09-2018
-MC-478,Globex MFG#10,  mfg277@industry.com  ,广州,2639455,2021-12-26
-MC-479,Aperture MFG#11,mfg278@industry.com,杭州,2 649 293,12-05-2025
-MC-480,Black Mesa MFG#12,mfg279@plant.net,深圳,1323053,2015-03-04
-MC-481,  Pied Piper MFG#13  ,mfg280@industry.com,上海,4150665,01/04/2017
-MC-482,Oscorp MFG#14,  mfg281@factory.org  ,武汉,4472046,07-05-2021
-MC-483,LexCorp MFG#15,  mfg282@plant.net  ,成都,2994821,2019-06-05
-MC-484,  Oscorp MFG#16  ,mfg283@plant.net,深圳,"$1,499,752.00",2016-10-26
-MC-485,Dunder Mifflin MFG#17,mfg284@factory.org,南京,"$319,367.00",06/05/2017
-MC-486,vandelay mfg#18,  mfg285@plant.net  ,杭州,"$1,123,096.00",2021-07-15
-MC-487,Blue Sun MFG#19,mfg286@industry.com,成都,1 638 808,01/10/2024
-MC-488,Oscorp MFG#20,mfg287@plant.net,南京,4652091,02/02/2021
-MC-489,Stark Industries MFG#21,mfg288@factory.org,深圳,2128753,2018-04-12
-MC-490,  Globex MFG#22  ,mfg289@industry.com,北京,3811018,01-05-2022
-MC-491,LexCorp MFG#23,mfg290@factory.org,武汉,1968803,04-02-2024
-MC-492,tyrell corp mfg#24,  mfg291@industry.com  ,杭州,3659778,2025-04-08
-MC-493,Globex MFG#25,  mfg292@plant.net  ,西安,"$880,873.00",2018-07-08
-MC-494,  Oscorp MFG#26  ,mfg293@industry.com,杭州,3826360,04/02/2022
-MC-495,Tyrell Corp MFG#27,mfg294@plant.net,南京,241881,2018-06-04
-MC-496,PIED PIPER MFG#28,mfg295@factory.org,杭州,4342898,05/07/2025
-MC-497,Wayne Enterprises MFG#29,mfg296@plant.net,广州,"$2,733,701.00",10-06-2019
-MC-498,Blue Sun MFG#30,  mfg297@factory.org  ,北京,574 420,2024-10-23
-MC-499,Dunder Mifflin MFG#31,mfg298@industry.com,深圳,3074588,08/17/2025
-MC-500,WEYLAND-YUTANI MFG#32,MFG299@FACTORY.ORG,南京,592931,2019-12-01
-MC-501,  Globex MFG#33  ,mfg300@factory.org,西安,"$3,514,779.00",2024-05-01
-MC-502,LEXCORP MFG#34,  mfg301@plant.net  ,苏州,"$1,360,070.00",19-07-2018
-MC-503,Weyland-Yutani MFG#35,mfg302@factory.org,成都,4206272,2025-04-19
-MC-504,Dunder Mifflin MFG#36,MFG303@PLANT.NET,杭州,3039918,05/05/2021
-MC-505,WAYNE ENTERPRISES MFG#37,mfg304@industry.com,深圳,"$4,171,802.00",2020-04-15
-MC-506,Tyrell Corp MFG#38,MFG305@PLANT.NET,杭州,4302447,16-04-2017
-MC-507,WAYNE ENTERPRISES MFG#39,MFG306@PLANT.NET,上海,"$2,105,236.00",2022-11-28
-MC-508,cyberdyne mfg#40,MFG307@PLANT.NET,上海,3245084,08/09/2015
-MC-509,  Acme Corp MFG#41  ,mfg308@factory.org,广州,1608277,2018-08-18
-MC-510,HOOLI MFG#42,mfg309@factory.org,南京,2 536 896,2026-02-19
-MC-511,Black Mesa MFG#43,mfg310@industry.com,武汉,"$177,016.00",2020-07-15
-MC-512,Pied Piper MFG#44,MFG311@FACTORY.ORG,杭州,"$4,131,285.00",11/08/2015
-MC-513,Dunder Mifflin MFG#45,mfg312@plant.net,成都,3344720,01/04/2020
-MC-514,  Hooli MFG#46  ,mfg313@industry.com,广州,"2 151 523,00",06/24/2024
-MC-515,Black Mesa MFG#47,mfg314@plant.net,成都,4368242,08/05/2015
-MC-516,Cyberdyne MFG#48,mfg315@plant.net,北京,4184106,2026-10-22
-MC-517,black mesa mfg#49,MFG316@PLANT.NET,北京,4 706 141,2018-06-01
-MC-518,  Blue Sun MFG#50  ,mfg317@factory.org,成都,2483841,10-11-2019
-MC-519,LEXCORP MFG#51,mfg318@factory.org,深圳,1 919 878,2025-08-27
-MC-520,pied piper mfg#52,MFG319@INDUSTRY.COM,武汉,"$4,166,297.00",2022-03-02
-MC-521,TYRELL CORP MFG#53,mfg320@industry.com,成都,4879519,2026-10-08
-MC-522,BLACK MESA MFG#54,mfg321@factory.org,上海,"$1,800,971.00",2025-11-14
-MC-523,Massive Dynamic MFG#55,  mfg322@industry.com  ,杭州,2 469 288,2023-03-21
-MC-524,Dunder Mifflin MFG#56,mfg323@industry.com,北京,1 258 499,04/17/2020
-MC-525,  Vandelay MFG#57  ,mfg324@industry.com,西安,4661832,08/11/2026
-MC-526,vandelay mfg#58,mfg325@plant.net,西安,"$4,110,311.00",2017-09-19
-MC-527,oscorp mfg#59,mfg326@plant.net,深圳,"$3,586,449.00",2017-09-01
-MC-528,Initech MFG#60,mfg327@plant.net,深圳,"$2,897,692.00",28-04-2024
-MC-529,Weyland-Yutani MFG#61,MFG328@PLANT.NET,广州,835244,01/18/2024
-MC-530,Blue Sun MFG#62,mfg329@factory.org,南京,3 089 771,03/23/2017
-MC-531,  Weyland-Yutani MFG#63  ,mfg330@factory.org,上海,3830007,01-11-2021
-MC-532,LEXCORP MFG#64,mfg331@factory.org,深圳,4622956,09/22/2023
-MC-533,  Umbrella Co MFG#65  ,  mfg332@factory.org  ,杭州,4215554,02/13/2022
-MC-534,HOOLI MFG#66,mfg333@plant.net,北京,3566732,2020-02-28
-MC-535,Initech MFG#67,MFG334@INDUSTRY.COM,上海,3658505,2017-08-07
-MC-536,  Tyrell Corp MFG#68  ,  mfg335@factory.org  ,深圳,4158602,12-08-2015
-MC-537,Umbrella Co MFG#69,mfg336@industry.com,西安,2833884,2025-03-02
-MC-538,Dunder Mifflin MFG#70,mfg337@plant.net,北京,2561931,2019-03-01
-MC-539,Cyberdyne MFG#71,mfg338@plant.net,深圳,920421,03/18/2025
-MC-540,  Tyrell Corp MFG#72  ,  mfg339@factory.org  ,南京,"$4,363,532.00",14-11-2019
-MC-541,Vandelay MFG#73,mfg340@industry.com,西安,2147895,2016-07-10
-MC-542,Hooli MFG#74,  mfg341@industry.com  ,武汉,"$1,695,893.00",12/25/2023
-MC-543,wonka mfg#75,mfg342@industry.com,南京,"$427,135.00",2026-02-22
-MC-544,LexCorp MFG#76,  mfg343@plant.net  ,北京,3609292,2026-01-20
-MC-545,  Aperture MFG#77  ,MFG344@INDUSTRY.COM,北京,"$4,001,754.00",06-10-2023
-MC-546,GLOBEX MFG#78,MFG345@FACTORY.ORG,南京,"$3,972,001.00",11/12/2015
-MC-547,  Acme Corp MFG#79  ,  mfg346@plant.net  ,杭州,"$4,380,565.00",11/25/2024
-MC-548,Vandelay MFG#80,mfg347@plant.net,深圳,4 026 407,10-06-2019
-MC-549,Globex MFG#81,  mfg348@factory.org  ,成都,1677612,2021-02-08
-MC-550,Stark Industries MFG#82,MFG349@FACTORY.ORG,杭州,4451462,06/17/2016
-MC-551,WAYNE ENTERPRISES MFG#83,MFG350@INDUSTRY.COM,北京,3401471,10/22/2026
-MC-552,Oscorp MFG#84,mfg351@industry.com,广州,"$4,733,734.00",2017-01-28
-MC-553,Cyberdyne MFG#85,mfg352@industry.com,北京,4241860,08/16/2025
-MC-554,  Aperture MFG#86  ,MFG353@INDUSTRY.COM,广州,3522630,2024-11-11
-MC-555,Cyberdyne MFG#87,mfg354@plant.net,杭州,"$1,992,537.00",2022-05-09
-MC-556,Hooli MFG#88,mfg355@plant.net,南京,"1 131 273,00",2023-01-22
-MC-557,UMBRELLA CO MFG#0,mfg356@industry.com,武汉,2981346,2021-05-25
-MC-558,  Aperture MFG#1  ,  mfg357@plant.net  ,广州,"$2,830,762.00",09-09-2018
-MC-559,dunder mifflin mfg#2,MFG358@PLANT.NET,深圳,"$3,697,366.00",12/22/2018
-MC-560,UMBRELLA CO MFG#3,mfg359@factory.org,南京,4823281,2023-02-10
-MC-561,Black Mesa MFG#4,mfg360@industry.com,北京,4662519,2015-03-14
-MC-562,PIED PIPER MFG#5,mfg361@plant.net,南京,"$4,686,389.00",10/19/2026
-MC-563,globex mfg#6,mfg362@industry.com,广州,883736,2015-02-25
-MC-564,INITECH MFG#7,mfg363@factory.org,成都,"$3,060,239.00",2021-09-13
-MC-565,Oscorp MFG#8,MFG364@INDUSTRY.COM,深圳,3936303,2021-11-19
-MC-566,cyberdyne mfg#9,mfg365@plant.net,武汉,"$2,589,332.00",2020-10-27
-MC-567,aperture mfg#10,mfg366@plant.net,西安,3409020,2026-11-23
-MC-568,Globex MFG#11,mfg367@factory.org,西安,2961666,16-08-2021
-MC-569,APERTURE MFG#12,MFG368@FACTORY.ORG,深圳,1593083,15-06-2016
-MC-570,Tyrell Corp MFG#13,mfg369@industry.com,苏州,1060712,12/09/2017
-MC-571,  Aperture MFG#14  ,mfg370@factory.org,杭州,3093599,11-09-2022
-MC-572,wayne enterprises mfg#15,mfg371@factory.org,成都,3529425,03/06/2023
-MC-573,Blue Sun MFG#16,mfg372@plant.net,杭州,"$1,580,266.00",2019-07-21
-MC-574,  Aperture MFG#17  ,MFG373@INDUSTRY.COM,武汉,"$2,596,981.00",2022-07-05
-MC-575,dunder mifflin mfg#18,MFG374@INDUSTRY.COM,武汉,"$3,532,373.00",10/25/2016
-MC-576,MASSIVE DYNAMIC MFG#19,mfg375@plant.net,苏州,"$382,843.00",01/01/2026
-MC-577,  Aperture MFG#20  ,mfg376@industry.com,北京,"$3,110,298.00",2023-03-28
-MC-578,Massive Dynamic MFG#21,mfg377@factory.org,上海,57740,26-08-2016
-MC-579,Cyberdyne MFG#22,mfg378@plant.net,成都,3717386,01/27/2015
-MC-580,Cyberdyne MFG#23,mfg379@plant.net,西安,"201 391,00",05/19/2018
-MC-581,Hooli MFG#24,MFG380@FACTORY.ORG,上海,1503498,2024-12-27
-MC-582,Vandelay MFG#25,mfg381@factory.org,南京,"$491,917.00",2016-04-11
-MC-583,Acme Corp MFG#26,MFG382@FACTORY.ORG,南京,4421358,07-05-2016
-MC-584,tyrell corp mfg#27,MFG383@PLANT.NET,武汉,3523438,2026-12-11
-MC-585,  Blue Sun MFG#28  ,MFG384@INDUSTRY.COM,广州,2928617,2018-05-25
-MC-586,MASSIVE DYNAMIC MFG#29,mfg385@factory.org,北京,1376019,2017-07-06
-MC-587,  Hooli MFG#30  ,mfg386@factory.org,南京,1714933,17-01-2020
-MC-588,Acme Corp MFG#31,mfg387@industry.com,成都,"$4,271,377.00",12/10/2018
-MC-589,  LexCorp MFG#32  ,mfg388@plant.net,杭州,2115120,24-08-2020
-MC-590,  Weyland-Yutani MFG#33  ,mfg389@plant.net,成都,"4 491 229,00",2022-07-24
-MC-591,WEYLAND-YUTANI MFG#34,mfg390@industry.com,苏州,"$368,899.00",08/24/2021
-MC-592,CYBERDYNE MFG#35,mfg391@plant.net,杭州,1 125 091,14-12-2021
-MC-593,Pied Piper MFG#36,  mfg392@industry.com  ,上海,"$3,303,555.00",2015-11-13
-MC-594,  Tyrell Corp MFG#37  ,mfg393@industry.com,广州,3001768,2026-11-01
-MC-595,  Acme Corp MFG#38  ,MFG394@FACTORY.ORG,上海,"1 197 178,00",2018-06-15
-MC-596,APERTURE MFG#39,mfg395@plant.net,成都,4123673,2019-12-21
-MC-597,Pied Piper MFG#40,MFG396@PLANT.NET,广州,2287935,09/21/2017
-MC-598,dunder mifflin mfg#41,mfg397@plant.net,杭州,"$2,280,590.00",06/24/2017
-MC-599,Acme Corp MFG#42,MFG398@PLANT.NET,西安,"100 859,00",11/11/2023
-MC-600,Globex MFG#43,mfg399@plant.net,广州,1938746,28-01-2025
-MC-601,Pied Piper MFG#44,mfg400@factory.org,深圳,4782277,2023-07-17
-MC-602,Cyberdyne MFG#45,  mfg401@factory.org  ,成都,4 149 556,2023-10-12
-MC-603,Hooli MFG#46,mfg402@industry.com,成都,1632005,26-05-2017
-MC-604,WEYLAND-YUTANI MFG#47,mfg403@factory.org,深圳,1697640,2019-05-15
-MC-605,Cyberdyne MFG#48,MFG404@PLANT.NET,成都,"$4,734,421.00",03/11/2023
-MC-606,  Oscorp MFG#49  ,mfg405@industry.com,深圳,3116530,26-05-2022
-MC-607,Pied Piper MFG#50,mfg406@factory.org,深圳,"$4,854,679.00",2020-03-19
-MC-608,Tyrell Corp MFG#51,mfg407@factory.org,深圳,"$2,017,523.00",2025-06-17
-MC-609,massive dynamic mfg#52,mfg408@industry.com,苏州,"4 498 315,00",25-09-2016
-MC-610,blue sun mfg#53,  mfg409@industry.com  ,西安,2 799 036,2018-08-07
-MC-611,  Tyrell Corp MFG#54  ,mfg410@industry.com,武汉,"$3,515,517.00",06/06/2025
-MC-612,Dunder Mifflin MFG#55,MFG411@INDUSTRY.COM,北京,3655773,05/13/2019
-MC-613,  Weyland-Yutani MFG#56  ,MFG412@PLANT.NET,深圳,2896909,2015-01-12
-MC-614,  Hooli MFG#57  ,  mfg413@plant.net  ,苏州,984608,23-12-2025
-MC-615,Cyberdyne MFG#58,mfg414@factory.org,南京,"$780,488.00",2015-11-05
-MC-616,TYRELL CORP MFG#59,mfg415@industry.com,上海,2288701,23-08-2022
-MC-617,Tyrell Corp MFG#60,mfg416@industry.com,广州,3964124,2026-10-05
-MC-618,Wonka MFG#61,mfg417@plant.net,杭州,616566,12/24/2025
-MC-619,OSCORP MFG#62,mfg418@industry.com,杭州,"$3,966,314.00",05-04-2022
-MC-620,  LexCorp MFG#63  ,mfg419@industry.com,苏州,1455729,2026-12-05
-MC-621,Umbrella Co MFG#64,MFG420@INDUSTRY.COM,成都,2527987,2018-07-28
-MC-622,Black Mesa MFG#65,  mfg421@plant.net  ,深圳,2215669,05/16/2016
-MC-623,GLOBEX MFG#66,mfg422@factory.org,广州,4953673,2022-03-03
-MC-624,Umbrella Co MFG#67,mfg423@factory.org,北京,"3 848 173,00",2023-07-12
-MC-625,Dunder Mifflin MFG#68,MFG424@FACTORY.ORG,深圳,"$3,520,129.00",2026-09-07
-MC-626,VANDELAY MFG#69,mfg425@plant.net,成都,"$2,062,669.00",2026-07-17
-MC-627,Massive Dynamic MFG#70,  mfg426@factory.org  ,上海,3959032,08/13/2019
-MC-628,  Globex MFG#71  ,mfg427@plant.net,成都,"2 421 549,00",11/07/2020
-MC-629,Globex MFG#72,  mfg428@plant.net  ,上海,"$1,005,693.00",2025-07-09
-MC-630,Stark Industries MFG#73,  mfg429@plant.net  ,苏州,"$4,538,658.00",2016-09-07
-MC-631,  Stark Industries MFG#74  ,mfg430@plant.net,南京,4699051,2022-06-24
-MC-632,Wonka MFG#75,mfg431@factory.org,武汉,1 778 929,2018-07-23
-MC-633,BLUE SUN MFG#76,MFG432@PLANT.NET,深圳,"$4,644,711.00",2026-09-01
-MC-634,Massive Dynamic MFG#77,mfg433@factory.org,西安,2946183,2017-08-04
-MC-635,Cyberdyne MFG#78,  mfg434@industry.com  ,苏州,"$2,932,631.00",07/25/2024
-MC-636,Acme Corp MFG#79,MFG435@PLANT.NET,深圳,4 324 063,15-01-2020
-MC-637,Oscorp MFG#80,mfg436@plant.net,西安,1413425,01/03/2022
-MC-638,cyberdyne mfg#81,mfg437@factory.org,苏州,"$3,807,723.00",15-11-2023
-MC-639,Massive Dynamic MFG#82,mfg438@plant.net,广州,484908,24-08-2019
-MC-640,  Globex MFG#83  ,mfg439@factory.org,杭州,4197637,2021-06-15
-MC-641,Initech MFG#84,mfg440@industry.com,南京,"$4,045,520.00",02-07-2024
-MC-642,OSCORP MFG#85,mfg441@factory.org,成都,"2 457 808,00",02/27/2025
-MC-643,Aperture MFG#86,mfg442@plant.net,深圳,"$3,582,485.00",2021-08-12
-MC-644,  Vandelay MFG#87  ,mfg443@plant.net,苏州,"$2,656,227.00",2018-12-25
-MC-645,dunder mifflin mfg#88,mfg444@factory.org,西安,1147755,2016-04-02
-MC-646,Stark Industries MFG#0,  mfg445@industry.com  ,西安,4371986,2022-01-26
-MC-647,umbrella co mfg#1,mfg446@factory.org,广州,"$2,512,630.00",2015-08-22
-MC-648,wonka mfg#2,mfg447@industry.com,深圳,278140,07/10/2016
-MC-649,Globex MFG#3,mfg448@industry.com,深圳,3 194 648,08-05-2016
-MC-650,Globex MFG#4,mfg449@plant.net,南京,"$4,507,155.00",04/23/2024
-MC-651,Blue Sun MFG#5,MFG450@INDUSTRY.COM,上海,957 846,2023-06-28
-MC-652,ACME CORP MFG#6,mfg451@factory.org,成都,2219265,04-02-2018
-MC-653,Acme Corp MFG#7,mfg452@plant.net,南京,4412807,2015-09-08
-MC-654,dunder mifflin mfg#8,  mfg453@factory.org  ,上海,4 706 708,12/15/2017
-MC-655,Black Mesa MFG#9,mfg454@factory.org,北京,2480792,2021-12-01
-MC-656,UMBRELLA CO MFG#10,MFG455@INDUSTRY.COM,南京,"$1,987,424.00",2023-04-07
-MC-657,LexCorp MFG#11,  mfg456@factory.org  ,深圳,946716,2019-01-02
-MC-658,  LexCorp MFG#12  ,mfg457@plant.net,成都,4 020 089,2024-11-16
-MC-659,Tyrell Corp MFG#13,mfg458@factory.org,杭州,237156,08/02/2020
-MC-660,Cyberdyne MFG#14,mfg459@factory.org,西安,"$1,512,443.00",07/21/2024
-MC-661,  Cyberdyne MFG#15  ,  mfg460@factory.org  ,成都,"$4,680,065.00",07-08-2024
-MC-662,Blue Sun MFG#16,  mfg461@industry.com  ,西安,4 919 400,06/27/2020
-MC-663,Oscorp MFG#17,mfg462@factory.org,北京,"$3,064,325.00",01/20/2023
-MC-664,Weyland-Yutani MFG#18,mfg463@industry.com,上海,2009222,2026-03-11
-MC-665,Cyberdyne MFG#19,  mfg464@plant.net  ,杭州,935735,2018-06-05
-MC-666,  Initech MFG#20  ,MFG465@INDUSTRY.COM,成都,2549890,2016-02-22
-MC-667,TYRELL CORP MFG#21,mfg466@factory.org,苏州,4992419,06-02-2023
-MC-668,GLOBEX MFG#22,mfg467@plant.net,苏州,"$549,623.00",2020-05-11
-MC-669,  Oscorp MFG#23  ,mfg468@industry.com,成都,833424,02/21/2015
-MC-670,Hooli MFG#24,mfg469@industry.com,西安,3627298,2019-01-02
-MC-671,Blue Sun MFG#25,MFG470@FACTORY.ORG,北京,"$3,191,759.00",07/21/2017
-MC-672,Initech MFG#26,MFG471@PLANT.NET,广州,"$1,890,206.00",2016-09-26
-MC-673,  Stark Industries MFG#27  ,mfg472@industry.com,苏州,2915743,2026-06-11
-MC-674,  Dunder Mifflin MFG#28  ,mfg473@factory.org,深圳,"$159,501.00",25-12-2015
-MC-675,  Tyrell Corp MFG#29  ,  mfg474@industry.com  ,杭州,"$3,711,937.00",2016-01-15
-MC-676,  Wayne Enterprises MFG#30  ,mfg475@industry.com,北京,4326367,2019-03-21
-MC-677,tyrell corp mfg#31,MFG476@PLANT.NET,武汉,"$207,104.00",04/01/2015
-MC-678,Black Mesa MFG#32,mfg477@factory.org,深圳,4756053,2018-01-06
-MC-679,TYRELL CORP MFG#33,  mfg478@factory.org  ,北京,"$3,351,715.00",2018-07-25
-MC-680,Blue Sun MFG#34,mfg479@factory.org,广州,"$3,262,496.00",2017-04-22
-MC-681,  Wonka MFG#35  ,mfg480@industry.com,武汉,2039180,04/10/2026
-MC-682,Dunder Mifflin MFG#36,mfg481@factory.org,苏州,"$829,739.00",01/11/2017
-MC-683,cyberdyne mfg#37,MFG482@INDUSTRY.COM,深圳,4092812,2023-03-25
-MC-684,  LexCorp MFG#38  ,mfg483@plant.net,西安,"$2,909,183.00",28-12-2018
-MC-685,massive dynamic mfg#39,mfg484@factory.org,杭州,567033,08/06/2016
-MC-686,  Weyland-Yutani MFG#40  ,  mfg485@industry.com  ,杭州,"$3,321,482.00",2019-05-17
-MC-687,Black Mesa MFG#41,  mfg486@plant.net  ,西安,"$1,933,510.00",05/07/2025
-MC-688,Cyberdyne MFG#42,MFG487@PLANT.NET,广州,1488180,2019-05-12
-MC-689,UMBRELLA CO MFG#43,mfg488@plant.net,广州,"$256,816.00",08-04-2026
-MC-690,WAYNE ENTERPRISES MFG#44,  mfg489@plant.net  ,武汉,"$339,725.00",06/09/2019
-MC-691,BLACK MESA MFG#45,mfg490@industry.com,杭州,4 768 030,23-05-2023
-MC-692,  Wonka MFG#46  ,mfg491@plant.net,成都,2 730 526,02/17/2019
-MC-693,Stark Industries MFG#47,mfg492@factory.org,广州,4475546,25-05-2022
-MC-694,  Massive Dynamic MFG#48  ,MFG493@INDUSTRY.COM,深圳,4 259 831,2020-06-22
-MC-695,Aperture MFG#49,mfg494@factory.org,北京,4371560,2022-03-04
-MC-696,  Hooli MFG#50  ,mfg495@plant.net,北京,1038165,08/04/2021
-MC-697,aperture mfg#51,mfg496@factory.org,西安,4 124 777,08/09/2017
-MC-698,Massive Dynamic MFG#52,MFG497@PLANT.NET,北京,"$1,466,703.00",01/13/2024
-MC-699,Globex MFG#53,mfg498@factory.org,西安,"$4,240,270.00",2017-09-18
-MC-700,  LexCorp MFG#54  ,MFG499@FACTORY.ORG,成都,"853 331,00",2025-04-20
-MC-701,  Wayne Enterprises MFG#55  ,mfg500@plant.net,北京,2888579,2017-08-13
-MC-702,Globex MFG#56,mfg501@factory.org,杭州,3183184,10/07/2016
-MC-703,  Wayne Enterprises MFG#57  ,  mfg502@plant.net  ,北京,"$3,495,563.00",01-01-2026
-MC-704,Hooli MFG#58,  mfg503@plant.net  ,杭州,"$4,297,802.00",16-01-2019
-MC-705,HOOLI MFG#59,MFG504@FACTORY.ORG,西安,4803374,15-09-2015
-MC-706,Blue Sun MFG#60,MFG505@INDUSTRY.COM,南京,1882136,2025-01-04
-MC-707,Oscorp MFG#61,mfg506@factory.org,西安,"$3,471,535.00",2026-06-26
-MC-708,PIED PIPER MFG#62,mfg507@plant.net,苏州,3871321,11/16/2023
-MC-709,Acme Corp MFG#63,mfg508@factory.org,成都,3 095 646,08/11/2015
-MC-710,  Dunder Mifflin MFG#64  ,mfg509@factory.org,上海,3508472,2018-10-15
-MC-711,Wonka MFG#65,  mfg510@industry.com  ,广州,"$4,370,337.00",2015-11-25
-MC-712,Acme Corp MFG#66,mfg511@plant.net,杭州,4830979,2018-05-17
-MC-713,  Wayne Enterprises MFG#67  ,mfg512@factory.org,杭州,452015,14-07-2026
-MC-714,  Umbrella Co MFG#68  ,mfg513@plant.net,西安,1056106,2024-10-15
-MC-715,  Pied Piper MFG#69  ,mfg514@industry.com,南京,2 514 564,2021-04-13
-MC-716,pied piper mfg#70,  mfg515@industry.com  ,北京,"672 994,00",06/13/2019
-MC-717,  Wonka MFG#71  ,MFG516@FACTORY.ORG,深圳,3933632,2024-03-13
-MC-718,OSCORP MFG#72,mfg517@plant.net,南京,4180022,2021-06-03
-MC-719,TYRELL CORP MFG#73,MFG518@PLANT.NET,南京,"$2,620,707.00",2016-06-04
-MC-720,  Massive Dynamic MFG#74  ,  mfg519@factory.org  ,杭州,1440436,2024-10-19
-MC-721,Dunder Mifflin MFG#75,MFG520@PLANT.NET,苏州,1 254 350,05/02/2021
-MC-722,Weyland-Yutani MFG#76,  mfg521@plant.net  ,广州,1472660,01/16/2015
-MC-723,  Hooli MFG#77  ,MFG522@FACTORY.ORG,上海,3206838,05/13/2022
-MC-724,HOOLI MFG#78,  mfg523@plant.net  ,上海,"$1,466,919.00",02-05-2018
-MC-725,MASSIVE DYNAMIC MFG#79,  mfg524@industry.com  ,苏州,2488046,2016-04-11
-MC-726,DUNDER MIFFLIN MFG#80,mfg525@plant.net,西安,"$3,734,410.00",09/06/2023
-MC-727,Acme Corp MFG#81,mfg526@plant.net,上海,"$4,370,656.00",2020-11-08
-MC-728,Dunder Mifflin MFG#82,MFG527@INDUSTRY.COM,上海,4774071,04/13/2023
-MC-729,  Wonka MFG#83  ,mfg528@factory.org,杭州,1887881,12/03/2019
-MC-730,Acme Corp MFG#84,mfg529@plant.net,苏州,"$3,162,131.00",04/01/2017
-MC-731,Umbrella Co MFG#85,mfg530@plant.net,南京,"103 024,00",09/18/2026
-MC-732,VANDELAY MFG#86,  mfg531@plant.net  ,武汉,3706111,26-12-2022
-MC-733,OSCORP MFG#87,mfg532@plant.net,杭州,3889090,05-03-2020
-MC-734,UMBRELLA CO MFG#88,mfg533@factory.org,西安,"$4,200,090.00",2023-01-06
-MC-735,Wayne Enterprises MFG#0,  mfg534@plant.net  ,武汉,4950834,2019-01-15
-MC-736,  Black Mesa MFG#1  ,MFG535@PLANT.NET,北京,4 962 802,01-11-2024
-MC-737,  Pied Piper MFG#2  ,mfg536@factory.org,苏州,"4 652 210,00",11-11-2015
-MC-738,Wayne Enterprises MFG#3,mfg537@plant.net,广州,"844 617,00",19-05-2021
-MC-739,STARK INDUSTRIES MFG#4,MFG538@FACTORY.ORG,上海,3579886,2022-12-18
-MC-740,Hooli MFG#5,  mfg539@factory.org  ,上海,1686352,2025-11-06
-MC-741,BLACK MESA MFG#6,mfg540@plant.net,武汉,"2 678 748,00",2025-01-04
-MC-742,  Massive Dynamic MFG#7  ,mfg541@plant.net,广州,"$1,151,757.00",15-07-2020
-MC-743,Black Mesa MFG#8,MFG542@PLANT.NET,西安,2036348,2017-06-12
-MC-744,HOOLI MFG#9,mfg543@industry.com,广州,3458657,10/27/2024
-MC-745,Massive Dynamic MFG#10,MFG544@PLANT.NET,北京,"1 933 010,00",2025-10-18
-MC-746,MASSIVE DYNAMIC MFG#11,mfg545@factory.org,武汉,"$269,816.00",07/05/2023
-MC-747,STARK INDUSTRIES MFG#12,  mfg546@industry.com  ,深圳,"$3,589,059.00",2016-12-05
-MC-748,HOOLI MFG#13,mfg547@factory.org,杭州,1669394,2025-05-26
-MC-749,Globex MFG#14,mfg548@industry.com,成都,"2 368 637,00",06/23/2023
-MC-750,Stark Industries MFG#15,mfg549@industry.com,南京,3388358,2018-05-05
-MC-751,wayne enterprises mfg#16,mfg550@factory.org,南京,2113064,06-11-2023
-MC-752,Tyrell Corp MFG#17,mfg551@plant.net,深圳,1808044,2018-09-03
-MC-753,Black Mesa MFG#18,  mfg552@industry.com  ,上海,2302526,2020-12-21
-MC-754,Vandelay MFG#19,  mfg553@factory.org  ,广州,4152163,2015-12-15
-MC-755,Blue Sun MFG#20,mfg554@industry.com,西安,718763,02/18/2022
-MC-756,wayne enterprises mfg#21,mfg555@plant.net,南京,"$2,000,771.00",08/19/2015
-MC-757,Tyrell Corp MFG#22,MFG556@INDUSTRY.COM,南京,4815679,2016-02-09
-MC-758,Initech MFG#23,  mfg557@plant.net  ,苏州,2547906,2019-12-14
-MC-759,  Globex MFG#24  ,mfg558@factory.org,苏州,"$3,617,654.00",08/23/2026
-MC-760,massive dynamic mfg#25,mfg559@plant.net,北京,4337701,2026-02-19
-MC-761,Cyberdyne MFG#26,  mfg560@industry.com  ,南京,"$4,203,225.00",10-09-2017
-MC-762,Pied Piper MFG#27,mfg561@plant.net,上海,"$2,098,959.00",2016-01-22
-MC-763,  Vandelay MFG#28  ,MFG562@FACTORY.ORG,西安,"$452,392.00",2025-09-11
-MC-764,Umbrella Co MFG#29,  mfg563@plant.net  ,北京,4741654,2025-03-06
-MC-765,Acme Corp MFG#30,  mfg564@plant.net  ,广州,"$2,570,559.00",14-05-2015
-MC-766,  Acme Corp MFG#31  ,mfg565@factory.org,深圳,263770,08/04/2016
-MC-767,Tyrell Corp MFG#32,  mfg566@plant.net  ,西安,"$1,035,063.00",16-11-2015
-MC-768,Initech MFG#33,mfg567@factory.org,成都,284972,12/12/2019
-MC-769,Black Mesa MFG#34,mfg568@plant.net,深圳,3663148,07/08/2023
-MC-770,Weyland-Yutani MFG#35,mfg569@plant.net,西安,4118816,23-04-2026
-MC-771,PIED PIPER MFG#36,mfg570@industry.com,北京,"3 845 387,00",08/02/2015
-MC-772,Hooli MFG#37,mfg571@factory.org,成都,"3 193 914,00",17-04-2022
-MC-773,LexCorp MFG#38,MFG572@PLANT.NET,苏州,1050694,2025-12-13
-MC-774,Hooli MFG#39,mfg573@industry.com,南京,"$3,647,547.00",2025-11-22
-MC-775,Wayne Enterprises MFG#40,mfg574@industry.com,深圳,"$2,243,122.00",22-12-2022
-MC-776,dunder mifflin mfg#41,  mfg575@factory.org  ,武汉,2965890,06-09-2025
-MC-777,LexCorp MFG#42,mfg576@industry.com,广州,4214883,2019-04-14
-MC-778,Massive Dynamic MFG#43,mfg577@factory.org,西安,1704382,03/06/2025
-MC-779,Globex MFG#44,mfg578@factory.org,上海,991366,2024-09-20
-MC-780,Pied Piper MFG#45,  mfg579@plant.net  ,武汉,3 041 616,02/25/2020
-MC-781,  Initech MFG#46  ,mfg580@factory.org,西安,"$4,541,494.00",08/07/2018
-MC-782,  Cyberdyne MFG#47  ,mfg581@factory.org,北京,646447,2019-02-28
-MC-783,  Acme Corp MFG#48  ,mfg582@industry.com,苏州,2092434,17-05-2016
-MC-784,GLOBEX MFG#49,MFG583@PLANT.NET,苏州,480067,07/24/2026
-MC-785,Weyland-Yutani MFG#50,MFG584@FACTORY.ORG,南京,"$2,584,838.00",08-01-2020
-MC-786,INITECH MFG#51,mfg585@industry.com,苏州,"$367,917.00",2024-02-18
-MC-787,Blue Sun MFG#52,  mfg586@plant.net  ,苏州,3263452,10-11-2023
-MC-788,BLUE SUN MFG#53,mfg587@industry.com,南京,"3 009 237,00",2015-08-22
-MC-789,Wayne Enterprises MFG#54,mfg588@factory.org,西安,4499405,2021-06-13
-MC-790,Aperture MFG#55,MFG589@PLANT.NET,杭州,2597124,2015-01-19
-MC-791,Wonka MFG#56,mfg590@plant.net,南京,4138827,15-08-2019
-MC-792,  Blue Sun MFG#57  ,mfg591@industry.com,西安,2000371,01/18/2020
-MC-793,HOOLI MFG#58,mfg592@plant.net,武汉,"4 985 086,00",07/03/2020
-MC-794,  Cyberdyne MFG#59  ,mfg593@plant.net,杭州,"$227,592.00",2023-07-13
-MC-795,LEXCORP MFG#60,  mfg594@plant.net  ,苏州,"2 705 996,00",2024-10-15
-MC-796,OSCORP MFG#61,mfg595@industry.com,西安,"$633,911.00",16-03-2025
-MC-797,Aperture MFG#62,  mfg596@plant.net  ,西安,3 651 898,2023-09-19
-MC-798,TYRELL CORP MFG#63,mfg597@factory.org,武汉,"2 377 849,00",2017-02-13
-MC-799,Blue Sun MFG#64,mfg598@factory.org,武汉,"$736,045.00",04/09/2016
-MC-800,Stark Industries MFG#65,mfg599@plant.net,广州,"$1,270,556.00",08/20/2020
-MC-801,Tyrell Corp MFG#66,mfg600@factory.org,成都,3728901,11-07-2020
-MC-802,  Globex MFG#67  ,mfg601@factory.org,深圳,3264662,10/05/2023
-MC-803,CYBERDYNE MFG#68,  mfg602@industry.com  ,南京,3735354,05/02/2020
-MC-804,weyland-yutani mfg#69,mfg603@factory.org,深圳,543499,2026-05-04
-MC-805,WONKA MFG#70,mfg604@factory.org,北京,3278903,2016-05-25
-MC-806,  Vandelay MFG#71  ,mfg605@plant.net,苏州,886016,05/11/2021
-MC-807,Weyland-Yutani MFG#72,mfg606@industry.com,上海,917134,04/02/2021
-MC-808,lexcorp mfg#73,mfg607@industry.com,成都,622348,2019-03-22
-MC-809,  Vandelay MFG#74  ,  mfg608@plant.net  ,武汉,1081752,2022-04-03
-MC-810,Cyberdyne MFG#75,  mfg609@industry.com  ,杭州,2778036,04/14/2021
-MC-811,Acme Corp MFG#76,mfg610@factory.org,成都,767309,03/02/2015
-MC-812,HOOLI MFG#77,  mfg611@plant.net  ,杭州,"3 645 936,00",01-12-2017
-MC-813,Aperture MFG#78,mfg612@factory.org,武汉,"2 260 101,00",2025-01-27
-MC-814,tyrell corp mfg#79,mfg613@factory.org,西安,2392950,2024-07-08
-MC-815,globex mfg#80,  mfg614@plant.net  ,北京,633175,2024-12-09
-MC-816,cyberdyne mfg#81,MFG615@FACTORY.ORG,苏州,"$2,705,191.00",2019-03-11
-MC-817,Cyberdyne MFG#82,mfg616@plant.net,南京,358036,03/06/2020
-MC-818,Wayne Enterprises MFG#83,mfg617@factory.org,西安,4599203,2025-04-12
-MC-819,  Black Mesa MFG#84  ,mfg618@factory.org,北京,4841403,04-10-2019
-MC-820,Oscorp MFG#85,  mfg619@industry.com  ,广州,"$3,556,998.00",17-03-2024
-MC-821,  Dunder Mifflin MFG#86  ,mfg620@plant.net,上海,759418,2022-12-04
-MC-822,  Black Mesa MFG#87  ,mfg621@industry.com,北京,3 361 182,05/21/2015
-MC-823,hooli mfg#88,MFG622@PLANT.NET,南京,2802980,2015-09-25
-MC-824,Weyland-Yutani MFG#0,mfg623@factory.org,苏州,2889767,23-06-2016
-MC-825,Initech MFG#1,MFG624@PLANT.NET,西安,"2 937 475,00",2019-03-09
-MC-826,WAYNE ENTERPRISES MFG#2,mfg625@industry.com,上海,4235729,05/10/2018
-MC-827,Aperture MFG#3,mfg626@industry.com,成都,4637033,2021-05-12
-MC-828,  Stark Industries MFG#4  ,MFG627@FACTORY.ORG,深圳,"$2,702,056.00",2020-03-28
-MC-829,INITECH MFG#5,  mfg628@industry.com  ,成都,3818369,2025-04-16
-MC-830,Blue Sun MFG#6,mfg629@factory.org,成都,102512,2016-04-02
-MC-831,  Globex MFG#7  ,  mfg630@factory.org  ,西安,1189938,28-06-2021
-MC-832,tyrell corp mfg#8,  mfg631@factory.org  ,西安,"$3,808,164.00",2023-06-08
-MC-833,Umbrella Co MFG#9,mfg632@industry.com,苏州,"$1,147,138.00",2026-07-16
-MC-834,  Weyland-Yutani MFG#10  ,mfg633@industry.com,杭州,718157,05-05-2017
-MC-835,  Wayne Enterprises MFG#11  ,  mfg634@plant.net  ,北京,4848144,2021-01-21
-MC-836,  Massive Dynamic MFG#12  ,  mfg635@factory.org  ,武汉,603505,26-10-2019
-MC-837,Aperture MFG#13,mfg636@factory.org,深圳,"$466,164.00",08-12-2025
-MC-838,STARK INDUSTRIES MFG#14,mfg637@plant.net,北京,"693 379,00",09/10/2024
-MC-839,Stark Industries MFG#15,MFG638@INDUSTRY.COM,武汉,"$2,965,394.00",24-07-2020
-MC-840,Wayne Enterprises MFG#16,mfg639@industry.com,深圳,3382951,2026-01-24
-MC-841,Umbrella Co MFG#17,mfg640@industry.com,北京,"$3,075,269.00",2017-07-04
-MC-842,INITECH MFG#18,mfg641@industry.com,深圳,4177424,11/10/2018
-MC-843,dunder mifflin mfg#19,mfg642@factory.org,广州,2377513,2015-05-15
-MC-844,WEYLAND-YUTANI MFG#20,mfg643@plant.net,上海,"$2,330,928.00",2024-01-21
-MC-845,massive dynamic mfg#21,mfg644@factory.org,苏州,97903,01/11/2024
-MC-846,Tyrell Corp MFG#22,MFG645@INDUSTRY.COM,广州,"$1,769,658.00",01/25/2020
-MC-847,Aperture MFG#23,MFG646@PLANT.NET,广州,3705371,09/13/2016
-MC-848,Blue Sun MFG#24,mfg647@plant.net,苏州,956 079,09/21/2015
-MC-849,  Globex MFG#25  ,MFG648@PLANT.NET,北京,"$4,567,171.00",12/13/2024
-MC-850,LEXCORP MFG#26,mfg649@factory.org,杭州,"$4,995,610.00",04/13/2023
-MC-851,APERTURE MFG#27,  mfg650@industry.com  ,南京,4 967 919,2020-02-13
-MC-852,lexcorp mfg#28,mfg651@industry.com,北京,202545,26-11-2018
-MC-853,Weyland-Yutani MFG#29,mfg652@plant.net,上海,1278015,09-03-2020
-MC-854,ACME CORP MFG#30,mfg653@industry.com,杭州,1725020,10/23/2015
-MC-855,Blue Sun MFG#31,mfg654@industry.com,南京,979887,2025-03-28
-MC-856,Aperture MFG#32,  mfg655@factory.org  ,西安,2529178,08-05-2018
-MC-857,black mesa mfg#33,mfg656@plant.net,苏州,"$1,796,462.00",01/08/2016
-MC-858,  Black Mesa MFG#34  ,mfg657@plant.net,武汉,4 095 427,2018-04-10
-MC-859,Tyrell Corp MFG#35,mfg658@plant.net,西安,3839103,2019-01-09
-MC-860,Tyrell Corp MFG#36,MFG659@PLANT.NET,杭州,1 123 433,2017-08-25
-MC-861,  Oscorp MFG#37  ,mfg660@factory.org,成都,2984238,2026-10-03
-MC-862,Blue Sun MFG#38,mfg661@plant.net,广州,3684946,2019-06-14
-MC-863,BLACK MESA MFG#39,  mfg662@industry.com  ,上海,2 714 035,03/13/2016
-MC-864,STARK INDUSTRIES MFG#40,mfg663@industry.com,广州,"$952,449.00",10/23/2019
-MC-865,Oscorp MFG#41,mfg664@factory.org,成都,1444683,2024-10-07
-MC-866,Pied Piper MFG#42,mfg665@factory.org,广州,3116978,01/06/2016
-MC-867,hooli mfg#43,mfg666@factory.org,杭州,"$3,978,876.00",06/04/2024
-MC-868,  Dunder Mifflin MFG#44  ,mfg667@factory.org,西安,"$718,027.00",23-02-2018
-MC-869,Cyberdyne MFG#45,MFG668@PLANT.NET,苏州,4793538,01/20/2023
-MC-870,BLACK MESA MFG#46,  mfg669@factory.org  ,武汉,2889616,27-12-2021
-MC-871,Stark Industries MFG#47,mfg670@factory.org,苏州,4882642,07/11/2018
-MC-872,APERTURE MFG#48,mfg671@factory.org,杭州,"$2,891,118.00",18-01-2016
-MC-873,HOOLI MFG#49,  mfg672@industry.com  ,上海,4955956,2020-07-12
-MC-874,Aperture MFG#50,mfg673@industry.com,杭州,4762544,2019-12-02
-MC-875,Dunder Mifflin MFG#51,MFG674@PLANT.NET,武汉,1425784,11/23/2017
-MC-876,Vandelay MFG#52,  mfg675@industry.com  ,苏州,3982933,27-09-2025
-MC-877,Acme Corp MFG#53,MFG676@FACTORY.ORG,广州,1985358,2016-07-26
-MC-878,Pied Piper MFG#54,mfg677@industry.com,武汉,"$2,784,290.00",2020-01-16
-MC-879,LexCorp MFG#55,  mfg678@factory.org  ,广州,"3 614 395,00",2016-09-05
-MC-880,UMBRELLA CO MFG#56,MFG679@PLANT.NET,武汉,4656486,01/28/2026
-MC-881,Wayne Enterprises MFG#57,mfg680@plant.net,广州,862 877,2021-01-07
-MC-882,  Black Mesa MFG#58  ,mfg681@industry.com,武汉,193446,28-07-2025
-MC-883,wonka mfg#59,mfg682@factory.org,南京,2 603 315,10/22/2023
-MC-884,oscorp mfg#60,mfg683@plant.net,成都,3649452,2026-03-07
-MC-885,INITECH MFG#61,  mfg684@plant.net  ,武汉,"$2,554,771.00",09/22/2025
-MC-886,Cyberdyne MFG#62,mfg685@industry.com,广州,56 327,17-08-2021
-MC-887,LexCorp MFG#63,mfg686@factory.org,南京,"$1,447,805.00",2016-07-18
-MC-888,UMBRELLA CO MFG#64,mfg687@factory.org,北京,1001220,03/24/2024
-MC-889,Massive Dynamic MFG#65,mfg688@industry.com,深圳,4473636,10/03/2018
-MC-890,  Hooli MFG#66  ,mfg689@plant.net,广州,4696709,2016-03-05
-MC-891,LEXCORP MFG#67,mfg690@industry.com,苏州,2443198,2016-08-10
-MC-892,BLUE SUN MFG#68,MFG691@INDUSTRY.COM,武汉,"$4,751,301.00",01/07/2016
-MC-893,TYRELL CORP MFG#69,mfg692@factory.org,深圳,4205557,12/09/2020
-MC-894,Weyland-Yutani MFG#70,mfg693@factory.org,南京,"$4,114,469.00",2016-02-15
-MC-895,LexCorp MFG#71,mfg694@plant.net,西安,3 286 608,11-02-2018
-MC-896,Hooli MFG#72,  mfg695@industry.com  ,深圳,762833,2022-05-16
-MC-897,Initech MFG#73,mfg696@industry.com,西安,2701898,05/01/2019
-MC-898,Vandelay MFG#74,mfg697@industry.com,深圳,"2 253 545,00",2018-04-24
-MC-899,LexCorp MFG#75,  mfg698@plant.net  ,上海,795287,2023-01-03
-MC-900,Dunder Mifflin MFG#76,mfg699@industry.com,苏州,3 878 097,2026-07-27
-MC-901,UMBRELLA CO MFG#77,mfg700@industry.com,深圳,"$911,848.00",06-08-2018
-MC-902,Aperture MFG#78,mfg701@factory.org,南京,"4 549 640,00",2017-05-02
-MC-903,Initech MFG#79,mfg702@factory.org,武汉,4789761,2020-03-04
-MC-904,  Stark Industries MFG#80  ,mfg703@factory.org,西安,4109721,2022-09-01
-MC-905,Pied Piper MFG#81,mfg704@industry.com,成都,3565817,2023-09-13
-MC-906,Initech MFG#82,mfg705@factory.org,苏州,"$477,540.00",13-06-2023
-MC-907,Pied Piper MFG#83,  mfg706@industry.com  ,西安,4354370,26-02-2021
-MC-908,Pied Piper MFG#84,  mfg707@plant.net  ,武汉,"$4,182,747.00",04/03/2021
-MC-909,  Stark Industries MFG#85  ,MFG708@FACTORY.ORG,深圳,"$1,840,669.00",2015-01-12
-MC-910,  Wonka MFG#86  ,MFG709@FACTORY.ORG,苏州,"$4,095,034.00",08/10/2025
-MC-911,  Black Mesa MFG#87  ,mfg710@plant.net,武汉,3978361,2023-06-01
-MC-912,Stark Industries MFG#88,mfg711@plant.net,深圳,106537,26-02-2021
-MC-913,LexCorp MFG#0,mfg712@industry.com,杭州,"1 564 360,00",04-07-2024
-MC-914,CYBERDYNE MFG#1,  mfg713@industry.com  ,成都,4090674,2016-02-01
-MC-915,STARK INDUSTRIES MFG#2,mfg714@factory.org,广州,"$1,908,781.00",2023-10-07
-MC-916,Cyberdyne MFG#3,MFG715@INDUSTRY.COM,南京,132794,2026-10-01
-MC-917,UMBRELLA CO MFG#4,mfg716@factory.org,上海,4167887,09/26/2015
-MC-918,Aperture MFG#5,mfg717@factory.org,上海,"$3,169,127.00",2023-04-28
-MC-919,  Blue Sun MFG#6  ,MFG718@FACTORY.ORG,上海,"$2,302,359.00",12/17/2024
-MC-920,  Black Mesa MFG#7  ,  mfg719@industry.com  ,苏州,4324466,2018-10-02
-MC-921,BLUE SUN MFG#8,mfg720@factory.org,武汉,4572086,2024-10-19
-MC-922,INITECH MFG#9,mfg721@factory.org,武汉,1891890,2015-12-07
-MC-923,  Umbrella Co MFG#10  ,mfg722@industry.com,苏州,2947664,07/14/2019
-MC-924,blue sun mfg#11,mfg723@factory.org,广州,2 305 327,07-11-2020
-MC-925,Wonka MFG#12,  mfg724@factory.org  ,北京,1490202,2026-03-08
-MC-926,Wonka MFG#13,  mfg725@industry.com  ,广州,3769572,2022-08-25
-MC-927,  Vandelay MFG#14  ,mfg726@factory.org,上海,3274386,2020-04-18
-MC-928,APERTURE MFG#15,mfg727@factory.org,北京,"$4,648,020.00",23-09-2019
-MC-929,WAYNE ENTERPRISES MFG#16,mfg728@industry.com,上海,3682262,2026-04-28
-MC-930,acme corp mfg#17,mfg729@plant.net,成都,2481338,05/01/2023
-MC-931,  Umbrella Co MFG#18  ,mfg730@plant.net,杭州,1331447,2018-03-16
-MC-932,UMBRELLA CO MFG#19,  mfg731@industry.com  ,成都,106956,11/18/2018
-MC-933,INITECH MFG#20,  mfg732@plant.net  ,深圳,"1 418 149,00",04/13/2015
-MC-934,  Massive Dynamic MFG#21  ,mfg733@industry.com,苏州,4258581,21-08-2026
-MC-935,  LexCorp MFG#22  ,mfg734@plant.net,杭州,2 648 746,11-02-2017
-MC-936,Pied Piper MFG#23,mfg735@factory.org,广州,"2 076 062,00",2015-12-27
-MC-937,Wonka MFG#24,mfg736@plant.net,上海,"$4,871,260.00",2023-07-20
-MC-938,  Black Mesa MFG#25  ,mfg737@factory.org,成都,4557602,01-09-2018
-MC-939,INITECH MFG#26,mfg738@factory.org,成都,1095392,05/17/2022
-MC-940,dunder mifflin mfg#27,mfg739@industry.com,北京,"3 003 805,00",2022-09-25
-MC-941,WEYLAND-YUTANI MFG#28,MFG740@PLANT.NET,西安,"$3,463,752.00",22-11-2016
-MC-942,Wayne Enterprises MFG#29,mfg741@factory.org,武汉,"$4,986,764.00",12/18/2017
-MC-943,GLOBEX MFG#30,mfg742@plant.net,南京,3170949,2025-05-11
-MC-944,Wayne Enterprises MFG#31,mfg743@factory.org,西安,"1 836 490,00",2024-02-20
-MC-945,Initech MFG#32,mfg744@plant.net,苏州,"$760,734.00",2022-11-15
-MC-946,Dunder Mifflin MFG#33,mfg745@plant.net,深圳,143869,2021-07-24
-MC-947,Dunder Mifflin MFG#34,mfg746@factory.org,深圳,"1 674 914,00",08/05/2023
-MC-948,Dunder Mifflin MFG#35,mfg747@factory.org,西安,1658635,17-10-2021
-MC-949,Dunder Mifflin MFG#36,mfg748@industry.com,深圳,"$2,357,437.00",01-11-2024
-MC-950,PIED PIPER MFG#37,  mfg749@factory.org  ,南京,4 177 426,10-04-2018
-MC-951,  Dunder Mifflin MFG#38  ,mfg750@industry.com,苏州,"$2,823,219.00",2023-05-21
-MC-952,Stark Industries MFG#39,MFG751@INDUSTRY.COM,武汉,2686266,10/20/2020
-MC-953,Acme Corp MFG#40,mfg752@industry.com,南京,"$940,542.00",03/28/2019
-MC-954,wayne enterprises mfg#41,mfg753@industry.com,深圳,"2 660 165,00",2022-09-10
-MC-955,  Globex MFG#42  ,mfg754@factory.org,深圳,599 115,2016-07-10
-MC-956,hooli mfg#43,mfg755@industry.com,杭州,4 417 392,2025-01-18
-MC-957,Hooli MFG#44,MFG756@PLANT.NET,上海,"$4,268,127.00",2024-01-22
-MC-958,Umbrella Co MFG#45,mfg757@industry.com,北京,"2 413 508,00",2020-07-06
-MC-959,  Wonka MFG#46  ,mfg758@factory.org,西安,"$2,101,309.00",2021-12-19
-MC-960,umbrella co mfg#47,MFG759@FACTORY.ORG,杭州,4583152,2022-01-20
-MC-961,Hooli MFG#48,mfg760@factory.org,南京,2173715,2025-02-01
-MC-962,Stark Industries MFG#49,mfg761@factory.org,杭州,878 362,2018-10-19
-MC-963,Initech MFG#50,  mfg762@plant.net  ,广州,"4 494 894,00",2017-12-28
-MC-964,Cyberdyne MFG#51,mfg763@factory.org,上海,"1 431 418,00",19-04-2015
-MC-965,INITECH MFG#52,mfg764@industry.com,北京,"3 829 512,00",03/17/2019
-MC-966,Tyrell Corp MFG#53,mfg765@plant.net,北京,"$1,852,806.00",2017-01-11
-MC-967,  Dunder Mifflin MFG#54  ,mfg766@industry.com,西安,"$3,580,883.00",06/14/2024
-MC-968,Dunder Mifflin MFG#55,  mfg767@industry.com  ,深圳,"2 929 625,00",2017-08-23
-MC-969,tyrell corp mfg#56,mfg768@industry.com,成都,"$627,698.00",2023-11-19
-MC-970,umbrella co mfg#57,mfg769@industry.com,武汉,4933335,08/09/2026
-MC-971,  Blue Sun MFG#58  ,mfg770@industry.com,西安,"$571,377.00",01/05/2025
-MC-972,  Umbrella Co MFG#59  ,MFG771@PLANT.NET,北京,"$388,476.00",2020-06-07
-MC-973,black mesa mfg#60,  mfg772@factory.org  ,南京,139886,02/08/2024
-MC-974,STARK INDUSTRIES MFG#61,mfg773@factory.org,杭州,4153856,23-08-2022
-MC-975,  Massive Dynamic MFG#62  ,mfg774@industry.com,北京,4783503,2021-08-24
-MC-976,WONKA MFG#63,MFG775@INDUSTRY.COM,西安,"$3,820,700.00",2023-02-14
-MC-977,Hooli MFG#64,MFG776@FACTORY.ORG,西安,"2 972 912,00",01/18/2026
-MC-978,dunder mifflin mfg#65,MFG777@INDUSTRY.COM,武汉,"3 473 357,00",08/12/2025
-MC-979,Wonka MFG#66,mfg778@industry.com,上海,"$972,313.00",2020-10-20
-MC-980,  Stark Industries MFG#67  ,  mfg779@industry.com  ,北京,2 141 830,05/28/2022
-MC-981,Blue Sun MFG#68,MFG780@PLANT.NET,西安,2842619,2026-07-06
-MC-982,OSCORP MFG#69,MFG781@PLANT.NET,苏州,"$4,033,656.00",2016-09-13
-MC-983,aperture mfg#70,mfg782@plant.net,广州,645740,2023-09-21
-MC-984,Pied Piper MFG#71,  mfg783@industry.com  ,深圳,4057919,18-04-2019
-MC-985,Umbrella Co MFG#72,mfg784@industry.com,苏州,"$3,710,198.00",2023-01-28
-MC-986,black mesa mfg#73,mfg785@plant.net,武汉,4 461 181,2017-12-24
-MC-987,  Acme Corp MFG#74  ,mfg786@plant.net,苏州,3110312,22-06-2026
-MC-988,Tyrell Corp MFG#75,mfg787@industry.com,广州,4 951 381,2019-11-16
-MC-989,  Cyberdyne MFG#76  ,mfg788@industry.com,杭州,1941510,07/24/2025
-MC-990,Acme Corp MFG#77,mfg789@factory.org,苏州,868121,2022-08-08
-MC-991,lexcorp mfg#78,  mfg790@industry.com  ,武汉,206 186,11/06/2016
-MC-992,black mesa mfg#79,mfg791@factory.org,深圳,"4 408 012,00",2015-12-15
-MC-993,Wonka MFG#80,mfg792@factory.org,广州,"$2,512,394.00",21-10-2018
-MC-994,Massive Dynamic MFG#81,  mfg793@factory.org  ,成都,"$2,049,468.00",2022-12-09
-MC-995,Initech MFG#82,mfg794@factory.org,西安,"$538,542.00",21-06-2026
-MC-996,Acme Corp MFG#83,mfg795@industry.com,苏州,2604107,28-10-2022
-MC-997,  Cyberdyne MFG#84  ,MFG796@FACTORY.ORG,北京,3699642,2022-05-16
-MC-998,Massive Dynamic MFG#85,  mfg797@factory.org  ,深圳,4568297,12/22/2020
-MC-999,APERTURE MFG#86,mfg798@plant.net,南京,2277482,08/15/2016
-MC-1000,Black Mesa MFG#87,  mfg799@factory.org  ,南京,"$4,068,438.00",08/02/2024
-MC-1001,  Vandelay MFG#88  ,  mfg800@plant.net  ,西安,"$2,648,707.00",05/20/2020
-MC-1002,dunder mifflin mfg#0,mfg801@plant.net,杭州,"$4,663,431.00",10-10-2023
-MC-1003,Wayne Enterprises MFG#1,mfg802@factory.org,杭州,"$1,279,222.00",09/08/2018
-MC-1004,vandelay mfg#2,mfg803@industry.com,深圳,445 417,2019-06-09
-MC-1005,  Weyland-Yutani MFG#3  ,mfg804@plant.net,北京,2 547 122,04/03/2025
-MC-1006,Blue Sun MFG#4,mfg805@plant.net,上海,3480494,2015-10-12
-MC-1007,wayne enterprises mfg#5,MFG806@FACTORY.ORG,广州,840052,2015-09-22
-MC-1008,Wonka MFG#6,mfg807@factory.org,武汉,2944416,12/02/2019
-MC-1009,  Vandelay MFG#7  ,  mfg808@plant.net  ,成都,"$4,733,206.00",12/08/2017
-MC-1010,Umbrella Co MFG#8,mfg809@factory.org,杭州,"138 173,00",2024-10-23
-MC-1011,  Hooli MFG#9  ,mfg810@industry.com,西安,2098119,11/22/2019
-MC-1012,Stark Industries MFG#10,mfg811@plant.net,广州,"1 882 684,00",2026-03-11
-MC-1013,CYBERDYNE MFG#11,MFG812@INDUSTRY.COM,杭州,4815549,05-11-2021
-MC-1014,CYBERDYNE MFG#12,MFG813@FACTORY.ORG,杭州,2275788,2015-05-16
-MC-1015,Blue Sun MFG#13,  mfg814@plant.net  ,西安,"$4,119,122.00",2024-08-26
-MC-1016,LexCorp MFG#14,mfg815@factory.org,西安,"$2,287,693.00",2015-11-25
-MC-1017,  Dunder Mifflin MFG#15  ,  mfg816@factory.org  ,广州,3388976,14-07-2015
-MC-1018,  Blue Sun MFG#16  ,MFG817@INDUSTRY.COM,广州,3081167,2026-05-25
-MC-1019,LexCorp MFG#17,  mfg818@factory.org  ,武汉,1 229 155,06-02-2015
-MC-1020,Weyland-Yutani MFG#18,mfg819@plant.net,南京,"$3,963,327.00",2025-05-02
-MC-1021,oscorp mfg#19,mfg820@industry.com,广州,4859969,2017-01-24
-MC-1022,Aperture MFG#20,MFG821@INDUSTRY.COM,南京,"$2,877,330.00",2020-06-28
-MC-1023,LEXCORP MFG#21,mfg822@industry.com,武汉,"$4,636,930.00",2020-04-17
-MC-1024,Acme Corp MFG#22,mfg823@industry.com,北京,4724136,10/04/2020
-MC-1025,  Oscorp MFG#23  ,mfg824@industry.com,武汉,"$2,423,977.00",03/04/2019
-MC-1026,STARK INDUSTRIES MFG#24,  mfg825@industry.com  ,西安,1090553,2016-10-14
-MC-1027,Umbrella Co MFG#25,mfg826@factory.org,苏州,4351117,04-05-2016
-MC-1028,Initech MFG#26,mfg827@factory.org,武汉,"$3,330,666.00",10-02-2023
-MC-1029,ACME CORP MFG#27,MFG828@INDUSTRY.COM,杭州,682704,02-08-2016
-MC-1030,Hooli MFG#28,mfg829@plant.net,杭州,"$1,938,644.00",2015-05-08
-MC-1031,Weyland-Yutani MFG#29,mfg830@industry.com,深圳,"$4,861,367.00",08-12-2018
-MC-1032,MASSIVE DYNAMIC MFG#30,mfg831@factory.org,苏州,1 735 783,2022-09-28
-MC-1033,  Aperture MFG#31  ,MFG832@FACTORY.ORG,南京,"2 758 727,00",26-09-2018
-MC-1034,Oscorp MFG#32,mfg833@industry.com,成都,"$1,420,358.00",08-10-2017
-MC-1035,  Cyberdyne MFG#33  ,mfg834@plant.net,杭州,"4 203 731,00",05/13/2026
-MC-1036,WEYLAND-YUTANI MFG#34,  mfg835@industry.com  ,深圳,596459,2019-07-10
-MC-1037,TYRELL CORP MFG#35,  mfg836@industry.com  ,杭州,2395888,09/24/2024
-MC-1038,TYRELL CORP MFG#36,MFG837@FACTORY.ORG,武汉,"2 301 098,00",10/14/2015
-MC-1039,Dunder Mifflin MFG#37,mfg838@factory.org,深圳,"$1,289,886.00",12-04-2021
-MC-1040,globex mfg#38,  mfg839@industry.com  ,西安,4 256 551,2021-05-12
-MC-1041,Stark Industries MFG#39,mfg840@factory.org,南京,"856 871,00",2026-05-26
-MC-1042,ACME CORP MFG#40,MFG841@PLANT.NET,上海,"3 787 434,00",2015-09-17
-MC-1043,Tyrell Corp MFG#41,mfg842@plant.net,成都,808 939,2016-11-02
-MC-1044,BLACK MESA MFG#42,mfg843@factory.org,成都,"$969,471.00",2017-09-13
-MC-1045,GLOBEX MFG#43,mfg844@factory.org,上海,"$176,230.00",07-11-2020
-MC-1046,VANDELAY MFG#44,MFG845@FACTORY.ORG,武汉,"$1,867,090.00",2025-02-01
-MC-1047,Dunder Mifflin MFG#45,mfg846@industry.com,苏州,4748991,03/25/2025
-MC-1048,  Dunder Mifflin MFG#46  ,MFG847@FACTORY.ORG,北京,4377010,2021-10-15
-MC-1049,  Umbrella Co MFG#47  ,MFG848@FACTORY.ORG,南京,217 680,2018-09-06
-MC-1050,Initech MFG#48,mfg849@plant.net,南京,4228443,2024-06-13
-MC-1051,STARK INDUSTRIES MFG#49,mfg850@factory.org,武汉,"$2,907,084.00",2017-10-03
-MC-1052,Wonka MFG#50,mfg851@industry.com,深圳,2871803,10/07/2025
-MC-1053,Blue Sun MFG#51,  mfg852@industry.com  ,杭州,"$1,392,889.00",01/03/2022
-MC-1054,WONKA MFG#52,mfg853@factory.org,南京,"$780,298.00",2018-02-10
-MC-1055,  Cyberdyne MFG#53  ,mfg854@factory.org,上海,4117131,2021-08-26
-MC-1056,Cyberdyne MFG#54,  mfg855@plant.net  ,苏州,"1 290 239,00",2024-09-10
-MC-1057,BLACK MESA MFG#55,  mfg856@factory.org  ,北京,2445908,2022-06-19
-MC-1058,APERTURE MFG#56,mfg857@industry.com,杭州,"$2,937,804.00",2018-04-16
-MC-1059,LexCorp MFG#57,  mfg858@plant.net  ,深圳,2555382,2015-02-22
-MC-1060,Oscorp MFG#58,MFG859@FACTORY.ORG,成都,"$4,945,217.00",2026-12-27
-MC-1061,LexCorp MFG#59,MFG860@INDUSTRY.COM,深圳,3804072,06/11/2019
-MC-1062,Initech MFG#60,mfg861@factory.org,广州,4913974,2019-01-05
-MC-1063,Massive Dynamic MFG#61,mfg862@plant.net,杭州,2099475,04-06-2019
-MC-1064,tyrell corp mfg#62,  mfg863@industry.com  ,苏州,686159,2023-07-26
-MC-1065,Acme Corp MFG#63,mfg864@plant.net,西安,1874163,01/12/2023
-MC-1066,CYBERDYNE MFG#64,mfg865@plant.net,南京,1622766,26-07-2015
-MC-1067,massive dynamic mfg#65,MFG866@PLANT.NET,苏州,734745,2022-04-19
-MC-1068,Dunder Mifflin MFG#66,mfg867@plant.net,武汉,393 873,2020-09-10
-MC-1069,wonka mfg#67,  mfg868@industry.com  ,武汉,1537315,2022-08-14
-MC-1070,Wayne Enterprises MFG#68,mfg869@plant.net,北京,1666098,12-10-2023
-MC-1071,weyland-yutani mfg#69,mfg870@plant.net,南京,"1 031 648,00",2024-01-19
-MC-1072,Umbrella Co MFG#70,mfg871@plant.net,苏州,407426,07/11/2026
-MC-1073,Aperture MFG#71,mfg872@industry.com,苏州,1876531,2026-03-12
-MC-1074,Wonka MFG#72,  mfg873@industry.com  ,武汉,"$3,428,654.00",01/19/2018
-MC-1075,Dunder Mifflin MFG#73,mfg874@plant.net,西安,"$2,324,338.00",03/14/2021
-MC-1076,Black Mesa MFG#74,  mfg875@industry.com  ,苏州,"$1,048,067.00",2016-03-28
-MC-1077,  Aperture MFG#75  ,MFG876@INDUSTRY.COM,深圳,3514034,07/03/2025
-MC-1078,aperture mfg#76,mfg877@plant.net,深圳,"$3,794,733.00",2026-09-08
-MC-1079,  Aperture MFG#77  ,mfg878@plant.net,杭州,"$2,133,974.00",08/26/2015
-MC-1080,blue sun mfg#78,mfg879@factory.org,上海,"3 731 819,00",02-07-2023
-MC-1081,BLACK MESA MFG#79,mfg880@industry.com,成都,"$1,769,561.00",16-08-2015
-MC-1082,LexCorp MFG#80,mfg881@factory.org,广州,2223932,01/25/2022
-MC-1083,Vandelay MFG#81,mfg882@plant.net,南京,1946496,05/21/2022
-MC-1084,Blue Sun MFG#82,mfg883@factory.org,西安,"$2,707,994.00",2024-08-17
-MC-1085,Stark Industries MFG#83,  mfg884@factory.org  ,广州,"1 231 346,00",01-08-2022
-MC-1086,VANDELAY MFG#84,mfg885@plant.net,杭州,1177222,2015-06-09
-MC-1087,Black Mesa MFG#85,mfg886@industry.com,武汉,1835119,06-07-2025
-MC-1088,OSCORP MFG#86,mfg887@industry.com,南京,1179619,26-02-2017
-MC-1089,Wayne Enterprises MFG#87,mfg888@industry.com,南京,"$3,072,853.00",11/05/2020
-MC-1090,WONKA MFG#88,mfg889@industry.com,北京,"1 963 993,00",01/20/2026
-MC-1091,BLACK MESA MFG#0,mfg890@industry.com,成都,1 514 991,2026-12-04
-MC-1092,  Dunder Mifflin MFG#1  ,mfg891@plant.net,西安,"$1,229,825.00",02/06/2019
-MC-1093,Globex MFG#2,mfg892@plant.net,武汉,4221039,01/24/2024
-MC-1094,  Dunder Mifflin MFG#3  ,mfg893@plant.net,苏州,271265,2020-09-12
-MC-1095,Black Mesa MFG#4,mfg894@plant.net,广州,4628315,01-07-2020
-MC-1096,pied piper mfg#5,MFG895@FACTORY.ORG,北京,"$3,367,675.00",2023-12-05
-MC-1097,LexCorp MFG#6,mfg896@plant.net,北京,"$1,453,319.00",2017-09-15
-MC-1098,  Tyrell Corp MFG#7  ,MFG897@INDUSTRY.COM,武汉,4 253 815,10/27/2016
-MC-1099,Wonka MFG#8,  mfg898@industry.com  ,西安,2599101,2016-03-16
-MC-1100,  Globex MFG#9  ,mfg899@industry.com,上海,342916,11/15/2015
-MC-1101,BLUE SUN MFG#10,mfg900@industry.com,西安,1888675,2022-01-17
-MC-1102,VANDELAY MFG#11,mfg901@plant.net,深圳,1 650 176,2024-04-22
-MC-1103,wonka mfg#12,MFG902@PLANT.NET,成都,4771248,2015-09-17
-MC-1104,Stark Industries MFG#13,mfg903@factory.org,广州,3401903,2019-06-26
-MC-1105,wayne enterprises mfg#14,  mfg904@factory.org  ,上海,1769457,2019-11-22
-MC-1106,Wayne Enterprises MFG#15,mfg905@factory.org,南京,"$3,665,415.00",11/03/2016
-MC-1107,MASSIVE DYNAMIC MFG#16,  mfg906@industry.com  ,深圳,646676,2019-06-15
-MC-1108,  Wayne Enterprises MFG#17  ,mfg907@plant.net,武汉,3206459,2021-11-12
-MC-1109,Umbrella Co MFG#18,MFG908@INDUSTRY.COM,深圳,"1 306 128,00",2026-03-28
-MC-1110,Tyrell Corp MFG#19,MFG909@INDUSTRY.COM,杭州,662844,13-10-2016
-MC-1111,INITECH MFG#20,mfg910@industry.com,北京,"$2,814,231.00",2021-08-06
-MC-1112,STARK INDUSTRIES MFG#21,mfg911@factory.org,苏州,"$1,558,215.00",2018-05-21
-MC-1113,  Stark Industries MFG#22  ,mfg912@industry.com,广州,730744,2021-10-07
-MC-1114,Cyberdyne MFG#23,  mfg913@industry.com  ,广州,1 304 636,10-04-2015
-MC-1115,wonka mfg#24,mfg914@plant.net,南京,"$1,336,743.00",2022-03-08
-MC-1116,pied piper mfg#25,  mfg915@plant.net  ,杭州,"$1,141,755.00",2026-03-23
-MC-1117,wayne enterprises mfg#26,MFG916@FACTORY.ORG,苏州,3047854,10-10-2019
-MC-1118,Stark Industries MFG#27,mfg917@industry.com,杭州,1272812,16-06-2021
-MC-1119,Oscorp MFG#28,mfg918@plant.net,南京,"$4,092,702.00",17-08-2026
-MC-1120,Cyberdyne MFG#29,mfg919@industry.com,上海,3981618,28-10-2026
-MC-1121,STARK INDUSTRIES MFG#30,mfg920@industry.com,成都,"$2,134,641.00",07/24/2022
-MC-1122,Umbrella Co MFG#31,  mfg921@plant.net  ,西安,"$2,301,281.00",03/27/2017
-MC-1123,WAYNE ENTERPRISES MFG#32,mfg922@factory.org,上海,3359066,2018-06-18
-MC-1124,GLOBEX MFG#33,MFG923@FACTORY.ORG,北京,730392,08/16/2026
-MC-1125,Tyrell Corp MFG#34,  mfg924@industry.com  ,苏州,4245187,2022-08-15
-MC-1126,globex mfg#35,MFG925@INDUSTRY.COM,北京,"$4,386,885.00",2024-02-14
-MC-1127,  Massive Dynamic MFG#36  ,  mfg926@factory.org  ,南京,"2 413 975,00",2021-05-15
-MC-1128,Blue Sun MFG#37,mfg927@factory.org,南京,1924463,2016-10-22
-MC-1129,WAYNE ENTERPRISES MFG#38,mfg928@plant.net,南京,1168599,09-07-2017
-MC-1130,LexCorp MFG#39,  mfg929@factory.org  ,杭州,"3 180 448,00",05/27/2020
-MC-1131,LexCorp MFG#40,mfg930@industry.com,苏州,"4 186 680,00",2015-01-16
-MC-1132,  Massive Dynamic MFG#41  ,  mfg931@industry.com  ,苏州,3885493,19-09-2024
-MC-1133,Stark Industries MFG#42,MFG932@PLANT.NET,南京,4578828,08/21/2021
-MC-1134,Vandelay MFG#43,mfg933@industry.com,南京,2641410,2021-04-03
-MC-1135,Hooli MFG#44,  mfg934@industry.com  ,上海,"$4,468,866.00",11/11/2017
-MC-1136,  Massive Dynamic MFG#45  ,MFG935@FACTORY.ORG,深圳,246190,04/22/2017
-MC-1137,Acme Corp MFG#46,mfg936@plant.net,成都,"$723,446.00",04/17/2017
-MC-1138,tyrell corp mfg#47,mfg937@plant.net,西安,3423985,2017-08-24
-MC-1139,APERTURE MFG#48,  mfg938@factory.org  ,上海,"$2,986,346.00",2023-04-13
-MC-1140,WAYNE ENTERPRISES MFG#49,mfg939@industry.com,成都,"$3,185,162.00",2018-07-04
-MC-1141,BLACK MESA MFG#50,mfg940@factory.org,广州,"$2,046,475.00",03/08/2017
-MC-1142,Tyrell Corp MFG#51,mfg941@factory.org,武汉,4246358,2023-03-01
-MC-1143,APERTURE MFG#52,mfg942@factory.org,苏州,2006612,10/19/2025
-MC-1144,  Blue Sun MFG#53  ,mfg943@industry.com,广州,3 555 763,2020-07-23
-MC-1145,VANDELAY MFG#54,  mfg944@plant.net  ,上海,"$3,748,203.00",2024-04-21
-MC-1146,DUNDER MIFFLIN MFG#55,mfg945@industry.com,武汉,328529,2025-04-01
-MC-1147,TYRELL CORP MFG#56,mfg946@industry.com,杭州,"2 626 827,00",04/09/2018
-MC-1148,aperture mfg#57,mfg947@industry.com,深圳,1931884,04-11-2016
-MC-1149,  Acme Corp MFG#58  ,  mfg948@factory.org  ,杭州,3856706,2023-10-19
-MC-1150,Cyberdyne MFG#59,  mfg949@factory.org  ,成都,2402306,2023-06-12
-MC-1151,Oscorp MFG#60,mfg950@factory.org,杭州,"1 324 983,00",05/02/2023
-MC-1152,Wonka MFG#61,mfg951@factory.org,杭州,"$258,744.00",2017-09-03
-MC-1153,LexCorp MFG#62,mfg952@factory.org,广州,"$1,848,888.00",10/19/2020
-MC-1154,Black Mesa MFG#63,  mfg953@plant.net  ,武汉,4 666 736,11-10-2017
-MC-1155,  Wayne Enterprises MFG#64  ,  mfg954@factory.org  ,杭州,"3 342 401,00",2025-11-28
-MC-1156,LexCorp MFG#65,  mfg955@industry.com  ,西安,4971172,2024-04-20
-MC-1157,Hooli MFG#66,mfg956@factory.org,深圳,"3 078 771,00",09/11/2018
-MC-1158,LexCorp MFG#67,mfg957@industry.com,西安,"$2,609,446.00",05/21/2019
-MC-1159,vandelay mfg#68,mfg958@factory.org,广州,"$776,460.00",2024-06-09
-MC-1160,LexCorp MFG#69,mfg959@plant.net,杭州,"$4,335,515.00",2021-09-05
-MC-1161,  Wonka MFG#70  ,mfg960@factory.org,南京,314280,07/08/2015
-MC-1162,  Dunder Mifflin MFG#71  ,  mfg961@factory.org  ,南京,1917849,2021-05-15
-MC-1163,Stark Industries MFG#72,MFG962@INDUSTRY.COM,西安,"397 929,00",09/28/2016
-MC-1164,  Tyrell Corp MFG#73  ,mfg963@industry.com,苏州,"2 545 769,00",03/08/2023
-MC-1165,lexcorp mfg#74,  mfg964@industry.com  ,深圳,872334,11/05/2022
-MC-1166,  Umbrella Co MFG#75  ,mfg965@factory.org,深圳,"$3,060,690.00",2026-05-21
-MC-1167,Initech MFG#76,mfg966@factory.org,杭州,1 759 380,2024-10-26
-MC-1168,WAYNE ENTERPRISES MFG#77,MFG967@PLANT.NET,杭州,"$69,082.00",2016-03-12
-MC-1169,OSCORP MFG#78,mfg968@industry.com,南京,3190148,2022-11-25
-MC-1170,Wayne Enterprises MFG#79,mfg969@factory.org,苏州,3992902,2019-11-19
-MC-1171,  Cyberdyne MFG#80  ,MFG970@INDUSTRY.COM,西安,4 694 752,2018-03-14
-MC-1172,Stark Industries MFG#81,mfg971@plant.net,北京,4331690,07/17/2021
-MC-1173,Dunder Mifflin MFG#82,mfg972@industry.com,苏州,3873074,12/27/2023
-MC-1174,Vandelay MFG#83,MFG973@FACTORY.ORG,深圳,4802215,05-11-2019
-MC-1175,UMBRELLA CO MFG#84,mfg974@plant.net,北京,4329039,19-10-2021
-MC-1176,wonka mfg#85,  mfg975@factory.org  ,武汉,4998155,11/27/2024
-MC-1177,  Black Mesa MFG#86  ,mfg976@plant.net,北京,3338680,2021-05-04
-MC-1178,Globex MFG#87,mfg977@industry.com,深圳,3 619 356,10/24/2015
-MC-1179,Pied Piper MFG#88,MFG978@FACTORY.ORG,杭州,4911767,21-02-2026
-MC-1180,Weyland-Yutani MFG#0,mfg979@factory.org,西安,"$3,043,960.00",01/19/2022
-MC-1181,Aperture MFG#1,mfg980@industry.com,广州,976 249,2023-07-18
-MC-1182,Globex MFG#2,mfg981@industry.com,西安,"2 666 431,00",2017-08-03
-MC-1183,BLUE SUN MFG#3,  mfg982@industry.com  ,深圳,"$684,897.00",01/21/2025
-MC-1184,LexCorp MFG#4,MFG983@INDUSTRY.COM,杭州,"$1,802,714.00",2020-02-15
-MC-1185,  Acme Corp MFG#5  ,  mfg984@industry.com  ,成都,3434683,2025-01-04
-MC-1186,Oscorp MFG#6,MFG985@INDUSTRY.COM,杭州,"4 018 551,00",2020-05-05
-MC-1187,Hooli MFG#7,  mfg986@industry.com  ,西安,2 282 904,2015-02-25
-MC-1188,MASSIVE DYNAMIC MFG#8,  mfg987@factory.org  ,南京,1418413,10/20/2015
-MC-1189,PIED PIPER MFG#9,  mfg988@plant.net  ,武汉,4983034,07-04-2020
-MC-1190,Acme Corp MFG#10,MFG989@FACTORY.ORG,南京,"$4,419,174.00",2015-08-03
-MC-1191,WONKA MFG#11,mfg990@factory.org,成都,4 583 686,05/04/2015
-MC-1192,dunder mifflin mfg#12,mfg991@industry.com,北京,1561878,2018-12-26
-MC-1193,  Cyberdyne MFG#13  ,mfg992@factory.org,成都,802704,06-05-2024
-MC-1194,  Stark Industries MFG#14  ,mfg993@industry.com,上海,"$1,607,816.00",2020-11-06
-MC-1195,  Vandelay MFG#15  ,  mfg994@factory.org  ,苏州,"$4,261,455.00",2022-02-20
-MC-1196,ACME CORP MFG#16,  mfg995@industry.com  ,北京,102197,2015-06-02
-MC-1197,  Hooli MFG#17  ,mfg996@plant.net,北京,"$2,040,564.00",2021-08-23
-MC-1198,LexCorp MFG#18,mfg997@industry.com,上海,"1 574 644,00",2026-06-07
-MC-1199,  Vandelay MFG#19  ,mfg998@plant.net,深圳,424339,02/02/2017
-MC-1200,Wayne Enterprises MFG#20,  mfg999@plant.net  ,广州,1102320,2016-03-16
-MC-1201,Wonka MFG#21,  mfg1000@factory.org  ,广州,"$1,639,408.00",2020-08-12
-MC-1202,Stark Industries MFG#22,mfg1001@plant.net,成都,418974,03-07-2018
-MC-1203,Globex MFG#23,  mfg1002@plant.net  ,杭州,4390290,2020-05-10
-MC-1204,WAYNE ENTERPRISES MFG#24,  mfg1003@industry.com  ,广州,"$1,676,602.00",02-07-2023
-MC-1205,Stark Industries MFG#25,mfg1004@industry.com,南京,525 903,2020-11-07
-MC-1206,Black Mesa MFG#26,  mfg1005@factory.org  ,杭州,"$496,757.00",2017-07-01
-MC-1207,Blue Sun MFG#27,mfg1006@plant.net,苏州,"$4,739,578.00",04/07/2025
-MC-1208,Cyberdyne MFG#28,mfg1007@factory.org,广州,"1 537 272,00",2017-11-08
-MC-1209,Aperture MFG#29,mfg1008@industry.com,苏州,4183468,2015-02-10
-MC-1210,GLOBEX MFG#30,mfg1009@industry.com,北京,"$89,666.00",2023-11-18
-MC-1211,  Dunder Mifflin MFG#31  ,MFG1010@PLANT.NET,武汉,"2 585 210,00",2018-05-17
-MC-1212,  Initech MFG#32  ,mfg1011@factory.org,广州,4815958,2015-05-21
-MC-1213,  Black Mesa MFG#33  ,MFG1012@INDUSTRY.COM,上海,3521744,2021-11-21
-MC-1214,LexCorp MFG#34,mfg1013@factory.org,北京,4179139,2019-06-18
-MC-1215,Tyrell Corp MFG#35,mfg1014@plant.net,杭州,4213139,2017-11-26
-MC-1216,Weyland-Yutani MFG#36,mfg1015@industry.com,苏州,4 581 842,2017-03-18
-MC-1217,Pied Piper MFG#37,MFG1016@INDUSTRY.COM,南京,526820,2020-01-07
-MC-1218,weyland-yutani mfg#38,mfg1017@factory.org,成都,"$345,167.00",2022-02-25
-MC-1219,  Weyland-Yutani MFG#39  ,mfg1018@plant.net,杭州,1 053 604,2026-06-04
-MC-1220,UMBRELLA CO MFG#40,mfg1019@plant.net,武汉,1303815,03/15/2026
-MC-1221,LexCorp MFG#41,MFG1020@FACTORY.ORG,南京,393699,17-02-2019
-MC-1222,Oscorp MFG#42,mfg1021@factory.org,深圳,"$2,305,130.00",07-05-2026
-MC-1223,BLACK MESA MFG#43,mfg1022@factory.org,北京,880740,2018-06-20
-MC-1224,  Hooli MFG#44  ,MFG1023@PLANT.NET,成都,1197861,26-10-2020
-MC-1225,Vandelay MFG#45,  mfg1024@plant.net  ,南京,2849126,17-02-2015
-MC-1226,  Dunder Mifflin MFG#46  ,mfg1025@industry.com,西安,4977988,2026-09-19
-MC-1227,  Black Mesa MFG#47  ,MFG1026@INDUSTRY.COM,苏州,1591073,03/18/2025
-MC-1228,  Vandelay MFG#48  ,mfg1027@factory.org,南京,1827281,2026-07-05
-MC-1229,Oscorp MFG#49,mfg1028@plant.net,成都,3 073 880,2021-03-11
-MC-1230,Tyrell Corp MFG#50,  mfg1029@factory.org  ,成都,"4 240 452,00",2024-09-14
-MC-1231,  Pied Piper MFG#51  ,mfg1030@plant.net,深圳,2162109,2017-11-19
-MC-1232,Tyrell Corp MFG#52,MFG1031@INDUSTRY.COM,武汉,"$1,557,990.00",2023-01-02
-MC-1233,Aperture MFG#53,  mfg1032@plant.net  ,北京,1822988,11/11/2017
-MC-1234,wonka mfg#54,mfg1033@plant.net,广州,2561790,2021-07-11
-MC-1235,Oscorp MFG#55,mfg1034@plant.net,苏州,4053232,2024-04-23
-MC-1236,PIED PIPER MFG#56,mfg1035@plant.net,武汉,1222634,03/24/2017
-MC-1237,  Globex MFG#57  ,  mfg1036@industry.com  ,深圳,"$2,325,290.00",2024-08-20
-MC-1238,Dunder Mifflin MFG#58,  mfg1037@factory.org  ,北京,"$4,893,615.00",08/28/2021
-MC-1239,UMBRELLA CO MFG#59,mfg1038@plant.net,上海,4410507,2022-01-23
-MC-1240,WEYLAND-YUTANI MFG#60,mfg1039@industry.com,苏州,2850612,2019-05-22
-MC-1241,Weyland-Yutani MFG#61,MFG1040@FACTORY.ORG,武汉,4 157 407,2024-06-16
-MC-1242,UMBRELLA CO MFG#62,MFG1041@PLANT.NET,苏州,2452777,08-02-2020
-MC-1243,Weyland-Yutani MFG#63,mfg1042@industry.com,南京,"$1,801,109.00",04/11/2026
-MC-1244,VANDELAY MFG#64,mfg1043@plant.net,杭州,3790587,2026-03-08
-MC-1245,  Initech MFG#65  ,mfg1044@plant.net,深圳,598248,09/24/2017
-MC-1246,Weyland-Yutani MFG#66,MFG1045@FACTORY.ORG,深圳,"3 912 327,00",12/09/2022
-MC-1247,Aperture MFG#67,MFG1046@PLANT.NET,南京,2288838,12/26/2015
-MC-1248,VANDELAY MFG#68,mfg1047@plant.net,北京,"$3,975,759.00",2017-11-12
-MC-1249,LexCorp MFG#69,mfg1048@industry.com,武汉,"$179,758.00",2024-11-28
-MC-1250,PIED PIPER MFG#70,  mfg1049@plant.net  ,成都,"$4,901,710.00",2021-08-22
-MC-1251,Hooli MFG#71,mfg1050@factory.org,广州,3526603,04/07/2021
-MC-1252,Wayne Enterprises MFG#72,  mfg1051@factory.org  ,武汉,"$1,224,472.00",17-01-2020
-MC-1253,CYBERDYNE MFG#73,mfg1052@industry.com,武汉,1 994 829,04/07/2022
-MC-1254,Massive Dynamic MFG#74,mfg1053@factory.org,杭州,803384,2019-06-15
-MC-1255,Aperture MFG#75,mfg1054@industry.com,西安,"$3,749,814.00",04/11/2018
-MC-1256,  Hooli MFG#76  ,mfg1055@industry.com,武汉,2099157,2019-03-13
-MC-1257,Massive Dynamic MFG#77,mfg1056@factory.org,南京,"$3,697,836.00",2025-10-04
-MC-1258,Massive Dynamic MFG#78,mfg1057@factory.org,北京,4064293,2019-04-24
-MC-1259,Pied Piper MFG#79,mfg1058@plant.net,苏州,"$1,152,164.00",10/15/2023
-MC-1260,lexcorp mfg#80,mfg1059@factory.org,北京,4 810 263,02/03/2015
-MC-1261,Acme Corp MFG#81,MFG1060@FACTORY.ORG,广州,1840041,01/15/2018
-MC-1262,Aperture MFG#82,mfg1061@industry.com,南京,3295697,17-08-2018
-MC-1263,vandelay mfg#83,mfg1062@industry.com,广州,735 878,09/05/2019
-MC-1264,BLACK MESA MFG#84,mfg1063@factory.org,武汉,3336746,2024-08-27
-MC-1265,Blue Sun MFG#85,mfg1064@plant.net,西安,2520115,2026-05-27
-MC-1266,Stark Industries MFG#86,MFG1065@PLANT.NET,深圳,"$99,586.00",13-11-2015
-MC-1267,  Umbrella Co MFG#87  ,MFG1066@FACTORY.ORG,苏州,"$2,223,287.00",2023-12-04
-MC-1268,WEYLAND-YUTANI MFG#88,mfg1067@industry.com,杭州,"$4,378,878.00",19-07-2026
-MC-1269,Tyrell Corp MFG#0,mfg1068@factory.org,广州,233839,2026-01-01
-MC-1270,  Black Mesa MFG#1  ,mfg1069@plant.net,南京,2291896,04/20/2026
-MC-1271,Globex MFG#2,MFG1070@INDUSTRY.COM,西安,3122073,2016-05-20
-MC-1272,cyberdyne mfg#3,MFG1071@PLANT.NET,武汉,3132466,2026-04-03
-MC-1273,PIED PIPER MFG#4,mfg1072@industry.com,西安,3118670,18-06-2021
-MC-1274,wonka mfg#5,  mfg1073@factory.org  ,西安,"$907,080.00",04-12-2025
-MC-1275,Initech MFG#6,MFG1074@PLANT.NET,北京,"$1,166,508.00",2024-10-07
-MC-1276,  Umbrella Co MFG#7  ,mfg1075@factory.org,杭州,"$1,289,419.00",2021-11-16
-MC-1277,Globex MFG#8,mfg1076@factory.org,西安,1 788 934,2024-04-04
-MC-1278,  Weyland-Yutani MFG#9  ,mfg1077@factory.org,上海,"$3,969,744.00",05/03/2025
-MC-1279,LexCorp MFG#10,MFG1078@FACTORY.ORG,西安,3213938,2021-06-07
-MC-1280,Acme Corp MFG#11,mfg1079@plant.net,北京,"434 708,00",02/23/2017
-MC-1281,Blue Sun MFG#12,  mfg1080@industry.com  ,上海,"$1,128,649.00",02/21/2018
-MC-1282,massive dynamic mfg#13,  mfg1081@plant.net  ,广州,4842730,2020-06-04
-MC-1283,LEXCORP MFG#14,mfg1082@factory.org,北京,"$4,758,064.00",2018-05-21
-MC-1284,Vandelay MFG#15,mfg1083@factory.org,广州,1269328,2015-04-20
-MC-1285,LEXCORP MFG#16,  mfg1084@factory.org  ,成都,785217,01/15/2018
-MC-1286,BLUE SUN MFG#17,mfg1085@industry.com,南京,"$4,851,601.00",2025-07-20
-MC-1287,LexCorp MFG#18,mfg1086@plant.net,西安,"$2,204,924.00",2016-03-21
-MC-1288,APERTURE MFG#19,mfg1087@plant.net,武汉,4123856,2016-03-18
-MC-1289,Aperture MFG#20,mfg1088@industry.com,苏州,4 200 513,2020-03-05
-MC-1290,PIED PIPER MFG#21,mfg1089@plant.net,武汉,3544423,2024-02-05
-MC-1291,Cyberdyne MFG#22,mfg1090@factory.org,杭州,2797644,28-01-2021
-MC-1292,Cyberdyne MFG#23,mfg1091@plant.net,上海,"1 753 548,00",2021-01-17
-MC-1293,Vandelay MFG#24,  mfg1092@industry.com  ,南京,1310629,2017-06-22
-MC-1294,  Wayne Enterprises MFG#25  ,  mfg1093@factory.org  ,北京,170444,2023-10-22
-MC-1295,Pied Piper MFG#26,mfg1094@factory.org,北京,"$4,995,944.00",07-07-2018
-MC-1296,  Initech MFG#27  ,  mfg1095@industry.com  ,上海,1 670 638,12/13/2015
-MC-1297,Wonka MFG#28,mfg1096@factory.org,武汉,"$248,831.00",18-04-2015
-MC-1298,DUNDER MIFFLIN MFG#29,  mfg1097@factory.org  ,深圳,4210746,2025-12-19
-MC-1299,  Umbrella Co MFG#30  ,mfg1098@factory.org,深圳,4760309,2015-11-13
-MC-1300,Stark Industries MFG#31,  mfg1099@industry.com  ,苏州,1002166,01/08/2018
-MC-1301,  Black Mesa MFG#32  ,mfg1100@plant.net,武汉,"989 044,00",2017-11-19
-MC-1302,Vandelay MFG#33,mfg1101@industry.com,苏州,3058599,2026-12-15
-MC-1303,Wayne Enterprises MFG#34,mfg1102@plant.net,深圳,3851461,03/19/2024
-MC-1304,LexCorp MFG#35,MFG1103@PLANT.NET,武汉,1386285,2018-03-26
-MC-1305,Wayne Enterprises MFG#36,MFG1104@INDUSTRY.COM,深圳,1582127,05/19/2015
-MC-1306,Pied Piper MFG#37,mfg1105@plant.net,南京,3629190,2020-06-13
-MC-1307,Black Mesa MFG#38,mfg1106@industry.com,南京,"$2,278,645.00",2024-06-15
-MC-1308,Wonka MFG#39,mfg1107@plant.net,苏州,"$1,473,581.00",2021-12-16
-MC-1309,Wonka MFG#40,mfg1108@plant.net,广州,4383108,27-06-2026
-MC-1310,Oscorp MFG#41,mfg1109@plant.net,南京,"$2,354,130.00",2024-04-10
-MC-1311,Initech MFG#42,  mfg1110@factory.org  ,北京,1166388,2021-09-26
-MC-1312,Vandelay MFG#43,mfg1111@factory.org,苏州,2633870,2026-09-25
-MC-1313,Massive Dynamic MFG#44,mfg1112@factory.org,武汉,"$3,288,355.00",2022-02-22
-MC-1314,  Hooli MFG#45  ,MFG1113@FACTORY.ORG,苏州,"$4,126,026.00",2021-05-28
-MC-1315,Initech MFG#46,mfg1114@factory.org,深圳,3464343,02/10/2020
-MC-1316,  Initech MFG#47  ,  mfg1115@plant.net  ,武汉,4526869,04/17/2023
-MC-1317,Initech MFG#48,mfg1116@factory.org,深圳,4044158,2016-01-07
-MC-1318,Wonka MFG#49,mfg1117@plant.net,南京,"$3,206,585.00",07-02-2021
-MC-1319,Hooli MFG#50,  mfg1118@plant.net  ,武汉,2 320 638,27-06-2025
-MC-1320,  Black Mesa MFG#51  ,mfg1119@factory.org,成都,4 008 201,01/17/2026
-MC-1321,LEXCORP MFG#52,mfg1120@plant.net,苏州,1 151 542,2025-09-18
-MC-1322,Wayne Enterprises MFG#53,  mfg1121@industry.com  ,深圳,1256818,07-12-2026
-MC-1323,Dunder Mifflin MFG#54,mfg1122@plant.net,成都,"$3,296,881.00",2020-10-16
-MC-1324,Massive Dynamic MFG#55,mfg1123@plant.net,上海,"$2,428,225.00",24-05-2024
-MC-1325,  Acme Corp MFG#56  ,MFG1124@PLANT.NET,北京,4467035,2024-04-16
-MC-1326,  Cyberdyne MFG#57  ,  mfg1125@factory.org  ,上海,3057814,02/21/2020
-MC-1327,Vandelay MFG#58,mfg1126@plant.net,北京,"$4,263,509.00",2015-11-25
-MC-1328,  Stark Industries MFG#59  ,mfg1127@industry.com,苏州,2 001 359,07/05/2022
-MC-1329,Umbrella Co MFG#60,mfg1128@plant.net,广州,"$2,018,162.00",2016-06-02
-MC-1330,Globex MFG#61,mfg1129@plant.net,深圳,"$4,659,294.00",2026-07-27
-MC-1331,Initech MFG#62,mfg1130@factory.org,苏州,2 460 388,22-06-2024
-MC-1332,Globex MFG#63,mfg1131@industry.com,深圳,1271236,2018-11-22
-MC-1333,  Umbrella Co MFG#64  ,mfg1132@industry.com,西安,108038,03/28/2021
-MC-1334,  Wonka MFG#65  ,MFG1133@INDUSTRY.COM,西安,4936560,11/05/2015
-MC-1335,Oscorp MFG#66,  mfg1134@plant.net  ,杭州,"$1,510,854.00",02/11/2017
-MC-1336,Acme Corp MFG#67,mfg1135@plant.net,杭州,3913994,2025-08-19
-MC-1337,STARK INDUSTRIES MFG#68,mfg1136@factory.org,深圳,"3 112 679,00",03/02/2025
-MC-1338,Aperture MFG#69,mfg1137@industry.com,成都,"2 370 364,00",09/17/2017
-MC-1339,ACME CORP MFG#70,mfg1138@plant.net,成都,4967479,2016-01-26
-MC-1340,STARK INDUSTRIES MFG#71,  mfg1139@industry.com  ,苏州,3747494,09/11/2017
-MC-1341,Oscorp MFG#72,mfg1140@plant.net,北京,"$806,330.00",2025-09-23
-MC-1342,Hooli MFG#73,MFG1141@PLANT.NET,西安,3415847,03-11-2015
-MC-1343,Acme Corp MFG#74,  mfg1142@factory.org  ,成都,"$3,774,848.00",2022-11-15
-MC-1344,Vandelay MFG#75,mfg1143@industry.com,武汉,"$1,097,795.00",11-07-2021
-MC-1345,Weyland-Yutani MFG#76,mfg1144@plant.net,北京,"$4,159,950.00",16-03-2026
-MC-1346,OSCORP MFG#77,mfg1145@factory.org,苏州,2 934 545,21-06-2021
-MC-1347,HOOLI MFG#78,mfg1146@plant.net,北京,2988571,05/05/2022
-MC-1348,Wayne Enterprises MFG#79,mfg1147@industry.com,南京,1812170,04/23/2020
-MC-1349,Globex MFG#80,  mfg1148@plant.net  ,西安,"$4,544,130.00",2021-12-21
-MC-1350,Massive Dynamic MFG#81,mfg1149@plant.net,杭州,2837064,22-05-2017
-MC-1351,wonka mfg#82,mfg1150@industry.com,深圳,"$4,861,728.00",2018-01-26
-MC-1352,Acme Corp MFG#83,mfg1151@factory.org,北京,3 274 934,01/24/2023
-MC-1353,Acme Corp MFG#84,MFG1152@INDUSTRY.COM,深圳,"1 718 131,00",08/10/2019
-MC-1354,  Stark Industries MFG#85  ,  mfg1153@plant.net  ,广州,4369647,2020-04-22
-MC-1355,  Initech MFG#86  ,mfg1154@factory.org,上海,68697,16-01-2021
-MC-1356,  Stark Industries MFG#87  ,mfg1155@plant.net,苏州,"475 559,00",2019-10-18
-MC-1357,Dunder Mifflin MFG#88,mfg1156@plant.net,成都,4807802,07/24/2015
-MC-1358,Cyberdyne MFG#0,mfg1157@industry.com,杭州,"$1,079,961.00",01/22/2015
-MC-1359,Hooli MFG#1,mfg1158@industry.com,成都,"$1,044,657.00",2026-07-08
-MC-1360,Vandelay MFG#2,mfg1159@plant.net,杭州,"$147,844.00",2022-10-10
-MC-1361,  Massive Dynamic MFG#3  ,mfg1160@factory.org,武汉,1318416,2020-05-16
-MC-1362,Massive Dynamic MFG#4,  mfg1161@plant.net  ,苏州,"$3,881,095.00",14-01-2025
-MC-1363,pied piper mfg#5,mfg1162@factory.org,南京,"$4,853,573.00",2015-09-01
-MC-1364,Umbrella Co MFG#6,mfg1163@factory.org,南京,"$2,757,983.00",2026-04-16
-MC-1365,Stark Industries MFG#7,mfg1164@industry.com,广州,4 396 802,2015-09-14
-MC-1366,  Globex MFG#8  ,  mfg1165@factory.org  ,南京,"2 283 442,00",2019-04-23
-MC-1367,OSCORP MFG#9,  mfg1166@plant.net  ,杭州,3006677,2016-07-17
-MC-1368,WAYNE ENTERPRISES MFG#10,MFG1167@INDUSTRY.COM,武汉,2573836,2025-09-15
-MC-1369,tyrell corp mfg#11,mfg1168@plant.net,西安,2316937,20-03-2023
-MC-1370,Umbrella Co MFG#12,mfg1169@industry.com,成都,2454440,02-02-2022
-MC-1371,INITECH MFG#13,mfg1170@plant.net,苏州,"$880,612.00",2023-04-22
-MC-1372,Acme Corp MFG#14,  mfg1171@industry.com  ,成都,1379485,18-03-2018
-MC-1373,wayne enterprises mfg#15,mfg1172@factory.org,成都,74783,18-07-2024
-MC-1374,  Pied Piper MFG#16  ,mfg1173@plant.net,深圳,"$1,225,392.00",23-09-2026
-MC-1375,APERTURE MFG#17,mfg1174@factory.org,上海,"$3,726,484.00",2023-11-19
-MC-1376,vandelay mfg#18,mfg1175@industry.com,杭州,"$3,988,089.00",28-01-2022
-MC-1377,Acme Corp MFG#19,mfg1176@industry.com,杭州,1324020,2015-06-15
-MC-1378,OSCORP MFG#20,mfg1177@factory.org,西安,3251307,04-06-2019
-MC-1379,Vandelay MFG#21,MFG1178@PLANT.NET,杭州,"$1,496,840.00",2026-02-19
-MC-1380,  Cyberdyne MFG#22  ,  mfg1179@industry.com  ,成都,"$1,003,914.00",11/08/2018
-MC-1381,Black Mesa MFG#23,mfg1180@industry.com,西安,"$1,082,510.00",2018-04-11
-MC-1382,Blue Sun MFG#24,MFG1181@PLANT.NET,武汉,1685882,2023-10-10
-MC-1383,Wonka MFG#25,mfg1182@industry.com,深圳,1397840,03/23/2024
-MC-1384,Initech MFG#26,mfg1183@plant.net,苏州,887555,10/01/2019
-MC-1385,Acme Corp MFG#27,MFG1184@INDUSTRY.COM,深圳,"$4,520,259.00",2018-06-02
-MC-1386,Wayne Enterprises MFG#28,mfg1185@plant.net,杭州,"$2,005,727.00",2026-05-04
-MC-1387,Aperture MFG#29,mfg1186@factory.org,南京,404030,01/25/2017
-MC-1388,Hooli MFG#30,  mfg1187@factory.org  ,南京,4234311,07/03/2015
-MC-1389,Wayne Enterprises MFG#31,mfg1188@industry.com,苏州,"$685,201.00",2022-06-21
-MC-1390,APERTURE MFG#32,mfg1189@factory.org,苏州,4757499,2025-08-10
-MC-1391,  Massive Dynamic MFG#33  ,MFG1190@PLANT.NET,武汉,3 176 624,2015-08-19
-MC-1392,WONKA MFG#34,  mfg1191@plant.net  ,深圳,3463057,2021-09-27
-MC-1393,Cyberdyne MFG#35,MFG1192@PLANT.NET,广州,721818,25-10-2023
-MC-1394,LEXCORP MFG#36,mfg1193@plant.net,南京,3848753,02/09/2020
-MC-1395,Weyland-Yutani MFG#37,mfg1194@factory.org,上海,510742,10/16/2017
-MC-1396,  Acme Corp MFG#38  ,mfg1195@plant.net,南京,1384756,05/15/2023
-MC-1397,HOOLI MFG#39,mfg1196@plant.net,西安,"$2,274,551.00",10/22/2017
-MC-1398,  Aperture MFG#40  ,MFG1197@INDUSTRY.COM,苏州,"1 214 696,00",2020-09-03
-MC-1399,WAYNE ENTERPRISES MFG#41,mfg1198@industry.com,南京,2783607,02/27/2025
-MC-1400,Tyrell Corp MFG#42,mfg1199@factory.org,上海,2419763,2018-11-27
+MC-281,Hooli MFG#80,MFG80@FACTORY.ORG,深圳,"$85,524.00",06/23/2017
+MC-282,LEXCORP MFG#81,mfg81@industry.com,成都,"$1,460,999.00",2023-01-09
+MC-283,black mesa mfg#82,mfg82@factory.org,苏州,1286652,19-01-2021
+MC-284,Pied Piper MFG#83,  mfg83@plant.net  ,苏州,"1,688,799.00",01-09-2015
+MC-285,  Vandelay MFG#84  ,mfg84@factory.org,上海,4258682,15-12-2020
+MC-286,aperture mfg#85,MFG85@FACTORY.ORG,上海,"3,052,438.00",01/15/2019
+MC-287,Umbrella Co MFG#86,mfg86@plant.net,成都,2215791,01/02/2021
+MC-288,Black Mesa MFG#87,  mfg87@industry.com  ,苏州,"4,642,024.00",2024-03-10
+MC-289,  Wayne Enterprises MFG#88  ,mfg88@plant.net,苏州,"2,172,554.00",2025-11-20
+MC-290,massive dynamic mfg#0,mfg89@industry.com,成都,"2,484,631.00",07/05/2018
+MC-291,  Cyberdyne MFG#1  ,MFG90@PLANT.NET,杭州,3685839,2024-04-03
+MC-292,  Aperture MFG#2  ,mfg91@industry.com,成都,4379183,2026-11-23
+MC-293,vandelay mfg#3,  mfg92@plant.net  ,西安,"3,728,932.00",2017-10-11
+MC-294,Pied Piper MFG#4,  mfg93@plant.net  ,苏州,"1,313,610.00",28-11-2026
+MC-295,stark industries mfg#5,  mfg94@plant.net  ,杭州,3979107,02/08/2023
+MC-296,Blue Sun MFG#6,  mfg95@industry.com  ,苏州,4520318,2017-01-05
+MC-297,  Weyland-Yutani MFG#7  ,MFG96@FACTORY.ORG,北京,"3,666,916.00",2024-12-01
+MC-298,Massive Dynamic MFG#8,mfg97@plant.net,西安,2791950,2018-11-16
+MC-299,  Massive Dynamic MFG#9  ,MFG98@FACTORY.ORG,南京,2492947,2016-07-17
+MC-300,  Wayne Enterprises MFG#10  ,mfg99@plant.net,广州,3431906,2019-11-08
+MC-301,globex mfg#11,MFG100@PLANT.NET,上海,"$1,637,083.00",11-05-2016
+MC-302,vandelay mfg#12,mfg101@plant.net,成都,"$4,444,824.00",2025-02-13
+MC-303,Oscorp MFG#13,mfg102@factory.org,成都,"$2,444,711.00",2020-11-05
+MC-304,  Pied Piper MFG#14  ,mfg103@plant.net,深圳,2406366,05/28/2016
+MC-305,Wonka MFG#15,mfg104@industry.com,上海,719272,21-07-2015
+MC-306,Globex MFG#16,  mfg105@factory.org  ,上海,1670168,22-08-2021
+MC-307,Pied Piper MFG#17,mfg106@plant.net,南京,212310,06/20/2022
+MC-308,  Cyberdyne MFG#18  ,mfg107@factory.org,成都,"449,961.00",2022-02-03
+MC-309,Black Mesa MFG#19,mfg108@factory.org,上海,4028561,2017-12-26
+MC-310,GLOBEX MFG#20,mfg109@industry.com,杭州,785736,2021-08-12
+MC-311,Dunder Mifflin MFG#21,mfg110@industry.com,广州,3904654,2020-01-10
+MC-312,  Wonka MFG#22  ,MFG111@FACTORY.ORG,成都,"3,405,709.00",2017-02-27
+MC-313,LexCorp MFG#23,MFG112@FACTORY.ORG,深圳,"715,628.00",2016-12-02
+MC-314,Massive Dynamic MFG#24,  mfg113@factory.org  ,杭州,"3,784,196.00",2019-04-14
+MC-315,LexCorp MFG#25,MFG114@FACTORY.ORG,上海,"$1,115,287.00",2026-12-25
+MC-316,  Acme Corp MFG#26  ,  mfg115@factory.org  ,杭州,"4,090,115.00",08/03/2018
+MC-317,Cyberdyne MFG#27,MFG116@FACTORY.ORG,成都,"2,934,157.00",07-12-2023
+MC-318,  Acme Corp MFG#28  ,mfg117@factory.org,上海,"$2,475,993.00",2023-10-09
+MC-319,Dunder Mifflin MFG#29,mfg118@plant.net,杭州,"$716,671.00",2026-03-15
+MC-320,Massive Dynamic MFG#30,MFG119@FACTORY.ORG,苏州,1904141,2026-12-03
+MC-321,Black Mesa MFG#31,mfg120@industry.com,深圳,220888,02/01/2021
+MC-322,  Blue Sun MFG#32  ,MFG121@FACTORY.ORG,成都,4075159,15-08-2018
+MC-323,Initech MFG#33,mfg122@factory.org,杭州,"$1,659,953.00",2018-01-06
+MC-324,WAYNE ENTERPRISES MFG#34,mfg123@factory.org,杭州,"$1,347,634.00",2016-08-26
+MC-325,Weyland-Yutani MFG#35,mfg124@factory.org,成都,"4,240,090.00",01/10/2023
+MC-326,blue sun mfg#36,MFG125@PLANT.NET,苏州,"3,402,149.00",04/09/2017
+MC-327,Blue Sun MFG#37,mfg126@factory.org,西安,611695,2019-05-26
+MC-328,LexCorp MFG#38,mfg127@industry.com,广州,"$1,842,627.00",2018-05-28
+MC-329,Wonka MFG#39,  mfg128@industry.com  ,成都,4102917,2024-08-08
+MC-330,Wonka MFG#40,mfg129@plant.net,西安,"$1,373,611.00",17-11-2021
+MC-331,Tyrell Corp MFG#41,  mfg130@factory.org  ,北京,1944491,2025-02-26
+MC-332,Hooli MFG#42,  mfg131@industry.com  ,西安,"1,955,279.00",02-05-2024
+MC-333,PIED PIPER MFG#43,mfg132@industry.com,上海,286305,2016-09-05
+MC-334,Initech MFG#44,  mfg133@plant.net  ,广州,"$1,063,113.00",09/26/2020
+MC-335,Massive Dynamic MFG#45,  mfg134@plant.net  ,上海,3463087,2015-11-23
+MC-336,CYBERDYNE MFG#46,mfg135@industry.com,上海,"$1,715,453.00",2017-10-21
+MC-337,  Wonka MFG#47  ,mfg136@factory.org,广州,"$2,870,173.00",2016-12-27
+MC-338,Vandelay MFG#48,mfg137@plant.net,北京,1636577,2017-07-08
+MC-339,  Massive Dynamic MFG#49  ,mfg138@industry.com,上海,364552,21-06-2016
+MC-340,Initech MFG#50,mfg139@factory.org,北京,2254744,2015-05-24
+MC-341,Oscorp MFG#51,  mfg140@industry.com  ,成都,2125553,2016-09-15
+MC-342,Oscorp MFG#52,mfg141@plant.net,北京,4066049,01/28/2017
+MC-343,CYBERDYNE MFG#53,mfg142@industry.com,上海,4746512,2025-06-01
+MC-344,massive dynamic mfg#54,mfg143@factory.org,南京,2116369,2017-04-08
+MC-345,  Hooli MFG#55  ,  mfg144@industry.com  ,深圳,"$4,337,966.00",2022-05-21
+MC-346,  Wayne Enterprises MFG#56  ,mfg145@industry.com,杭州,"$231,342.00",2015-06-03
+MC-347,GLOBEX MFG#57,  mfg146@industry.com  ,广州,"$3,610,758.00",11/05/2015
+MC-348,LexCorp MFG#58,  mfg147@plant.net  ,杭州,"4,714,635.00",09/09/2025
+MC-349,Aperture MFG#59,mfg148@factory.org,广州,4164290,2016-04-08
+MC-350,Stark Industries MFG#60,mfg149@plant.net,武汉,1714887,02/19/2021
+MC-351,Hooli MFG#61,MFG150@PLANT.NET,南京,80208,2020-06-21
+MC-352,tyrell corp mfg#62,mfg151@plant.net,武汉,"$267,146.00",02-07-2022
+MC-353,  Wayne Enterprises MFG#63  ,mfg152@plant.net,杭州,"$4,278,583.00",12-10-2025
+MC-354,VANDELAY MFG#64,mfg153@industry.com,成都,1513771,2019-10-07
+MC-355,INITECH MFG#65,  mfg154@plant.net  ,广州,4729854,09-09-2026
+MC-356,INITECH MFG#66,  mfg155@industry.com  ,武汉,3147515,11/14/2020
+MC-357,Umbrella Co MFG#67,mfg156@factory.org,广州,"3,322,107.00",2020-03-24
+MC-358,Wayne Enterprises MFG#68,mfg157@industry.com,广州,"$1,715,153.00",03/07/2016
+MC-359,  Black Mesa MFG#69  ,MFG158@PLANT.NET,西安,4885298,2023-12-10
+MC-360,globex mfg#70,MFG159@INDUSTRY.COM,武汉,4446489,2022-08-21
+MC-361,OSCORP MFG#71,mfg160@industry.com,西安,1141378,11/22/2016
+MC-362,Black Mesa MFG#72,MFG161@INDUSTRY.COM,西安,"$3,868,774.00",2019-09-09
+MC-363,TYRELL CORP MFG#73,  mfg162@plant.net  ,深圳,"1,088,906.00",2016-08-25
+MC-364,  Pied Piper MFG#74  ,  mfg163@plant.net  ,武汉,"$4,980,966.00",01-01-2026
+MC-365,Globex MFG#75,MFG164@PLANT.NET,西安,"1,468,516.00",19-02-2018
+MC-366,Massive Dynamic MFG#76,mfg165@industry.com,广州,"$3,575,811.00",12/12/2026
+MC-367,UMBRELLA CO MFG#77,mfg166@plant.net,南京,"2,992,431.00",2025-05-14
+MC-368,Aperture MFG#78,mfg167@plant.net,西安,2777217,15-10-2025
+MC-369,Wayne Enterprises MFG#79,  mfg168@industry.com  ,广州,"4,536,878.00",2024-02-03
+MC-370,Cyberdyne MFG#80,mfg169@plant.net,成都,"$4,184,036.00",2023-03-22
+MC-371,WONKA MFG#81,mfg170@industry.com,成都,"$2,225,907.00",2018-08-23
+MC-372,Initech MFG#82,mfg171@factory.org,成都,3324599,08/07/2025
+MC-373,Weyland-Yutani MFG#83,MFG172@FACTORY.ORG,南京,1991511,2022-12-20
+MC-374,LexCorp MFG#84,mfg173@plant.net,南京,"1,166,186.00",2021-11-26
+MC-375,LEXCORP MFG#85,mfg174@factory.org,杭州,"1,348,749.00",10/11/2026
+MC-376,Umbrella Co MFG#86,MFG175@PLANT.NET,杭州,"$1,671,811.00",2017-01-15
+MC-377,  Massive Dynamic MFG#87  ,  mfg176@factory.org  ,成都,"2,134,127.00",06/28/2021
+MC-378,  Aperture MFG#88  ,mfg177@factory.org,武汉,4788285,01/18/2021
+MC-379,  Initech MFG#0  ,  mfg178@plant.net  ,苏州,4969999,2026-11-26
+MC-380,black mesa mfg#1,mfg179@industry.com,西安,"$457,359.00",10/08/2019
+MC-381,oscorp mfg#2,MFG180@PLANT.NET,成都,"1,322,585.00",2023-10-15
+MC-382,Globex MFG#3,MFG181@INDUSTRY.COM,苏州,"4,140,723.00",2015-09-02
+MC-383,Globex MFG#4,mfg182@factory.org,南京,"911,388.00",2025-06-08
+MC-384,WAYNE ENTERPRISES MFG#5,mfg183@industry.com,北京,"$4,865,656.00",10-07-2016
+MC-385,Black Mesa MFG#6,  mfg184@factory.org  ,苏州,2875115,02/14/2026
+MC-386,Blue Sun MFG#7,MFG185@PLANT.NET,南京,"$2,660,626.00",24-06-2026
+MC-387,Initech MFG#8,mfg186@plant.net,成都,"$895,704.00",03/24/2022
+MC-388,Massive Dynamic MFG#9,mfg187@industry.com,苏州,3447165,07/21/2023
+MC-389,INITECH MFG#10,mfg188@plant.net,杭州,986622,2023-10-21
+MC-390,aperture mfg#11,  mfg189@plant.net  ,西安,522568,2026-12-26
+MC-391,BLACK MESA MFG#12,MFG190@INDUSTRY.COM,上海,3862152,2021-10-18
+MC-392,CYBERDYNE MFG#13,mfg191@industry.com,成都,1414276,04/27/2018
+MC-393,  Vandelay MFG#14  ,mfg192@industry.com,西安,"$871,984.00",2017-10-14
+MC-394,Wayne Enterprises MFG#15,  mfg193@plant.net  ,西安,"$2,672,024.00",04/17/2022
+MC-395,Acme Corp MFG#16,mfg194@factory.org,苏州,4633118,2023-05-23
+MC-396,Aperture MFG#17,  mfg195@factory.org  ,苏州,2224145,01/15/2020
+MC-397,Cyberdyne MFG#18,mfg196@plant.net,武汉,"$3,920,758.00",2016-12-17
+MC-398,Weyland-Yutani MFG#19,  mfg197@plant.net  ,杭州,"3,258,356.00",2019-11-03
+MC-399,Wayne Enterprises MFG#20,mfg198@plant.net,西安,4582659,2015-01-01
+MC-400,GLOBEX MFG#21,mfg199@plant.net,广州,"4,794,004.00",01/07/2024
+MC-401,APERTURE MFG#22,mfg200@industry.com,成都,2161602,05/27/2020
+MC-402,Blue Sun MFG#23,mfg201@factory.org,北京,3366810,03/24/2021
+MC-403,  Initech MFG#24  ,mfg202@industry.com,西安,"3,722,329.00",2025-12-07
+MC-404,OSCORP MFG#25,MFG203@PLANT.NET,深圳,"1,611,235.00",2026-09-27
+MC-405,vandelay mfg#26,mfg204@industry.com,上海,"2,628,171.00",12/03/2015
+MC-406,ACME CORP MFG#27,MFG205@INDUSTRY.COM,杭州,4312132,05/11/2015
+MC-407,Wonka MFG#28,mfg206@plant.net,成都,2208602,24-12-2023
+MC-408,  Umbrella Co MFG#29  ,MFG207@INDUSTRY.COM,西安,3802431,08/01/2018
+MC-409,Tyrell Corp MFG#30,mfg208@plant.net,杭州,"2,983,939.00",11-01-2017
+MC-410,Stark Industries MFG#31,mfg209@plant.net,上海,341231,08-02-2021
+MC-411,tyrell corp mfg#32,mfg210@industry.com,深圳,1364632,21-04-2015
+MC-412,Massive Dynamic MFG#33,  mfg211@industry.com  ,武汉,4041547,08/21/2017
+MC-413,VANDELAY MFG#34,  mfg212@factory.org  ,广州,"$618,339.00",08/22/2020
+MC-414,Acme Corp MFG#35,mfg213@industry.com,南京,3140312,2017-07-09
+MC-415,Vandelay MFG#36,mfg214@industry.com,苏州,1512792,2023-08-27
+MC-416,  Black Mesa MFG#37  ,  mfg215@factory.org  ,上海,"$3,001,640.00",05/13/2015
+MC-417,OSCORP MFG#38,mfg216@plant.net,西安,1555701,2020-07-27
+MC-418,OSCORP MFG#39,mfg217@industry.com,上海,"$4,575,363.00",07/21/2016
+MC-419,  Cyberdyne MFG#40  ,mfg218@industry.com,上海,"3,233,101.00",07-07-2017
+MC-420,Oscorp MFG#41,mfg219@factory.org,武汉,4541549,15-02-2022
+MC-421,Dunder Mifflin MFG#42,mfg220@factory.org,西安,"$663,774.00",11/05/2023
+MC-422,Hooli MFG#43,MFG221@INDUSTRY.COM,成都,3533859,09/11/2020
+MC-423,Vandelay MFG#44,MFG222@FACTORY.ORG,深圳,4656084,25-04-2020
+MC-424,Vandelay MFG#45,  mfg223@industry.com  ,成都,"962,460.00",2021-01-22
+MC-425,Vandelay MFG#46,mfg224@factory.org,深圳,464994,2015-05-05
+MC-426,Weyland-Yutani MFG#47,mfg225@plant.net,成都,3476291,2018-08-18
+MC-427,Dunder Mifflin MFG#48,MFG226@INDUSTRY.COM,北京,"1,152,567.00",2023-07-09
+MC-428,  Dunder Mifflin MFG#49  ,MFG227@INDUSTRY.COM,上海,"4,164,799.00",2016-10-21
+MC-429,  Oscorp MFG#50  ,mfg228@factory.org,广州,"4,265,508.00",2017-05-04
+MC-430,  Black Mesa MFG#51  ,mfg229@factory.org,上海,"942,250.00",26-09-2018
+MC-431,  Weyland-Yutani MFG#52  ,MFG230@INDUSTRY.COM,深圳,2123683,2024-08-06
+MC-432,Aperture MFG#53,mfg231@plant.net,上海,107430,2020-01-05
+MC-433,ACME CORP MFG#54,MFG232@FACTORY.ORG,杭州,"3,357,602.00",01/22/2024
+MC-434,  Black Mesa MFG#55  ,mfg233@factory.org,西安,"3,759,825.00",2019-09-22
+MC-435,Blue Sun MFG#56,mfg234@industry.com,北京,456712,20-08-2016
+MC-436,DUNDER MIFFLIN MFG#57,  mfg235@industry.com  ,上海,"4,400,131.00",08/17/2025
+MC-437,acme corp mfg#58,mfg236@industry.com,西安,"$774,170.00",26-02-2017
+MC-438,Blue Sun MFG#59,mfg237@plant.net,西安,"3,448,039.00",2024-10-09
+MC-439,Dunder Mifflin MFG#60,mfg238@industry.com,武汉,"4,737,292.00",07-04-2023
+MC-440,cyberdyne mfg#61,mfg239@plant.net,成都,"2,929,745.00",06/15/2015
+MC-441,Acme Corp MFG#62,MFG240@PLANT.NET,南京,"1,963,486.00",09-03-2020
+MC-442,VANDELAY MFG#63,mfg241@plant.net,杭州,"4,773,816.00",2020-02-08
+MC-443,Stark Industries MFG#64,mfg242@factory.org,武汉,1979234,2016-03-02
+MC-444,Massive Dynamic MFG#65,  mfg243@factory.org  ,杭州,"1,653,637.00",2024-07-13
+MC-445,  Massive Dynamic MFG#66  ,mfg244@industry.com,广州,3069380,2019-09-03
+MC-446,BLACK MESA MFG#67,  mfg245@factory.org  ,广州,1972398,2016-02-14
+MC-447,lexcorp mfg#68,  mfg246@industry.com  ,广州,"979,227.00",2025-03-26
+MC-448,Pied Piper MFG#69,  mfg247@factory.org  ,北京,419529,2024-04-04
+MC-449,ACME CORP MFG#70,mfg248@factory.org,西安,"$3,815,114.00",04-08-2015
+MC-450,  Acme Corp MFG#71  ,mfg249@industry.com,南京,"$2,424,726.00",17-07-2016
+MC-451,  Dunder Mifflin MFG#72  ,mfg250@plant.net,杭州,3663243,07/05/2025
+MC-452,  Tyrell Corp MFG#73  ,MFG251@FACTORY.ORG,西安,"$3,604,269.00",2026-09-26
+MC-453,Vandelay MFG#74,MFG252@PLANT.NET,深圳,"$3,116,450.00",2025-10-20
+MC-454,blue sun mfg#75,  mfg253@plant.net  ,苏州,1858690,10-12-2015
+MC-455,VANDELAY MFG#76,MFG254@INDUSTRY.COM,武汉,807751,2018-04-03
+MC-456,Weyland-Yutani MFG#77,MFG255@PLANT.NET,成都,4667981,2026-08-01
+MC-457,Vandelay MFG#78,mfg256@plant.net,广州,3259230,2015-07-10
+MC-458,Dunder Mifflin MFG#79,MFG257@PLANT.NET,成都,"$2,979,021.00",2019-11-14
+MC-459,PIED PIPER MFG#80,MFG258@INDUSTRY.COM,苏州,1817583,19-07-2023
+MC-460,hooli mfg#81,  mfg259@factory.org  ,杭州,3905417,2026-02-06
+MC-461,Pied Piper MFG#82,MFG260@PLANT.NET,武汉,"3,226,754.00",05/06/2024
+MC-462,  Stark Industries MFG#83  ,  mfg261@industry.com  ,苏州,2058872,2023-04-24
+MC-463,UMBRELLA CO MFG#84,mfg262@industry.com,广州,"$3,578,716.00",2017-09-06
+MC-464,  Pied Piper MFG#85  ,mfg263@factory.org,杭州,"$4,059,060.00",2023-04-28
+MC-465,Massive Dynamic MFG#86,mfg264@industry.com,深圳,"$178,025.00",2016-11-09
+MC-466,Massive Dynamic MFG#87,mfg265@industry.com,武汉,2384072,10/23/2023
+MC-467,  Acme Corp MFG#88  ,MFG266@PLANT.NET,深圳,485693,2015-11-28
+MC-468,PIED PIPER MFG#0,mfg267@industry.com,武汉,"$4,566,945.00",03/17/2022
+MC-469,LexCorp MFG#1,MFG268@INDUSTRY.COM,西安,"1,314,444.00",2020-11-09
+MC-470,Stark Industries MFG#2,mfg269@industry.com,成都,"$3,518,947.00",2019-12-09
+MC-471,GLOBEX MFG#3,mfg270@plant.net,北京,"$4,116,153.00",2017-03-01
+MC-472,  Dunder Mifflin MFG#4  ,mfg271@plant.net,北京,"3,424,533.00",2018-07-06
+MC-473,Blue Sun MFG#5,mfg272@industry.com,广州,2140910,06/16/2025
+MC-474,Vandelay MFG#6,  mfg273@factory.org  ,武汉,"$4,861,463.00",2026-08-09
+MC-475,  Blue Sun MFG#7  ,mfg274@factory.org,深圳,1001293,2022-10-20
+MC-476,  Umbrella Co MFG#8  ,mfg275@factory.org,苏州,"$4,596,009.00",07/02/2015
+MC-477,VANDELAY MFG#9,  mfg276@plant.net  ,南京,"$2,519,726.00",2020-09-22
+MC-478,Initech MFG#10,mfg277@industry.com,南京,"$3,956,992.00",04-07-2022
+MC-479,LEXCORP MFG#11,mfg278@industry.com,深圳,"2,916,072.00",27-12-2018
+MC-480,WONKA MFG#12,MFG279@PLANT.NET,杭州,"222,213.00",05/14/2019
+MC-481,  Stark Industries MFG#13  ,mfg280@plant.net,成都,"$480,374.00",04/20/2025
+MC-482,  Hooli MFG#14  ,MFG281@PLANT.NET,上海,2881015,2023-06-20
+MC-483,TYRELL CORP MFG#15,mfg282@factory.org,上海,4601872,12/28/2026
+MC-484,Massive Dynamic MFG#16,MFG283@INDUSTRY.COM,西安,"$522,579.00",2019-08-21
+MC-485,Oscorp MFG#17,mfg284@plant.net,武汉,627968,2023-11-22
+MC-486,  Wayne Enterprises MFG#18  ,mfg285@plant.net,北京,"3,083,109.00",26-06-2020
+MC-487,STARK INDUSTRIES MFG#19,  mfg286@industry.com  ,苏州,3483477,02/03/2018
+MC-488,APERTURE MFG#20,mfg287@factory.org,西安,2502800,2023-12-22
+MC-489,WONKA MFG#21,mfg288@factory.org,西安,"$695,415.00",01/23/2021
+MC-490,  Cyberdyne MFG#22  ,MFG289@PLANT.NET,上海,2256349,05/28/2026
+MC-491,Umbrella Co MFG#23,mfg290@factory.org,广州,"4,179,622.00",02/17/2015
+MC-492,  Cyberdyne MFG#24  ,mfg291@plant.net,苏州,"$1,958,394.00",02-04-2018
+MC-493,Cyberdyne MFG#25,  mfg292@factory.org  ,武汉,2404573,02/02/2020
+MC-494,VANDELAY MFG#26,mfg293@factory.org,北京,392122,12/07/2017
+MC-495,  Globex MFG#27  ,MFG294@INDUSTRY.COM,苏州,"1,942,464.00",01/20/2026
+MC-496,WONKA MFG#28,mfg295@plant.net,北京,51960,20-07-2020
+MC-497,HOOLI MFG#29,  mfg296@industry.com  ,苏州,"$2,980,175.00",2020-07-05
+MC-498,Hooli MFG#30,MFG297@INDUSTRY.COM,成都,3054096,25-11-2015
+MC-499,Massive Dynamic MFG#31,  mfg298@factory.org  ,深圳,"$1,575,467.00",18-08-2021
+MC-500,APERTURE MFG#32,MFG299@PLANT.NET,北京,393934,10/22/2020
+MC-501,  Wayne Enterprises MFG#33  ,mfg300@factory.org,杭州,1922422,2017-01-01
+MC-502,Pied Piper MFG#34,  mfg301@industry.com  ,深圳,"2,626,510.00",2026-03-16
+MC-503,Pied Piper MFG#35,mfg302@industry.com,西安,"$225,241.00",2021-10-07
+MC-504,LexCorp MFG#36,  mfg303@industry.com  ,南京,"92,844.00",03/19/2026
+MC-505,Aperture MFG#37,mfg304@industry.com,西安,3919454,07/13/2023
+MC-506,GLOBEX MFG#38,mfg305@plant.net,深圳,4085463,02-01-2026
+MC-507,  Black Mesa MFG#39  ,  mfg306@plant.net  ,南京,"365,701.00",2023-05-18
+MC-508,Blue Sun MFG#40,MFG307@INDUSTRY.COM,北京,2135265,2023-12-11
+MC-509,umbrella co mfg#41,mfg308@industry.com,成都,"$3,710,829.00",2022-09-06
+MC-510,Vandelay MFG#42,mfg309@factory.org,上海,3413024,2021-01-27
+MC-511,  Pied Piper MFG#43  ,mfg310@industry.com,北京,2637920,2025-05-01
+MC-512,aperture mfg#44,mfg311@factory.org,上海,"759,463.00",16-06-2024
+MC-513,ACME CORP MFG#45,mfg312@industry.com,杭州,"$4,503,347.00",2023-09-28
+MC-514,Umbrella Co MFG#46,mfg313@factory.org,杭州,"$2,910,747.00",2020-10-05
+MC-515,  Blue Sun MFG#47  ,mfg314@industry.com,深圳,"$1,884,082.00",2019-05-17
+MC-516,Weyland-Yutani MFG#48,mfg315@factory.org,杭州,2805710,2020-09-02
+MC-517,Aperture MFG#49,  mfg316@factory.org  ,上海,1859843,2015-05-22
+MC-518,Umbrella Co MFG#50,MFG317@PLANT.NET,西安,"2,234,544.00",2023-07-23
+MC-519,Hooli MFG#51,MFG318@PLANT.NET,西安,4867908,2023-06-24
+MC-520,LEXCORP MFG#52,mfg319@industry.com,北京,4031555,02/12/2021
+MC-521,INITECH MFG#53,  mfg320@factory.org  ,北京,"113,842.00",2022-05-03
+MC-522,  Stark Industries MFG#54  ,mfg321@plant.net,上海,2509163,03/01/2018
+MC-523,Cyberdyne MFG#55,MFG322@PLANT.NET,南京,2508259,2017-08-27
+MC-524,Wonka MFG#56,mfg323@plant.net,深圳,3078484,2021-12-03
+MC-525,Wonka MFG#57,mfg324@factory.org,上海,482931,2023-07-19
+MC-526,Aperture MFG#58,mfg325@plant.net,成都,3807486,09/15/2015
+MC-527,Pied Piper MFG#59,MFG326@FACTORY.ORG,北京,1661193,10/07/2023
+MC-528,  Acme Corp MFG#60  ,MFG327@FACTORY.ORG,成都,2354858,12/02/2026
+MC-529,initech mfg#61,  mfg328@industry.com  ,深圳,2979086,2025-03-18
+MC-530,Aperture MFG#62,  mfg329@factory.org  ,成都,"$2,697,674.00",2018-01-02
+MC-531,  Acme Corp MFG#63  ,mfg330@industry.com,杭州,2862905,06/25/2020
+MC-532,  Black Mesa MFG#64  ,mfg331@plant.net,深圳,1952877,10-06-2026
+MC-533,Weyland-Yutani MFG#65,mfg332@factory.org,深圳,4449125,2019-10-14
+MC-534,Wayne Enterprises MFG#66,mfg333@industry.com,深圳,"$749,432.00",01-04-2016
+MC-535,STARK INDUSTRIES MFG#67,mfg334@factory.org,广州,2349322,2017-02-28
+MC-536,Blue Sun MFG#68,mfg335@plant.net,上海,3243216,11/14/2015
+MC-537,Initech MFG#69,mfg336@industry.com,杭州,4214795,2016-11-03
+MC-538,Blue Sun MFG#70,mfg337@plant.net,北京,2208534,11/16/2026
+MC-539,Blue Sun MFG#71,mfg338@industry.com,苏州,4704971,2021-06-18
+MC-540,Umbrella Co MFG#72,mfg339@plant.net,武汉,"$2,518,187.00",2021-07-02
+MC-541,WAYNE ENTERPRISES MFG#73,MFG340@FACTORY.ORG,北京,"$2,968,560.00",06/24/2021
+MC-542,Wayne Enterprises MFG#74,mfg341@factory.org,西安,"$3,592,901.00",05/23/2018
+MC-543,Vandelay MFG#75,mfg342@factory.org,苏州,290317,2018-12-20
+MC-544,PIED PIPER MFG#76,  mfg343@plant.net  ,西安,3666857,16-08-2015
+MC-545,  Acme Corp MFG#77  ,  mfg344@plant.net  ,苏州,"$1,677,290.00",2015-12-27
+MC-546,Stark Industries MFG#78,  mfg345@industry.com  ,武汉,"$226,907.00",11/04/2023
+MC-547,Umbrella Co MFG#79,  mfg346@factory.org  ,北京,961041,26-11-2016
+MC-548,  Umbrella Co MFG#80  ,mfg347@industry.com,北京,3441903,02/03/2019
+MC-549,acme corp mfg#81,mfg348@plant.net,苏州,"607,726.00",04/03/2026
+MC-550,Acme Corp MFG#82,mfg349@factory.org,杭州,1904211,26-04-2016
+MC-551,Aperture MFG#83,mfg350@plant.net,上海,4681498,12/01/2017
+MC-552,Pied Piper MFG#84,mfg351@plant.net,广州,"$1,747,143.00",2021-09-28
+MC-553,Pied Piper MFG#85,  mfg352@industry.com  ,成都,"$4,633,785.00",2018-12-25
+MC-554,Initech MFG#86,mfg353@industry.com,成都,491605,12/18/2018
+MC-555,  Dunder Mifflin MFG#87  ,mfg354@factory.org,上海,775341,2016-04-10
+MC-556,Acme Corp MFG#88,MFG355@FACTORY.ORG,武汉,"$1,049,178.00",2024-09-10
+MC-557,LEXCORP MFG#0,mfg356@plant.net,深圳,"$4,437,442.00",11-10-2022
+MC-558,Acme Corp MFG#1,MFG357@INDUSTRY.COM,武汉,4237737,11/28/2022
+MC-559,Pied Piper MFG#2,MFG358@FACTORY.ORG,北京,148784,09/16/2015
+MC-560,Stark Industries MFG#3,mfg359@factory.org,杭州,"$3,598,086.00",02/07/2021
+MC-561,  Aperture MFG#4  ,mfg360@factory.org,武汉,4627893,07-04-2023
+MC-562,Black Mesa MFG#5,mfg361@industry.com,上海,536780,09/02/2016
+MC-563,Aperture MFG#6,  mfg362@industry.com  ,西安,4218837,2026-08-21
+MC-564,BLACK MESA MFG#7,mfg363@plant.net,广州,4482547,2024-05-12
+MC-565,black mesa mfg#8,mfg364@plant.net,北京,"$4,836,235.00",08/18/2021
+MC-566,WONKA MFG#9,mfg365@plant.net,深圳,"$914,248.00",2019-03-20
+MC-567,  Oscorp MFG#10  ,  mfg366@factory.org  ,武汉,"1,373,474.00",2026-09-07
+MC-568,blue sun mfg#11,mfg367@factory.org,北京,925229,2018-09-23
+MC-569,LEXCORP MFG#12,mfg368@factory.org,西安,3292547,2021-03-21
+MC-570,INITECH MFG#13,mfg369@industry.com,成都,4634274,04-11-2020
+MC-571,vandelay mfg#14,mfg370@factory.org,武汉,2468490,15-04-2017
+MC-572,Vandelay MFG#15,mfg371@factory.org,成都,"$542,133.00",2022-07-24
+MC-573,WEYLAND-YUTANI MFG#16,  mfg372@factory.org  ,武汉,"4,655,087.00",03/17/2023
+MC-574,Black Mesa MFG#17,mfg373@plant.net,广州,4715729,28-09-2020
+MC-575,  Blue Sun MFG#18  ,mfg374@plant.net,西安,"1,955,280.00",04/10/2022
+MC-576,  Pied Piper MFG#19  ,mfg375@factory.org,武汉,"$4,492,765.00",2017-07-27
+MC-577,Aperture MFG#20,mfg376@industry.com,杭州,592926,17-09-2023
+MC-578,  Oscorp MFG#21  ,mfg377@factory.org,上海,"525,704.00",2025-03-03
+MC-579,APERTURE MFG#22,  mfg378@factory.org  ,广州,"3,183,516.00",09-07-2019
+MC-580,DUNDER MIFFLIN MFG#23,mfg379@factory.org,西安,2071586,10/07/2017
+MC-581,Wonka MFG#24,MFG380@FACTORY.ORG,北京,4137390,2020-03-13
+MC-582,Initech MFG#25,mfg381@plant.net,杭州,"4,779,415.00",2022-08-25
+MC-583,Acme Corp MFG#26,MFG382@PLANT.NET,苏州,"$2,858,877.00",11/06/2015
+MC-584,Wonka MFG#27,mfg383@factory.org,上海,"$3,575,366.00",10/02/2021
+MC-585,  Wonka MFG#28  ,mfg384@industry.com,北京,641060,2021-05-24
+MC-586,Aperture MFG#29,mfg385@plant.net,深圳,2163009,02/25/2016
+MC-587,Wayne Enterprises MFG#30,mfg386@factory.org,上海,"$3,205,362.00",19-04-2019
+MC-588,Blue Sun MFG#31,mfg387@industry.com,武汉,"1,176,742.00",05/28/2024
+MC-589,Umbrella Co MFG#32,  mfg388@plant.net  ,上海,3978245,2025-06-05
+MC-590,PIED PIPER MFG#33,MFG389@PLANT.NET,西安,"$2,072,219.00",2015-07-11
+MC-591,TYRELL CORP MFG#34,MFG390@FACTORY.ORG,成都,"$2,038,799.00",05/14/2021
+MC-592,Aperture MFG#35,mfg391@factory.org,上海,"$3,044,026.00",2018-02-15
+MC-593,ACME CORP MFG#36,mfg392@industry.com,广州,1590949,2023-08-11
+MC-594,Blue Sun MFG#37,  mfg393@plant.net  ,广州,513937,20-07-2017
+MC-595,Pied Piper MFG#38,mfg394@factory.org,南京,4266888,05/25/2022
+MC-596,  Stark Industries MFG#39  ,  mfg395@factory.org  ,深圳,377502,2016-11-22
+MC-597,ACME CORP MFG#40,MFG396@FACTORY.ORG,苏州,"2,409,792.00",03-10-2022
+MC-598,Cyberdyne MFG#41,  mfg397@factory.org  ,成都,502610,06/19/2025
+MC-599,Tyrell Corp MFG#42,mfg398@plant.net,深圳,"$2,947,233.00",2025-06-08
+MC-600,UMBRELLA CO MFG#43,MFG399@FACTORY.ORG,北京,"$1,233,698.00",2024-01-04
+MC-601,Stark Industries MFG#44,  mfg400@factory.org  ,北京,"3,318,591.00",2018-10-23
+MC-602,  Dunder Mifflin MFG#45  ,MFG401@INDUSTRY.COM,苏州,"$983,296.00",2026-11-20
+MC-603,  Initech MFG#46  ,mfg402@factory.org,西安,"2,572,526.00",2016-05-02
+MC-604,  Tyrell Corp MFG#47  ,mfg403@plant.net,广州,"$2,393,703.00",2016-06-10
+MC-605,Tyrell Corp MFG#48,mfg404@industry.com,广州,4083278,2017-10-21
+MC-606,Globex MFG#49,mfg405@industry.com,广州,"$4,235,456.00",03-03-2024
+MC-607,DUNDER MIFFLIN MFG#50,MFG406@INDUSTRY.COM,苏州,"$4,399,503.00",15-06-2016
+MC-608,Vandelay MFG#51,mfg407@factory.org,杭州,"$981,119.00",2019-12-16
+MC-609,Cyberdyne MFG#52,mfg408@factory.org,苏州,"$2,532,748.00",2024-12-10
+MC-610,Massive Dynamic MFG#53,  mfg409@industry.com  ,深圳,2282343,11/12/2023
+MC-611,Blue Sun MFG#54,MFG410@INDUSTRY.COM,西安,"$2,331,159.00",18-06-2021
+MC-612,  Massive Dynamic MFG#55  ,MFG411@FACTORY.ORG,南京,4475860,2017-07-19
+MC-613,Globex MFG#56,MFG412@FACTORY.ORG,南京,780642,2019-04-26
+MC-614,Aperture MFG#57,  mfg413@industry.com  ,上海,4999315,28-02-2018
+MC-615,Oscorp MFG#58,mfg414@plant.net,苏州,4326450,08-03-2018
+MC-616,LexCorp MFG#59,  mfg415@industry.com  ,西安,"$100,042.00",09-09-2015
+MC-617,Cyberdyne MFG#60,mfg416@industry.com,南京,4500765,2024-11-16
+MC-618,aperture mfg#61,mfg417@plant.net,杭州,"$1,713,307.00",04/08/2016
+MC-619,  Stark Industries MFG#62  ,MFG418@PLANT.NET,成都,127307,2015-07-24
+MC-620,Acme Corp MFG#63,  mfg419@plant.net  ,广州,"$1,019,189.00",2015-08-05
+MC-621,CYBERDYNE MFG#64,mfg420@industry.com,南京,"$2,264,806.00",01/26/2023
+MC-622,OSCORP MFG#65,mfg421@factory.org,上海,4340461,11/05/2024
+MC-623,Umbrella Co MFG#66,mfg422@industry.com,成都,"$2,416,625.00",2018-02-19
+MC-624,Blue Sun MFG#67,MFG423@PLANT.NET,南京,"2,190,607.00",2021-10-27
+MC-625,TYRELL CORP MFG#68,mfg424@factory.org,深圳,1789598,10/08/2016
+MC-626,Stark Industries MFG#69,  mfg425@plant.net  ,苏州,"$2,605,185.00",26-02-2018
+MC-627,  Weyland-Yutani MFG#70  ,mfg426@industry.com,西安,1259374,2024-10-04
+MC-628,  Cyberdyne MFG#71  ,  mfg427@factory.org  ,成都,4125619,04-09-2022
+MC-629,Massive Dynamic MFG#72,mfg428@industry.com,上海,403227,2015-10-15
+MC-630,Cyberdyne MFG#73,mfg429@factory.org,广州,"$566,723.00",09/26/2022
+MC-631,vandelay mfg#74,mfg430@factory.org,西安,969635,07/09/2022
+MC-632,wayne enterprises mfg#75,mfg431@factory.org,武汉,3107583,09/02/2025
+MC-633,Weyland-Yutani MFG#76,mfg432@plant.net,南京,"$1,492,953.00",2021-08-24
+MC-634,oscorp mfg#77,  mfg433@industry.com  ,苏州,"$3,901,477.00",2022-06-10
+MC-635,Black Mesa MFG#78,MFG434@INDUSTRY.COM,成都,741801,2016-11-16
+MC-636,LexCorp MFG#79,MFG435@INDUSTRY.COM,广州,"$1,416,703.00",2017-08-05
+MC-637,Vandelay MFG#80,mfg436@industry.com,苏州,"$3,924,497.00",26-12-2020
+MC-638,Cyberdyne MFG#81,MFG437@PLANT.NET,深圳,4829526,2016-04-28
+MC-639,DUNDER MIFFLIN MFG#82,MFG438@FACTORY.ORG,深圳,"$2,319,150.00",2022-02-22
+MC-640,  Vandelay MFG#83  ,mfg439@plant.net,南京,"2,461,301.00",2022-09-18
+MC-641,Wayne Enterprises MFG#84,mfg440@industry.com,北京,"$592,452.00",2015-06-06
+MC-642,Dunder Mifflin MFG#85,mfg441@industry.com,杭州,4905778,2025-12-07
+MC-643,Tyrell Corp MFG#86,  mfg442@factory.org  ,南京,3077962,21-12-2020
+MC-644,VANDELAY MFG#87,MFG443@PLANT.NET,苏州,"$4,842,166.00",05/21/2026
+MC-645,Stark Industries MFG#88,mfg444@plant.net,南京,"$1,705,469.00",2026-12-19
+MC-646,HOOLI MFG#0,mfg445@plant.net,杭州,2655811,27-07-2015
+MC-647,WAYNE ENTERPRISES MFG#1,mfg446@plant.net,西安,"$3,154,775.00",02/20/2016
+MC-648,Initech MFG#2,mfg447@factory.org,武汉,2896816,2026-12-27
+MC-649,WONKA MFG#3,mfg448@plant.net,广州,3213085,2021-08-26
+MC-650,globex mfg#4,mfg449@factory.org,武汉,"2,291,526.00",03-09-2017
+MC-651,  Vandelay MFG#5  ,mfg450@plant.net,深圳,"3,506,774.00",07/09/2023
+MC-652,Globex MFG#6,mfg451@plant.net,上海,"$873,700.00",2017-03-22
+MC-653,  Vandelay MFG#7  ,mfg452@plant.net,南京,"$3,884,712.00",2021-07-09
+MC-654,GLOBEX MFG#8,mfg453@plant.net,南京,"$3,957,828.00",15-01-2017
+MC-655,  Blue Sun MFG#9  ,  mfg454@plant.net  ,西安,4741344,04/24/2020
+MC-656,  Stark Industries MFG#10  ,mfg455@factory.org,广州,1920976,14-05-2026
+MC-657,Wayne Enterprises MFG#11,MFG456@FACTORY.ORG,成都,164853,01-11-2023
+MC-658,stark industries mfg#12,mfg457@plant.net,苏州,4025236,2017-12-03
+MC-659,Cyberdyne MFG#13,mfg458@industry.com,上海,3647631,2015-05-09
+MC-660,Weyland-Yutani MFG#14,mfg459@industry.com,西安,"4,629,380.00",18-08-2023
+MC-661,  Massive Dynamic MFG#15  ,mfg460@plant.net,苏州,1859439,10/12/2026
+MC-662,Initech MFG#16,mfg461@plant.net,西安,3374273,01/26/2015
+MC-663,Oscorp MFG#17,mfg462@industry.com,北京,724128,2025-06-14
+MC-664,lexcorp mfg#18,MFG463@PLANT.NET,南京,73074,2019-01-18
+MC-665,Cyberdyne MFG#19,mfg464@plant.net,深圳,4354825,09/19/2020
+MC-666,BLUE SUN MFG#20,MFG465@PLANT.NET,杭州,842238,27-09-2017
+MC-667,Black Mesa MFG#21,MFG466@FACTORY.ORG,西安,506457,2020-12-26
+MC-668,CYBERDYNE MFG#22,MFG467@PLANT.NET,西安,370218,2025-07-26
+MC-669,oscorp mfg#23,mfg468@plant.net,北京,"$2,958,455.00",05-01-2015
+MC-670,  Initech MFG#24  ,mfg469@plant.net,深圳,2974921,2024-07-07
+MC-671,PIED PIPER MFG#25,MFG470@INDUSTRY.COM,苏州,"$4,427,064.00",13-05-2021
+MC-672,  Vandelay MFG#26  ,mfg471@plant.net,南京,"$3,615,979.00",03/09/2016
+MC-673,hooli mfg#27,mfg472@industry.com,上海,"$515,728.00",2022-11-03
+MC-674,wonka mfg#28,mfg473@industry.com,上海,"$1,370,626.00",2019-05-03
+MC-675,Oscorp MFG#29,mfg474@factory.org,深圳,4343692,15-05-2020
+MC-676,OSCORP MFG#30,mfg475@industry.com,成都,4909457,2022-10-19
+MC-677,Aperture MFG#31,MFG476@FACTORY.ORG,上海,"$664,750.00",18-09-2015
+MC-678,APERTURE MFG#32,mfg477@plant.net,上海,2952542,21-01-2021
+MC-679,BLUE SUN MFG#33,mfg478@factory.org,上海,3417175,11/27/2023
+MC-680,  Black Mesa MFG#34  ,mfg479@industry.com,杭州,1168090,2015-08-25
+MC-681,UMBRELLA CO MFG#35,  mfg480@factory.org  ,南京,"3,269,183.00",2025-04-11
+MC-682,Umbrella Co MFG#36,mfg481@plant.net,苏州,4455256,11/01/2016
+MC-683,Black Mesa MFG#37,mfg482@plant.net,成都,402337,2024-03-21
+MC-684,weyland-yutani mfg#38,mfg483@industry.com,杭州,"3,339,905.00",2017-12-13
+MC-685,Stark Industries MFG#39,MFG484@INDUSTRY.COM,深圳,4414804,08/06/2019
+MC-686,  Weyland-Yutani MFG#40  ,  mfg485@industry.com  ,武汉,4081140,11-01-2023
+MC-687,  Umbrella Co MFG#41  ,MFG486@PLANT.NET,北京,"$1,334,172.00",20-10-2020
+MC-688,Black Mesa MFG#42,mfg487@industry.com,成都,"$2,399,766.00",23-06-2018
+MC-689,Acme Corp MFG#43,mfg488@industry.com,杭州,"$520,140.00",2019-03-01
+MC-690,OSCORP MFG#44,mfg489@factory.org,杭州,1439272,07/23/2026
+MC-691,TYRELL CORP MFG#45,mfg490@industry.com,武汉,"$2,792,236.00",2022-04-04
+MC-692,Blue Sun MFG#46,mfg491@factory.org,成都,"$1,709,353.00",2015-11-26
+MC-693,OSCORP MFG#47,MFG492@INDUSTRY.COM,上海,2655159,27-01-2018
+MC-694,PIED PIPER MFG#48,mfg493@industry.com,成都,"$238,425.00",05/27/2022
+MC-695,  Dunder Mifflin MFG#49  ,MFG494@FACTORY.ORG,上海,"$1,981,340.00",06-07-2018
+MC-696,  Tyrell Corp MFG#50  ,  mfg495@factory.org  ,成都,4016773,2018-10-07
+MC-697,  Dunder Mifflin MFG#51  ,MFG496@INDUSTRY.COM,上海,1333120,2020-10-01
+MC-698,Vandelay MFG#52,MFG497@FACTORY.ORG,北京,1039129,2020-09-21
+MC-699,Initech MFG#53,MFG498@PLANT.NET,广州,"$4,065,672.00",11-01-2015
+MC-700,PIED PIPER MFG#54,mfg499@industry.com,上海,3859633,11/11/2022
+MC-701,BLACK MESA MFG#55,mfg500@plant.net,南京,727518,08/05/2023
+MC-702,  Umbrella Co MFG#56  ,mfg501@industry.com,深圳,"$2,131,280.00",11/02/2025
+MC-703,  Umbrella Co MFG#57  ,mfg502@industry.com,武汉,"$4,711,758.00",11-12-2024
+MC-704,LexCorp MFG#58,mfg503@plant.net,北京,2387242,2026-05-05
+MC-705,Pied Piper MFG#59,  mfg504@industry.com  ,深圳,3274155,2021-12-25
+MC-706,Acme Corp MFG#60,  mfg505@industry.com  ,武汉,1897100,01-10-2024
+MC-707,Globex MFG#61,  mfg506@industry.com  ,广州,"$2,934,916.00",03/16/2021
+MC-708,  Umbrella Co MFG#62  ,mfg507@factory.org,深圳,718954,2026-05-15
+MC-709,Tyrell Corp MFG#63,MFG508@PLANT.NET,北京,2757420,2021-11-08
+MC-710,cyberdyne mfg#64,mfg509@industry.com,广州,"$809,021.00",03/09/2019
+MC-711,VANDELAY MFG#65,MFG510@FACTORY.ORG,成都,2176076,23-09-2020
+MC-712,OSCORP MFG#66,mfg511@plant.net,上海,"$3,206,177.00",2022-09-25
+MC-713,ACME CORP MFG#67,mfg512@factory.org,深圳,1735569,2016-12-25
+MC-714,Cyberdyne MFG#68,mfg513@industry.com,广州,"$3,805,811.00",13-10-2023
+MC-715,Acme Corp MFG#69,mfg514@plant.net,北京,2285609,11-02-2017
+MC-716,Acme Corp MFG#70,mfg515@industry.com,北京,330000,06-11-2023
+MC-717,Vandelay MFG#71,mfg516@factory.org,杭州,"$2,725,324.00",2026-02-15
+MC-718,BLACK MESA MFG#72,mfg517@plant.net,杭州,802222,2022-04-21
+MC-719,VANDELAY MFG#73,MFG518@FACTORY.ORG,上海,"$322,423.00",2022-12-15
+MC-720,  Wayne Enterprises MFG#74  ,mfg519@industry.com,北京,3817900,05/06/2022
+MC-721,STARK INDUSTRIES MFG#75,mfg520@plant.net,杭州,"$4,246,639.00",2015-10-13
+MC-722,Globex MFG#76,mfg521@plant.net,武汉,"3,796,257.00",2018-06-26
+MC-723,Dunder Mifflin MFG#77,MFG522@INDUSTRY.COM,深圳,2962693,2022-02-18
+MC-724,LexCorp MFG#78,mfg523@factory.org,成都,2051082,2020-11-20
+MC-725,Initech MFG#79,mfg524@industry.com,深圳,4828093,09/08/2026
+MC-726,Globex MFG#80,mfg525@plant.net,成都,"3,159,717.00",2020-02-28
+MC-727,Initech MFG#81,  mfg526@factory.org  ,广州,"4,386,858.00",2021-03-20
+MC-728,Wayne Enterprises MFG#82,  mfg527@factory.org  ,广州,4187370,2020-04-05
+MC-729,DUNDER MIFFLIN MFG#83,mfg528@industry.com,杭州,"3,409,659.00",12/06/2019
+MC-730,STARK INDUSTRIES MFG#84,MFG529@INDUSTRY.COM,南京,443821,2025-03-18
+MC-731,Initech MFG#85,MFG530@PLANT.NET,上海,"$2,433,451.00",2026-12-28
+MC-732,Initech MFG#86,mfg531@plant.net,上海,"$582,945.00",02-02-2020
+MC-733,Oscorp MFG#87,MFG532@FACTORY.ORG,苏州,4984901,2023-04-28
+MC-734,  Umbrella Co MFG#88  ,MFG533@PLANT.NET,苏州,1530282,05/23/2024
+MC-735,  Massive Dynamic MFG#0  ,mfg534@plant.net,广州,900836,15-02-2020
+MC-736,Weyland-Yutani MFG#1,mfg535@industry.com,西安,"3,748,486.00",2019-10-15
+MC-737,  Black Mesa MFG#2  ,mfg536@plant.net,深圳,166583,2015-09-25
+MC-738,ACME CORP MFG#3,MFG537@INDUSTRY.COM,杭州,195915,2025-08-08
+MC-739,Globex MFG#4,MFG538@FACTORY.ORG,武汉,1909715,2024-01-28
+MC-740,Weyland-Yutani MFG#5,mfg539@industry.com,武汉,"2,054,694.00",2020-10-16
+MC-741,pied piper mfg#6,MFG540@PLANT.NET,南京,"3,700,265.00",2021-04-23
+MC-742,MASSIVE DYNAMIC MFG#7,  mfg541@factory.org  ,杭州,2417854,01/12/2022
+MC-743,Initech MFG#8,MFG542@INDUSTRY.COM,南京,4668050,2024-07-13
+MC-744,  Cyberdyne MFG#9  ,mfg543@factory.org,深圳,"4,300,842.00",01/12/2019
+MC-745,  Cyberdyne MFG#10  ,mfg544@factory.org,广州,"4,854,696.00",2020-03-01
+MC-746,Wonka MFG#11,  mfg545@plant.net  ,苏州,"4,257,101.00",06-05-2025
+MC-747,Weyland-Yutani MFG#12,  mfg546@industry.com  ,上海,77680,2017-08-24
+MC-748,  Blue Sun MFG#13  ,mfg547@factory.org,北京,"$2,584,141.00",2015-12-02
+MC-749,blue sun mfg#14,mfg548@industry.com,西安,"1,667,171.00",2020-01-15
+MC-750,Massive Dynamic MFG#15,mfg549@industry.com,苏州,286183,13-02-2023
+MC-751,Oscorp MFG#16,  mfg550@plant.net  ,广州,"2,896,745.00",01/07/2023
+MC-752,Stark Industries MFG#17,mfg551@factory.org,北京,2691927,11/08/2020
+MC-753,Massive Dynamic MFG#18,MFG552@PLANT.NET,南京,3475041,2022-12-22
+MC-754,weyland-yutani mfg#19,MFG553@INDUSTRY.COM,南京,3711644,2022-12-27
+MC-755,Blue Sun MFG#20,mfg554@industry.com,成都,"$1,086,496.00",08/03/2024
+MC-756,Aperture MFG#21,mfg555@industry.com,南京,3592683,05/01/2025
+MC-757,Cyberdyne MFG#22,mfg556@industry.com,北京,"$4,360,678.00",06/27/2020
+MC-758,TYRELL CORP MFG#23,  mfg557@factory.org  ,北京,"$4,754,792.00",02-04-2026
+MC-759,  Globex MFG#24  ,  mfg558@factory.org  ,广州,1889106,07/22/2019
+MC-760,Weyland-Yutani MFG#25,MFG559@INDUSTRY.COM,上海,"2,380,555.00",22-10-2017
+MC-761,GLOBEX MFG#26,mfg560@factory.org,南京,"$1,761,675.00",18-11-2024
+MC-762,Cyberdyne MFG#27,  mfg561@plant.net  ,苏州,"4,205,747.00",2025-02-09
+MC-763,Vandelay MFG#28,  mfg562@plant.net  ,西安,"4,275,037.00",08/01/2024
+MC-764,Globex MFG#29,MFG563@PLANT.NET,北京,"$2,602,064.00",2024-04-06
+MC-765,Umbrella Co MFG#30,mfg564@industry.com,苏州,4287669,2016-01-04
+MC-766,pied piper mfg#31,mfg565@industry.com,广州,2540975,2024-12-12
+MC-767,stark industries mfg#32,  mfg566@industry.com  ,上海,4274117,06/13/2019
+MC-768,Cyberdyne MFG#33,MFG567@FACTORY.ORG,北京,"$786,263.00",11/21/2025
+MC-769,APERTURE MFG#34,mfg568@industry.com,北京,"3,883,212.00",2021-10-25
+MC-770,LexCorp MFG#35,mfg569@factory.org,苏州,3055225,2016-06-08
+MC-771,BLACK MESA MFG#36,mfg570@plant.net,南京,426951,2026-11-09
+MC-772,Dunder Mifflin MFG#37,mfg571@industry.com,杭州,"$2,696,326.00",2015-10-08
+MC-773,WEYLAND-YUTANI MFG#38,MFG572@INDUSTRY.COM,深圳,2476566,2025-10-16
+MC-774,Stark Industries MFG#39,MFG573@FACTORY.ORG,南京,3311677,2021-11-25
+MC-775,Aperture MFG#40,MFG574@INDUSTRY.COM,成都,"$2,976,430.00",08-09-2024
+MC-776,  Globex MFG#41  ,mfg575@factory.org,杭州,1665416,04/05/2021
+MC-777,Blue Sun MFG#42,  mfg576@plant.net  ,苏州,4633140,12/26/2024
+MC-778,Hooli MFG#43,mfg577@industry.com,苏州,3488846,03-08-2025
+MC-779,  Globex MFG#44  ,mfg578@industry.com,杭州,"$3,204,477.00",2022-06-13
+MC-780,LexCorp MFG#45,  mfg579@factory.org  ,武汉,2926180,2022-08-26
+MC-781,black mesa mfg#46,MFG580@INDUSTRY.COM,苏州,131715,24-10-2019
+MC-782,Dunder Mifflin MFG#47,MFG581@INDUSTRY.COM,南京,925214,12/16/2023
+MC-783,Wayne Enterprises MFG#48,mfg582@plant.net,苏州,2344968,01/14/2026
+MC-784,vandelay mfg#49,MFG583@FACTORY.ORG,南京,"$3,907,615.00",08/06/2024
+MC-785,Dunder Mifflin MFG#50,mfg584@industry.com,杭州,2514478,2021-06-12
+MC-786,  Massive Dynamic MFG#51  ,  mfg585@plant.net  ,西安,"2,287,609.00",05/24/2021
+MC-787,Black Mesa MFG#52,mfg586@industry.com,上海,"$3,153,631.00",26-09-2026
+MC-788,LEXCORP MFG#53,mfg587@factory.org,杭州,"$271,305.00",2024-09-13
+MC-789,  Stark Industries MFG#54  ,mfg588@factory.org,西安,"$3,858,425.00",04/14/2021
+MC-790,  Dunder Mifflin MFG#55  ,MFG589@INDUSTRY.COM,杭州,"$4,585,433.00",12/01/2026
+MC-791,  Hooli MFG#56  ,mfg590@industry.com,西安,"$4,092,358.00",2025-11-01
+MC-792,Black Mesa MFG#57,mfg591@industry.com,上海,3981867,2026-11-25
+MC-793,  Wayne Enterprises MFG#58  ,mfg592@factory.org,广州,"$2,418,858.00",03/23/2015
+MC-794,HOOLI MFG#59,mfg593@factory.org,杭州,1453407,03/21/2022
+MC-795,Acme Corp MFG#60,  mfg594@factory.org  ,杭州,"3,485,954.00",2022-01-21
+MC-796,  Hooli MFG#61  ,mfg595@factory.org,成都,2744767,11/27/2018
+MC-797,weyland-yutani mfg#62,mfg596@industry.com,深圳,4571797,03/24/2015
+MC-798,initech mfg#63,mfg597@industry.com,杭州,"1,347,261.00",12/07/2024
+MC-799,  Black Mesa MFG#64  ,mfg598@factory.org,武汉,"2,917,042.00",14-09-2023
+MC-800,UMBRELLA CO MFG#65,  mfg599@plant.net  ,南京,"1,199,586.00",07/07/2025
+MC-801,Cyberdyne MFG#66,mfg600@plant.net,西安,361489,16-10-2022
+MC-802,UMBRELLA CO MFG#67,MFG601@INDUSTRY.COM,深圳,"$1,083,638.00",2026-05-19
+MC-803,  Umbrella Co MFG#68  ,MFG602@INDUSTRY.COM,南京,2936089,2019-11-02
+MC-804,Stark Industries MFG#69,mfg603@plant.net,西安,"$4,935,322.00",2015-09-04
+MC-805,Globex MFG#70,mfg604@plant.net,武汉,"104,081.00",03/26/2018
+MC-806,  Acme Corp MFG#71  ,MFG605@PLANT.NET,深圳,2722885,2026-05-03
+MC-807,Acme Corp MFG#72,  mfg606@plant.net  ,苏州,"3,387,868.00",2015-11-20
+MC-808,Weyland-Yutani MFG#73,mfg607@factory.org,武汉,"4,606,892.00",12/19/2023
+MC-809,  Umbrella Co MFG#74  ,  mfg608@industry.com  ,苏州,4555079,01/04/2019
+MC-810,Dunder Mifflin MFG#75,mfg609@industry.com,南京,"$1,277,362.00",02/02/2018
+MC-811,Vandelay MFG#76,  mfg610@industry.com  ,北京,"$2,118,964.00",2022-02-20
+MC-812,Wonka MFG#77,mfg611@factory.org,苏州,3917627,11/25/2016
+MC-813,Stark Industries MFG#78,MFG612@PLANT.NET,苏州,2983508,2020-08-13
+MC-814,Dunder Mifflin MFG#79,mfg613@factory.org,苏州,2330413,07/02/2023
+MC-815,APERTURE MFG#80,mfg614@factory.org,杭州,"$1,041,680.00",2021-02-20
+MC-816,BLACK MESA MFG#81,  mfg615@factory.org  ,深圳,"$1,527,871.00",2023-07-28
+MC-817,Oscorp MFG#82,  mfg616@factory.org  ,西安,1914414,2023-05-23
+MC-818,MASSIVE DYNAMIC MFG#83,mfg617@industry.com,上海,4027770,2020-06-08
+MC-819,Acme Corp MFG#84,  mfg618@plant.net  ,西安,4510536,2016-05-05
+MC-820,Vandelay MFG#85,mfg619@factory.org,南京,4864439,2021-08-15
+MC-821,  Initech MFG#86  ,mfg620@industry.com,广州,"$3,878,029.00",2023-10-22
+MC-822,wayne enterprises mfg#87,mfg621@industry.com,杭州,3758587,06/14/2024
+MC-823,Aperture MFG#88,mfg622@plant.net,深圳,"$1,201,469.00",2023-03-07
+MC-824,Stark Industries MFG#0,mfg623@factory.org,杭州,"$4,277,274.00",2019-12-22
+MC-825,  Wonka MFG#1  ,  mfg624@factory.org  ,武汉,"4,769,191.00",2016-01-19
+MC-826,  Vandelay MFG#2  ,  mfg625@plant.net  ,武汉,"$3,402,235.00",05/19/2024
+MC-827,Vandelay MFG#3,  mfg626@factory.org  ,杭州,"2,876,744.00",04/13/2020
+MC-828,OSCORP MFG#4,  mfg627@industry.com  ,杭州,"1,988,473.00",03/27/2019
+MC-829,Wonka MFG#5,mfg628@factory.org,上海,"1,788,289.00",06/25/2018
+MC-830,  Oscorp MFG#6  ,  mfg629@industry.com  ,广州,4569978,2023-05-12
+MC-831,  Wonka MFG#7  ,mfg630@factory.org,南京,"1,995,514.00",04/06/2025
+MC-832,DUNDER MIFFLIN MFG#8,mfg631@plant.net,杭州,1620860,2017-08-23
+MC-833,LexCorp MFG#9,mfg632@factory.org,南京,120490,01/20/2019
+MC-834,  Wayne Enterprises MFG#10  ,mfg633@plant.net,上海,"$3,693,320.00",2023-01-23
+MC-835,Blue Sun MFG#11,  mfg634@industry.com  ,苏州,1549296,07/07/2020
+MC-836,Vandelay MFG#12,  mfg635@plant.net  ,深圳,"$849,304.00",28-06-2025
+MC-837,  Umbrella Co MFG#13  ,mfg636@industry.com,上海,"$3,613,837.00",01/23/2015
+MC-838,Weyland-Yutani MFG#14,mfg637@industry.com,南京,4172951,02-01-2026
+MC-839,Blue Sun MFG#15,mfg638@plant.net,上海,2438394,2026-05-03
+MC-840,Acme Corp MFG#16,mfg639@plant.net,广州,4415062,2018-05-27
+MC-841,Oscorp MFG#17,  mfg640@plant.net  ,苏州,"$1,693,312.00",2018-04-08
+MC-842,  LexCorp MFG#18  ,mfg641@plant.net,广州,"798,348.00",01/14/2019
+MC-843,dunder mifflin mfg#19,MFG642@FACTORY.ORG,北京,"$3,145,548.00",09/01/2018
+MC-844,UMBRELLA CO MFG#20,mfg643@industry.com,武汉,"$2,843,841.00",02/10/2019
+MC-845,  Wonka MFG#21  ,mfg644@plant.net,成都,"$1,878,568.00",2022-08-01
+MC-846,oscorp mfg#22,mfg645@factory.org,深圳,"$3,051,813.00",2021-04-25
+MC-847,INITECH MFG#23,MFG646@FACTORY.ORG,西安,4685696,09-07-2015
+MC-848,Globex MFG#24,mfg647@factory.org,杭州,"$2,665,915.00",2019-06-26
+MC-849,Pied Piper MFG#25,  mfg648@industry.com  ,西安,"$115,126.00",2025-12-09
+MC-850,Black Mesa MFG#26,mfg649@industry.com,武汉,3167450,06/17/2018
+MC-851,PIED PIPER MFG#27,MFG650@FACTORY.ORG,上海,2253577,2024-12-08
+MC-852,  Aperture MFG#28  ,  mfg651@factory.org  ,西安,"$1,793,082.00",2025-10-01
+MC-853,  Stark Industries MFG#29  ,MFG652@FACTORY.ORG,上海,"4,677,363.00",08-10-2023
+MC-854,Initech MFG#30,mfg653@factory.org,北京,3774615,09/25/2015
+MC-855,Blue Sun MFG#31,mfg654@industry.com,北京,273447,2015-04-01
+MC-856,WONKA MFG#32,  mfg655@factory.org  ,南京,1804396,2022-08-18
+MC-857,  Massive Dynamic MFG#33  ,  mfg656@factory.org  ,西安,"$2,767,186.00",09/27/2022
+MC-858,ACME CORP MFG#34,mfg657@factory.org,西安,2955044,2016-05-10
+MC-859,VANDELAY MFG#35,mfg658@factory.org,南京,"$775,857.00",21-10-2023
+MC-860,UMBRELLA CO MFG#36,  mfg659@plant.net  ,武汉,"$154,140.00",2022-05-13
+MC-861,  Umbrella Co MFG#37  ,  mfg660@industry.com  ,南京,"1,888,989.00",2022-04-22
+MC-862,Aperture MFG#38,mfg661@factory.org,南京,"4,783,355.00",03/11/2018
+MC-863,stark industries mfg#39,mfg662@plant.net,苏州,"$2,299,563.00",2025-02-09
+MC-864,umbrella co mfg#40,mfg663@industry.com,深圳,"$503,085.00",20-01-2017
+MC-865,Initech MFG#41,mfg664@plant.net,深圳,2839090,2019-12-15
+MC-866,LexCorp MFG#42,mfg665@factory.org,广州,"$3,790,844.00",07-08-2020
+MC-867,Weyland-Yutani MFG#43,mfg666@factory.org,苏州,3987626,2025-02-26
+MC-868,  Initech MFG#44  ,mfg667@industry.com,杭州,"$4,491,297.00",02/07/2019
+MC-869,Wayne Enterprises MFG#45,mfg668@factory.org,武汉,"2,305,751.00",20-01-2022
+MC-870,stark industries mfg#46,MFG669@INDUSTRY.COM,杭州,4155806,2016-11-11
+MC-871,  Pied Piper MFG#47  ,  mfg670@industry.com  ,西安,101340,2016-04-02
+MC-872,Wayne Enterprises MFG#48,mfg671@plant.net,杭州,343517,2025-04-21
+MC-873,Aperture MFG#49,MFG672@PLANT.NET,杭州,4286161,08/14/2026
+MC-874,  Black Mesa MFG#50  ,MFG673@FACTORY.ORG,上海,899904,2026-11-04
+MC-875,Massive Dynamic MFG#51,  mfg674@plant.net  ,北京,3464652,2025-08-10
+MC-876,  Stark Industries MFG#52  ,mfg675@industry.com,武汉,"$305,142.00",14-11-2022
+MC-877,Dunder Mifflin MFG#53,  mfg676@factory.org  ,深圳,2704710,2023-06-18
+MC-878,Acme Corp MFG#54,  mfg677@industry.com  ,西安,4139251,2023-08-21
+MC-879,Aperture MFG#55,mfg678@factory.org,上海,"$1,960,033.00",2024-12-21
+MC-880,Hooli MFG#56,mfg679@plant.net,北京,"$924,536.00",03/11/2023
+MC-881,TYRELL CORP MFG#57,  mfg680@factory.org  ,杭州,4297844,03-03-2017
+MC-882,Hooli MFG#58,MFG681@INDUSTRY.COM,北京,792927,2023-08-28
+MC-883,Blue Sun MFG#59,  mfg682@plant.net  ,西安,1556657,06-12-2024
+MC-884,UMBRELLA CO MFG#60,mfg683@industry.com,南京,1595034,2020-03-01
+MC-885,Blue Sun MFG#61,mfg684@plant.net,武汉,"$942,758.00",2025-07-04
+MC-886,Dunder Mifflin MFG#62,mfg685@plant.net,北京,115431,2018-07-09
+MC-887,Globex MFG#63,MFG686@FACTORY.ORG,杭州,"$2,851,362.00",10/23/2026
+MC-888,  Massive Dynamic MFG#64  ,mfg687@factory.org,北京,"$746,074.00",06/15/2017
+MC-889,cyberdyne mfg#65,mfg688@industry.com,南京,"987,685.00",28-09-2018
+MC-890,ACME CORP MFG#66,MFG689@INDUSTRY.COM,苏州,3126853,11/21/2024
+MC-891,DUNDER MIFFLIN MFG#67,mfg690@industry.com,深圳,"$1,483,658.00",2018-10-09
+MC-892,Cyberdyne MFG#68,  mfg691@plant.net  ,成都,4085625,2015-07-12
+MC-893,LEXCORP MFG#69,mfg692@factory.org,深圳,"1,283,718.00",2016-01-02
+MC-894,BLUE SUN MFG#70,mfg693@factory.org,成都,3606119,2022-11-23
+MC-895,WEYLAND-YUTANI MFG#71,mfg694@plant.net,北京,1944681,24-09-2019
+MC-896,stark industries mfg#72,mfg695@industry.com,武汉,"$3,877,981.00",11/26/2021
+MC-897,aperture mfg#73,  mfg696@industry.com  ,深圳,3234769,18-07-2022
+MC-898,DUNDER MIFFLIN MFG#74,mfg697@plant.net,广州,"3,709,027.00",2024-08-28
+MC-899,globex mfg#75,  mfg698@industry.com  ,上海,"$4,175,648.00",2016-05-12
+MC-900,Vandelay MFG#76,  mfg699@factory.org  ,西安,3949233,2026-08-12
+MC-901,LexCorp MFG#77,mfg700@industry.com,成都,"$1,291,220.00",03/18/2019
+MC-902,  Aperture MFG#78  ,mfg701@plant.net,广州,"$1,463,000.00",2019-10-15
+MC-903,  Dunder Mifflin MFG#79  ,mfg702@industry.com,武汉,"$1,017,551.00",2022-07-13
+MC-904,  Wonka MFG#80  ,mfg703@plant.net,南京,3454766,12/06/2024
+MC-905,stark industries mfg#81,mfg704@plant.net,广州,"$1,726,422.00",2026-12-17
+MC-906,Aperture MFG#82,MFG705@FACTORY.ORG,苏州,2296337,11/26/2021
+MC-907,Globex MFG#83,  mfg706@factory.org  ,武汉,"$2,753,127.00",2026-05-12
+MC-908,  Blue Sun MFG#84  ,MFG707@FACTORY.ORG,深圳,"$1,216,316.00",23-10-2021
+MC-909,  Tyrell Corp MFG#85  ,  mfg708@plant.net  ,南京,"$2,919,142.00",2020-09-26
+MC-910,  Aperture MFG#86  ,mfg709@industry.com,北京,"$665,490.00",2021-12-19
+MC-911,  Tyrell Corp MFG#87  ,MFG710@INDUSTRY.COM,广州,"$3,985,262.00",2021-04-09
+MC-912,Initech MFG#88,  mfg711@plant.net  ,成都,868534,2020-02-01
+MC-913,Stark Industries MFG#0,mfg712@plant.net,北京,"1,876,920.00",2021-06-02
+MC-914,LexCorp MFG#1,  mfg713@plant.net  ,北京,2333469,02/08/2016
+MC-915,Acme Corp MFG#2,mfg714@factory.org,杭州,"$855,787.00",03/20/2016
+MC-916,Stark Industries MFG#3,mfg715@factory.org,北京,936229,2024-05-17
+MC-917,  Umbrella Co MFG#4  ,MFG716@FACTORY.ORG,杭州,"1,827,012.00",03-12-2015
+MC-918,HOOLI MFG#5,mfg717@plant.net,武汉,2638832,08/04/2018
+MC-919,LexCorp MFG#6,  mfg718@factory.org  ,南京,"$3,985,260.00",2021-11-18
+MC-920,Cyberdyne MFG#7,mfg719@industry.com,成都,"$817,166.00",04/25/2016
+MC-921,  Acme Corp MFG#8  ,MFG720@FACTORY.ORG,成都,1255720,09/18/2021
+MC-922,Massive Dynamic MFG#9,  mfg721@factory.org  ,上海,"$2,980,922.00",2017-12-22
+MC-923,  Tyrell Corp MFG#10  ,mfg722@factory.org,杭州,"993,001.00",2025-07-12
+MC-924,  Dunder Mifflin MFG#11  ,mfg723@industry.com,武汉,2722732,2017-06-21
+MC-925,  Wonka MFG#12  ,mfg724@plant.net,武汉,1281677,06/23/2026
+MC-926,Wayne Enterprises MFG#13,  mfg725@plant.net  ,上海,"$3,795,855.00",22-09-2023
+MC-927,Oscorp MFG#14,MFG726@FACTORY.ORG,武汉,3954809,2026-05-09
+MC-928,Blue Sun MFG#15,MFG727@FACTORY.ORG,武汉,1527704,13-03-2025
+MC-929,  Dunder Mifflin MFG#16  ,MFG728@INDUSTRY.COM,广州,"$1,416,858.00",08/05/2018
+MC-930,Initech MFG#17,mfg729@factory.org,杭州,"$346,885.00",27-11-2022
+MC-931,Blue Sun MFG#18,mfg730@factory.org,南京,3593899,2016-11-03
+MC-932,Wonka MFG#19,  mfg731@industry.com  ,成都,"3,771,096.00",04/06/2018
+MC-933,LexCorp MFG#20,mfg732@industry.com,深圳,"$3,855,553.00",27-05-2017
+MC-934,  Blue Sun MFG#21  ,  mfg733@factory.org  ,西安,"$3,174,991.00",08/17/2023
+MC-935,VANDELAY MFG#22,  mfg734@factory.org  ,上海,4398772,11/17/2020
+MC-936,Hooli MFG#23,mfg735@factory.org,上海,"$3,241,582.00",04/22/2026
+MC-937,Acme Corp MFG#24,mfg736@plant.net,南京,"$697,769.00",2020-04-06
+MC-938,Weyland-Yutani MFG#25,  mfg737@plant.net  ,南京,"472,688.00",05/02/2021
+MC-939,MASSIVE DYNAMIC MFG#26,mfg738@plant.net,深圳,3000621,2015-10-10
+MC-940,Aperture MFG#27,mfg739@plant.net,苏州,2216654,06/12/2021
+MC-941,Blue Sun MFG#28,mfg740@factory.org,深圳,4470972,2026-06-24
+MC-942,Umbrella Co MFG#29,MFG741@PLANT.NET,杭州,1813489,08/26/2020
+MC-943,GLOBEX MFG#30,mfg742@plant.net,上海,"$3,720,863.00",2015-11-09
+MC-944,Umbrella Co MFG#31,MFG743@PLANT.NET,苏州,"$415,430.00",18-08-2026
+MC-945,BLACK MESA MFG#32,  mfg744@factory.org  ,深圳,1259524,17-03-2023
+MC-946,Aperture MFG#33,mfg745@factory.org,武汉,"2,297,787.00",2023-09-19
+MC-947,Vandelay MFG#34,MFG746@PLANT.NET,成都,"4,839,244.00",2016-05-06
+MC-948,  Umbrella Co MFG#35  ,mfg747@industry.com,上海,"$3,601,498.00",20-01-2022
+MC-949,GLOBEX MFG#36,  mfg748@industry.com  ,杭州,4180056,2017-06-22
+MC-950,Oscorp MFG#37,mfg749@plant.net,深圳,1480878,14-04-2026
+MC-951,  Wonka MFG#38  ,mfg750@factory.org,北京,"$3,193,648.00",2016-03-24
+MC-952,WAYNE ENTERPRISES MFG#39,mfg751@factory.org,成都,1258505,04/02/2020
+MC-953,Acme Corp MFG#40,mfg752@industry.com,武汉,2320919,2018-02-15
+MC-954,stark industries mfg#41,  mfg753@plant.net  ,上海,3215963,09/18/2026
+MC-955,blue sun mfg#42,mfg754@factory.org,深圳,"$1,004,787.00",26-08-2024
+MC-956,Massive Dynamic MFG#43,mfg755@industry.com,南京,2623725,2015-07-05
+MC-957,Cyberdyne MFG#44,mfg756@industry.com,西安,2031520,2015-08-01
+MC-958,Hooli MFG#45,mfg757@plant.net,深圳,686861,06/01/2018
+MC-959,Cyberdyne MFG#46,mfg758@plant.net,武汉,227226,2016-02-14
+MC-960,Initech MFG#47,mfg759@industry.com,广州,4545409,2022-10-11
+MC-961,  Pied Piper MFG#48  ,mfg760@plant.net,上海,1269094,2015-07-03
+MC-962,Globex MFG#49,MFG761@FACTORY.ORG,成都,1404287,2024-09-09
+MC-963,blue sun mfg#50,  mfg762@plant.net  ,苏州,"4,637,620.00",25-01-2024
+MC-964,  Oscorp MFG#51  ,  mfg763@industry.com  ,苏州,712079,10/17/2019
+MC-965,LexCorp MFG#52,  mfg764@industry.com  ,西安,"$4,583,676.00",05/19/2023
+MC-966,black mesa mfg#53,mfg765@factory.org,杭州,"574,599.00",2015-07-28
+MC-967,Tyrell Corp MFG#54,MFG766@PLANT.NET,广州,"4,639,828.00",10/14/2018
+MC-968,Oscorp MFG#55,mfg767@industry.com,深圳,"$174,809.00",22-06-2022
+MC-969,  Initech MFG#56  ,mfg768@plant.net,成都,3452970,03/20/2022
+MC-970,Globex MFG#57,mfg769@plant.net,杭州,"1,581,774.00",10/17/2025
+MC-971,  Wayne Enterprises MFG#58  ,mfg770@plant.net,成都,"$2,731,626.00",01/15/2023
+MC-972,Weyland-Yutani MFG#59,mfg771@plant.net,苏州,"$1,715,273.00",2023-03-27
+MC-973,Black Mesa MFG#60,mfg772@plant.net,成都,"1,205,489.00",2021-07-08
+MC-974,  Vandelay MFG#61  ,mfg773@plant.net,南京,491207,02/13/2017
+MC-975,  Blue Sun MFG#62  ,  mfg774@plant.net  ,南京,1862513,14-10-2022
+MC-976,Initech MFG#63,mfg775@factory.org,南京,"2,033,014.00",2018-07-26
+MC-977,Vandelay MFG#64,mfg776@factory.org,武汉,3638163,05/05/2025
+MC-978,  Globex MFG#65  ,MFG777@FACTORY.ORG,北京,3404939,02/21/2015
+MC-979,INITECH MFG#66,mfg778@plant.net,广州,4813300,2026-07-15
+MC-980,Weyland-Yutani MFG#67,mfg779@industry.com,南京,3911163,2021-01-26
+MC-981,DUNDER MIFFLIN MFG#68,MFG780@FACTORY.ORG,南京,2032725,2020-07-21
+MC-982,  Pied Piper MFG#69  ,MFG781@INDUSTRY.COM,苏州,"4,806,115.00",2017-01-15
+MC-983,  Globex MFG#70  ,mfg782@factory.org,广州,"$513,621.00",12-08-2023
+MC-984,LexCorp MFG#71,MFG783@INDUSTRY.COM,杭州,861357,02-05-2019
+MC-985,Globex MFG#72,mfg784@plant.net,上海,"$4,101,989.00",05/18/2019
+MC-986,cyberdyne mfg#73,mfg785@factory.org,上海,1323929,03/18/2016
+MC-987,  Black Mesa MFG#74  ,mfg786@factory.org,苏州,"$3,313,174.00",2019-10-19
+MC-988,LexCorp MFG#75,  mfg787@factory.org  ,成都,4938061,2025-07-25
+MC-989,umbrella co mfg#76,  mfg788@plant.net  ,北京,"1,764,230.00",2023-10-16
+MC-990,APERTURE MFG#77,mfg789@plant.net,北京,2426088,2023-04-07
+MC-991,Aperture MFG#78,  mfg790@factory.org  ,成都,"527,496.00",06/10/2022
+MC-992,Massive Dynamic MFG#79,MFG791@FACTORY.ORG,杭州,4570600,10-05-2017
+MC-993,Acme Corp MFG#80,  mfg792@industry.com  ,杭州,"$4,918,832.00",09/20/2024
+MC-994,  Massive Dynamic MFG#81  ,MFG793@FACTORY.ORG,杭州,"$3,508,919.00",17-06-2022
+MC-995,Tyrell Corp MFG#82,MFG794@PLANT.NET,深圳,595940,2022-04-26
+MC-996,INITECH MFG#83,mfg795@plant.net,苏州,3966967,2022-08-28
+MC-997,GLOBEX MFG#84,mfg796@plant.net,西安,"$3,133,911.00",2024-07-13
+MC-998,UMBRELLA CO MFG#85,mfg797@plant.net,上海,3739727,2020-01-23
+MC-999,PIED PIPER MFG#86,mfg798@industry.com,上海,1683392,2021-10-05
+MC-1000,dunder mifflin mfg#87,MFG799@FACTORY.ORG,南京,"2,030,885.00",02/06/2019
+MC-1001,Umbrella Co MFG#88,mfg800@industry.com,武汉,"$3,926,463.00",2025-03-06
+MC-1002,  LexCorp MFG#0  ,  mfg801@factory.org  ,武汉,"1,828,223.00",04-03-2024
+MC-1003,  Weyland-Yutani MFG#1  ,mfg802@factory.org,广州,"2,202,680.00",12-02-2016
+MC-1004,black mesa mfg#2,  mfg803@factory.org  ,武汉,2728054,2017-02-21
+MC-1005,VANDELAY MFG#3,mfg804@factory.org,广州,2758944,05-11-2021
+MC-1006,Hooli MFG#4,mfg805@factory.org,武汉,744586,12/05/2017
+MC-1007,TYRELL CORP MFG#5,mfg806@factory.org,成都,2236313,08/01/2024
+MC-1008,Umbrella Co MFG#6,MFG807@INDUSTRY.COM,杭州,2007730,25-08-2023
+MC-1009,Tyrell Corp MFG#7,mfg808@plant.net,北京,"3,323,860.00",02/06/2025
+MC-1010,Dunder Mifflin MFG#8,  mfg809@plant.net  ,上海,"3,168,388.00",03-10-2018
+MC-1011,Umbrella Co MFG#9,  mfg810@industry.com  ,成都,1159774,04/14/2016
+MC-1012,Stark Industries MFG#10,  mfg811@industry.com  ,广州,1291968,08/02/2025
+MC-1013,Pied Piper MFG#11,mfg812@factory.org,南京,"$3,374,344.00",2025-06-24
+MC-1014,  Wayne Enterprises MFG#12  ,mfg813@factory.org,深圳,"$603,979.00",28-10-2015
+MC-1015,Wayne Enterprises MFG#13,MFG814@FACTORY.ORG,南京,1473434,01/09/2015
+MC-1016,  Tyrell Corp MFG#14  ,  mfg815@industry.com  ,南京,"$1,678,854.00",2025-09-02
+MC-1017,  Blue Sun MFG#15  ,mfg816@industry.com,西安,2541979,04-12-2017
+MC-1018,LEXCORP MFG#16,MFG817@PLANT.NET,北京,"2,078,164.00",16-06-2015
+MC-1019,Acme Corp MFG#17,mfg818@industry.com,广州,"2,053,396.00",2021-01-07
+MC-1020,Dunder Mifflin MFG#18,MFG819@INDUSTRY.COM,上海,472956,27-02-2022
+MC-1021,Initech MFG#19,  mfg820@plant.net  ,上海,630503,2022-08-25
+MC-1022,initech mfg#20,mfg821@plant.net,武汉,2678554,2016-04-27
+MC-1023,Oscorp MFG#21,  mfg822@industry.com  ,广州,"414,243.00",04/12/2019
+MC-1024,Cyberdyne MFG#22,mfg823@plant.net,广州,1060266,07/14/2017
+MC-1025,Wayne Enterprises MFG#23,mfg824@factory.org,成都,"2,345,983.00",27-11-2024
+MC-1026,Wayne Enterprises MFG#24,MFG825@FACTORY.ORG,武汉,"$3,306,143.00",28-01-2025
+MC-1027,  Aperture MFG#25  ,mfg826@factory.org,广州,"$1,175,539.00",11/20/2015
+MC-1028,Weyland-Yutani MFG#26,mfg827@factory.org,广州,"$1,995,044.00",2024-04-23
+MC-1029,Vandelay MFG#27,mfg828@industry.com,深圳,"$2,331,213.00",2019-10-09
+MC-1030,BLUE SUN MFG#28,mfg829@factory.org,武汉,1849017,04-12-2017
+MC-1031,BLACK MESA MFG#29,  mfg830@factory.org  ,武汉,"855,291.00",03/03/2021
+MC-1032,Oscorp MFG#30,MFG831@INDUSTRY.COM,北京,"2,147,167.00",03/05/2017
+MC-1033,BLUE SUN MFG#31,  mfg832@factory.org  ,杭州,672372,08/21/2023
+MC-1034,MASSIVE DYNAMIC MFG#32,MFG833@INDUSTRY.COM,成都,3028407,05/09/2022
+MC-1035,Weyland-Yutani MFG#33,  mfg834@plant.net  ,北京,388235,11/20/2021
+MC-1036,STARK INDUSTRIES MFG#34,MFG835@FACTORY.ORG,成都,1658119,06/15/2022
+MC-1037,Wonka MFG#35,mfg836@industry.com,杭州,"$2,382,309.00",2025-04-18
+MC-1038,Black Mesa MFG#36,  mfg837@factory.org  ,广州,2663930,12-03-2019
+MC-1039,LEXCORP MFG#37,MFG838@INDUSTRY.COM,武汉,"1,187,192.00",09-06-2021
+MC-1040,Hooli MFG#38,mfg839@industry.com,北京,"$2,825,308.00",2022-07-05
+MC-1041,Vandelay MFG#39,mfg840@factory.org,苏州,"335,002.00",2019-06-25
+MC-1042,Dunder Mifflin MFG#40,mfg841@industry.com,上海,"$1,306,762.00",12/10/2019
+MC-1043,Cyberdyne MFG#41,mfg842@plant.net,成都,4764238,27-12-2015
+MC-1044,Black Mesa MFG#42,mfg843@factory.org,南京,"4,511,251.00",2016-05-22
+MC-1045,black mesa mfg#43,MFG844@FACTORY.ORG,南京,2003770,19-11-2021
+MC-1046,  Umbrella Co MFG#44  ,mfg845@plant.net,深圳,"2,856,889.00",27-05-2025
+MC-1047,initech mfg#45,mfg846@plant.net,上海,2522057,11/08/2020
+MC-1048,Massive Dynamic MFG#46,mfg847@factory.org,上海,"$4,618,264.00",2021-03-21
+MC-1049,STARK INDUSTRIES MFG#47,mfg848@factory.org,广州,3093310,2022-04-06
+MC-1050,Umbrella Co MFG#48,mfg849@industry.com,上海,"$3,749,551.00",2025-08-14
+MC-1051,Weyland-Yutani MFG#49,mfg850@plant.net,上海,"$2,673,904.00",02/25/2018
+MC-1052,Aperture MFG#50,MFG851@FACTORY.ORG,北京,"204,127.00",2017-06-20
+MC-1053,Tyrell Corp MFG#51,mfg852@factory.org,深圳,694717,12-04-2024
+MC-1054,Pied Piper MFG#52,  mfg853@factory.org  ,上海,"1,593,624.00",01/05/2023
+MC-1055,Umbrella Co MFG#53,  mfg854@factory.org  ,成都,746178,03/04/2024
+MC-1056,Tyrell Corp MFG#54,mfg855@factory.org,广州,3605071,01/08/2017
+MC-1057,Wayne Enterprises MFG#55,mfg856@industry.com,苏州,715358,2018-02-03
+MC-1058,OSCORP MFG#56,  mfg857@industry.com  ,杭州,1556636,19-06-2016
+MC-1059,LexCorp MFG#57,mfg858@factory.org,杭州,4696844,2026-09-12
+MC-1060,massive dynamic mfg#58,mfg859@industry.com,成都,2313955,11/07/2024
+MC-1061,Initech MFG#59,mfg860@factory.org,北京,"$2,408,221.00",2022-02-16
+MC-1062,Wonka MFG#60,mfg861@industry.com,苏州,"1,384,035.00",2024-02-25
+MC-1063,oscorp mfg#61,mfg862@factory.org,北京,4107539,2026-11-08
+MC-1064,Stark Industries MFG#62,mfg863@industry.com,深圳,2297052,2020-12-13
+MC-1065,Umbrella Co MFG#63,mfg864@industry.com,深圳,250211,2023-11-16
+MC-1066,Aperture MFG#64,mfg865@plant.net,苏州,2650977,2018-11-27
+MC-1067,Hooli MFG#65,mfg866@factory.org,深圳,"$2,215,346.00",07/13/2017
+MC-1068,VANDELAY MFG#66,mfg867@factory.org,杭州,"3,488,951.00",2023-10-08
+MC-1069,HOOLI MFG#67,mfg868@industry.com,杭州,4559540,18-02-2021
+MC-1070,Aperture MFG#68,mfg869@industry.com,北京,"$1,716,660.00",2024-06-16
+MC-1071,Globex MFG#69,mfg870@factory.org,南京,1721718,2018-11-13
+MC-1072,  Wonka MFG#70  ,MFG871@PLANT.NET,广州,213692,2016-11-20
+MC-1073,Pied Piper MFG#71,mfg872@industry.com,南京,"4,306,659.00",2026-05-16
+MC-1074,UMBRELLA CO MFG#72,MFG873@FACTORY.ORG,苏州,"$1,525,560.00",2018-02-18
+MC-1075,Hooli MFG#73,MFG874@FACTORY.ORG,上海,1907365,2023-09-11
+MC-1076,  Aperture MFG#74  ,  mfg875@plant.net  ,广州,1027497,2022-04-01
+MC-1077,DUNDER MIFFLIN MFG#75,MFG876@PLANT.NET,杭州,2667342,23-01-2025
+MC-1078,  Stark Industries MFG#76  ,mfg877@plant.net,北京,"$2,016,290.00",06/14/2023
+MC-1079,Blue Sun MFG#77,MFG878@FACTORY.ORG,西安,4253291,2017-06-14
+MC-1080,  Aperture MFG#78  ,  mfg879@factory.org  ,杭州,"1,403,641.00",2023-07-04
+MC-1081,  Acme Corp MFG#79  ,mfg880@plant.net,南京,3736442,2024-04-27
+MC-1082,Vandelay MFG#80,mfg881@industry.com,上海,"4,282,441.00",2018-10-08
+MC-1083,Black Mesa MFG#81,mfg882@plant.net,北京,"$2,312,521.00",11/27/2023
+MC-1084,Cyberdyne MFG#82,  mfg883@plant.net  ,广州,"$236,817.00",2022-12-02
+MC-1085,Hooli MFG#83,mfg884@industry.com,南京,"4,736,081.00",2018-09-19
+MC-1086,TYRELL CORP MFG#84,mfg885@factory.org,深圳,"4,172,481.00",2020-03-25
+MC-1087,Dunder Mifflin MFG#85,mfg886@factory.org,成都,"$3,795,620.00",07/24/2018
+MC-1088,PIED PIPER MFG#86,mfg887@plant.net,武汉,"$2,597,003.00",12/12/2015
+MC-1089,  Pied Piper MFG#87  ,mfg888@factory.org,深圳,2310198,12/27/2024
+MC-1090,  LexCorp MFG#88  ,mfg889@factory.org,苏州,"508,316.00",2017-02-12
+MC-1091,HOOLI MFG#0,mfg890@plant.net,武汉,"$1,145,503.00",12/26/2022
+MC-1092,Tyrell Corp MFG#1,MFG891@FACTORY.ORG,西安,"$4,627,753.00",07/24/2016
+MC-1093,wayne enterprises mfg#2,mfg892@plant.net,苏州,2709396,2025-04-25
+MC-1094,Massive Dynamic MFG#3,mfg893@factory.org,成都,"2,958,967.00",05/23/2024
+MC-1095,Cyberdyne MFG#4,  mfg894@industry.com  ,杭州,4740562,2017-02-22
+MC-1096,  Vandelay MFG#5  ,mfg895@factory.org,北京,"$2,467,709.00",2025-04-14
+MC-1097,APERTURE MFG#6,  mfg896@factory.org  ,成都,"$4,619,665.00",2021-11-04
+MC-1098,WAYNE ENTERPRISES MFG#7,  mfg897@industry.com  ,北京,1987800,07/15/2018
+MC-1099,TYRELL CORP MFG#8,mfg898@plant.net,上海,4698297,21-02-2021
+MC-1100,Acme Corp MFG#9,mfg899@factory.org,广州,"$4,506,615.00",07/14/2025
+MC-1101,LEXCORP MFG#10,mfg900@factory.org,南京,"$4,919,599.00",11-05-2021
+MC-1102,APERTURE MFG#11,mfg901@industry.com,西安,"2,305,815.00",04-02-2015
+MC-1103,APERTURE MFG#12,mfg902@plant.net,广州,"$3,614,241.00",10-12-2018
+MC-1104,Tyrell Corp MFG#13,mfg903@industry.com,武汉,"$2,462,815.00",2020-07-01
+MC-1105,oscorp mfg#14,mfg904@plant.net,上海,"215,032.00",2024-05-03
+MC-1106,lexcorp mfg#15,MFG905@INDUSTRY.COM,北京,3666195,25-01-2021
+MC-1107,Stark Industries MFG#16,mfg906@industry.com,苏州,"$3,439,228.00",2020-08-27
+MC-1108,  Initech MFG#17  ,mfg907@industry.com,武汉,"3,044,422.00",2022-09-22
+MC-1109,Blue Sun MFG#18,  mfg908@factory.org  ,杭州,1014140,11/05/2018
+MC-1110,Aperture MFG#19,MFG909@FACTORY.ORG,上海,"$4,485,277.00",2023-08-21
+MC-1111,Aperture MFG#20,mfg910@industry.com,杭州,2774333,02/15/2022
+MC-1112,Weyland-Yutani MFG#21,  mfg911@factory.org  ,广州,3865492,2021-01-06
+MC-1113,Weyland-Yutani MFG#22,MFG912@INDUSTRY.COM,南京,"$1,300,472.00",23-04-2016
+MC-1114,Vandelay MFG#23,mfg913@industry.com,南京,"1,182,040.00",02/12/2021
+MC-1115,Stark Industries MFG#24,mfg914@industry.com,武汉,"$4,809,480.00",01/01/2015
+MC-1116,hooli mfg#25,  mfg915@industry.com  ,上海,"1,437,436.00",06/21/2023
+MC-1117,  Blue Sun MFG#26  ,mfg916@factory.org,北京,"$2,749,549.00",2019-08-08
+MC-1118,  Massive Dynamic MFG#27  ,mfg917@factory.org,成都,2952203,13-12-2024
+MC-1119,Oscorp MFG#28,mfg918@industry.com,广州,"2,599,852.00",2024-03-27
+MC-1120,Vandelay MFG#29,mfg919@industry.com,西安,944081,2018-11-12
+MC-1121,UMBRELLA CO MFG#30,mfg920@factory.org,北京,"$1,889,548.00",11/01/2018
+MC-1122,  Umbrella Co MFG#31  ,mfg921@industry.com,杭州,"$2,424,661.00",08/27/2019
+MC-1123,globex mfg#32,mfg922@industry.com,上海,2047321,05/20/2025
+MC-1124,Weyland-Yutani MFG#33,  mfg923@plant.net  ,苏州,"4,802,789.00",2018-08-22
+MC-1125,GLOBEX MFG#34,  mfg924@industry.com  ,杭州,"$4,842,147.00",07-07-2016
+MC-1126,  Weyland-Yutani MFG#35  ,mfg925@plant.net,广州,"2,800,834.00",2025-05-26
+MC-1127,  Oscorp MFG#36  ,  mfg926@plant.net  ,北京,"653,900.00",04/07/2020
+MC-1128,  Weyland-Yutani MFG#37  ,mfg927@factory.org,南京,990309,2025-02-22
+MC-1129,VANDELAY MFG#38,mfg928@plant.net,武汉,3040872,14-11-2026
+MC-1130,Blue Sun MFG#39,  mfg929@industry.com  ,武汉,"4,720,792.00",28-07-2015
+MC-1131,  Cyberdyne MFG#40  ,mfg930@factory.org,杭州,"2,165,997.00",2017-08-04
+MC-1132,Initech MFG#41,mfg931@plant.net,南京,3349784,2025-09-19
+MC-1133,Dunder Mifflin MFG#42,mfg932@industry.com,苏州,551483,03/19/2016
+MC-1134,Aperture MFG#43,mfg933@factory.org,广州,2144568,15-12-2019
+MC-1135,wayne enterprises mfg#44,mfg934@factory.org,广州,"$3,866,159.00",07/12/2021
+MC-1136,Globex MFG#45,mfg935@plant.net,苏州,867045,2017-07-13
+MC-1137,globex mfg#46,mfg936@factory.org,南京,"$2,494,137.00",04/01/2018
+MC-1138,Vandelay MFG#47,mfg937@industry.com,苏州,3239041,05/24/2024
+MC-1139,Dunder Mifflin MFG#48,mfg938@factory.org,北京,"2,113,428.00",02-04-2022
+MC-1140,LEXCORP MFG#49,mfg939@plant.net,苏州,4365577,2025-12-13
+MC-1141,  Pied Piper MFG#50  ,mfg940@factory.org,上海,"$2,966,953.00",2020-08-21
+MC-1142,  Aperture MFG#51  ,mfg941@industry.com,南京,4337753,2024-01-09
+MC-1143,Aperture MFG#52,  mfg942@industry.com  ,上海,1484020,2021-03-05
+MC-1144,BLUE SUN MFG#53,  mfg943@factory.org  ,杭州,863154,24-05-2016
+MC-1145,  Initech MFG#54  ,mfg944@plant.net,西安,"2,335,923.00",02/01/2019
+MC-1146,  Oscorp MFG#55  ,MFG945@PLANT.NET,成都,"856,820.00",05-10-2017
+MC-1147,Acme Corp MFG#56,  mfg946@plant.net  ,上海,3108979,2016-04-11
+MC-1148,Aperture MFG#57,MFG947@PLANT.NET,杭州,2952234,2019-06-02
+MC-1149,Globex MFG#58,mfg948@factory.org,西安,591247,06/07/2016
+MC-1150,Cyberdyne MFG#59,MFG949@INDUSTRY.COM,武汉,"$3,625,186.00",02/13/2017
+MC-1151,LEXCORP MFG#60,  mfg950@industry.com  ,北京,"$3,286,267.00",2021-10-27
+MC-1152,  Hooli MFG#61  ,  mfg951@plant.net  ,苏州,2390413,2020-04-05
+MC-1153,LEXCORP MFG#62,mfg952@plant.net,苏州,"$2,300,348.00",2021-05-01
+MC-1154,Aperture MFG#63,mfg953@factory.org,成都,"3,350,926.00",2018-08-03
+MC-1155,  Vandelay MFG#64  ,mfg954@plant.net,广州,2353529,08/20/2018
+MC-1156,Weyland-Yutani MFG#65,mfg955@factory.org,杭州,2419427,2018-09-22
+MC-1157,BLACK MESA MFG#66,MFG956@FACTORY.ORG,广州,"2,129,166.00",02/16/2019
+MC-1158,Weyland-Yutani MFG#67,mfg957@factory.org,广州,3688008,02/18/2017
+MC-1159,GLOBEX MFG#68,  mfg958@plant.net  ,成都,"$2,655,064.00",10/27/2017
+MC-1160,LexCorp MFG#69,  mfg959@plant.net  ,上海,"$3,261,293.00",2024-12-25
+MC-1161,  Aperture MFG#70  ,mfg960@industry.com,杭州,4398289,07-05-2016
+MC-1162,Initech MFG#71,MFG961@FACTORY.ORG,北京,2268373,03/23/2020
+MC-1163,  Initech MFG#72  ,mfg962@industry.com,苏州,"$914,631.00",2016-01-15
+MC-1164,  Weyland-Yutani MFG#73  ,mfg963@factory.org,苏州,"$3,991,202.00",03-07-2016
+MC-1165,Dunder Mifflin MFG#74,mfg964@industry.com,深圳,"$3,948,033.00",05/02/2019
+MC-1166,LexCorp MFG#75,mfg965@industry.com,深圳,1718675,2021-05-14
+MC-1167,Tyrell Corp MFG#76,  mfg966@industry.com  ,南京,"$923,963.00",15-12-2023
+MC-1168,Blue Sun MFG#77,mfg967@factory.org,上海,"$1,706,764.00",19-12-2026
+MC-1169,  Wayne Enterprises MFG#78  ,mfg968@factory.org,西安,2690896,2023-10-01
+MC-1170,  Hooli MFG#79  ,  mfg969@plant.net  ,广州,"$331,858.00",03/06/2017
+MC-1171,Hooli MFG#80,mfg970@factory.org,深圳,1208980,03-10-2024
+MC-1172,  Dunder Mifflin MFG#81  ,mfg971@factory.org,深圳,231825,2016-02-10
+MC-1173,Vandelay MFG#82,mfg972@industry.com,北京,3158603,2024-09-28
+MC-1174,HOOLI MFG#83,mfg973@plant.net,广州,"$3,656,710.00",2024-09-13
+MC-1175,pied piper mfg#84,  mfg974@industry.com  ,武汉,1115524,12-12-2018
+MC-1176,  Vandelay MFG#85  ,MFG975@FACTORY.ORG,苏州,"682,209.00",2025-12-17
+MC-1177,blue sun mfg#86,MFG976@PLANT.NET,武汉,3865567,2022-10-21
+MC-1178,Oscorp MFG#87,mfg977@industry.com,武汉,"$2,426,706.00",2024-12-10
+MC-1179,Globex MFG#88,mfg978@factory.org,杭州,"$801,966.00",08-09-2025
+MC-1180,Stark Industries MFG#0,MFG979@PLANT.NET,西安,"4,508,141.00",2025-08-15
+MC-1181,Weyland-Yutani MFG#1,mfg980@factory.org,西安,3331078,22-08-2017
+MC-1182,  Dunder Mifflin MFG#2  ,mfg981@plant.net,成都,4925183,2022-07-24
+MC-1183,Acme Corp MFG#3,  mfg982@factory.org  ,上海,"$3,175,135.00",2023-06-11
+MC-1184,Vandelay MFG#4,mfg983@industry.com,上海,"668,946.00",12/26/2023
+MC-1185,black mesa mfg#5,MFG984@FACTORY.ORG,成都,"$4,551,719.00",13-02-2025
+MC-1186,  Massive Dynamic MFG#6  ,mfg985@plant.net,杭州,3789285,2026-10-20
+MC-1187,Black Mesa MFG#7,mfg986@industry.com,南京,"$3,652,381.00",2023-01-28
+MC-1188,Vandelay MFG#8,  mfg987@plant.net  ,广州,4811864,2020-08-02
+MC-1189,Cyberdyne MFG#9,mfg988@plant.net,广州,"$2,666,347.00",2024-03-22
+MC-1190,Acme Corp MFG#10,mfg989@plant.net,成都,3687629,2025-07-21
+MC-1191,Blue Sun MFG#11,mfg990@plant.net,北京,"2,232,737.00",2018-11-22
+MC-1192,  Black Mesa MFG#12  ,mfg991@plant.net,西安,"$3,229,278.00",07/26/2026
+MC-1193,VANDELAY MFG#13,MFG992@INDUSTRY.COM,北京,"$1,208,533.00",09/22/2017
+MC-1194,Globex MFG#14,mfg993@plant.net,南京,434095,11/18/2017
+MC-1195,Stark Industries MFG#15,MFG994@PLANT.NET,成都,619560,2016-09-13
+MC-1196,Aperture MFG#16,mfg995@plant.net,深圳,1638669,02/19/2016
+MC-1197,Black Mesa MFG#17,mfg996@factory.org,北京,"$4,642,224.00",08/12/2018
+MC-1198,DUNDER MIFFLIN MFG#18,mfg997@industry.com,广州,2571965,08-04-2015
+MC-1199,Blue Sun MFG#19,mfg998@plant.net,西安,4156581,07/13/2024
+MC-1200,  Black Mesa MFG#20  ,MFG999@INDUSTRY.COM,苏州,453722,2017-06-08
+MC-1201,  Wayne Enterprises MFG#21  ,mfg1000@industry.com,广州,"$1,556,329.00",2024-07-09
+MC-1202,Pied Piper MFG#22,mfg1001@plant.net,成都,3447935,05-02-2024
+MC-1203,Pied Piper MFG#23,mfg1002@plant.net,杭州,"$169,905.00",2024-07-23
+MC-1204,  Aperture MFG#24  ,mfg1003@industry.com,广州,2715802,26-03-2025
+MC-1205,Massive Dynamic MFG#25,  mfg1004@factory.org  ,上海,3243597,27-12-2017
+MC-1206,Blue Sun MFG#26,MFG1005@PLANT.NET,广州,2521106,05/15/2015
+MC-1207,DUNDER MIFFLIN MFG#27,mfg1006@industry.com,南京,"$2,978,487.00",2015-08-22
+MC-1208,  Tyrell Corp MFG#28  ,mfg1007@factory.org,成都,2064444,2017-09-26
+MC-1209,Initech MFG#29,mfg1008@factory.org,北京,4501925,2026-08-26
+MC-1210,  Globex MFG#30  ,  mfg1009@industry.com  ,广州,2116551,04/28/2019
+MC-1211,WAYNE ENTERPRISES MFG#31,mfg1010@plant.net,武汉,2614525,01/28/2024
+MC-1212,Wayne Enterprises MFG#32,mfg1011@industry.com,上海,118363,25-12-2026
+MC-1213,TYRELL CORP MFG#33,mfg1012@factory.org,杭州,3136919,01/07/2025
+MC-1214,  Dunder Mifflin MFG#34  ,mfg1013@plant.net,武汉,2822756,2016-09-04
+MC-1215,Globex MFG#35,mfg1014@factory.org,苏州,"$3,827,185.00",10-07-2016
+MC-1216,Acme Corp MFG#36,MFG1015@PLANT.NET,南京,2506554,12/23/2015
+MC-1217,stark industries mfg#37,mfg1016@factory.org,武汉,4513625,2024-01-18
+MC-1218,  Blue Sun MFG#38  ,mfg1017@plant.net,深圳,"1,291,339.00",15-11-2015
+MC-1219,Black Mesa MFG#39,MFG1018@INDUSTRY.COM,南京,"$4,430,287.00",2023-12-17
+MC-1220,Tyrell Corp MFG#40,mfg1019@factory.org,广州,171850,2025-11-25
+MC-1221,tyrell corp mfg#41,mfg1020@plant.net,武汉,"$1,357,457.00",2022-07-28
+MC-1222,  Blue Sun MFG#42  ,MFG1021@INDUSTRY.COM,成都,2822484,18-09-2016
+MC-1223,Cyberdyne MFG#43,MFG1022@PLANT.NET,苏州,3845205,2015-10-04
+MC-1224,initech mfg#44,mfg1023@factory.org,北京,3281274,2023-04-10
+MC-1225,Pied Piper MFG#45,mfg1024@plant.net,成都,"3,453,918.00",2018-11-05
+MC-1226,Vandelay MFG#46,mfg1025@plant.net,苏州,"$3,823,998.00",08/17/2019
+MC-1227,WONKA MFG#47,mfg1026@plant.net,杭州,4715336,2023-05-07
+MC-1228,DUNDER MIFFLIN MFG#48,mfg1027@industry.com,西安,2624343,2018-01-18
+MC-1229,Blue Sun MFG#49,MFG1028@PLANT.NET,深圳,1048903,28-04-2023
+MC-1230,  Globex MFG#50  ,  mfg1029@plant.net  ,深圳,"$3,727,362.00",01/06/2019
+MC-1231,Black Mesa MFG#51,mfg1030@plant.net,杭州,3590579,2015-02-26
+MC-1232,aperture mfg#52,mfg1031@plant.net,上海,"1,090,887.00",2020-10-05
+MC-1233,Dunder Mifflin MFG#53,  mfg1032@factory.org  ,武汉,3555007,2022-03-11
+MC-1234,WAYNE ENTERPRISES MFG#54,  mfg1033@plant.net  ,西安,379495,05/05/2025
+MC-1235,Wayne Enterprises MFG#55,  mfg1034@factory.org  ,南京,2100607,2025-07-14
+MC-1236,Aperture MFG#56,mfg1035@industry.com,南京,"763,084.00",18-05-2015
+MC-1237,  Black Mesa MFG#57  ,mfg1036@factory.org,杭州,617874,2015-07-28
+MC-1238,LexCorp MFG#58,mfg1037@industry.com,苏州,"$2,834,957.00",2024-02-09
+MC-1239,LexCorp MFG#59,mfg1038@factory.org,西安,"4,251,376.00",10/18/2015
+MC-1240,Globex MFG#60,mfg1039@plant.net,武汉,"$4,823,782.00",16-09-2017
+MC-1241,aperture mfg#61,mfg1040@plant.net,西安,"4,543,076.00",14-04-2025
+MC-1242,Initech MFG#62,mfg1041@industry.com,南京,1598844,2020-05-11
+MC-1243,STARK INDUSTRIES MFG#63,mfg1042@factory.org,杭州,2901845,02/16/2015
+MC-1244,Stark Industries MFG#64,mfg1043@factory.org,北京,"$1,726,474.00",12/26/2017
+MC-1245,Umbrella Co MFG#65,mfg1044@factory.org,西安,"$4,852,146.00",11/09/2019
+MC-1246,Tyrell Corp MFG#66,mfg1045@industry.com,杭州,"$2,072,287.00",08/19/2024
+MC-1247,Pied Piper MFG#67,mfg1046@factory.org,苏州,4869819,09/15/2017
+MC-1248,  Hooli MFG#68  ,mfg1047@industry.com,上海,"$4,474,926.00",2017-11-20
+MC-1249,LexCorp MFG#69,  mfg1048@industry.com  ,南京,"$926,917.00",01/20/2018
+MC-1250,wonka mfg#70,MFG1049@PLANT.NET,南京,"$1,908,451.00",2015-08-03
+MC-1251,  Black Mesa MFG#71  ,mfg1050@industry.com,广州,555474,04-03-2020
+MC-1252,  Dunder Mifflin MFG#72  ,mfg1051@factory.org,深圳,"4,007,646.00",04/15/2015
+MC-1253,Wayne Enterprises MFG#73,mfg1052@industry.com,深圳,160174,11-01-2021
+MC-1254,APERTURE MFG#74,mfg1053@factory.org,上海,3958571,16-04-2018
+MC-1255,BLUE SUN MFG#75,  mfg1054@industry.com  ,苏州,"2,451,402.00",08/28/2025
+MC-1256,Pied Piper MFG#76,  mfg1055@industry.com  ,杭州,"$2,555,188.00",2023-05-01
+MC-1257,Initech MFG#77,mfg1056@industry.com,南京,"$3,574,151.00",2020-08-17
+MC-1258,INITECH MFG#78,MFG1057@INDUSTRY.COM,南京,"$4,295,436.00",2025-04-04
+MC-1259,wayne enterprises mfg#79,  mfg1058@industry.com  ,南京,"$4,096,324.00",2020-09-17
+MC-1260,Blue Sun MFG#80,mfg1059@plant.net,深圳,"$1,513,301.00",06/17/2017
+MC-1261,ACME CORP MFG#81,mfg1060@factory.org,上海,"4,084,071.00",2025-07-10
+MC-1262,Wayne Enterprises MFG#82,  mfg1061@industry.com  ,武汉,2244103,2019-06-15
+MC-1263,Massive Dynamic MFG#83,mfg1062@factory.org,南京,"$4,254,216.00",2018-08-04
+MC-1264,Weyland-Yutani MFG#84,mfg1063@factory.org,苏州,4063994,2017-11-21
+MC-1265,hooli mfg#85,mfg1064@plant.net,苏州,"4,451,430.00",2018-05-26
+MC-1266,Dunder Mifflin MFG#86,mfg1065@factory.org,南京,"$3,757,846.00",2019-11-21
+MC-1267,PIED PIPER MFG#87,MFG1066@FACTORY.ORG,广州,335656,2025-11-27
+MC-1268,VANDELAY MFG#88,mfg1067@factory.org,深圳,"2,671,480.00",2026-01-24
+MC-1269,  Umbrella Co MFG#0  ,mfg1068@factory.org,武汉,"4,212,912.00",2022-12-04
+MC-1270,WONKA MFG#1,MFG1069@INDUSTRY.COM,北京,"$1,134,191.00",13-07-2016
+MC-1271,ACME CORP MFG#2,mfg1070@industry.com,苏州,"$4,115,873.00",10-03-2015
+MC-1272,  Oscorp MFG#3  ,mfg1071@industry.com,武汉,"$428,821.00",2021-08-20
+MC-1273,  Weyland-Yutani MFG#4  ,mfg1072@factory.org,武汉,4373837,2023-06-06
+MC-1274,Hooli MFG#5,mfg1073@factory.org,杭州,3711352,2022-02-02
+MC-1275,UMBRELLA CO MFG#6,MFG1074@PLANT.NET,苏州,952858,2020-07-24
+MC-1276,  Oscorp MFG#7  ,MFG1075@PLANT.NET,苏州,2833785,09/12/2016
+MC-1277,WONKA MFG#8,mfg1076@industry.com,西安,"$1,370,618.00",2024-04-17
+MC-1278,TYRELL CORP MFG#9,mfg1077@industry.com,杭州,4360899,2024-07-27
+MC-1279,Acme Corp MFG#10,  mfg1078@factory.org  ,苏州,"2,598,904.00",09/24/2019
+MC-1280,WEYLAND-YUTANI MFG#11,mfg1079@plant.net,南京,2513047,2015-12-01
+MC-1281,Pied Piper MFG#12,mfg1080@industry.com,成都,657838,20-05-2018
+MC-1282,PIED PIPER MFG#13,  mfg1081@industry.com  ,南京,3431109,2019-03-10
+MC-1283,wayne enterprises mfg#14,  mfg1082@plant.net  ,成都,4976137,2018-10-22
+MC-1284,VANDELAY MFG#15,mfg1083@industry.com,成都,"1,345,219.00",09/27/2022
+MC-1285,  Pied Piper MFG#16  ,MFG1084@PLANT.NET,西安,3225786,09/23/2019
+MC-1286,Hooli MFG#17,mfg1085@factory.org,杭州,4548350,23-04-2023
+MC-1287,Umbrella Co MFG#18,mfg1086@industry.com,苏州,"$1,931,990.00",2022-01-11
+MC-1288,umbrella co mfg#19,mfg1087@industry.com,武汉,"$1,899,976.00",11/22/2026
+MC-1289,  Tyrell Corp MFG#20  ,  mfg1088@industry.com  ,苏州,"3,874,769.00",04/05/2017
+MC-1290,Tyrell Corp MFG#21,mfg1089@factory.org,广州,"2,695,653.00",2021-11-07
+MC-1291,Dunder Mifflin MFG#22,  mfg1090@industry.com  ,深圳,"2,915,203.00",2019-07-11
+MC-1292,Globex MFG#23,mfg1091@plant.net,广州,"$4,384,198.00",06-02-2021
+MC-1293,VANDELAY MFG#24,MFG1092@INDUSTRY.COM,南京,730911,11/26/2020
+MC-1294,Dunder Mifflin MFG#25,MFG1093@INDUSTRY.COM,上海,"$75,776.00",2018-03-15
+MC-1295,  Dunder Mifflin MFG#26  ,MFG1094@FACTORY.ORG,成都,"3,374,055.00",10/20/2025
+MC-1296,Umbrella Co MFG#27,mfg1095@plant.net,西安,1814904,2018-03-25
+MC-1297,Wonka MFG#28,mfg1096@plant.net,广州,"$412,617.00",2025-06-09
+MC-1298,  Stark Industries MFG#29  ,mfg1097@industry.com,南京,"$4,651,301.00",06/19/2016
+MC-1299,Globex MFG#30,mfg1098@factory.org,成都,417791,2019-12-23
+MC-1300,STARK INDUSTRIES MFG#31,MFG1099@PLANT.NET,广州,"$733,743.00",17-04-2017
+MC-1301,Aperture MFG#32,mfg1100@plant.net,广州,"239,946.00",2023-10-24
+MC-1302,WAYNE ENTERPRISES MFG#33,  mfg1101@factory.org  ,苏州,3540789,01-10-2023
+MC-1303,ACME CORP MFG#34,MFG1102@FACTORY.ORG,西安,3578140,2021-03-24
+MC-1304,Globex MFG#35,mfg1103@industry.com,成都,3719744,2022-10-01
+MC-1305,BLUE SUN MFG#36,MFG1104@FACTORY.ORG,上海,"4,242,065.00",2017-09-23
+MC-1306,LexCorp MFG#37,mfg1105@factory.org,深圳,"$2,631,760.00",2021-03-06
+MC-1307,Black Mesa MFG#38,  mfg1106@plant.net  ,北京,"$4,973,004.00",2026-09-10
+MC-1308,  Wonka MFG#39  ,mfg1107@factory.org,武汉,4248543,2021-10-08
+MC-1309,  Globex MFG#40  ,  mfg1108@industry.com  ,武汉,"2,741,398.00",2021-11-24
+MC-1310,  Tyrell Corp MFG#41  ,mfg1109@factory.org,苏州,"1,244,406.00",2025-07-18
+MC-1311,LexCorp MFG#42,mfg1110@plant.net,深圳,2365256,27-04-2020
+MC-1312,  Black Mesa MFG#43  ,MFG1111@PLANT.NET,苏州,"$3,534,583.00",07/23/2022
+MC-1313,Weyland-Yutani MFG#44,mfg1112@plant.net,南京,"$4,320,878.00",2024-02-18
+MC-1314,acme corp mfg#45,MFG1113@FACTORY.ORG,南京,1221053,09/24/2021
+MC-1315,Initech MFG#46,MFG1114@FACTORY.ORG,广州,"$375,960.00",2016-02-06
+MC-1316,Umbrella Co MFG#47,mfg1115@industry.com,西安,3538672,12/26/2022
+MC-1317,Stark Industries MFG#48,mfg1116@plant.net,武汉,"326,184.00",08/03/2015
+MC-1318,Black Mesa MFG#49,mfg1117@factory.org,上海,529798,2018-01-28
+MC-1319,Dunder Mifflin MFG#50,mfg1118@plant.net,武汉,"$4,327,859.00",2019-04-10
+MC-1320,Tyrell Corp MFG#51,MFG1119@PLANT.NET,北京,2531732,17-10-2021
+MC-1321,HOOLI MFG#52,MFG1120@PLANT.NET,苏州,"476,256.00",05/03/2026
+MC-1322,  Oscorp MFG#53  ,mfg1121@industry.com,深圳,"$1,072,828.00",01-11-2023
+MC-1323,Hooli MFG#54,mfg1122@factory.org,上海,"4,629,309.00",2024-05-14
+MC-1324,OSCORP MFG#55,mfg1123@industry.com,杭州,907605,2020-02-01
+MC-1325,Massive Dynamic MFG#56,MFG1124@INDUSTRY.COM,南京,4741565,11-08-2024
+MC-1326,WONKA MFG#57,MFG1125@INDUSTRY.COM,南京,3089386,19-06-2016
+MC-1327,  Pied Piper MFG#58  ,mfg1126@industry.com,南京,3578102,2026-09-26
+MC-1328,INITECH MFG#59,mfg1127@factory.org,武汉,"3,356,287.00",07/05/2015
+MC-1329,stark industries mfg#60,mfg1128@industry.com,西安,1246530,2017-10-23
+MC-1330,Wayne Enterprises MFG#61,mfg1129@industry.com,上海,358446,16-12-2023
+MC-1331,LexCorp MFG#62,mfg1130@plant.net,苏州,"$3,439,891.00",2023-09-02
+MC-1332,  Wayne Enterprises MFG#63  ,  mfg1131@plant.net  ,广州,"$2,875,885.00",04/03/2026
+MC-1333,  Umbrella Co MFG#64  ,mfg1132@plant.net,北京,"$1,245,182.00",2021-07-07
+MC-1334,Oscorp MFG#65,mfg1133@factory.org,上海,2857302,03/05/2021
+MC-1335,Initech MFG#66,mfg1134@industry.com,深圳,"$592,829.00",2017-05-16
+MC-1336,Pied Piper MFG#67,MFG1135@PLANT.NET,南京,"4,842,736.00",2015-12-04
+MC-1337,Black Mesa MFG#68,MFG1136@PLANT.NET,深圳,"$1,484,613.00",13-02-2015
+MC-1338,  Dunder Mifflin MFG#69  ,mfg1137@industry.com,苏州,446056,01-02-2021
+MC-1339,PIED PIPER MFG#70,MFG1138@PLANT.NET,苏州,"1,960,020.00",10/22/2026
+MC-1340,HOOLI MFG#71,mfg1139@factory.org,成都,737432,2020-07-19
+MC-1341,  Tyrell Corp MFG#72  ,mfg1140@industry.com,南京,"$4,018,687.00",2025-08-25
+MC-1342,UMBRELLA CO MFG#73,mfg1141@industry.com,成都,"$2,427,705.00",2022-07-28
+MC-1343,UMBRELLA CO MFG#74,mfg1142@factory.org,深圳,1293274,2020-01-21
+MC-1344,  Oscorp MFG#75  ,mfg1143@industry.com,成都,84398,10/25/2020
+MC-1345,Vandelay MFG#76,MFG1144@PLANT.NET,南京,2009089,2023-02-24
+MC-1346,GLOBEX MFG#77,MFG1145@FACTORY.ORG,南京,"$4,394,878.00",04/16/2024
+MC-1347,Vandelay MFG#78,MFG1146@FACTORY.ORG,杭州,"$2,806,126.00",04-08-2020
+MC-1348,vandelay mfg#79,  mfg1147@industry.com  ,武汉,"1,255,989.00",14-03-2026
+MC-1349,Acme Corp MFG#80,MFG1148@FACTORY.ORG,武汉,1286841,2023-03-16
+MC-1350,Hooli MFG#81,mfg1149@industry.com,杭州,"$2,728,546.00",2019-08-22
+MC-1351,  Vandelay MFG#82  ,mfg1150@industry.com,南京,1942544,2023-04-20
+MC-1352,Wonka MFG#83,  mfg1151@factory.org  ,南京,"$2,999,766.00",14-05-2026
+MC-1353,Wayne Enterprises MFG#84,MFG1152@PLANT.NET,杭州,283088,2024-07-12
+MC-1354,  Black Mesa MFG#85  ,mfg1153@factory.org,北京,4738011,2018-04-13
+MC-1355,  Umbrella Co MFG#86  ,  mfg1154@plant.net  ,深圳,"$3,889,699.00",06/21/2018
+MC-1356,  Weyland-Yutani MFG#87  ,  mfg1155@industry.com  ,南京,3114739,14-05-2026
+MC-1357,  Blue Sun MFG#88  ,MFG1156@FACTORY.ORG,武汉,1656750,2015-01-13
+MC-1358,Hooli MFG#0,mfg1157@factory.org,苏州,506240,16-06-2021
+MC-1359,  Wayne Enterprises MFG#1  ,mfg1158@plant.net,北京,1352152,18-10-2016
+MC-1360,globex mfg#2,mfg1159@plant.net,西安,1856563,2023-03-10
+MC-1361,Blue Sun MFG#3,mfg1160@industry.com,广州,"$1,786,689.00",2017-08-24
+MC-1362,Pied Piper MFG#4,  mfg1161@plant.net  ,上海,4194114,2021-08-15
+MC-1363,hooli mfg#5,mfg1162@factory.org,上海,"$592,278.00",2022-12-28
+MC-1364,Wayne Enterprises MFG#6,mfg1163@plant.net,上海,"$4,291,264.00",11/28/2024
+MC-1365,Tyrell Corp MFG#7,mfg1164@plant.net,西安,1716615,2016-03-09
+MC-1366,  Dunder Mifflin MFG#8  ,MFG1165@FACTORY.ORG,西安,"4,633,514.00",2017-07-04
+MC-1367,Pied Piper MFG#9,MFG1166@INDUSTRY.COM,成都,"1,777,238.00",03/08/2026
+MC-1368,Stark Industries MFG#10,MFG1167@PLANT.NET,南京,339857,2024-08-06
+MC-1369,  Massive Dynamic MFG#11  ,  mfg1168@factory.org  ,苏州,3026182,07-05-2022
+MC-1370,  Hooli MFG#12  ,mfg1169@plant.net,杭州,1217502,2015-11-05
+MC-1371,  Aperture MFG#13  ,mfg1170@plant.net,广州,611143,2020-10-22
+MC-1372,blue sun mfg#14,mfg1171@plant.net,上海,"4,530,894.00",02/11/2015
+MC-1373,  Wayne Enterprises MFG#15  ,mfg1172@industry.com,深圳,928330,2025-01-08
+MC-1374,LexCorp MFG#16,MFG1173@FACTORY.ORG,西安,"$3,299,610.00",01-03-2021
+MC-1375,APERTURE MFG#17,mfg1174@factory.org,成都,"$749,054.00",12/04/2024
+MC-1376,aperture mfg#18,MFG1175@PLANT.NET,深圳,1465991,16-02-2015
+MC-1377,Cyberdyne MFG#19,MFG1176@INDUSTRY.COM,西安,"$1,765,726.00",2026-05-26
+MC-1378,aperture mfg#20,  mfg1177@industry.com  ,南京,"$4,810,440.00",2023-01-07
+MC-1379,Cyberdyne MFG#21,mfg1178@plant.net,北京,2124755,2026-02-21
+MC-1380,  Hooli MFG#22  ,mfg1179@industry.com,上海,3875421,2025-08-27
+MC-1381,Blue Sun MFG#23,  mfg1180@plant.net  ,上海,"4,643,049.00",12/28/2024
+MC-1382,Black Mesa MFG#24,mfg1181@factory.org,深圳,2348815,2019-10-18
+MC-1383,  Cyberdyne MFG#25  ,mfg1182@factory.org,北京,"2,598,265.00",2020-08-13
+MC-1384,Umbrella Co MFG#26,mfg1183@factory.org,武汉,4991485,2019-12-19
+MC-1385,Hooli MFG#27,mfg1184@plant.net,成都,"3,766,912.00",28-02-2020
+MC-1386,aperture mfg#28,mfg1185@plant.net,北京,1153909,2026-08-17
+MC-1387,Wayne Enterprises MFG#29,  mfg1186@factory.org  ,苏州,"1,434,879.00",2021-01-03
+MC-1388,APERTURE MFG#30,MFG1187@PLANT.NET,苏州,3864140,07/10/2025
+MC-1389,Massive Dynamic MFG#31,mfg1188@industry.com,苏州,4816075,21-02-2021
+MC-1390,black mesa mfg#32,MFG1189@FACTORY.ORG,武汉,593624,2020-09-22
+MC-1391,  Weyland-Yutani MFG#33  ,mfg1190@industry.com,西安,1241874,2016-06-06
+MC-1392,MASSIVE DYNAMIC MFG#34,  mfg1191@industry.com  ,杭州,1473726,2025-06-19
+MC-1393,globex mfg#35,mfg1192@plant.net,北京,"3,214,012.00",2021-01-26
+MC-1394,Globex MFG#36,mfg1193@plant.net,北京,"$267,850.00",09/07/2025
+MC-1395,  Oscorp MFG#37  ,  mfg1194@factory.org  ,成都,1163379,08/06/2026
+MC-1396,acme corp mfg#38,mfg1195@industry.com,成都,4695767,2021-04-06
+MC-1397,Initech MFG#39,mfg1196@plant.net,成都,2513339,2021-09-22
+MC-1398,aperture mfg#40,mfg1197@industry.com,苏州,2088711,2026-08-28
+MC-1399,Wayne Enterprises MFG#41,mfg1198@factory.org,上海,"$1,793,368.00",02/07/2017
+MC-1400,Massive Dynamic MFG#42,mfg1199@factory.org,北京,181513,07/09/2020

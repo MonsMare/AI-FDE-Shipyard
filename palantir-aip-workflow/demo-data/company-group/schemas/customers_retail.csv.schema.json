@@ -28,7 +28,7 @@
         "Acme Corp-103",
         "Aperture-104"
       ],
-      "distinct": 3529
+      "distinct": 3534
     },
     {
       "name": "email",
@@ -84,8 +84,12 @@
         "2020-04-15",
         "2020-05-15"
       ],
-      "distinct": 3418
+      "distinct": 3408,
+      "typeBreakdown": {
+        "string": 2426,
+        "date": 2574
+      }
     }
   ],
-  "generatedAt": "2026-08-06T10:13:14.927Z"
+  "generatedAt": "2026-08-07T09:55:58.950Z"
 }

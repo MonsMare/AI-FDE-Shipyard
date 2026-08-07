@@ -22,13 +22,13 @@
       "nullCount": 0,
       "total": 2600,
       "sample": [
-        "Carol Leo",
-        "Jack David",
-        "PAUL CAROL",
-        "  Xu Grace  ",
-        "Xu Nick"
+        "HENRY LEO",
+        "yuki liu",
+        "BOB LEO",
+        "Wang Mona",
+        "carol carol"
       ],
-      "distinct": 1975
+      "distinct": 1995
     },
     {
       "name": "department_id",
@@ -36,11 +36,11 @@
       "nullCount": 0,
       "total": 2600,
       "sample": [
-        "D-27",
-        "D-33",
+        "D-17",
         "D-4",
-        "D-34",
-        "D-39"
+        "D-26",
+        "D-12",
+        "D-23"
       ],
       "distinct": 40
     },
@@ -50,11 +50,11 @@
       "nullCount": 0,
       "total": 2600,
       "sample": [
-        "P-94",
-        "P-38",
-        "P-70",
-        "P-110",
-        "P-60"
+        "P-53",
+        "P-9",
+        "P-28",
+        "P-48",
+        "P-110"
       ],
       "distinct": 120
     },
@@ -64,8 +64,8 @@
       "nullCount": 0,
       "total": 2600,
       "sample": [
-        "saas",
         "retail",
+        "saas",
         "mfg"
       ],
       "distinct": 3
@@ -76,13 +76,20 @@
       "nullCount": 0,
       "total": 2600,
       "sample": [
-        "2021-06-20",
-        "27-03-2023",
-        "12/11/2021",
-        "09/01/2017",
-        "2018-07-09"
+        "03/20/2022",
+        "22-09-2021",
+        "2024-10-09",
+        "2019-02-17",
+        "2015-10-26"
       ],
-      "distinct": 2319
+      "distinct": 2305,
+      "typeBreakdown": {
+        "string": 1295,
+        "date": 1305
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     },
     {
       "name": "salary",
@@ -90,13 +97,20 @@
       "nullCount": 0,
       "total": 2600,
       "sample": [
-        "25861",
-        "$31,807.00",
-        "51024",
-        "52 162",
-        "15491"
+        "35883",
+        "36134",
+        "46044",
+        "34,654.00",
+        "$14,874.00"
       ],
-      "distinct": 2575
+      "distinct": 2574,
+      "typeBreakdown": {
+        "string": 1299,
+        "integer": 1301
+      },
+      "dirtyFormats": [
+        "$ 前缀"
+      ]
     },
     {
       "name": "email",
@@ -105,12 +119,16 @@
       "total": 2600,
       "sample": [
         "EMP1001@MERIDIAN.COM",
-        "emp1002@meridian.com",
-        "emp1003@meridian.com",
-        "emp1004@meridian.com",
-        "  emp1005@meridian. co  "
+        "EMP1002@MERIDIAN. CO",
+        "emp1003@meridian. co",
+        "emp1004@meridian.COM",
+        "emp1005@meridian.com"
       ],
-      "distinct": 2600
+      "distinct": 2600,
+      "typeBreakdown": {
+        "string": 854,
+        "email": 1746
+      }
     },
     {
       "name": "status",
@@ -124,5 +142,5 @@
       "distinct": 2
     }
   ],
-  "generatedAt": "2026-08-06T10:13:14.220Z"
+  "generatedAt": "2026-08-07T09:55:58.056Z"
 }

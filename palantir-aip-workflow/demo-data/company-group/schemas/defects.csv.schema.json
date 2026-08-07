@@ -22,13 +22,13 @@
       "nullCount": 0,
       "total": 2000,
       "sample": [
-        "QC-4090",
-        "QC-4225",
-        "QC-4170",
-        "QC-3234",
-        "QC-7347"
+        "QC-1526",
+        "QC-7509",
+        "QC-6852",
+        "QC-6137",
+        "QC-4953"
       ],
-      "distinct": 521
+      "distinct": 475
     },
     {
       "name": "batch_id",
@@ -36,13 +36,13 @@
       "nullCount": 0,
       "total": 2000,
       "sample": [
-        "BATCH-308",
-        "BATCH-2355",
-        "BATCH-328",
-        "BATCH-7028",
-        "BATCH-4624"
+        "BATCH-7477",
+        "BATCH-1449",
+        "BATCH-6697",
+        "BATCH-4466",
+        "BATCH-1698"
       ],
-      "distinct": 1775
+      "distinct": 1743
     },
     {
       "name": "defect_code",
@@ -52,9 +52,9 @@
       "sample": [
         "DENT",
         "THREAD-BAD",
+        "SCRATCH",
         "未定义",
-        "COLOR-MISMATCH",
-        "SCRATCH"
+        "COLOR-MISMATCH"
       ],
       "distinct": 6
     },
@@ -64,14 +64,14 @@
       "nullCount": 0,
       "total": 2000,
       "sample": [
-        "50",
-        "8",
-        "30",
-        "33",
-        "9"
+        "27",
+        "11",
+        "34",
+        "17",
+        "29"
       ],
       "distinct": 50
     }
   ],
-  "generatedAt": "2026-08-06T10:13:17.367Z"
+  "generatedAt": "2026-08-07T09:56:02.441Z"
 }

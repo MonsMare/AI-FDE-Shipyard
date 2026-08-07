@@ -23,10 +23,10 @@
       "total": 15000,
       "sample": [
         "CUST-99999",
-        "CUST-168",
-        "CUST-1471",
-        "CUST-2504",
-        "CUST-3971"
+        "CUST-1478",
+        "CUST-214",
+        "CUST-4524",
+        "CUST-4636"
       ],
       "distinct": null
     },
@@ -36,25 +36,25 @@
       "nullCount": 0,
       "total": 15000,
       "sample": [
-        "ST-8",
-        "ST-13",
-        "ST-11",
-        "ST-15",
-        "ST-21"
+        "ST-3",
+        "ST-20",
+        "ST-6",
+        "ST-7",
+        "ST-12"
       ],
       "distinct": null
     },
     {
       "name": "coupon_id",
       "inferredType": "string",
-      "nullCount": 10552,
+      "nullCount": 10507,
       "total": 15000,
       "sample": [
-        "CP-162",
+        "CP-107",
+        "CP-65",
         "CP-60",
-        "CP-103",
-        "CP-133",
-        "CP-24"
+        "CP-10",
+        "CP-56"
       ],
       "distinct": 200
     },
@@ -64,13 +64,20 @@
       "nullCount": 0,
       "total": 15000,
       "sample": [
-        "08-12-2025",
-        "2026-12-20",
-        "2025-02-22",
-        "2025-06-05",
-        "12/09/2024"
+        "2024-05-26",
+        "2026-12-26",
+        "05/14/2025",
+        "02/26/2025",
+        "11/27/2025"
       ],
-      "distinct": null
+      "distinct": null,
+      "typeBreakdown": {
+        "string": 7489,
+        "date": 7511
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     },
     {
       "name": "status",
@@ -78,7 +85,7 @@
       "nullCount": 0,
       "total": 15000,
       "sample": [
-        "ACTIVE",
+        "pending",
         "closed",
         "CLOSED",
         " Active ",
@@ -92,14 +99,19 @@
       "nullCount": 0,
       "total": 15000,
       "sample": [
-        "$14,636.00",
-        "13322",
-        "$11,189.00",
-        "17 337,00",
-        "15225"
+        "11760",
+        "3368",
+        "14281",
+        "15299",
+        "14304"
       ],
-      "distinct": null
+      "distinct": null,
+      "typeBreakdown": {
+        "string": 7317,
+        "integer": 7557,
+        "number": 126
+      }
     }
   ],
-  "generatedAt": "2026-08-06T10:13:15.356Z"
+  "generatedAt": "2026-08-07T09:55:59.728Z"
 }

@@ -41,7 +41,7 @@ demo-data/
 |---|---|---|
 | 大小写/空白 | `  Alice  ` / `BOB@X.COM` / `ACTIVE`/`Active` | `company_trim` / `email_lower_*` / `status_map_*` |
 | 日期三格式 | `2026-08-05` / `08/05/2026` / `05-08-2026` | `date_md_to_iso` / `date_dmy_to_iso`（链式） |
-| 金额格式 | `$1,234.50` / `1234.5` / `1 234,50` | `money_strip_symbols` → `money_cast_number`（链式） |
+| 金额格式 | `$1,234.50` / `1234.5` / `1,234.50` | `money_strip_symbols` → `money_cast_number`（链式） |
 | REF 编码 | `REF-2026-xxx` SKU / `BATCH-123` | `sku_normalize` / `batch_id_normalize` |
 | 结构问题 | 孤儿外键（1% 订单指向不存在客户）、负数量、空值 | `qty_abs`（负数量转正） |
 

@@ -22,13 +22,13 @@
       "nullCount": 0,
       "total": 2000,
       "sample": [
-        "CUST-1782",
-        "CUST-4909",
-        "CUST-3807",
-        "CUST-2835",
-        "CUST-4318"
+        "CUST-3429",
+        "CUST-1652",
+        "CUST-3227",
+        "CUST-2583",
+        "CUST-3830"
       ],
-      "distinct": 1635
+      "distinct": 1675
     },
     {
       "name": "subject",
@@ -36,11 +36,11 @@
       "nullCount": 0,
       "total": 2000,
       "sample": [
-        "投诉",
         "退换货",
-        "发票问题",
         "物流查询",
-        "售后维修"
+        "发票问题",
+        "售后维修",
+        "投诉"
       ],
       "distinct": 5
     },
@@ -51,10 +51,10 @@
       "total": 2000,
       "sample": [
         "closed",
-        "resolved",
-        "open",
         "OPEN",
-        "pending"
+        "pending",
+        "resolved",
+        "open"
       ],
       "distinct": 5
     },
@@ -64,28 +64,36 @@
       "nullCount": 0,
       "total": 2000,
       "sample": [
-        "15-05-2025",
-        "08/11/2026",
-        "2026-12-21",
-        "11-10-2026",
-        "02/08/2026"
+        "2026-10-13",
+        "05/11/2025",
+        "06-09-2026",
+        "2026-04-24",
+        "10/02/2025"
       ],
-      "distinct": 1205
+      "distinct": 1211,
+      "typeBreakdown": {
+        "string": 984,
+        "date": 1016
+      }
     },
     {
       "name": "closed_at",
       "inferredType": "mixed",
-      "nullCount": 431,
+      "nullCount": 404,
       "total": 2000,
       "sample": [
-        "04/21/2025",
-        "2026-04-05",
-        "2026-02-17",
-        "09/11/2025",
-        "06/01/2025"
+        "2026-06-07",
+        "2025-02-06",
+        "2026-11-18",
+        "2025-05-16",
+        "02/09/2026"
       ],
-      "distinct": 1056
+      "distinct": 1076,
+      "typeBreakdown": {
+        "string": 771,
+        "date": 825
+      }
     }
   ],
-  "generatedAt": "2026-08-06T10:13:16.318Z"
+  "generatedAt": "2026-08-07T09:56:01.084Z"
 }

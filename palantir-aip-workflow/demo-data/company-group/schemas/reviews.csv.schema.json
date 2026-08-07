@@ -22,13 +22,13 @@
       "nullCount": 0,
       "total": 3000,
       "sample": [
-        "SKU1115",
-        "MD-1689",
-        "R-1448",
-        "R-1606",
-        "SKU1060"
+        "MD-1461",
+        "REF-1768",
+        "MD-1189",
+        "REF-1639",
+        "R-1108"
       ],
-      "distinct": 779
+      "distinct": 784
     },
     {
       "name": "customer_id",
@@ -36,13 +36,13 @@
       "nullCount": 0,
       "total": 3000,
       "sample": [
-        "CUST-3226",
-        "CUST-848",
-        "CUST-4165",
-        "CUST-584",
-        "CUST-1017"
+        "CUST-4990",
+        "CUST-332",
+        "CUST-1123",
+        "CUST-4011",
+        "CUST-2442"
       ],
-      "distinct": 2275
+      "distinct": 2257
     },
     {
       "name": "rating",
@@ -50,25 +50,29 @@
       "nullCount": 0,
       "total": 3000,
       "sample": [
-        "★4",
-        "5",
-        "4",
+        "2",
         "3",
-        "1"
+        "1",
+        "5",
+        "4"
       ],
-      "distinct": 7
+      "distinct": 7,
+      "typeBreakdown": {
+        "string": 815,
+        "integer": 2185
+      }
     },
     {
       "name": "comment",
       "inferredType": "string",
-      "nullCount": 1515,
+      "nullCount": 1522,
       "total": 3000,
       "sample": [
-        "物流慢",
-        "性价比高",
-        "差评",
         "很好",
-        "一般"
+        "差评",
+        "物流慢",
+        "一般",
+        "性价比高"
       ],
       "distinct": 5
     },
@@ -78,14 +82,18 @@
       "nullCount": 0,
       "total": 3000,
       "sample": [
-        "2024-12-03",
-        "2024-03-03",
-        "09/02/2025",
-        "09/06/2024",
-        "02/28/2026"
+        "2026-10-26",
+        "2026-10-22",
+        "02/12/2025",
+        "11-12-2025",
+        "2026-12-01"
       ],
-      "distinct": 1848
+      "distinct": 1800,
+      "typeBreakdown": {
+        "string": 1486,
+        "date": 1514
+      }
     }
   ],
-  "generatedAt": "2026-08-06T10:13:16.100Z"
+  "generatedAt": "2026-08-07T09:56:00.781Z"
 }

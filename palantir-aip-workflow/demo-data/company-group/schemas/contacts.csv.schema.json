@@ -22,13 +22,13 @@
       "nullCount": 0,
       "total": 2400,
       "sample": [
-        "AC-503",
-        "AC-705",
-        "AC-777",
-        "AC-107",
-        "AC-832"
+        "AC-882",
+        "AC-586",
+        "AC-895",
+        "AC-715",
+        "AC-383"
       ],
-      "distinct": 838
+      "distinct": 844
     },
     {
       "name": "name",
@@ -36,13 +36,13 @@
       "nullCount": 0,
       "total": 2400,
       "sample": [
-        "Xavier Mona",
-        "Karen Alice",
-        "  Jack Xavier  ",
-        "  Xavier Wang  ",
-        "FRANK CAROL"
+        "Olive Sam",
+        "Zhou Vera",
+        "  Zhou Grace  ",
+        "Xavier Ivy",
+        "Bob Wendy"
       ],
-      "distinct": 1854
+      "distinct": 1890
     },
     {
       "name": "email",
@@ -50,11 +50,11 @@
       "nullCount": 0,
       "total": 2400,
       "sample": [
-        "user0@tech.com",
-        "USER1@CLOUD.IO",
-        "  user2@cloud.io  ",
-        "  user3@tech.com  ",
-        "user4@tech.com"
+        "user0@cloud.io",
+        "  user1@tech.com  ",
+        "user2@cloud.io",
+        "user3@cloud.io",
+        "user4@cloud.io"
       ],
       "distinct": 2400
     },
@@ -64,14 +64,18 @@
       "nullCount": 0,
       "total": 2400,
       "sample": [
-        "13834161014",
-        "13872230192",
-        "+86 138 7747 6297",
-        "13862010186",
-        "+86 138 8782 2264"
+        "+86 138 1944 2523",
+        "021-96138643",
+        "021-98741033",
+        "13875447223",
+        "+86 138 5699 4884"
       ],
-      "distinct": 2400
+      "distinct": 2400,
+      "typeBreakdown": {
+        "string": 1605,
+        "integer": 795
+      }
     }
   ],
-  "generatedAt": "2026-08-06T10:13:17.882Z"
+  "generatedAt": "2026-08-07T09:56:03.151Z"
 }

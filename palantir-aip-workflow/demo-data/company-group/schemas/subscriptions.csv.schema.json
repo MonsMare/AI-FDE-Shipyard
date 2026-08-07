@@ -22,11 +22,11 @@
       "nullCount": 0,
       "total": 6000,
       "sample": [
-        "SC-426",
-        "SC-392",
-        "SC-386",
-        "SC-275",
-        "SC-1063"
+        "SC-2943",
+        "SC-1166",
+        "SC-909",
+        "SC-2360",
+        "SC-1931"
       ],
       "distinct": null
     },
@@ -36,11 +36,11 @@
       "nullCount": 0,
       "total": 6000,
       "sample": [
-        "AC-434",
-        "AC-156",
-        "AC-774",
+        "AC-101",
+        "AC-579",
         "AC-311",
-        "AC-404"
+        "AC-56",
+        "AC-234"
       ],
       "distinct": null
     },
@@ -50,11 +50,11 @@
       "nullCount": 0,
       "total": 6000,
       "sample": [
-        "PLAN-5",
-        "PLAN-4",
-        "PLAN-2",
         "PLAN-6",
-        "PLAN-1"
+        "PLAN-1",
+        "PLAN-4",
+        "PLAN-3",
+        "PLAN-2"
       ],
       "distinct": null
     },
@@ -64,13 +64,20 @@
       "nullCount": 0,
       "total": 6000,
       "sample": [
-        "2026-06-24",
-        "06/04/2022",
-        "10/17/2022",
-        "2026-06-16",
-        "2022-04-01"
+        "25-04-2026",
+        "2023-01-13",
+        "06-06-2024",
+        "2023-05-01",
+        "08/03/2022"
       ],
-      "distinct": null
+      "distinct": null,
+      "typeBreakdown": {
+        "string": 2985,
+        "date": 3015
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     },
     {
       "name": "status",
@@ -78,11 +85,11 @@
       "nullCount": 0,
       "total": 6000,
       "sample": [
+        "cancelled",
         "ACTIVE",
         "trial",
-        "cancelled",
-        "active",
-        "CANCELLED"
+        "CANCELLED",
+        "active"
       ],
       "distinct": null
     },
@@ -98,5 +105,5 @@
       "distinct": null
     }
   ],
-  "generatedAt": "2026-08-06T10:13:17.967Z"
+  "generatedAt": "2026-08-07T09:56:03.258Z"
 }

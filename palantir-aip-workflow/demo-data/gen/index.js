@@ -53,12 +53,15 @@ function makeCtx(scale) {
       if (r < 0.8) return `${m}/${day}/${y}`;
       return `${day}-${m}-${y}`;
     },
-    // 三格式金额（spec §4.2）：1234.5 50% / $1,234.50 30% / 1 234,50 20%
+    // 三格式金额（spec §4.2）：1234.5 50% / $1,234.50 30% / 1,234.50 20%（美式千分位，可被 [$,] 规则完全清洗）
     moneyFmt: (n) => {
       const r = rng();
       if (r < 0.5) return String(n);
       if (r < 0.8) return `$${n.toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
-      return `${String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}${rng() < 0.5 ? ',00' : ''}`;
+      // 手写美式千分位（不依赖 locale，保持确定性）：整数部分每三位逗号分隔 + 两位小数
+      const [int, dec] = String(n).split('.');
+      const grouped = int.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      return `${grouped}.${(dec || '').padEnd(2, '0')}`;
     },
     // 月份：2024-01 ~ 2026-06（YYYY-MM 或 MM/YYYY 混）
     monthFmt: () => {

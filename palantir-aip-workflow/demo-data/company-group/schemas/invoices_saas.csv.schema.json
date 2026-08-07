@@ -22,11 +22,11 @@
       "nullCount": 0,
       "total": 6000,
       "sample": [
-        "SUB-3349",
-        "SUB-450",
-        "SUB-1512",
-        "SUB-5204",
-        "SUB-1103"
+        "SUB-2821",
+        "SUB-3668",
+        "SUB-5748",
+        "SUB-4589",
+        "SUB-4014"
       ],
       "distinct": null
     },
@@ -36,13 +36,20 @@
       "nullCount": 0,
       "total": 6000,
       "sample": [
-        "2024-12-07",
-        "09/14/2026",
-        "01/05/2025",
-        "2025-09-17",
-        "12/06/2025"
+        "2025-05-16",
+        "11-07-2024",
+        "2026-11-19",
+        "2025-06-02",
+        "2025-01-04"
       ],
-      "distinct": null
+      "distinct": null,
+      "typeBreakdown": {
+        "string": 3067,
+        "date": 2933
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     },
     {
       "name": "amount",
@@ -50,13 +57,18 @@
       "nullCount": 0,
       "total": 6000,
       "sample": [
-        "4 260,00",
-        "3190",
-        "3554",
-        "$3,180.00",
-        "129"
+        "2967",
+        "$4,512.00",
+        "$4,994.00",
+        "998",
+        "2,544.00"
       ],
-      "distinct": null
+      "distinct": null,
+      "typeBreakdown": {
+        "string": 2767,
+        "integer": 3002,
+        "number": 231
+      }
     },
     {
       "name": "status",
@@ -65,13 +77,13 @@
       "total": 6000,
       "sample": [
         "overdue",
-        "paid",
-        "pending",
         "PAID",
-        "OVERDUE"
+        "paid",
+        "OVERDUE",
+        "pending"
       ],
       "distinct": null
     }
   ],
-  "generatedAt": "2026-08-06T10:13:18.201Z"
+  "generatedAt": "2026-08-07T09:56:03.591Z"
 }

@@ -22,11 +22,11 @@
       "nullCount": 0,
       "total": 120,
       "sample": [
+        "电路板",
+        "钢板",
         "铜线",
-        "齿轮",
-        "塑料粒子",
         "密封圈",
-        "电机"
+        "铝材"
       ],
       "distinct": 10
     },
@@ -36,11 +36,11 @@
       "nullCount": 0,
       "total": 120,
       "sample": [
-        "SM-38",
-        "SM-2",
-        "SM-14",
-        "SM-34",
-        "SM-4"
+        "SM-3",
+        "SM-16",
+        "SM-7",
+        "SM-26",
+        "SM-22"
       ],
       "distinct": 38
     },
@@ -50,10 +50,10 @@
       "nullCount": 0,
       "total": 120,
       "sample": [
-        "g",
+        "kg",
         "件",
         "套",
-        "kg",
+        "g",
         "米"
       ],
       "distinct": 5
@@ -64,14 +64,22 @@
       "nullCount": 0,
       "total": 120,
       "sample": [
-        "4415",
-        "3240",
-        "$2,193.00",
-        "45,00",
-        "3428"
+        "1,673.00",
+        "$2,879.00",
+        "590",
+        "281",
+        "1330"
       ],
-      "distinct": 119
+      "distinct": 120,
+      "typeBreakdown": {
+        "string": 57,
+        "integer": 59,
+        "number": 4
+      },
+      "dirtyFormats": [
+        "$ 前缀"
+      ]
     }
   ],
-  "generatedAt": "2026-08-06T10:13:16.432Z"
+  "generatedAt": "2026-08-07T09:56:01.230Z"
 }

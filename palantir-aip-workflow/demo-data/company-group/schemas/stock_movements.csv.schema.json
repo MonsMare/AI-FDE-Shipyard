@@ -22,11 +22,11 @@
       "nullCount": 0,
       "total": 20000,
       "sample": [
-        "SKU1575",
-        "MD-1225",
-        "SKU1623",
-        "MD-1538",
-        "REF-1054"
+        "REF-1570",
+        "REF-1253",
+        "REF-1240",
+        "R-1692",
+        "SKU1652"
       ],
       "distinct": null
     },
@@ -36,11 +36,11 @@
       "nullCount": 0,
       "total": 20000,
       "sample": [
-        "ST-19",
-        "ST-8",
-        "ST-16",
-        "ST-10",
-        "ST-5"
+        "ST-14",
+        "ST-7",
+        "ST-21",
+        "ST-12",
+        "ST-17"
       ],
       "distinct": null
     },
@@ -50,11 +50,11 @@
       "nullCount": 0,
       "total": 20000,
       "sample": [
-        "198",
-        "-137",
-        "-98",
-        "189",
-        "-119"
+        "-151",
+        "-188",
+        "-66",
+        "-152",
+        "25"
       ],
       "distinct": null
     },
@@ -64,13 +64,20 @@
       "nullCount": 0,
       "total": 20000,
       "sample": [
-        "23-09-2025",
-        "2025-12-21",
-        "2025-07-03",
-        "07/04/2025",
-        "24-02-2026"
+        "2025-11-28",
+        "2025-07-09",
+        "2025-08-24",
+        "28-03-2025",
+        "08/09/2026"
       ],
-      "distinct": null
+      "distinct": null,
+      "typeBreakdown": {
+        "string": 9959,
+        "date": 10041
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     },
     {
       "name": "type",
@@ -78,14 +85,14 @@
       "nullCount": 0,
       "total": 20000,
       "sample": [
-        "in",
         "In",
+        "OUT",
         "adjust",
-        "ADJUST",
-        "OUT"
+        "in",
+        "ADJUST"
       ],
       "distinct": null
     }
   ],
-  "generatedAt": "2026-08-06T10:13:15.671Z"
+  "generatedAt": "2026-08-07T09:56:00.185Z"
 }

@@ -22,13 +22,13 @@
       "nullCount": 0,
       "total": 1200,
       "sample": [
-        "CUST-4692",
-        "CUST-1623",
-        "CUST-4877",
-        "CUST-3553",
-        "CUST-2873"
+        "CUST-3549",
+        "CUST-96",
+        "CUST-1656",
+        "CUST-1491",
+        "CUST-3046"
       ],
-      "distinct": 1075
+      "distinct": 1052
     },
     {
       "name": "level",
@@ -36,11 +36,11 @@
       "nullCount": 0,
       "total": 1200,
       "sample": [
-        "silver",
-        "SILVER",
         "GOLD",
         "bronze",
-        "gold"
+        "silver",
+        "Gold",
+        "SILVER"
       ],
       "distinct": 6
     },
@@ -50,14 +50,14 @@
       "nullCount": 0,
       "total": 1200,
       "sample": [
-        "22865",
-        "35779",
-        "4980",
-        "23265",
-        "39579"
+        "6292",
+        "5196",
+        "3956",
+        "34546",
+        "22586"
       ],
-      "distinct": 1185
+      "distinct": 1188
     }
   ],
-  "generatedAt": "2026-08-06T10:13:14.995Z"
+  "generatedAt": "2026-08-07T09:55:59.054Z"
 }

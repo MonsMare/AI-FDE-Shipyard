@@ -28,7 +28,7 @@
         "ACME CORP (-103)",
         "APERTURE (-104)"
       ],
-      "distinct": 2339
+      "distinct": 2314
     },
     {
       "name": "email",
@@ -56,7 +56,7 @@
         "David Karen",
         "Eve Leo"
       ],
-      "distinct": 2130
+      "distinct": 2161
     },
     {
       "name": "signup_date",
@@ -65,12 +65,16 @@
       "total": 3000,
       "sample": [
         "2022-01-15",
-        "2026-07-01",
-        "2023-08-14",
-        "02-06-2022",
-        "06/22/2021"
+        "11-12-2021",
+        "2022-08-25",
+        "2025-03-08",
+        "09/01/2025"
       ],
-      "distinct": 2225
+      "distinct": 2272,
+      "typeBreakdown": {
+        "string": 1431,
+        "date": 1569
+      }
     },
     {
       "name": "tier",
@@ -79,12 +83,12 @@
       "total": 3000,
       "sample": [
         "paid",
+        "free",
         "FREE",
-        "PAID",
-        "free"
+        "PAID"
       ],
       "distinct": 4
     }
   ],
-  "generatedAt": "2026-08-06T10:13:17.752Z"
+  "generatedAt": "2026-08-07T09:56:02.980Z"
 }

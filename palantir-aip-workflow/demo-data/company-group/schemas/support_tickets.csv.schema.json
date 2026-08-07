@@ -22,13 +22,13 @@
       "nullCount": 0,
       "total": 4000,
       "sample": [
-        "SC-1216",
-        "SC-669",
-        "SC-2234",
-        "SC-2314",
-        "SC-2920"
+        "SC-2685",
+        "SC-481",
+        "SC-865",
+        "SC-204",
+        "SC-870"
       ],
-      "distinct": 2208
+      "distinct": 2226
     },
     {
       "name": "subscription_id",
@@ -36,13 +36,13 @@
       "nullCount": 0,
       "total": 4000,
       "sample": [
-        "SUB-3240",
-        "SUB-4792",
-        "SUB-4736",
-        "SUB-5159",
-        "SUB-3371"
+        "SUB-4117",
+        "SUB-5882",
+        "SUB-3553",
+        "SUB-4060",
+        "SUB-571"
       ],
-      "distinct": 2897
+      "distinct": 2913
     },
     {
       "name": "priority",
@@ -50,11 +50,11 @@
       "nullCount": 0,
       "total": 4000,
       "sample": [
-        "high",
         "low",
-        "medium",
+        "high",
         "LOW",
-        "urgent"
+        "urgent",
+        "medium"
       ],
       "distinct": 5
     },
@@ -65,10 +65,10 @@
       "total": 4000,
       "sample": [
         "open",
-        "OPEN",
+        "closed",
         "waiting",
         "resolved",
-        "closed"
+        "OPEN"
       ],
       "distinct": 5
     },
@@ -79,13 +79,17 @@
       "total": 4000,
       "sample": [
         "2026-01-10",
-        "16-07-2025",
+        "02/02/2026",
         "2026-05-10",
-        "16-05-2025",
+        "25-11-2026",
         "2026-04-10"
       ],
-      "distinct": 1559
+      "distinct": 1568,
+      "typeBreakdown": {
+        "string": 1750,
+        "date": 2250
+      }
     }
   ],
-  "generatedAt": "2026-08-06T10:13:18.348Z"
+  "generatedAt": "2026-08-07T09:56:03.787Z"
 }

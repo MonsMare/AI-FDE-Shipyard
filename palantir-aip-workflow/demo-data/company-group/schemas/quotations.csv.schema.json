@@ -22,13 +22,13 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "MC-1238",
-        "MC-401",
-        "MC-581",
-        "MC-362",
-        "MC-407"
+        "MC-884",
+        "MC-503",
+        "MC-848",
+        "MC-116",
+        "MC-1073"
       ],
-      "distinct": 871
+      "distinct": 879
     },
     {
       "name": "quote_date",
@@ -36,13 +36,17 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "02-09-2024",
-        "04/20/2025",
-        "10/24/2025",
-        "2026-06-05",
-        "2025-07-25"
+        "2026-11-27",
+        "2024-02-13",
+        "24-02-2026",
+        "27-08-2024",
+        "03/19/2024"
       ],
-      "distinct": 1134
+      "distinct": 1160,
+      "typeBreakdown": {
+        "string": 718,
+        "date": 782
+      }
     },
     {
       "name": "valid_until",
@@ -50,13 +54,20 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "2025-09-26",
-        "2025-05-18",
-        "2024-03-19",
-        "11-08-2026",
-        "01/26/2025"
+        "03/25/2026",
+        "01/27/2026",
+        "2025-07-07",
+        "10-11-2026",
+        "2024-10-08"
       ],
-      "distinct": 1149
+      "distinct": 1162,
+      "typeBreakdown": {
+        "string": 772,
+        "date": 728
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     },
     {
       "name": "amount",
@@ -64,13 +75,17 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "$603,961.00",
-        "663 584,00",
-        "$1,938,777.00",
-        "1002482",
-        "1658463"
+        "1300105",
+        "737827",
+        "1581111",
+        "$661,807.00",
+        "$975,946.00"
       ],
-      "distinct": 1500
+      "distinct": 1500,
+      "typeBreakdown": {
+        "string": 731,
+        "integer": 769
+      }
     },
     {
       "name": "status",
@@ -78,14 +93,14 @@
       "nullCount": 0,
       "total": 1500,
       "sample": [
-        "converted",
         "expired",
-        "rejected",
+        "pending",
         "CONVERTED",
-        "pending"
+        "rejected",
+        "converted"
       ],
       "distinct": 5
     }
   ],
-  "generatedAt": "2026-08-06T10:13:17.502Z"
+  "generatedAt": "2026-08-07T09:56:02.627Z"
 }

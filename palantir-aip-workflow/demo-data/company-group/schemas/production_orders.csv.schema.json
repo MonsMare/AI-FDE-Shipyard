@@ -22,11 +22,11 @@
       "nullCount": 0,
       "total": 8000,
       "sample": [
-        "M-1078",
-        "M-1190",
-        "M-1256",
-        "M-1003",
-        "M-1203"
+        "M-1230",
+        "M-1108",
+        "M-1247",
+        "M-1160",
+        "M-1097"
       ],
       "distinct": null
     },
@@ -36,11 +36,11 @@
       "nullCount": 0,
       "total": 8000,
       "sample": [
-        "WC-12",
+        "WC-7",
+        "WC-8",
         "WC-6",
-        "WC-4",
-        "WC-13",
-        "WC-10"
+        "WC-11",
+        "WC-14"
       ],
       "distinct": null
     },
@@ -50,11 +50,11 @@
       "nullCount": 0,
       "total": 8000,
       "sample": [
-        "2517",
-        "76",
-        "467",
-        "3731",
-        "1058"
+        "896",
+        "3777",
+        "3960",
+        "1865",
+        "244"
       ],
       "distinct": null
     },
@@ -64,10 +64,10 @@
       "nullCount": 0,
       "total": 8000,
       "sample": [
-        "RELEASED",
         "COMPLETED",
+        "open",
         "released",
-        "completed",
+        "RELEASED",
         "OPEN"
       ],
       "distinct": null
@@ -78,14 +78,18 @@
       "nullCount": 0,
       "total": 8000,
       "sample": [
-        "2025-10-27",
-        "09/25/2025",
-        "07/06/2026",
-        "2025-06-06",
-        "06/10/2026"
+        "09/10/2026",
+        "11/06/2025",
+        "2024-03-23",
+        "28-11-2026",
+        "05/21/2026"
       ],
-      "distinct": null
+      "distinct": null,
+      "typeBreakdown": {
+        "string": 3893,
+        "date": 4107
+      }
     }
   ],
-  "generatedAt": "2026-08-06T10:13:17.072Z"
+  "generatedAt": "2026-08-07T09:56:02.023Z"
 }

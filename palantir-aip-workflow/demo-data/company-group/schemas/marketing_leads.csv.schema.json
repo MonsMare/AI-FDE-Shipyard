@@ -22,11 +22,11 @@
       "nullCount": 0,
       "total": 5000,
       "sample": [
-        "CH-2",
-        "CH-7",
+        "CH-6",
         "CH-4",
-        "CH-3",
-        "CH-8"
+        "CH-1",
+        "CH-5",
+        "CH-2"
       ],
       "distinct": 8
     },
@@ -36,13 +36,13 @@
       "nullCount": 0,
       "total": 5000,
       "sample": [
-        "PIED PIPER LEAD0",
-        "oscorp lead1",
+        "  Weyland-Yutani lead0  ",
+        "Massive Dynamic lead1",
         "LexCorp lead2",
-        "GLOBEX LEAD3",
-        "LEXCORP LEAD4"
+        "  Wayne Enterprises lead3  ",
+        "hooli lead4"
       ],
-      "distinct": 3029
+      "distinct": 3025
     },
     {
       "name": "email",
@@ -50,11 +50,11 @@
       "nullCount": 0,
       "total": 5000,
       "sample": [
-        "LEAD0@LEADS.IO",
-        "lead1@prospect.com",
-        "LEAD2@SALES.NET",
-        "lead3@prospect.com",
-        "lead4@prospect.com"
+        "lead0@leads.io",
+        "LEAD1@SALES.NET",
+        "lead2@leads.io",
+        "lead3@sales.net",
+        "LEAD4@LEADS.IO"
       ],
       "distinct": 5000
     },
@@ -64,13 +64,20 @@
       "nullCount": 0,
       "total": 5000,
       "sample": [
-        "2026-03-22",
-        "2025-06-03",
-        "02/15/2025",
-        "12-11-2025",
-        "2025-10-23"
+        "03-04-2025",
+        "2025-08-06",
+        "2025-06-10",
+        "18-07-2026",
+        "24-12-2025"
       ],
-      "distinct": 1783
+      "distinct": 1753,
+      "typeBreakdown": {
+        "string": 2452,
+        "date": 2548
+      },
+      "dirtyFormats": [
+        "MM/DD/YYYY"
+      ]
     },
     {
       "name": "quality",
@@ -78,13 +85,13 @@
       "nullCount": 0,
       "total": 5000,
       "sample": [
-        "cold",
         "hot",
-        "warm",
-        "HOT"
+        "HOT",
+        "cold",
+        "warm"
       ],
       "distinct": 4
     }
   ],
-  "generatedAt": "2026-08-06T10:13:18.634Z"
+  "generatedAt": "2026-08-07T09:56:04.131Z"
 }

@@ -299,3 +299,15 @@ test('日期清洗的值正确性：转换后日期保持原语义（月日不�
     assert.strictEqual(out.rows[i][outIdx], converted, `第 ${i} 行日期语义错误: ${d} → ${out.rows[i][outIdx]}（期望 ${converted}）`);
   }
 });
+
+// ==================== Task 8: P4 金额清洗闭环 ====================
+
+test('P4: 金额清洗闭环（exec 后无 cast 空值残留）', () => {
+  const dir = genTmp(0.05, { schemas: true });
+  const r = execProject(dir);
+  assert.strictEqual(r.ok, true);
+  const money = readCsvFile(path.join(dir, 'output', 'money_cast_number.csv'));
+  const mcIdx = money.cols.indexOf('base_salary');
+  const empty = money.rows.filter((row) => row[mcIdx] === '').length;
+  assert.strictEqual(empty, 0, `金额清洗后仍有 ${empty} 空值`);
+});

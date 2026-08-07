@@ -22,11 +22,11 @@
       "nullCount": 0,
       "total": 5500,
       "sample": [
-        "SI-2673",
-        "SI-2891",
-        "SI-936",
-        "SI-2945",
-        "SI-459"
+        "SI-3298",
+        "SI-5938",
+        "SI-5251",
+        "SI-1502",
+        "SI-654"
       ],
       "distinct": null
     },
@@ -36,13 +36,18 @@
       "nullCount": 0,
       "total": 5500,
       "sample": [
-        "4 670,00",
-        "3665",
-        "828",
-        "4 672,00",
-        "3371"
+        "$4,025.00",
+        "4160",
+        "3009",
+        "425.00",
+        "$2,391.00"
       ],
-      "distinct": null
+      "distinct": null,
+      "typeBreakdown": {
+        "string": 2562,
+        "integer": 2759,
+        "number": 179
+      }
     },
     {
       "name": "method",
@@ -51,9 +56,9 @@
       "total": 5500,
       "sample": [
         "card",
+        "bank_transfer",
         "alipay",
-        "wechat",
-        "bank_transfer"
+        "wechat"
       ],
       "distinct": null
     },
@@ -63,10 +68,10 @@
       "nullCount": 0,
       "total": 5500,
       "sample": [
-        "failed",
-        "pending",
         "success",
-        "SUCCESS"
+        "pending",
+        "SUCCESS",
+        "failed"
       ],
       "distinct": null
     },
@@ -76,14 +81,18 @@
       "nullCount": 0,
       "total": 5500,
       "sample": [
-        "2025-12-09",
-        "06/12/2026",
-        "12/21/2024",
-        "2024-03-21",
-        "2025-10-05"
+        "07/11/2026",
+        "27-02-2025",
+        "08-02-2025",
+        "2025-10-22",
+        "2025-06-09"
       ],
-      "distinct": null
+      "distinct": null,
+      "typeBreakdown": {
+        "string": 2668,
+        "date": 2832
+      }
     }
   ],
-  "generatedAt": "2026-08-06T10:13:18.276Z"
+  "generatedAt": "2026-08-07T09:56:03.692Z"
 }
