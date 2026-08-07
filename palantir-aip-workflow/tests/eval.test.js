@@ -128,3 +128,57 @@ test('CLI: node bin/eval.js <项目目录> <规则id> 输出对照 JSON（requir
 
   fs.rmSync(dir, { recursive: true, force: true });
 });
+
+test('evalRule 联邦源（copied:false 指向项目外）：保留原 path、读外部文件内容、外部文件零副作用', () => {
+  const dir = setupDemo();
+  // 项目外临时数据文件（内容与项目内任何数据不同，可证明读的是外部文件）
+  const extDir = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-eval-ext-'));
+  const extCsv = path.join(extDir, 'external.csv');
+  fs.writeFileSync(extCsv, 'id,note\n1,  padded  \n2,plain\n');
+
+  // 注册联邦源：copied:false，path 指向项目外
+  fs.writeFileSync(path.join(dir, 'sources', 'external.csv.json'), JSON.stringify({
+    id: 'external.csv',
+    path: extCsv,
+    format: 'csv',
+    description: 'eval 测试：联邦源（项目外数据）',
+    copied: false,
+  }, null, 2));
+
+  // 注入 trim 规则作用于联邦源
+  const tfPath = path.join(dir, 'approved', 'transforms.json');
+  const tf = JSON.parse(fs.readFileSync(tfPath, 'utf8'));
+  tf.transforms = [{
+    id: 'trim_ext_note',
+    source: 'external.csv',
+    target: 'eval 联邦源测试',
+    type: 'trim',
+    rule: { column: 'note' },
+    description: 'eval 测试：联邦源 trim',
+    status: 'approved',
+  }];
+  fs.writeFileSync(tfPath, JSON.stringify(tf, null, 2));
+
+  const r = evalRule(dir, tf.transforms[0]);
+  assert.ok(r.ok, (r.problems || []).join('; '));
+  assert.strictEqual(r.before.rowCount, 2);
+  assert.strictEqual(r.after.rowCount, 2);
+  // before/after 样本来自外部文件内容（'  padded  ' 为外部文件独有值）
+  assert.strictEqual(r.before.samples[0].value, '  padded  ');
+  assert.strictEqual(r.after.samples[0].value, 'padded');
+  // 外部文件未被修改（零副作用：副本上只读外部数据）
+  assert.strictEqual(fs.readFileSync(extCsv, 'utf8'), 'id,note\n1,  padded  \n2,plain\n');
+  // 原项目无 output
+  assert.strictEqual(fs.existsSync(path.join(dir, 'output')), false);
+
+  fs.rmSync(extDir, { recursive: true, force: true });
+  fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test('evalRule 项目目录不存在 → {ok:false, problems}（不抛异常）', () => {
+  const rule = { id: 't', source: 'customers.csv', target: 'x', type: 'trim', rule: { column: 'name' } };
+  let r;
+  assert.doesNotThrow(() => { r = evalRule(path.join(os.tmpdir(), 'paip-eval-no-such-dir-xyz'), rule); });
+  assert.strictEqual(r.ok, false);
+  assert.ok(r.problems.some((p) => p.includes('项目目录不存在')));
+});

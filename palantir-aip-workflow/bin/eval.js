@@ -81,6 +81,9 @@ function evalRule(projectDir, transform) {
   if (!transform.type) problems.push('✘ [eval] 规则缺 type');
   if (!transform.rule || typeof transform.rule !== 'object') problems.push('✘ [eval] 规则缺 rule');
   if (problems.length > 0) return { ok: false, problems };
+  if (typeof projectDir !== 'string' || !fs.existsSync(projectDir)) {
+    return { ok: false, problems: [`✘ [eval] 项目目录不存在: ${projectDir}`] };
+  }
 
   const id = transform.id;
   const column = ruleColumn(transform.rule);
@@ -89,7 +92,8 @@ function evalRule(projectDir, transform) {
     // 1) 临时副本（零副作用铁律：评估绝不在原项目上执行）
     copyDir = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-eval-'));
     fs.cpSync(projectDir, copyDir, { recursive: true });
-    // 副本自包含：sources path 重写指向副本 data（同 e2e setupDemo 的 REPLACE_ME 约定）
+    // 副本自包含：项目内源（copied !== false）的 path 重写指向副本 data（同 e2e setupDemo 的 REPLACE_ME 约定）；
+    // 联邦源（copied === false，path 指向项目外）保留原 path——副本上只读外部数据文件，无副作用
     const dataDir = path.join(copyDir, 'data');
     const sourcesDir = path.join(copyDir, 'sources');
     if (fs.existsSync(sourcesDir)) {
@@ -97,7 +101,7 @@ function evalRule(projectDir, transform) {
         if (!name.endsWith('.json')) continue;
         const p = path.join(sourcesDir, name);
         const src = readJson(p);
-        if (src && src.path) {
+        if (src && src.path && src.copied !== false) {
           src.path = path.join(dataDir, path.basename(src.path.replace('REPLACE_ME/', '')));
           fs.writeFileSync(p, JSON.stringify(src, null, 2));
         }
@@ -173,7 +177,7 @@ function main() {
     if (rule) scope = 'staging';
   }
   if (!rule) {
-    console.error(`✘ approved/transforms.json 中找不到规则: ${ruleId}`);
+    console.error(`✘ approved/staging 中找不到规则: ${ruleId}`);
     process.exit(FAIL);
   }
   const r = evalRule(projectDir, rule);
