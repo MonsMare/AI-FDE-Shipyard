@@ -38,6 +38,10 @@ description: 注册数据源（联邦接入，不复制数据）并运行确定�
 }
 ```
 
+**命名契约**（`<name>` 即 `id`，含扩展名，全项目一致引用）：
+- `id` 含扩展名（如 `customers_retail.csv`）＝ `sources/<id>.json` 文件名 ＝ `schemas/<id>.schema.json` 文件名（同根名）
+- `transforms.source`、`merges.left.source`、`merges.right.source` 引用同一 `id`（含扩展名），必须与注册一致；注册后 `id` 不可变，改名＝重新注册新源
+
 ### 3. 运行 schema 推断
 ```
 node <插件根>/bin/schema-infer.js <数据文件路径> [--sample 5]
@@ -45,7 +49,7 @@ node <插件根>/bin/schema-infer.js <数据文件路径> [--sample 5]
 输出写入 `schemas/<name>.schema.json`（原样保存推断结果）。
 
 ### 4. 更新状态与审计
-- 更新 `state.json`：`sources` 数组追加注册信息，`stats.sourcesRegistered` +1
+- 更新 `state.json`：`stats.sourcesRegistered` +1（`sources` 数组已弃用不写入，权威注册表是 `sources/*.json`）
 - 登记审计事件：
 ```
 node <插件根>/bin/audit.js log <项目目录> source source_registered <源名> "<列数> 列, <行数> 行"

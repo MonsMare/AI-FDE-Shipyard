@@ -6,7 +6,7 @@ description: 用 LLM 从 schema 推断 Ontology 语义模型——对象类型�
 # paip-infer: LLM 语义建模
 
 ## Overview
-对应 Palantir 的 OAG 层：把 schema 推断结果交给 LLM，生成**对象类型**（实体）、**属性**（含主键/标题键）、**链接**（关系）与**语义描述**。产物进入 `staging/`，**必须经 paip-review 人工审查后才能成为正式 Ontology**（Palantir 原则：AI-authored proposals are subject to human validation）。
+对应 Palantir 的 OAG 层：把 schema 推断结果交给 LLM，生成**对象类型**（实体）、**属性**（含主键 primaryKey）、**链接**（关系）与**语义描述**。产物进入 `staging/`，**必须经 paip-review 人工审查后才能成为正式 Ontology**（Palantir 原则：AI-authored proposals are subject to human validation）。
 
 ## When to Use
 - 至少一个数据源已完成注册与 schema 推断（paip-source 完成）
@@ -21,7 +21,7 @@ description: 用 LLM 从 schema 推断 Ontology 语义模型——对象类型�
 
 ### 1. 收集输入
 - 读 `schemas/*.schema.json`（一个或多个）
-- 读 `state.json` 的 `sources` 确认来源
+- 读 `sources/*.json` 确认已注册源（权威注册表；`state.json` 的 `sources` 数组已弃用）
 
 ### 2. 构造 LLM 提示（本 skill 的核心）
 提示模板（中文或英文均可，与用户语言一致）：
@@ -34,7 +34,7 @@ description: 用 LLM 从 schema 推断 Ontology 语义模型——对象类型�
 
 要求:
 1. 对象类型：识别真实世界实体（人/组织/产品/交易/设备等）。不要为每个文件无脑建一个对象——同实体的多源应建模为同一对象。
-2. 每个对象: id（PascalCase）、displayName、description（一句话，为什么它是核心实体）、backingSource（哪个数据源支撑）、properties（每列映射为属性，id 用 camelCase，标主键 primaryKey 与标题键 titleKey）。
+2. 每个对象: id（PascalCase）、displayName、description（一句话，为什么它是核心实体）、backingSource（哪个数据源支撑）、properties（每列映射为属性，id 用 camelCase，标主键 primaryKey——属性仅需 primaryKey）。
 3. 链接类型: 对象之间的关系（如 Customer --has→ Order），给出 id、left/right 对象、cardinality（1:1/1:N/N:M）。
 4. 属性类型: string/integer/number/boolean/date/email 等。
 5. 只输出 JSON，不输出解释文字。
@@ -76,6 +76,6 @@ node <插件根>/bin/audit.js log <项目目录> infer objects_proposed staging/
 
 ## Common Mistakes
 - 一个文件一个对象类型的懒建模（应识别真实实体，跨源合并）
-- 不标主键/标题键（Ontology 无法落地）
+- 不标主键（Ontology 无法落地）
 - 直接写 approved/ 跳过审查（这是流水线最重要的纪律）
 - 把转换逻辑混进对象模型（转换是 paip-model 的职责）

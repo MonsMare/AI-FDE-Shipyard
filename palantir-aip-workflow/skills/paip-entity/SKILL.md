@@ -20,6 +20,7 @@ description: 用 LLM 做实体消解——跨数据源识别同一实体并生�
 ## Steps
 
 ### 1. 收集输入
+- 读 `sources/*.json` 确认已注册源 id（`left/right.source` 必须等于注册 id，含扩展名）
 - 读 `schemas/*.schema.json` 找候选 join 键（email/ID/名称类列）
 - 读 `staging/objects.json` 确认实体模型（合并要挂在对象上）
 

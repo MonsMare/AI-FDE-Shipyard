@@ -40,7 +40,7 @@ paip-init → paip-source → paip-infer → paip-model → paip-entity → paip
 ```
 <ontology-project>/
 ├── config.json        # 项目配置 + 状态机
-├── state.json         # 流水线状态（步骤/已注册源/统计）
+├── state.json         # 流水线状态（步骤/统计；sources 字段已弃用）
 ├── sources/           # 数据源注册（联邦引用，不复制数据）
 ├── schemas/           # schema 推断结果
 ├── staging/           # 待审查的 LLM 建议
@@ -51,6 +51,8 @@ paip-init → paip-source → paip-infer → paip-model → paip-entity → paip
 ```
 
 文件格式规范见 `templates/ontology-project/README.md`。
+
+> **`state.json` 的 `sources` 字段已弃用**：数据源注册的权威记录是 `sources/*.json`（每个源一个文件：id/path/format）。`state.json` 的 `sources` 数组为历史遗留，demo-data 生成器与各 skill 不再写入；读取方（infer/entity/exec/validate）一律以 `sources/*.json` 为准。
 
 ## 安装
 

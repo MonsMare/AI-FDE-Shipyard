@@ -40,15 +40,15 @@ description: 审查 staging 中的 Ontology 建议（对象/链接/转换/合并
 批准项移入 `approved/`（`status: "approved"`、`approvedAt`、`approvedBy: "user"`），拒绝项写回 staging 标记 `status: "rejected"`（**保留记录，不删除**——审计需要），修改项按用户意见更新后批准。
 
 ### 4. 更新状态与审计
-- `state.json`：对象/链接/转换/合并的状态迁移，`stats.*Approved` 累加；审查轮次完成，`currentStep` 推进到 `review` 完成（`review` 是终态）
+- `state.json`：对象/链接/转换/合并的状态迁移，`stats.*Approved` 累加；审查轮次完成，`currentStep` 推进到 `review` 完成（`review` 完成即进入 `exec`——已批准规则可执行物化）
 - 审计（逐条记录）：
 ```
 node <插件根>/bin/audit.js log <项目目录> review object_approved Customer "用户批准"
 node <插件根>/bin/audit.js log <项目目录> review transform_rejected normalize_email "用户拒绝"
 ```
-- 走完最后一步后，`state.json` 的 `steps.review` 置为 `done`，流水线闭环
+- 走完最后一步后，`state.json` 的 `steps.review` 置为 `done`，审查闭环（执行由 `paip:paip-exec` 承接）
 
-### 5. 终态报告
+### 5. 审查报告
 - 批准/拒绝/修改统计表
 - `approved/` 产出的完整清单
 - 审计轨迹路径（`audit/audit.jsonl`），提示用户可复查
