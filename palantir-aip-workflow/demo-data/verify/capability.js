@@ -15,13 +15,16 @@ const { readCsvFile } = require('../../bin/csv.js');
 
 const report = {};
 
-// ---------- 1. 幂等性：连续两次 exec ----------
+// ---------- 1. 幂等性：连续两次 exec（在副本上跑，避免污染主项目 state/audit） ----------
 {
-  const r1 = execProject(projectDir);
-  const out1 = fs.existsSync(path.join(projectDir, 'output')) ? fs.readdirSync(path.join(projectDir, 'output')).filter((f) => f.endsWith('.csv')).length : 0;
-  const r2 = execProject(projectDir);
-  const out2 = fs.existsSync(path.join(projectDir, 'output')) ? fs.readdirSync(path.join(projectDir, 'output')).filter((f) => f.endsWith('.csv')).length : 0;
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-cap-'));
+  fs.cpSync(projectDir, tmp, { recursive: true });
+  const r1 = execProject(tmp);
+  const out1 = fs.existsSync(path.join(tmp, 'output')) ? fs.readdirSync(path.join(tmp, 'output')).filter((f) => f.endsWith('.csv')).length : 0;
+  const r2 = execProject(tmp);
+  const out2 = fs.existsSync(path.join(tmp, 'output')) ? fs.readdirSync(path.join(tmp, 'output')).filter((f) => f.endsWith('.csv')).length : 0;
   report.idempotency = { firstOk: r1.ok, secondOk: r2.ok, firstOutputCount: out1, secondOutputCount: out2, stable: r1.ok && r2.ok && out1 === out2 };
+  fs.rmSync(tmp, { recursive: true, force: true });
 }
 
 // ---------- 2. 异常注入：非法 column → 拒绝且零副作用 ----------
@@ -59,23 +62,31 @@ const report = {};
   };
 }
 
-// ---------- 4. 清洗效果（exec 后残留脏值） ----------
+// ---------- 4. 清洗效果（exec 后残留脏值；副本上跑，保证输出一致） ----------
 {
-  const rawAttendance = readCsvFile(path.join(projectDir, 'data', 'group', 'attendance.csv'));
-  const rawDateIdx = rawAttendance.cols.indexOf('date');
-  const rawDirty = rawAttendance.rows.filter((r) => /[0-9]{2}\/[0-9]{2}\/[0-9]{4}|[0-9]{2}-[0-9]{2}-[0-9]{4}/.test(r[rawDateIdx])).length;
-  const cleaned = readCsvFile(path.join(projectDir, 'output', 'date_dmy_to_iso.csv'));
-  const cIdx = cleaned.cols.indexOf('date');
-  // 注意：date_md_to_iso 与 date_dmy_to_iso 链式，DD-MM-YYYY 应在 dmy 规则后消失
-  const dirtyAfter = cleaned.rows.filter((r) => /[0-9]{2}\/[0-9]{2}\/[0-9]{4}|[0-9]{2}-[0-9]{2}-[0-9]{4}/.test(r[cIdx])).length;
-  const moneyCast = readCsvFile(path.join(projectDir, 'output', 'money_cast_number.csv'));
-  const mcIdx = moneyCast.cols.indexOf('base_salary');
-  const moneyEmpty = moneyCast.rows.filter((r) => r[mcIdx] === '').length;
-  report.cleanEffect = {
-    dates_before: { total: rawAttendance.rows.length, dirty: rawDirty },
-    dates_after_chain: { total: cleaned.rows.length, dirty: dirtyAfter },
-    money_cast_empty_after_chain: moneyEmpty, // >0 说明金额脏格式未被清洗规则覆盖（空格千分位）
-  };
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-cap-'));
+  fs.cpSync(projectDir, tmp, { recursive: true });
+  const r = execProject(tmp);
+  if (!r.ok) {
+    report.cleanEffect = { error: 'exec 失败，无法评估清洗效果', problems: (r.problems || []).slice(0, 3) };
+  } else {
+    const rawAttendance = readCsvFile(path.join(tmp, 'data', 'group', 'attendance.csv'));
+    const rawDateIdx = rawAttendance.cols.indexOf('date');
+    const rawDirty = rawAttendance.rows.filter((r) => /[0-9]{2}\/[0-9]{2}\/[0-9]{4}|[0-9]{2}-[0-9]{2}-[0-9]{4}/.test(r[rawDateIdx])).length;
+    const cleaned = readCsvFile(path.join(tmp, 'output', 'date_dmy_to_iso.csv'));
+    const cIdx = cleaned.cols.indexOf('date');
+    // 注意：date_md_to_iso 与 date_dmy_to_iso 链式，DD-MM-YYYY 应在 dmy 规则后消失
+    const dirtyAfter = cleaned.rows.filter((r) => /[0-9]{2}\/[0-9]{2}\/[0-9]{4}|[0-9]{2}-[0-9]{2}-[0-9]{4}/.test(r[cIdx])).length;
+    const moneyCast = readCsvFile(path.join(tmp, 'output', 'money_cast_number.csv'));
+    const mcIdx = moneyCast.cols.indexOf('base_salary');
+    const moneyEmpty = moneyCast.rows.filter((r) => r[mcIdx] === '').length;
+    report.cleanEffect = {
+      dates_before: { total: rawAttendance.rows.length, dirty: rawDirty },
+      dates_after_chain: { total: cleaned.rows.length, dirty: dirtyAfter },
+      money_cast_empty_after_chain: moneyEmpty, // >0 说明金额脏格式未被清洗规则覆盖（空格千分位）
+    };
+  }
+  fs.rmSync(tmp, { recursive: true, force: true });
 }
 
 console.log(JSON.stringify(report, null, 2));

@@ -1,5 +1,5 @@
 {
-  "currentStep": "exec",
+  "currentStep": "review",
   "steps": {
     "init": "done",
     "source": "done",
@@ -7,9 +7,9 @@
     "model": "done",
     "entity": "done",
     "review": "in_progress",
-    "exec": "in_progress"
+    "exec": "pending"
   },
   "sources": [],
-  "lastEventId": 37,
+  "lastEventId": 0,
   "stats": {}
 }

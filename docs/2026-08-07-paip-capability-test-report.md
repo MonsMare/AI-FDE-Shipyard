@@ -74,6 +74,10 @@
 **P12. paip-visualize 依赖硬编码 MCP 工具名**
 - `mcp__drawio__open_drawio_mermaid` 等工具名硬编码；虽然声明了兜底（文字表格），但无 drawio MCP 时体验降级明显且无替代可视化（如输出 mermaid 文本文件）
 
+**P13. state.json 的 `sources` 数组与 `sources/*.json` 文件双轨制**
+- paip-source skill 要求"`state.json` 的 `sources` 追加注册信息"，但 demo-data 生成器与 exec/validate 均只消费 `sources/*.json` 文件——`state.sources` 在 demo-data 项目中为空数组，两处记录无法保持一致（谁写、谁读、谁权威未定义）【实测发现：demo-data 的 state.sources=[] 而 sources/ 有 64 个文件】
+- 附带问题：全量 exec 会推进 `state.json` 的 `lastEventId`/`currentStep`，入库的 company-group 应保持"干净输入态"（review/0），实测脚本应在副本上运行（已修正 capability.js 改为副本执行）
+
 ---
 
 ## 三、下一周期迭代目标（按优先级）
