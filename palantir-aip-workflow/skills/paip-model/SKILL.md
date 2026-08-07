@@ -72,7 +72,12 @@ node <插件根>/bin/validate.js <项目目录> --stage
 ```
 - 失败时展示全部 `✘` 问题，修复后重跑，通过后再写/更新 staging 产物
 - 写 `staging/transforms.json`（追加），`status: "staged"`、`proposedBy: "paip-model"`
-- 对关键转换（如正则），用输入样本验证规则产出符合预期——在报告中给出验证结果
+- **规则效果评估（必做，再进 staging）**：生成规则后必须展示 eval 前后对照再正式进 staging——规则写入 `staging/transforms.json` 后运行：
+```
+node <插件根>/bin/eval.js <项目目录> <规则id>
+```
+  eval 在项目临时副本上执行该单条规则（零副作用，不碰原数据），输出执行前后对照：行数 `rowCount`、指定列空值数 `emptyCount`、前后各 3 行样本 `samples`，以及 `changes.rowDelta`/`emptyDelta`（`dirtyDelta` 初版为 null，v2.2 补脏模式检测）。规则在 approved 或 staging 均可定位（CLI 自动回退）。对照显示效果不符预期时修正规则重跑，确认后再正式记录（state/audit 更新）
+- 对关键转换（如正则），用输入样本验证规则产出符合预期——在报告中给出 eval 对照结果与样本验证结果
 
 ### 4. 更新状态与审计
 - `state.json`：`transforms` 追加，`stats.transformsProposed` +N
@@ -98,5 +103,5 @@ node <插件根>/bin/audit.js log <项目目录> model transforms_proposed stagi
 
 ## Common Mistakes
 - 把 LLM 判断写成转换（违反确定性原则——转换应能无 LLM 重放）
-- 不验证正则就在 staging 里写上（至少用样本验证一次）
+- 不 eval 就在 staging 里写上（至少 eval 一次展示前后行数/空值对照与样本）
 - 一次生成过多规则不做分组说明（用户无法审查）
