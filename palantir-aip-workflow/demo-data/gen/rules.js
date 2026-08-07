@@ -96,8 +96,8 @@ const TRANSFORMS = {
     },
     {
       id: 'date_dmy_to_iso', source: 'attendance.csv', target: '日期格式统一（描述性）',
-      type: 'regex_replace', rule: { pattern: '(\\d{2})-(\\d{2})-(\\d{4})', replacement: '$3-$1-$2', column: 'date' },
-      description: 'DD-MM-YYYY → YYYY-MM-DD（依赖上一条先转 MM/DD）', status: 'approved',
+      type: 'regex_replace', rule: { pattern: '(\\d{2})-(\\d{2})-(\\d{4})', replacement: '$3-$2-$1', column: 'date' },
+      description: 'DD-MM-YYYY → YYYY-MM-DD（$3-$2-$1 保持月日语义；与 MM/DD 规则 pattern 互斥，顺序无关）', status: 'approved',
     },
     {
       id: 'money_strip_symbols', source: 'salary_records.csv', target: '金额清洗（描述性）',

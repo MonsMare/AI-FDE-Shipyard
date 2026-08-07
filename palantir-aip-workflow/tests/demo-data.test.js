@@ -275,3 +275,27 @@ test('execProject 全链执行：物化 CSV 按规则 id 命名 + 合并 mapping
   const state = JSON.parse(fs.readFileSync(path.join(dir, 'state.json'), 'utf8'));
   assert.strictEqual(state.currentStep, 'exec');
 });
+
+test('日期清洗的值正确性：转换后日期保持原语义（月日不颠倒）', () => {
+  const dir = genTmp(0.05, { schemas: true });
+  const r = execProject(dir);
+  assert.strictEqual(r.ok, true, (r.problems || []).slice(0, 5).join('\n'));
+  // 原始数据 → 按两条规则语义重放 → 与输出逐行比较
+  const raw = readCsvFile(path.join(dir, 'data', 'group', 'attendance.csv'));
+  const out = readCsvFile(path.join(dir, 'output', 'date_dmy_to_iso.csv'));
+  const rawIdx = raw.cols.indexOf('date');
+  const outIdx = out.cols.indexOf('date');
+  assert.strictEqual(raw.rows.length, out.rows.length, '行数应一致');
+  for (let i = 0; i < raw.rows.length; i++) {
+    const d = raw.rows[i][rawIdx];
+    let converted = d;
+    // date_md_to_iso: MM/DD/YYYY → YYYY-MM-DD（月=$1 日=$2）
+    const md = d.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+    if (md) converted = `${md[3]}-${md[1]}-${md[2]}`;
+    // date_dmy_to_iso: DD-MM-YYYY → YYYY-MM-DD（日=$1 月=$2，须交换为 $3-$2-$1）
+    const dmy = d.match(/^(\d{2})-(\d{2})-(\d{4})$/);
+    if (dmy) converted = `${dmy[3]}-${dmy[2]}-${dmy[1]}`;
+    // 若已是 ISO 或空值，规则不改变
+    assert.strictEqual(out.rows[i][outIdx], converted, `第 ${i} 行日期语义错误: ${d} → ${out.rows[i][outIdx]}（期望 ${converted}）`);
+  }
+});

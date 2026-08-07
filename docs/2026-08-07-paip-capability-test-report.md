@@ -78,6 +78,12 @@
 - paip-source skill 要求"`state.json` 的 `sources` 追加注册信息"，但 demo-data 生成器与 exec/validate 均只消费 `sources/*.json` 文件——`state.sources` 在 demo-data 项目中为空数组，两处记录无法保持一致（谁写、谁读、谁权威未定义）【实测发现：demo-data 的 state.sources=[] 而 sources/ 有 64 个文件】
 - 附带问题：全量 exec 会推进 `state.json` 的 `lastEventId`/`currentStep`，入库的 company-group 应保持"干净输入态"（review/0），实测脚本应在副本上运行（已修正 capability.js 改为副本执行）
 
+**P14. 日期清洗规则曾存在"值被篡改"缺陷（已修复）+ 产物缺少值校验**
+- 现象：`date_dmy_to_iso` 规则 `replacement: "$3-$1-$2"` 把 `DD-MM-YYYY`（如 `05-08-2026` = 8 月 5 日）转成 `2026-05-08`（5 月 8 日）——**月日颠倒**。格式上"清洗完成"（无残留脏格式），但值语义被静默篡改——比格式脏更严重【代码审查发现，2026-08-07 review 复核】
+- 根因：规则作者想当然地按"月-日"顺序写替换组，未做值重放验证
+- 影响与启示：**exec 产物只有"格式校验"没有"值校验"**——之前的"日期清洗完全生效"结论只验证了格式残留为 0，验证不了值正确性
+- 修复：replacement 改为 `$3-$2-$1`；`tests/demo-data.test.js` 新增"日期值重放校验"用例（原始值按规则语义手动转换，与产物逐行比对）【已修复，随本报告提交】
+
 ---
 
 ## 三、下一周期迭代目标（按优先级）
