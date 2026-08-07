@@ -13,7 +13,8 @@
       "infer": "pending",
       "model": "pending",
       "entity": "pending",
-      "review": "pending"
+      "review": "pending",
+      "exec": "pending"
     }
   },
   "llm": {

@@ -86,3 +86,16 @@ test('schema-infer.js 对带 BOM 的 CSV 表头无污染', () => {
   assert.strictEqual(out.rows, 1);
   fs.rmSync(dir, { recursive: true, force: true });
 });
+
+test('模板 state/config 含 7 步（含 exec）', () => {
+  const state = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'templates', 'ontology-project', 'state.json'), 'utf8'));
+  const config = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'templates', 'ontology-project', 'config.json'), 'utf8'));
+  const steps = state.steps || config.state.steps;
+  assert.deepStrictEqual(Object.keys(steps).sort(), ['entity', 'exec', 'infer', 'init', 'model', 'review', 'source']);
+  // 且 audit check 对模板初始化的项目应通过
+  const { spawnSync } = require('node:child_process');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-tpl-'));
+  fs.cpSync(path.join(__dirname, '..', 'templates', 'ontology-project'), dir, { recursive: true });
+  const r = spawnSync(process.execPath, [path.join(__dirname, '..', 'bin', 'audit.js'), 'check', dir], { encoding: 'utf8' });
+  assert.strictEqual(r.status, 0, r.stderr || r.stdout);
+});
