@@ -88,7 +88,7 @@ init → source → infer → model → entity → review → exec
 }
 ```
 - 转换必须是**确定性规则**（正则/映射/过滤），LLM 生成后由人确认——符合 Palantir"逻辑不进 prompt"原则
-- 规则 type 权威枚举 9 种：`regex_replace | regex_extract | map | filter | concat | split | cast | lower | upper | trim`（参数见 `skills/paip-model/SKILL.md` 参数表或 `bin/validate.js`）
+- 规则 type 权威枚举 10 种：`regex_replace | regex_extract | map | filter | concat | split | cast | lower | upper | trim`（参数见 `skills/paip-model/SKILL.md` 参数表或 `bin/validate.js`）
 - `target` 字段**仅描述性**，不控制输出路径；执行后产物按规则 id 命名 `output/<id>.csv`
 
 ### 实体合并（merges.json）—— 键映射替换

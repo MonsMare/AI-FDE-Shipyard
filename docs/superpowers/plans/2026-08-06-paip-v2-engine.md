@@ -11,7 +11,7 @@
 ## Global Constraints
 
 - 零第三方依赖（项目铁律，测试用内置 `node:test` + `node --test`）
-- 规则 type 权威枚举 9 种：`regex_replace / regex_extract / map / filter / concat / split / cast / lower / upper / trim`（spec §3.6，删 format_date）
+- 规则 type 权威枚举 10 种：`regex_replace / regex_extract / map / filter / concat / split / cast / lower / upper / trim`（spec §3.6，删 format_date）
 - 单元格一律为字符串（CSV 语义）；cast 输出规范化字符串、失败置 null（spec §3.6 执行细则，2026-08-06 实验确认）
 - filter 的 gt/lt 数值可解析时按数值比较（实验确认）
 - 铁律：失败中止，数据不动，状态不推进；统一写盘（内存算完才写）
@@ -55,7 +55,7 @@
 **校验规则（spec §3.2，对照 experiment/validate-artifacts）：**
 - objects：有 id/displayName/properties；properties 有 primaryKey
 - links：两端对象存在（approved 用 approved 集；--stage 用 staging 集+approved 基准）；cardinality ∈ {1:1, 1:N, N:M}
-- transforms：type ∈ 9 种权威枚举；rule 参数齐全（对照 §3.6 各 type 参数表）；column 存在（对照 schemas/*.schema.json 的列）；source 已注册（对照 sources/*.json 的 id）
+- transforms：type ∈ 10 种权威枚举；rule 参数齐全（对照 §3.6 各 type 参数表）；column 存在（对照 schemas/*.schema.json 的列）；source 已注册（对照 sources/*.json 的 id）
 - merges：confidence ∈ [0,1]；left/right.source 已注册；left/right.key 是对应 schema 的列
 - 文件缺失处理：某规则文件不存在（如无 merges.json）= 跳过该类型（部分批准合法）
 
@@ -132,7 +132,7 @@
 
 **Files:**
 - Create: `palantir-aip-workflow/skills/paip-exec/SKILL.md`
-- Modify: `palantir-aip-workflow/skills/paip-model/SKILL.md`（type 枚举收敛 9 种 + §3.6 表）、`palantir-aip-workflow/skills/paip-review/SKILL.md`（批准后衔接 paip-exec）、`palantir-aip-workflow/skills/paip-entity/SKILL.md`（merge 声明含 value：left/right 各 {source,key,value}）
+- Modify: `palantir-aip-workflow/skills/paip-model/SKILL.md`（type 枚举收敛 10 种 + §3.6 表）、`palantir-aip-workflow/skills/paip-review/SKILL.md`（批准后衔接 paip-exec）、`palantir-aip-workflow/skills/paip-entity/SKILL.md`（merge 声明含 value：left/right 各 {source,key,value}）
 - Modify: `palantir-aip-workflow/.claude-plugin/plugin.json`（注册 paip-exec，8 skill）
 
 **Interfaces:**

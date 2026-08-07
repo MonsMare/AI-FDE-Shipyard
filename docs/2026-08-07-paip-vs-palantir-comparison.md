@@ -60,7 +60,7 @@
 **差距**：
 1. **无"动作"概念（结构缺口）**：Palantir Ontology 是"语义+动能"两层——对象描述世界，**动作改变世界**（写回运营系统、可审计）。我们只有物化 CSV（output/），无动作类型定义。根因：范围裁剪（"决策写回"被认为超出演示范围）。结果：流水线是"单向读-算-写文件"，不是"闭环治理"。
 2. 自动映射列→属性：我们由 LLM 做（prompt 要求每列映射为属性）——能力等价但**无确定性兜底**（LLM 漏列时无自动检查）；validate 检查对象有 properties 但不检查"属性是否覆盖 backingSource 全部列"。→ 可加"列覆盖检查"。
-3. **规则枚举笔误（应统一修正）**：spec §3.6 与 paip-model SKILL.md 称"9 种"规则，实际权威枚举（validate.js 的 TYPES）为 **10 种**（regex_replace/regex_extract/map/filter/concat/split/cast/lower/upper/trim）——"9 种"是删 format_date 时的计数笔误，已传播到多处文档与注释（以 grep '9 种' 全量修正，含 README/exec 注释/engineering-principles/experiment/templates/v2 计划/spec），建议下轮统一修正。
+3. **规则枚举笔误（已统一修正）**：spec §3.6 与 paip-model SKILL.md 曾把权威枚举（validate.js 的 TYPES，10 项：regex_replace/regex_extract/map/filter/concat/split/cast/lower/upper/trim）误计为 9 项——删 format_date 时的计数笔误，曾传播到多处文档与注释（含 README/exec 注释/engineering-principles/experiment/templates/v2 计划/spec），现已全量修正为 10 种。
 
 ### 环节 4：实体消解（Entity Resolution）
 

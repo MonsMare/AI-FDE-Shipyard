@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // exec.js — 确定性执行引擎（spec §3.1/§4/§5）
 // 读 approved/transforms.json + approved/merges.json → 内部强制先跑 validate →
-// 纯 JS 行级执行（9 种规则，§3.6 执行细则）→ merge（键映射替换，§4）→ 统一写盘 output/<id>.csv → 审计。
+// 纯 JS 行级执行（10 种规则，§3.6 执行细则）→ merge（键映射替换，§4）→ 统一写盘 output/<id>.csv → 审计。
 // 铁律：失败中止，数据不动，状态不推进。
 // 接口: execProject(projectDir, {transformIds, mergeIds}) → {ok, outputs, events, problems?}
 // CLI: node exec.js <项目目录> [--transform <id>] [--merge <id>]
@@ -54,7 +54,7 @@ function cmp(a, b) {
   return a < b ? -1 : a > b ? 1 : 0;
 }
 
-// ==================== 规则执行（9 种，§3.6） ====================
+// ==================== 规则执行（10 种，§3.6） ====================
 
 // 对一行应用规则（filter 返回布尔，其余就地修改行）。返回 null 表示行被丢弃。
 function applyRule(row, rule) {

@@ -75,7 +75,7 @@ paip-init → paip-source → paip-infer → paip-model → paip-entity → paip
 | `bin/schema-infer.js` | 确定性 schema 推断（CSV/JSON/JSONL → 列类型/样本/空值率/去重计数） |
 | `bin/csv.js` | 公共 CSV 库（RFC 4180 解析/序列化，BOM/转义引号/内嵌换行） |
 | `bin/validate.js` | 产物格式校验器（objects/links/transforms/merges + 源注册/列存在） |
-| `bin/exec.js` | 确定性执行引擎（9 种规则行级执行 + 合并 + 统一写盘 + 审计） |
+| `bin/exec.js` | 确定性执行引擎（10 种规则行级执行 + 合并 + 统一写盘 + 审计） |
 | `bin/audit.js` | 状态机校验 + 审计事件追加（log/state/step/exec/check） |
 
 零依赖，Node 18+，直接 `node bin/<tool>.js` 调用。

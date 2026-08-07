@@ -42,7 +42,7 @@ description: 用 LLM 生成确定性数据转换逻辑（对应 Palantir Pipelin
 只输出 JSON，不输出解释。规则必须确定性（无随机、无 LLM 依赖）。
 ```
 
-**规则 type 权威枚举（9 种，与 bin/validate.js 一致）**：
+**规则 type 权威枚举（10 种，与 bin/validate.js 一致）**：
 
 | type | rule 参数 | 行为（确定性） |
 |---|---|---|

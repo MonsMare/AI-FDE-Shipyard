@@ -1,5 +1,5 @@
 // transform-rules-semantics/scripts/run.js — 只产数据，不下结论
-// 验证 spec §3.6 九种规则 type 的确定性语义 + §3.1 链式执行 + §5 失败中止零副作用
+// 验证 spec §3.6 十种规则 type 的确定性语义 + §3.1 链式执行 + §5 失败中止零副作用
 // 运行: node scripts/run.js
 'use strict';
 
@@ -114,7 +114,7 @@ function execTransforms(cols, rows, transforms) {
   return { cols, rows: curRows };
 }
 
-// ============ H2a: 九种规则语义用例 ============
+// ============ H2a: 十种规则语义用例 ============
 const ruleCases = [
   {
     id: 'regex_replace-global', type: 'regex_replace',

@@ -128,7 +128,7 @@
 | `cast` | `column`, `targetType`（string/integer/number/boolean/date） | 类型转换；失败置 null |
 | `lower` / `upper` / `trim` | `column` | 字符串变换 |
 
-**权威枚举（v2 收敛）**：regex_replace / regex_extract / map / filter / concat / split / cast / lower / upper / trim（9 种，删去 format_date——date 格式统一由 cast 处理）。validate 与 paip-model 提示词共用此表。L1 测试覆盖全部 9 种。
+**权威枚举（v2 收敛）**：regex_replace / regex_extract / map / filter / concat / split / cast / lower / upper / trim（10 种，删去 format_date——date 格式统一由 cast 处理）。validate 与 paip-model 提示词共用此表。L1 测试覆盖全部 10 种。
 
 **执行细则（2026-08-06 实验 transform-rules-semantics 实测确认，正式实现照此）**：
 - 单元格一律为字符串（CSV 语义）；`cast` 输出**规范化字符串**：integer 去前导零（`007`→`7`）、number 去尾零、boolean 归一为 `true`/`false`（接受 `TRUE`/`1`/`FALSE`/`0`）、date 校验 `YYYY-MM-DD` 前缀格式；**转换失败置 null**（写盘为空串）
@@ -199,7 +199,7 @@
 
 ## 6. 测试与验证
 
-### L1 单元验证（覆盖全部 9 种规则 type，对照 §3.6）
+### L1 单元验证（覆盖全部 10 种规则 type，对照 §3.6）
 微型 CSV 测每类规则，断言输出值。csv.js 的 parse/stringify 各一组用例（含 BOM、转义引号、内嵌换行）。
 
 ### L2 端到端 demo
@@ -343,7 +343,7 @@ demo 数据（customers.csv + orders.csv，各 4 行）走完整流水线：
 | 实验 | 验证内容 | 结论 | 对设计的影响 |
 |---|---|---|---|
 | `csv-parse-edge-cases` | 现有 parseCsv 缺陷（H1a）+ 修复方案（H1b） | 成立：现有实现 5/6 用例错；RFC 4180 状态机修复版 6/6 + 往返 2/2 过 | §3.3 bin/csv.js 方案确认 |
-| `transform-rules-semantics` | 9 种规则语义（H2a）+ 链式（H2b）+ 失败零副作用（H2c） | 成立：17/17 规则用例、链式 1/1、破坏性 3/3（无产物、state 不推进） | §3.6 执行细则补充（cast/filter/regex_extract/split/空值/date） |
+| `transform-rules-semantics` | 10 种规则语义（H2a）+ 链式（H2b）+ 失败零副作用（H2c） | 成立：17/17 规则用例、链式 1/1、破坏性 3/3（无产物、state 不推进） | §3.6 执行细则补充（cast/filter/regex_extract/split/空值/date） |
 | `merge-semantics` | 键映射/左优先/fan-out/实例级（H3a-d） | 成立：4/4 用例 | §4 补充 3 条合并语义（rightOnly、无重叠键、键列冲突） |
 | `scale-benchmark` | 纯 JS 内存执行规模边界（H4a/H4b） | 成立：100K 行 310ms/202MB；1M 行 3.25s/905MB 不崩溃 | §2 规模论证从"拍脑袋"升级为实测；建议外接 DB 触发线 ≥1M 行或 ≥512MB 峰值 RSS |
 

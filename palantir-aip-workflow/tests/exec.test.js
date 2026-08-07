@@ -61,7 +61,7 @@ function stateStep(dir) {
   return JSON.parse(fs.readFileSync(path.join(dir, 'state.json'), 'utf8')).currentStep;
 }
 
-// ==================== L1: 九种规则语义 ====================
+// ==================== L1: 十种规则语义 ====================
 
 test('L1: regex_replace 全局替换', () => {
   const dir = makeProject({
