@@ -357,3 +357,46 @@ demo 数据（customers.csv + orders.csv，各 4 行）走完整流水线：
 
 - 执行（行级变换）仅占总耗时 ~19-22%，瓶颈是 CSV 文本往返（解析+序列化）——未来优化方向是流式处理，不是执行器
 - 峰值 RSS 近似线性：1M 行 ≈ 905MB；推算 500 万行 ≈ 4.5GB 逼近开发机内存边界
+
+---
+
+## 12. v2.1 迭代记录（2026-08-07，能力测试问题处置）
+
+依据《paip 能力测试报告（demo-data 实战）》（`docs/2026-08-07-paip-capability-test-report.md`，P1-P14）与《paip vs Palantir 对比分析报告》（`docs/2026-08-07-paip-vs-palantir-comparison.md`）完成 v2.1 迭代，处置如下：
+
+### 12.1 P1-P14 处置表
+
+| P 项 | 处置 | 说明（提交） |
+|---|---|---|
+| P1 模板缺 `exec` 步骤 | ✓ 已修复 | 模板 `state/config.json` 补 `exec` 步骤（状态机 7 步），audit check 对模板初始化项目通过（b8988f2） |
+| P2 exec 过滤语义错误 | ✓ 已修复 | `--transform` 时只执行指定转换（跳过全部 merge）；`--merge` 时只执行指定合并（跳过全部 transform）；两者并存各自过滤（085fe1a） |
+| P3 `validate --stage` 早期不可用 | ✓ 已修复 | 无 `approved/` 时允许纯 staging 校验（对象存在性检查降级为 staging 集内自查）；paip-model/entity/infer 三个 skill 接入 `validate --stage` 校验步骤（6cc81bc） |
+| P4 demo-data 金额清洗不闭环 | ✓ 已修复 | 金额第三格式改美式千分位 `1,234.50`（可被 `[$,]` 规则清洗），重新生成全量 company-group，exec 后 cast 空值残留为 0（0724b71） |
+| P5 schema-infer mixed 无上下文 | ✓ 已修复 | mixed 列输出 `typeBreakdown`（各类型占比）与 `dirtyFormats`（MM/DD/YYYY、DD-MM-YYYY 等变体识别）（7068bf3） |
+| P6 model `target` 字段自相矛盾 | ✓ 已修复 | 提示模板 target 改"描述性说明（不控制输出路径）"，与 validate 行为一致（95a3a3e） |
+| P7 "review 是终态"说法过时 | ✓ 已修复 | paip-review 终态改 `exec`、闭环表述与 7 步状态机一致（95a3a3e） |
+| P8 `titleKey` 无消费方 | ✓ 已修复 | validate 新增"属性覆盖 backingSource 全部列"检查（连带 fixtures 补列，6cc81bc）；paip-infer 移除 titleKey 要求，属性仅需 primaryKey（95a3a3e） |
+| P9 源 id 命名契约不明 | ✓ 已修复 | paip-source 新增命名契约段：id 含扩展名 ＝ `sources/<id>.json` 文件名 ＝ `schemas/<id>.schema.json` 文件名 ＝ transforms.source / merges.left\|right.source 引用值（95a3a3e） |
+| P10 缺日期清洗标准做法 | ✓ 已修复 | paip-model 新增日期/金额清洗标准模式：regex 转 ISO → cast 链式（$n 组顺序保持月日语义）（95a3a3e） |
+| P11 entity join 键来源不明 | ✓ 已修复 | paip-entity Step 1 增加"读 `sources/*.json` 确认已注册源 id（left/right.source 必须等于注册 id）"（95a3a3e） |
+| P12 visualize 依赖硬编码 MCP 工具名 | 维持现状（推迟） | 无 drawio MCP 时文字表格兜底已声明；替代可视化（mermaid 文本文件输出等）并入 v2.2 |
+| P13 `state.sources` 双轨制 | ✓ 已修复 | README 声明 `state.sources` 弃用，权威记录为 `sources/*.json`；生成器与 skill 不再写入（e65a1d8） |
+| P14 日期规则月日颠倒 | ✓ 已修复（能力测试阶段） | `date_dmy_to_iso` replacement 改 `$3-$2-$1`（日=$1 月=$2 保持语义）；demo-data.test.js 新增"日期值重放校验"用例（0e479e6，v2.1 计划前完成） |
+
+### 12.2 v2.1 附加交付（超出 P 项范围）
+
+| 项 | 处置 | 说明（提交） |
+|---|---|---|
+| 规则枚举笔误全量修正 | ✓ 已修复 | 全仓"规则枚举 11 种"笔误统一为 10 种（regex_replace/regex_extract/map/filter/concat/split/cast/lower/upper/trim），plugin.test.js 新增全仓一致性断言（66fabe5） |
+| evals-lite 规则效果评估 | ✓ 已落地 | 新增 `bin/eval.js`（单规则前后对照评估），paip-model/paip-review skill 接入；兑现 §8 后续阶段 v2.1（evals-lite）增量定义与 §9 文件清单（dd83613/66b7198） |
+
+### 12.3 推迟至 v2.2+（迭代边界，本次仅文档标注）
+
+- LLM 节点（LLM 函数与动作层深度化）
+- OAG-lite 接地运行时
+- 动作语义（动作层）
+- ER 增强（Entity Resolution 深度集成）
+- 引擎适配层（Spark/Flink 可替换执行后端）
+- 模型可替换（LLM 供应商抽象）
+
+差距分析与优先级见《paip vs Palantir 对比分析报告》§三（差距根因）/§四（修改建议）；本迭代范围与每任务交付见 `docs/superpowers/plans/2026-08-07-paip-v2.1-iteration.md`。
