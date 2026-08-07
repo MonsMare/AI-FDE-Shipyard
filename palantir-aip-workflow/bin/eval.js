@@ -164,7 +164,7 @@ function main() {
     process.exit(FAIL);
   }
   if (!fs.existsSync(projectDir)) {
-    console.error(`✘ 项目目录不存在: ${projectDir}`);
+    console.error(`✘ [eval] 项目目录不存在: ${projectDir}`);
     process.exit(FAIL);
   }
   // 规则定位：approved 优先；找不到回退 staging（paip-model 在规则正式进 staging 状态前先用 eval 展示对照）
@@ -177,7 +177,7 @@ function main() {
     if (rule) scope = 'staging';
   }
   if (!rule) {
-    console.error(`✘ approved/staging 中找不到规则: ${ruleId}`);
+    console.error(`✘ [eval] approved/staging 中找不到规则: ${ruleId}`);
     process.exit(FAIL);
   }
   const r = evalRule(projectDir, rule);

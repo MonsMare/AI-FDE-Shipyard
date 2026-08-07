@@ -387,7 +387,7 @@ demo 数据（customers.csv + orders.csv，各 4 行）走完整流水线：
 
 | 项 | 处置 | 说明（提交） |
 |---|---|---|
-| 规则枚举笔误全量修正 | ✓ 已修复 | 全仓"规则枚举 11 种"笔误统一为 10 种（regex_replace/regex_extract/map/filter/concat/split/cast/lower/upper/trim），plugin.test.js 新增全仓一致性断言（66fabe5） |
+| 规则枚举笔误全量修正 | ✓ 已修复 | 全仓"规则枚举数"笔误统一为 10 种（regex_replace/regex_extract/map/filter/concat/split/cast/lower/upper/trim），plugin.test.js 新增全仓一致性断言（66fabe5） |
 | evals-lite 规则效果评估 | ✓ 已落地 | 新增 `bin/eval.js`（单规则前后对照评估），paip-model/paip-review skill 接入；兑现 §8 后续阶段 v2.1（evals-lite）增量定义与 §9 文件清单（dd83613/66b7198） |
 
 ### 12.3 推迟至 v2.2+（迭代边界，本次仅文档标注）

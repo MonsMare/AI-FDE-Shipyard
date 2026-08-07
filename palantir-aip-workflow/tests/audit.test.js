@@ -117,6 +117,22 @@ test('P5: mixed 类型附带 typeBreakdown 与 dirtyFormats', () => {
   fs.rmSync(dir, { recursive: true, force: true });
 });
 
+test('P5: 美式逗号千分位金额识别（1,234.50 与 $1,234.50）', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-schema-'));
+  const csv = path.join(dir, 'thousands.csv');
+  fs.writeFileSync(csv, 'a\r\n1234.5\r\n"$1,234.50"\r\n"1,234.50"\r\nabc\r\n');
+  const script = path.join(__dirname, '..', 'bin', 'schema-infer.js');
+  const r = spawnSync(process.execPath, [script, csv], { encoding: 'utf8' });
+  assert.strictEqual(r.status, 0, r.stderr);
+  const out = JSON.parse(r.stdout);
+  const col = out.columns[0];
+  assert.strictEqual(col.inferredType, 'mixed');
+  assert.ok(Array.isArray(col.dirtyFormats), '应输出 dirtyFormats');
+  assert.ok(col.dirtyFormats.includes('千分位'), '应识别逗号千分位');
+  assert.ok(col.dirtyFormats.includes('$ 前缀'), '应识别 $ 前缀');
+  fs.rmSync(dir, { recursive: true, force: true });
+});
+
 test('P5: 非 mixed 列不输出 typeBreakdown/dirtyFormats（schema 结构稳定）', () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-schema-'));
   const csv = path.join(dir, 'clean.csv');

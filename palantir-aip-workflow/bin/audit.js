@@ -6,7 +6,7 @@
 //   node audit.js state <projectDir>
 //      打印当前流水线状态
 //   node audit.js step <projectDir> <nextStep>
-//      校验并推进状态机（init→source→infer→model→entity→review）
+//      校验并推进状态机（init→source→infer→model→entity→review→exec）
 //   node audit.js check <projectDir>
 //      校验项目完整性（目录/文件存在、状态机一致性）
 // 零依赖，Node 18+。
