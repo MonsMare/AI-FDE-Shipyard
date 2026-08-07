@@ -231,8 +231,10 @@ function execProject(projectDir, opts = {}) {
   const merges = (readJson(path.join(approvedDir, 'merges.json')) || { merges: [] }).merges;
   const wantedT = opts.transformIds ? new Set(opts.transformIds) : null;
   const wantedM = opts.mergeIds ? new Set(opts.mergeIds) : null;
-  const ts = wantedT ? transforms.filter((t) => wantedT.has(t.id)) : transforms;
-  const ms = wantedM ? merges.filter((m) => wantedM.has(m.id)) : merges;
+  const onlyT = wantedT && !wantedM;
+  const onlyM = wantedM && !wantedT;
+  const ts = wantedT ? transforms.filter((t) => wantedT.has(t.id)) : (onlyM ? [] : transforms);
+  const ms = wantedM ? merges.filter((m) => wantedM.has(m.id)) : (onlyT ? [] : merges);
 
   if (ts.length === 0 && ms.length === 0) {
     return { ok: true, outputs: [], events: [] }; // 无事可做，成功退出

@@ -311,3 +311,31 @@ test('成功执行后审计一次性记录 transform_executed×N', () => {
   assert.strictEqual(evts.filter((e) => e.action === 'step_entered').length, 1);
   assert.strictEqual(stateStep(dir), 'exec'); // 状态机推进到 exec
 });
+
+// ==================== P2: --transform/--merge 过滤联动 ====================
+
+test('P2: --transform 过滤不执行任何 merge', () => {
+  const dir = makeProject({
+    transforms: [{ id: 't1', source: 'customers.csv', target: 'x', type: 'lower', rule: { column: 'name' } }],
+    merges: [{ id: 'm1', left: { source: 'customers.csv', key: 'customerId', value: 'c1' }, right: { source: 'orders.csv', key: 'customerId', value: 'X1' }, confidence: 0.9 }],
+  });
+  const r = execProject(dir, { transformIds: ['t1'] });
+  assert.strictEqual(r.ok, true);
+  const outs = fs.readdirSync(path.join(dir, 'output')).filter((f) => f.endsWith('.csv')).sort();
+  assert.deepStrictEqual(outs, ['t1.csv']); // 只有 t1，无 m1/m1-mapping
+  const evts = auditEvents(dir);
+  assert.strictEqual(evts.filter((e) => e.action === 'merge_executed').length, 0);
+});
+
+test('P2: --merge 过滤不执行任何 transform', () => {
+  const dir = makeProject({
+    transforms: [{ id: 't1', source: 'customers.csv', target: 'x', type: 'lower', rule: { column: 'name' } }],
+    merges: [{ id: 'm1', left: { source: 'customers.csv', key: 'customerId', value: 'c1' }, right: { source: 'orders.csv', key: 'customerId', value: 'X1' }, confidence: 0.9 }],
+  });
+  const r = execProject(dir, { mergeIds: ['m1'] });
+  assert.strictEqual(r.ok, true);
+  const outs = fs.readdirSync(path.join(dir, 'output')).filter((f) => f.endsWith('.csv')).sort();
+  assert.deepStrictEqual(outs, ['m1.csv', 'm1-mapping.csv'].sort()); // 顺序不敏感（readdirSync 顺序无保证）
+  const evts = auditEvents(dir);
+  assert.strictEqual(evts.filter((e) => e.action === 'transform_executed').length, 0);
+});
