@@ -12,9 +12,9 @@
 | # | 环节 | 做什么 | 为什么（官方设计理由） | 结果 |
 |---|---|---|---|---|
 | 1 | 数据接入与 Schema 推断（Indexing / Hydration / Infer schema） | 联邦直连数据源（不复制），自动推断 schema，映射进 Ontology | without duplicating the underlying data——避免第二真相源；schema 是事实 | 对象/属性/链接雏形 + 可建模数据 |
-| 2 | 转换逻辑生成（Pipeline Builder） | 自然语言→自动生成转换代码（Generate）；可插入 LLM 节点；Transform Assist 辅助正则 | 逻辑作为确定性工具（可审计可重放）；严格输出检查防下游破坏；独立管道逻辑可换执行引擎（Spark/Flink） | 可执行的管道 + 物化 dataset / 对象类型 |
+| 2 | 转换逻辑生成（Pipeline Builder） | 自然语言→自动生成转换代码（Generate）；可插入 LLM 节点；Transform Assist 辅助正则 | 逻辑作为确定性工具（可审计可重放）；严格输出检查防下游破坏；独立管道逻辑可换执行引擎（Spark/Flink）[严格输出检查/引擎解耦来源：08-07 官方文档抓取，见 §六] | 可执行的管道 + 物化 dataset / 对象类型 |
 | 3 | 语义建模（Ontology Manager） | 选数据源→自动映射每列为属性→自动推断 ID/类型→一键生成标准动作 | 建模是解释不是事实；向导降低人工成本；动作让模型可被运营系统消费 | 对象类型 + 动作类型（写回能力） |
-| 4 | 实体消解（Entity Resolution） | AI 跨源链接记录去重 | false positive 比 false negative 危险；去重是建模中最脏最累环节 | 可靠去重后的数据地基 |
+| 4 | 实体消解（Entity Resolution） | AI 跨源链接记录去重 | 去重是建模中最脏最累环节；false positive 比 false negative 危险（通用数据治理原则，非 Palantir 官方原文） | 可靠去重后的数据地基 |
 | 5 | 语义检索与接地（Semantic Search / OAG） | embedding 向量关联 Ontology 对象；LLM 生成以语义模型接地 | 对抗朴素 RAG 幻觉；搜索驱动的运营工作流 | 可语义检索的运营层 |
 | 6 | LLM 函数与动作层（AIP Logic / actions） | 无代码 LLM 函数；函数可编辑 Ontology，**可自动应用或暂存人工审核**；最小权限 | LLM 非确定性需要人审闸门；最小权限安全 | 可编排的 AI 动作 + 治理闸门 |
 | 7 | 评估（AIP Evals） | 测试用例+目标函数+评估函数+指标，跨版本/跨模型对比 | 专门应对 LLM 非确定性，建立投产信心 | 评估报告（可写回 dataset/dashboard） |
@@ -41,13 +41,13 @@
 
 | | Palantir | paip | 差距 |
 |---|---|---|---|
-| 做什么 | Generate（NL→转换代码）+ Use LLM node + Transform Assist + 严格输出检查 + 引擎可替换 | `paip-model`：LLM 生成 9 种确定性规则 JSON + `exec.js` 纯 JS 行级执行 | ⚠️ 核心对齐但缺 3 项 |
+| 做什么 | Generate（NL→转换代码）+ Use LLM node + Transform Assist + 严格输出检查 + 引擎可替换 | `paip-model`：LLM 生成 10 种确定性规则 JSON + `exec.js` 纯 JS 行级执行 | ⚠️ 核心对齐但缺 3 项 |
 | 为什么 | 逻辑确定性 + 防下游破坏 + 引擎解耦 | 同（确定性原则是设计核心） | ✅ |
 | 结果 | 可执行管道 + 物化 dataset/对象类型 | output/<id>.csv 物化 | ⚠️ 无对象类型产出 |
 
 **差距与根因**：
-1. **Use LLM node 缺失（设计取舍）**：Palantir 允许管道内插入 LLM 节点（清洗/抽取/分类），用 Evals+审计兜底非确定性；我们**一刀切禁止**（9 种规则全是确定性函数）。根因：确定性优先哲学 + 无评估兜底设施。**结果**：语义类任务（分类、抽取实体、情感判断）无法进管道——这是"AI 原生流水线"的核心能力之一，我们只做了"AI 生成规则"，没做"AI 执行任务"。
-2. **严格输出检查缺失（P14 相关）**：Palantir 构建时检查输出 schema，不通过则阻止构建防下游破坏；我们 validate 只查规则输入（列存在/参数齐全），**不查规则对输出列结构的影响**（如 cast 把列变空、split 新增列后下游规则引用）。根因：validate 设计时聚焦"规则合法性"未扩展"下游影响"。结果：链式规则中后规则引用前规则新列时，如果前规则改了列结构，错误只能执行时暴露。
+1. **Use LLM node 缺失（设计取舍）**：Palantir 允许管道内插入 LLM 节点（清洗/抽取/分类），用 Evals+审计兜底非确定性；我们**一刀切禁止**（10 种规则全是确定性函数）。根因：确定性优先哲学 + 无评估兜底设施。**结果**：语义类任务（分类、抽取实体、情感判断）无法进管道——这是"AI 原生流水线"的核心能力之一，我们只做了"AI 生成规则"，没做"AI 执行任务"。
+2. **严格输出检查缺失（P14 相关）**：Palantir 构建时检查输出 schema，不通过则阻止构建防下游破坏；我们 validate 只查规则输入（type/参数/输入列存在），**不校验输出列结构与值**——split 新增列、concat 的 targetColumn 均不检查（仅当后续规则把新列当输入列引用时才报错），值层面的变化（cast 把列置空、P14 的日期月日颠倒）validate 也发现不了。根因：validate 聚焦"规则合法性"未扩展"输出值校验"。结果：值被篡改的规则只能靠人工审查发现（P14 正是实例）。
 3. **引擎可替换**：Palantir 管道逻辑与执行引擎解耦（Spark/Flink 可换）；我们 spec §2 已声明"JS 参考实现 + 未来后端适配器"，接口留好但未实现抽象层（exec 直接读规则 JSON 执行）。→ 设计到位、实现未做。
 
 ### 环节 3：语义建模（Ontology Manager）
@@ -60,6 +60,7 @@
 **差距**：
 1. **无"动作"概念（结构缺口）**：Palantir Ontology 是"语义+动能"两层——对象描述世界，**动作改变世界**（写回运营系统、可审计）。我们只有物化 CSV（output/），无动作类型定义。根因：范围裁剪（"决策写回"被认为超出演示范围）。结果：流水线是"单向读-算-写文件"，不是"闭环治理"。
 2. 自动映射列→属性：我们由 LLM 做（prompt 要求每列映射为属性）——能力等价但**无确定性兜底**（LLM 漏列时无自动检查）；validate 检查对象有 properties 但不检查"属性是否覆盖 backingSource 全部列"。→ 可加"列覆盖检查"。
+3. **规则枚举笔误（应统一修正）**：spec §3.6 与 paip-model SKILL.md 称"9 种"规则，实际权威枚举（validate.js 的 TYPES）为 **10 种**（regex_replace/regex_extract/map/filter/concat/split/cast/lower/upper/trim）——"9 种"是删 format_date 时的计数笔误，已传播到多处文档与注释（以 grep '9 种' 全量修正，含 README/exec 注释/engineering-principles/experiment/templates/v2 计划/spec），建议下轮统一修正。
 
 ### 环节 4：实体消解（Entity Resolution）
 
@@ -104,7 +105,7 @@
 | 结果 | 可信决策闭环 | audit.jsonl + approved/ 不可变 | ✅ |
 
 **差距**：
-- 审计：我们逐动作审计 ✓（P13 发现 state.sources 双轨制小问题）。
+- 审计：我们逐动作审计 ✓（状态记录有小问题：P13 的 state.sources 双轨制——state.json 的 sources 数组与 sources/*.json 文件谁权威未定义，详见能力测试报告）。
 - 最小权限：无概念（单机单用户，可接受）。
 - **模型可替换：无**——config.json 有 llm 段（preferredModel/fallbackModel）但引擎不消费；Palantir 的"模型可替换+跨模型评估"（Evals 跨模型对比）我们没有。→ 与环节 7 同根因。
 
@@ -171,6 +172,6 @@
 
 ## 六、验证与局限
 
-- Palantir 侧结论均锚定本地调研报告（一手来源清单见其 §7）与 research 官方文档抓取；**未验证项**：OAG 官方正文、Entity Resolution 官方独立页面（疑似 404，官方机制为 Indexing/Object edits）、release notes 新功能
+- Palantir 侧结论均锚定本地调研报告（一手来源清单见其 §7）与 research 官方文档抓取；**来源说明与未验证项**：①"严格输出检查""引擎可替换（Spark/Flink）"来自 08-07 官方文档抓取（环节 2 行内已标注），AIP Evals 组件细节（测试用例+评估函数+指标）同样来自该次抓取（环节 7 未行内标注，特此补注）；②OAG 官方正文、release notes 新功能未抓取；③Entity Resolution：官方**产品页**存在且有原文引用（本地报告 §7 source 10，`palantir.com/foundry-entity-resolution/`），但 docs 站无对应文档页（research 尝试 `/docs/foundry/entity-resolution/overview/` 返回 404）——官方机制由 Indexing/Object edits 承担，两者不冲突，特此说明
 - 我们侧结论基于 `spec/2026-08-05-paip-engineering-design.md`、8 个 SKILL.md、引擎源码与能力测试报告（P1-P14）
 - 建议的可行性论证（如 evals-lite 的具体指标）应在实现前用 confirm-by-experiment 验证
