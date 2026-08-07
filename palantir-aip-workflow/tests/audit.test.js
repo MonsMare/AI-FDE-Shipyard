@@ -99,3 +99,35 @@ test('模板 state/config 含 7 步（含 exec）', () => {
   const r = spawnSync(process.execPath, [path.join(__dirname, '..', 'bin', 'audit.js'), 'check', dir], { encoding: 'utf8' });
   assert.strictEqual(r.status, 0, r.stderr || r.stdout);
 });
+
+// ==================== P5: schema-infer mixed 增强 ====================
+
+test('P5: mixed 类型附带 typeBreakdown 与 dirtyFormats', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-schema-'));
+  const csv = path.join(dir, 'mixed.csv');
+  fs.writeFileSync(csv, 'd\r\n2026-08-05\r\n08/05/2026\r\n05-08-2026\r\nabc\r\n');
+  const script = path.join(__dirname, '..', 'bin', 'schema-infer.js');
+  const r = spawnSync(process.execPath, [script, csv], { encoding: 'utf8' });
+  assert.strictEqual(r.status, 0, r.stderr);
+  const out = JSON.parse(r.stdout);
+  const col = out.columns[0];
+  assert.strictEqual(col.inferredType, 'mixed');
+  assert.ok(col.typeBreakdown && col.typeBreakdown.date >= 1, '应含日期占比');
+  assert.ok(Array.isArray(col.dirtyFormats) && col.dirtyFormats.includes('MM/DD/YYYY'), '应识别日期变体');
+  fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test('P5: 非 mixed 列不输出 typeBreakdown/dirtyFormats（schema 结构稳定）', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-schema-'));
+  const csv = path.join(dir, 'clean.csv');
+  fs.writeFileSync(csv, 'n,s,amount\r\n1,hi,12.5\r\n2,ho,3.25\r\n');
+  const script = path.join(__dirname, '..', 'bin', 'schema-infer.js');
+  const r = spawnSync(process.execPath, [script, csv], { encoding: 'utf8' });
+  assert.strictEqual(r.status, 0, r.stderr);
+  const out = JSON.parse(r.stdout);
+  for (const col of out.columns) {
+    assert.ok(!('typeBreakdown' in col), `非 mixed 列 ${col.name} 不应有 typeBreakdown`);
+    assert.ok(!('dirtyFormats' in col), `非 mixed 列 ${col.name} 不应有 dirtyFormats`);
+  }
+  fs.rmSync(dir, { recursive: true, force: true });
+});

@@ -33,6 +33,25 @@ function typeOf(value) {
   return 'string';
 }
 
+// P5: 脏格式变体识别（叠加在 typeOf 之上，不改变类型判定；仅 mixed 列输出）
+// 初版识别：日期变体 MM/DD/YYYY、DD-MM-YYYY；金额变体 $ 前缀、空格千分位（含 , 或 . 小数）
+const DIRTY_FORMATS = [
+  { key: 'MM/DD/YYYY', re: /^\d{1,2}\/\d{1,2}\/\d{4}$/ },
+  { key: 'DD-MM-YYYY', re: /^\d{1,2}-\d{1,2}-\d{4}$/ },
+  { key: '$ 前缀', re: /^\$[\d,]+(?:\.\d+)?$/ },
+  { key: '空格千分位', re: /^-?\d{1,3}( \d{3})+(?:[.,]\d+)?$/ },
+];
+// typeBreakdown 输出键序（只含出现过的类型）
+const TYPE_BREAKDOWN_ORDER = ['string', 'date', 'integer', 'number', 'boolean', 'email', 'ipv4'];
+
+function detectDirtyFormat(value) {
+  const s = String(value).trim();
+  for (const f of DIRTY_FORMATS) {
+    if (f.re.test(s)) return f.key;
+  }
+  return null;
+}
+
 function inferFromRows(cols, rows, sampleN) {
   const colStats = cols.map((name) => ({
     name,
@@ -42,12 +61,18 @@ function inferFromRows(cols, rows, sampleN) {
     sample: [],
     distinct: null,
   }));
+  // P5: 每列类型计数与脏格式变体计数（仅 mixed 列用于输出）
+  const typeCounts = cols.map(() => ({}));
+  const dirtyCounts = cols.map(() => ({}));
   for (const row of rows) {
     for (let i = 0; i < cols.length; i++) {
       const val = row[i] === undefined ? null : row[i];
       const t = typeOf(val);
       const st = colStats[i];
       if (t === 'null') { st.nullCount++; continue; }
+      typeCounts[i][t] = (typeCounts[i][t] || 0) + 1;
+      const dirty = detectDirtyFormat(val);
+      if (dirty) dirtyCounts[i][dirty] = (dirtyCounts[i][dirty] || 0) + 1;
       if (!st.inferredType) st.inferredType = t;
       else if (st.inferredType !== t) {
         // 类型冲突：整数+小数→number；否则记 mixed
@@ -59,6 +84,24 @@ function inferFromRows(cols, rows, sampleN) {
         if (!st.sample.includes(val)) st.sample.push(val);
       }
     }
+  }
+  // P5: mixed 列输出 typeBreakdown 与 dirtyFormats（非 mixed 列不加字段，保持 schema 结构稳定）
+  for (let i = 0; i < colStats.length; i++) {
+    const st = colStats[i];
+    if (st.inferredType !== 'mixed') continue;
+    const breakdown = {};
+    for (const k of TYPE_BREAKDOWN_ORDER) {
+      if (typeCounts[i][k]) breakdown[k] = typeCounts[i][k];
+    }
+    st.typeBreakdown = breakdown;
+    const nonNull = st.total - st.nullCount;
+    // 阈值：变体出现次数 ≥ 非空值的 30%（四舍五入，至少 1 次）
+    const threshold = Math.max(1, Math.round(nonNull * 0.3));
+    const formats = [];
+    for (const f of DIRTY_FORMATS) {
+      if ((dirtyCounts[i][f.key] || 0) >= threshold) formats.push(f.key);
+    }
+    if (formats.length > 0) st.dirtyFormats = formats;
   }
   // 去重计数（近似：取样本内的去重值 + 全部值集合计数仅在数据小时做精确统计）
   for (const st of colStats) {
