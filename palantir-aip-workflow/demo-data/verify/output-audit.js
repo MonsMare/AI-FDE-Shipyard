@@ -8,20 +8,28 @@ const path = require('path');
 const os = require('os');
 
 const projectDir = process.argv[2] || path.join(__dirname, '..', 'company-group');
+const projectDirAbs = path.resolve(projectDir);
 const { execProject } = require('../../bin/exec.js');
 const { readCsvFile } = require('../../bin/csv.js');
 
 const report = {};
 
 // ---------- 0. 副本执行 ----------
-const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-audit-'));
-fs.cpSync(projectDir, tmp, { recursive: true });
-const r = execProject(tmp);
-if (!r.ok) {
-  console.log(JSON.stringify({ error: 'exec 失败', problems: r.problems }, null, 2));
-  fs.rmSync(tmp, { recursive: true, force: true });
-  process.exit(1);
+let tmp;
+try {
+  tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-audit-'));
+  fs.cpSync(projectDir, tmp, { recursive: true });
+  const r = execProject(tmp);
+  if (!r.ok) {
+    console.log(JSON.stringify({ error: 'exec 失败', problems: r.problems }, null, 2));
+    process.exit(1);
+  }
+  main();
+} finally {
+  if (tmp) fs.rmSync(tmp, { recursive: true, force: true });
 }
+
+function main() {
 const outDir = path.join(tmp, 'output');
 const outFiles = fs.readdirSync(outDir).filter((f) => f.endsWith('.csv')).sort();
 const csv = (name) => readCsvFile(path.join(outDir, name));
@@ -59,14 +67,16 @@ const col = (t, name) => t.cols.indexOf(name);
   const rowCheck = [];
   for (const t of transforms) {
     if (t.type === 'filter') continue;
-    const srcRel = Object.values(JSON.parse(fs.readFileSync(path.join(tmp, 'sources', `${t.source}.json`), 'utf8')))[0] || null;
     let srcPath;
     try {
       const src = JSON.parse(fs.readFileSync(path.join(tmp, 'sources', `${t.source}.json`), 'utf8'));
       srcPath = src.path || null;
     } catch { srcPath = null; }
     if (!srcPath) { rowCheck.push({ id: t.id, skip: '源路径未知' }); continue; }
-    const srcAbs = path.isAbsolute(srcPath) ? srcPath : path.join(tmp, srcPath);
+    // 仅允许副本内路径（sources 的绝对路径指向主项目——副本内同名相对路径才是真实数据源）
+    const rel = path.isAbsolute(srcPath) ? srcPath.replace(new RegExp('^' + projectDirAbs.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[\\\\/]'), '') : srcPath;
+    const srcAbs = path.join(tmp, rel);
+    if (!srcAbs.startsWith(tmp + path.sep)) { rowCheck.push({ id: t.id, skip: '源路径越界' }); continue; }
     if (!fs.existsSync(srcAbs)) { rowCheck.push({ id: t.id, skip: '源文件缺失' }); continue; }
     const srcRows = readCsvFile(srcAbs).rows.length;
     const outRows = csv(`${t.id}.csv`).rows.length;
@@ -216,7 +226,7 @@ const col = (t, name) => t.cols.indexOf(name);
     defects_rows: defs.rows.length,
     duplicateCustomerPairs: { designed: 194, declared: customerMerges, coverage: +(customerMerges / 194).toFixed(2) },
   };
-}
 
-fs.rmSync(tmp, { recursive: true, force: true });
-console.log(JSON.stringify(report, null, 2));
+  console.log(JSON.stringify(report, null, 2));
+}
+}
