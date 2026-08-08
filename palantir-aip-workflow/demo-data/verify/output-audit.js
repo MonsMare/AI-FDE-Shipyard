@@ -78,6 +78,8 @@ const col = (t, name) => t.cols.indexOf(name);
     if (!srcPath) { rowCheck.push({ id: t.id, skip: '源路径未知' }); continue; }
     // 仅允许副本内路径（sources 的绝对路径指向主项目——副本内同名相对路径才是真实数据源）
     const rel = path.isAbsolute(srcPath) ? srcPath.replace(new RegExp('^' + projectDirAbs.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[\\\\/]'), '') : srcPath;
+    // join 前拦截：剥离失败（前缀不匹配/大小写/盘符差异）后 rel 仍为绝对路径——直接判越界，避免 join 拼接语义绕过
+    if (path.isAbsolute(rel)) { rowCheck.push({ id: t.id, skip: '源路径越界' }); continue; }
     const srcAbs = path.join(tmp, rel);
     if (!srcAbs.startsWith(tmp + path.sep)) { rowCheck.push({ id: t.id, skip: '源路径越界' }); continue; }
     if (!fs.existsSync(srcAbs)) { rowCheck.push({ id: t.id, skip: '源文件缺失' }); continue; }
