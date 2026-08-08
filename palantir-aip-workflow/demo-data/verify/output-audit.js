@@ -16,18 +16,21 @@ const report = {};
 
 // ---------- 0. 副本执行 ----------
 let tmp;
+let exitCode = 0;
 try {
   tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'paip-audit-'));
   fs.cpSync(projectDir, tmp, { recursive: true });
   const r = execProject(tmp);
   if (!r.ok) {
     console.log(JSON.stringify({ error: 'exec 失败', problems: r.problems }, null, 2));
-    process.exit(1);
+    exitCode = 1;
+  } else {
+    main();
   }
-  main();
 } finally {
   if (tmp) fs.rmSync(tmp, { recursive: true, force: true });
 }
+if (exitCode) process.exit(exitCode);
 
 function main() {
 const outDir = path.join(tmp, 'output');
