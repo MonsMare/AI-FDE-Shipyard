@@ -1,0 +1,8 @@
+{
+  "id": "crm_customers.csv",
+  "path": "C:\\Users\\meta\\Code\\研究中心\\marble-pillar\\palantir-aip-workflow\\experiment\\ai-fde-pilot\\data\\crm_customers.csv",
+  "format": "csv",
+  "registeredAt": "2026-08-08",
+  "description": "零售 CRM 客户主数据导出（1200 行）：customer_id=CRM-*，含脏名称（大小写/空白）、混合日期、脏电话格式",
+  "copied": false
+}

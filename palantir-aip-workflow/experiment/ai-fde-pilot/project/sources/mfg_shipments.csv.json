@@ -1,0 +1,8 @@
+{
+  "id": "mfg_shipments.csv",
+  "path": "C:\\Users\\meta\\Code\\研究中心\\marble-pillar\\palantir-aip-workflow\\experiment\\ai-fde-pilot\\data\\mfg_shipments.csv",
+  "format": "csv",
+  "registeredAt": "2026-08-08",
+  "description": "制造发货事实表（2000 行）：shipment_id=SHIP-*，引用 supplier_id；lead_time_days 含 >30 天延迟信号（206 行），unit_cost 含 $/逗号小数脏格式",
+  "copied": false
+}

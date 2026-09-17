@@ -1,0 +1,93 @@
+{
+  "file": "saas_accounts.csv",
+  "rows": 400,
+  "columns": [
+    {
+      "name": "account_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 400,
+      "sample": [
+        "SAAS-1",
+        "SAAS-2",
+        "SAAS-3",
+        "SAAS-4",
+        "SAAS-5"
+      ],
+      "distinct": 400
+    },
+    {
+      "name": "account_name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 400,
+      "sample": [
+        "王洋 TYRELL",
+        "胡磊 VANDELAY",
+        "APERTURE 胡平",
+        "HOOLI 张涛",
+        "吴艳 HOOLI"
+      ],
+      "distinct": 398
+    },
+    {
+      "name": "account_email",
+      "inferredType": "email",
+      "nullCount": 0,
+      "total": 400,
+      "sample": [
+        "tyrell0@corp.com",
+        "vandelay1@163.com",
+        "aperture2@qq.com",
+        "hooli3@qq.com",
+        "hooli4@163.com"
+      ],
+      "distinct": 400
+    },
+    {
+      "name": "billing_country",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 400,
+      "sample": [
+        "US",
+        "CN",
+        "SG",
+        "DE",
+        "JP"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "signup_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 400,
+      "sample": [
+        "06/06/2020",
+        "2021-12-07",
+        "2022-03-06",
+        "03/06/2022",
+        "01/11/2021"
+      ],
+      "distinct": 382,
+      "typeBreakdown": {
+        "string": 162,
+        "date": 238
+      }
+    },
+    {
+      "name": "plan",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 400,
+      "sample": [
+        "basic",
+        "enterprise",
+        "pro"
+      ],
+      "distinct": 3
+    }
+  ],
+  "generatedAt": "2026-08-08T02:52:30.784Z"
+}

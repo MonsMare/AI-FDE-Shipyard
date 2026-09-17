@@ -1,0 +1,132 @@
+{
+  "file": "mfg_shipments.csv",
+  "rows": 2000,
+  "columns": [
+    {
+      "name": "shipment_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "SHIP-1",
+        "SHIP-2",
+        "SHIP-3",
+        "SHIP-4",
+        "SHIP-5"
+      ],
+      "distinct": 2000
+    },
+    {
+      "name": "supplier_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "MFG-20",
+        "MFG-106",
+        "MFG-26",
+        "MFG-22",
+        "MFG-175"
+      ],
+      "distinct": 200
+    },
+    {
+      "name": "part_number",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "PN-4485",
+        "PN-2709",
+        "PN-5208",
+        "PN-3490",
+        "PN-1028"
+      ],
+      "distinct": 1793
+    },
+    {
+      "name": "quantity",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "170",
+        "169",
+        "108",
+        "72",
+        "105"
+      ],
+      "distinct": 200
+    },
+    {
+      "name": "unit_cost",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "99.93",
+        "$13",
+        "$62",
+        "1.05",
+        "$44"
+      ],
+      "distinct": 1445,
+      "typeBreakdown": {
+        "string": 1009,
+        "integer": 11,
+        "number": 980
+      }
+    },
+    {
+      "name": "order_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "2021-05-04",
+        "2022-12-06",
+        "03/26/2021",
+        "04/11/2021",
+        "2021-02-19"
+      ],
+      "distinct": 1597,
+      "typeBreakdown": {
+        "string": 898,
+        "date": 1102
+      }
+    },
+    {
+      "name": "arrival_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "2022-06-20",
+        "2024-04-11",
+        "2020-03-06",
+        "2024-10-16",
+        "2021-02-06"
+      ],
+      "distinct": 1574,
+      "typeBreakdown": {
+        "string": 886,
+        "date": 1114
+      }
+    },
+    {
+      "name": "lead_time_days",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 2000,
+      "sample": [
+        "13",
+        "9",
+        "3",
+        "11",
+        "25"
+      ],
+      "distinct": 68
+    }
+  ],
+  "generatedAt": "2026-08-08T02:52:31.080Z"
+}

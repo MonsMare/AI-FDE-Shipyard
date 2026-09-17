@@ -1,0 +1,129 @@
+{
+  "file": "saas_subscriptions.csv",
+  "rows": 3000,
+  "columns": [
+    {
+      "name": "subscription_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "SUB-1",
+        "SUB-2",
+        "SUB-3",
+        "SUB-4",
+        "SUB-5"
+      ],
+      "distinct": 3000
+    },
+    {
+      "name": "account_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "SAAS-307",
+        "SAAS-111",
+        "SAAS-35",
+        "SAAS-108",
+        "SAAS-31"
+      ],
+      "distinct": 398
+    },
+    {
+      "name": "product",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "platform",
+        "support",
+        "api",
+        "modules"
+      ],
+      "distinct": 4
+    },
+    {
+      "name": "quantity",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "19",
+        "28",
+        "-3",
+        "47",
+        "17"
+      ],
+      "distinct": 59
+    },
+    {
+      "name": "unit_price",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "350.7",
+        "$395",
+        "380,24",
+        "$192",
+        "$263"
+      ],
+      "distinct": 2492,
+      "typeBreakdown": {
+        "string": 1502,
+        "integer": 25,
+        "number": 1473
+      }
+    },
+    {
+      "name": "start_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "2023-12-21",
+        "2024-08-20",
+        "2020-01-13",
+        "2021-06-15",
+        "2021-03-24"
+      ],
+      "distinct": 2168,
+      "typeBreakdown": {
+        "string": 1338,
+        "date": 1662
+      }
+    },
+    {
+      "name": "end_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "2024-11-18",
+        "2023-12-20",
+        "2022-04-05",
+        "2022-02-15",
+        "2020-05-28"
+      ],
+      "distinct": 2181,
+      "typeBreakdown": {
+        "string": 1397,
+        "date": 1603
+      }
+    },
+    {
+      "name": "status",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 3000,
+      "sample": [
+        "cancelled",
+        "active",
+        "past_due"
+      ],
+      "distinct": 3
+    }
+  ],
+  "generatedAt": "2026-08-08T02:52:30.892Z"
+}

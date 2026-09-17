@@ -1,0 +1,95 @@
+{
+  "file": "mfg_suppliers.csv",
+  "rows": 200,
+  "columns": [
+    {
+      "name": "supplier_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "MFG-1",
+        "MFG-2",
+        "MFG-3",
+        "MFG-4",
+        "MFG-5"
+      ],
+      "distinct": 200
+    },
+    {
+      "name": "supplier_name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "王洋Tyrell",
+        "胡磊Vandelay",
+        "MFG Aperture 胡平",
+        "Hooli张涛",
+        "吴艳Hooli"
+      ],
+      "distinct": 92
+    },
+    {
+      "name": "supplier_email",
+      "inferredType": "email",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "tyrell0@corp.com",
+        "vandelay1@163.com",
+        "aperture2@qq.com",
+        "hooli3@qq.com",
+        "hooli4@163.com"
+      ],
+      "distinct": 200
+    },
+    {
+      "name": "location",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "US",
+        "CN",
+        "SG",
+        "DE",
+        "JP"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "since_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "13-03-2022",
+        "2021-03-04",
+        "2024-10-03",
+        "2023-01-17",
+        "2022-11-16"
+      ],
+      "distinct": 197,
+      "typeBreakdown": {
+        "string": 90,
+        "date": 110
+      }
+    },
+    {
+      "name": "rating",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 200,
+      "sample": [
+        "3",
+        "4",
+        "1",
+        "5",
+        "2"
+      ],
+      "distinct": 5
+    }
+  ],
+  "generatedAt": "2026-08-08T02:52:30.975Z"
+}

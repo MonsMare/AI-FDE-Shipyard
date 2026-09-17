@@ -1,0 +1,8 @@
+{
+  "id": "saas_subscriptions.csv",
+  "path": "C:\\Users\\meta\\Code\\研究中心\\marble-pillar\\palantir-aip-workflow\\experiment\\ai-fde-pilot\\data\\saas_subscriptions.csv",
+  "format": "csv",
+  "registeredAt": "2026-08-08",
+  "description": "SaaS 订阅事实表（3000 行）：subscription_id=SUB-*，引用 account_id；quantity 含负数量（退款差错信号 168 行），unit_price 含 $/逗号小数脏格式",
+  "copied": false
+}

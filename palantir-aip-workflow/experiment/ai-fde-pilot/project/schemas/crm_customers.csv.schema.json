@@ -1,0 +1,122 @@
+{
+  "file": "crm_customers.csv",
+  "rows": 1200,
+  "columns": [
+    {
+      "name": "customer_id",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "CRM-1",
+        "CRM-2",
+        "CRM-3",
+        "CRM-4",
+        "CRM-5"
+      ],
+      "distinct": 1200
+    },
+    {
+      "name": "company_name",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "王洋 Tyrell",
+        "  胡磊 Vandelay ",
+        "  Aperture 胡平 ",
+        "Hooli 张涛",
+        "吴艳 HOOLI"
+      ],
+      "distinct": 1186
+    },
+    {
+      "name": "contact_person",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "郭芳",
+        "吴娟",
+        "徐静",
+        "张丽",
+        "赵敏"
+      ],
+      "distinct": 384
+    },
+    {
+      "name": "email",
+      "inferredType": "email",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "tyrell0@corp.com",
+        "vandelay1@163.com",
+        "aperture2@qq.com",
+        "hooli3@qq.com",
+        "hooli4@163.com"
+      ],
+      "distinct": 1200
+    },
+    {
+      "name": "phone",
+      "inferredType": "integer",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "12136724526",
+        "14475502122",
+        "17139492223",
+        "14923923085",
+        "19153727599"
+      ],
+      "distinct": 1200
+    },
+    {
+      "name": "country",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "US",
+        "CN",
+        "SG",
+        "DE",
+        "JP"
+      ],
+      "distinct": 5
+    },
+    {
+      "name": "created_date",
+      "inferredType": "mixed",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "22-05-2020",
+        "2023-09-11",
+        "11/07/2023",
+        "07-07-2022",
+        "08/07/2021"
+      ],
+      "distinct": 1059,
+      "typeBreakdown": {
+        "string": 552,
+        "date": 648
+      }
+    },
+    {
+      "name": "segment",
+      "inferredType": "string",
+      "nullCount": 0,
+      "total": 1200,
+      "sample": [
+        "C",
+        "B",
+        "SMB",
+        "A"
+      ],
+      "distinct": 4
+    }
+  ],
+  "generatedAt": "2026-08-08T02:52:30.694Z"
+}

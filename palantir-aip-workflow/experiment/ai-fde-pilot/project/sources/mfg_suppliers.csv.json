@@ -1,0 +1,8 @@
+{
+  "id": "mfg_suppliers.csv",
+  "path": "C:\\Users\\meta\\Code\\研究中心\\marble-pillar\\palantir-aip-workflow\\experiment\\ai-fde-pilot\\data\\mfg_suppliers.csv",
+  "format": "csv",
+  "registeredAt": "2026-08-08",
+  "description": "制造 ERP 供应商主数据（200 行）：supplier_id=MFG-*，与 CRM 存在跨源重复（同 email 不同名称变体）",
+  "copied": false
+}

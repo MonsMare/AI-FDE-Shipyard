@@ -1,0 +1,63 @@
+{"id":1,"ts":"2026-08-08T02:52:51.724Z","step":"source","action":"step_entered","target":"","detail":"进入 source"}
+{"id":2,"ts":"2026-08-08T02:52:51.805Z","step":"infer","action":"step_entered","target":"","detail":"进入 infer"}
+{"id":3,"ts":"2026-08-08T02:52:51.884Z","step":"model","action":"step_entered","target":"","detail":"进入 model"}
+{"id":4,"ts":"2026-08-08T02:52:51.968Z","step":"entity","action":"step_entered","target":"","detail":"进入 entity"}
+{"id":5,"ts":"2026-08-08T02:52:52.066Z","step":"review","action":"step_entered","target":"","detail":"进入 review"}
+{"id":6,"ts":"2026-08-08T02:52:55.996Z","step":"source","action":"source_registered","target":"crm_customers.csv","detail":"8 列 1200 行"}
+{"id":7,"ts":"2026-08-08T02:52:56.110Z","step":"source","action":"source_registered","target":"saas_accounts.csv","detail":"6 列 400 行"}
+{"id":8,"ts":"2026-08-08T02:52:56.203Z","step":"source","action":"source_registered","target":"saas_subscriptions.csv","detail":"8 列 3000 行"}
+{"id":9,"ts":"2026-08-08T02:52:56.284Z","step":"source","action":"source_registered","target":"mfg_suppliers.csv","detail":"6 列 200 行"}
+{"id":10,"ts":"2026-08-08T02:52:56.363Z","step":"source","action":"source_registered","target":"mfg_shipments.csv","detail":"8 列 2000 行"}
+{"id":11,"ts":"2026-08-08T02:52:56.453Z","step":"infer","action":"objects_proposed","target":"staging/objects.json","detail":"5 个对象类型, 4 个链接"}
+{"id":12,"ts":"2026-08-08T02:52:56.541Z","step":"model","action":"transforms_proposed","target":"staging/transforms.json","detail":"45 条转换规则"}
+{"id":13,"ts":"2026-08-08T02:52:56.626Z","step":"entity","action":"merges_proposed","target":"staging/merges.json","detail":"160 条合并声明（确定性 email 匹配）"}
+{"id":14,"ts":"2026-08-08T02:52:56.717Z","step":"review","action":"objects_approved","target":"approved/objects.json","detail":"5 个对象批准"}
+{"id":15,"ts":"2026-08-08T02:52:56.795Z","step":"review","action":"links_approved","target":"approved/links.json","detail":"4 个链接批准"}
+{"id":16,"ts":"2026-08-08T02:52:56.873Z","step":"review","action":"transforms_approved","target":"approved/transforms.json","detail":"45 条转换批准"}
+{"id":17,"ts":"2026-08-08T02:52:56.956Z","step":"review","action":"merges_deferred","target":"staging/merges.json","detail":"ER 声明暂缓物化（引擎 v2.1 merge 语义与 A1 冲突）"}
+{"id":18,"ts":"2026-08-08T02:52:59.615Z","step":"exec","action":"transform_executed","target":"crm_company_name_trim","detail":""}
+{"id":19,"ts":"2026-08-08T02:52:59.618Z","step":"exec","action":"transform_executed","target":"crm_company_name_lower","detail":""}
+{"id":20,"ts":"2026-08-08T02:52:59.619Z","step":"exec","action":"transform_executed","target":"crm_email_trim","detail":""}
+{"id":21,"ts":"2026-08-08T02:52:59.621Z","step":"exec","action":"transform_executed","target":"crm_email_lower","detail":""}
+{"id":22,"ts":"2026-08-08T02:52:59.623Z","step":"exec","action":"transform_executed","target":"crm_phone_trim","detail":""}
+{"id":23,"ts":"2026-08-08T02:52:59.624Z","step":"exec","action":"transform_executed","target":"crm_created_date_mmddyyyy","detail":""}
+{"id":24,"ts":"2026-08-08T02:52:59.625Z","step":"exec","action":"transform_executed","target":"crm_created_date_ddmmyyyy","detail":""}
+{"id":25,"ts":"2026-08-08T02:52:59.627Z","step":"exec","action":"transform_executed","target":"crm_created_date_cast","detail":""}
+{"id":26,"ts":"2026-08-08T02:52:59.629Z","step":"exec","action":"transform_executed","target":"saas_account_name_trim","detail":""}
+{"id":27,"ts":"2026-08-08T02:52:59.630Z","step":"exec","action":"transform_executed","target":"saas_account_name_lower","detail":""}
+{"id":28,"ts":"2026-08-08T02:52:59.632Z","step":"exec","action":"transform_executed","target":"saas_account_email_trim","detail":""}
+{"id":29,"ts":"2026-08-08T02:52:59.633Z","step":"exec","action":"transform_executed","target":"saas_account_email_lower","detail":""}
+{"id":30,"ts":"2026-08-08T02:52:59.635Z","step":"exec","action":"transform_executed","target":"saas_signup_date_mmddyyyy","detail":""}
+{"id":31,"ts":"2026-08-08T02:52:59.637Z","step":"exec","action":"transform_executed","target":"saas_signup_date_ddmmyyyy","detail":""}
+{"id":32,"ts":"2026-08-08T02:52:59.639Z","step":"exec","action":"transform_executed","target":"saas_signup_date_cast","detail":""}
+{"id":33,"ts":"2026-08-08T02:52:59.640Z","step":"exec","action":"transform_executed","target":"subs_unit_price_currency","detail":""}
+{"id":34,"ts":"2026-08-08T02:52:59.642Z","step":"exec","action":"transform_executed","target":"subs_unit_price_thousands","detail":""}
+{"id":35,"ts":"2026-08-08T02:52:59.643Z","step":"exec","action":"transform_executed","target":"subs_unit_price_comma_decimal","detail":""}
+{"id":36,"ts":"2026-08-08T02:52:59.645Z","step":"exec","action":"transform_executed","target":"subs_unit_price_cast","detail":""}
+{"id":37,"ts":"2026-08-08T02:52:59.646Z","step":"exec","action":"transform_executed","target":"subs_quantity_cast","detail":""}
+{"id":38,"ts":"2026-08-08T02:52:59.648Z","step":"exec","action":"transform_executed","target":"subs_start_date_mmddyyyy","detail":""}
+{"id":39,"ts":"2026-08-08T02:52:59.649Z","step":"exec","action":"transform_executed","target":"subs_start_date_ddmmyyyy","detail":""}
+{"id":40,"ts":"2026-08-08T02:52:59.650Z","step":"exec","action":"transform_executed","target":"subs_start_date_cast","detail":""}
+{"id":41,"ts":"2026-08-08T02:52:59.652Z","step":"exec","action":"transform_executed","target":"subs_end_date_mmddyyyy","detail":""}
+{"id":42,"ts":"2026-08-08T02:52:59.654Z","step":"exec","action":"transform_executed","target":"subs_end_date_ddmmyyyy","detail":""}
+{"id":43,"ts":"2026-08-08T02:52:59.656Z","step":"exec","action":"transform_executed","target":"subs_end_date_cast","detail":""}
+{"id":44,"ts":"2026-08-08T02:52:59.658Z","step":"exec","action":"transform_executed","target":"mfg_supplier_name_trim","detail":""}
+{"id":45,"ts":"2026-08-08T02:52:59.660Z","step":"exec","action":"transform_executed","target":"mfg_supplier_name_lower","detail":""}
+{"id":46,"ts":"2026-08-08T02:52:59.661Z","step":"exec","action":"transform_executed","target":"mfg_supplier_email_trim","detail":""}
+{"id":47,"ts":"2026-08-08T02:52:59.663Z","step":"exec","action":"transform_executed","target":"mfg_supplier_email_lower","detail":""}
+{"id":48,"ts":"2026-08-08T02:52:59.665Z","step":"exec","action":"transform_executed","target":"mfg_since_date_mmddyyyy","detail":""}
+{"id":49,"ts":"2026-08-08T02:52:59.667Z","step":"exec","action":"transform_executed","target":"mfg_since_date_ddmmyyyy","detail":""}
+{"id":50,"ts":"2026-08-08T02:52:59.669Z","step":"exec","action":"transform_executed","target":"mfg_since_date_cast","detail":""}
+{"id":51,"ts":"2026-08-08T02:52:59.670Z","step":"exec","action":"transform_executed","target":"ship_unit_cost_currency","detail":""}
+{"id":52,"ts":"2026-08-08T02:52:59.672Z","step":"exec","action":"transform_executed","target":"ship_unit_cost_thousands","detail":""}
+{"id":53,"ts":"2026-08-08T02:52:59.674Z","step":"exec","action":"transform_executed","target":"ship_unit_cost_comma_decimal","detail":""}
+{"id":54,"ts":"2026-08-08T02:52:59.675Z","step":"exec","action":"transform_executed","target":"ship_unit_cost_cast","detail":""}
+{"id":55,"ts":"2026-08-08T02:52:59.677Z","step":"exec","action":"transform_executed","target":"ship_quantity_cast","detail":""}
+{"id":56,"ts":"2026-08-08T02:52:59.679Z","step":"exec","action":"transform_executed","target":"ship_order_date_mmddyyyy","detail":""}
+{"id":57,"ts":"2026-08-08T02:52:59.681Z","step":"exec","action":"transform_executed","target":"ship_order_date_ddmmyyyy","detail":""}
+{"id":58,"ts":"2026-08-08T02:52:59.683Z","step":"exec","action":"transform_executed","target":"ship_order_date_cast","detail":""}
+{"id":59,"ts":"2026-08-08T02:52:59.684Z","step":"exec","action":"transform_executed","target":"ship_arrival_date_mmddyyyy","detail":""}
+{"id":60,"ts":"2026-08-08T02:52:59.685Z","step":"exec","action":"transform_executed","target":"ship_arrival_date_ddmmyyyy","detail":""}
+{"id":61,"ts":"2026-08-08T02:52:59.687Z","step":"exec","action":"transform_executed","target":"ship_arrival_date_cast","detail":""}
+{"id":62,"ts":"2026-08-08T02:52:59.689Z","step":"exec","action":"transform_executed","target":"ship_lead_time_cast","detail":""}
+{"id":63,"ts":"2026-08-08T02:52:59.691Z","step":"exec","action":"step_entered","target":"","detail":"进入 exec"}

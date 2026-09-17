@@ -1,0 +1,90 @@
+{
+  "objects": [
+    {
+      "id": "Customer",
+      "displayName": "零售客户",
+      "description": "零售 CRM 客户主数据实体（1200 条，customer_id=CRM-*）。与 SaaS 账户（120 对）和制造供应商（40 对）存在跨源同一实体，由 ER 声明（staging/merges.json）以规范化 email 精确匹配消解；canonical 键为 customer_id。",
+      "backingSource": "crm_customers.csv",
+      "properties": [
+        { "id": "customer_id", "type": "string", "title": "客户 ID（主键）", "primaryKey": true },
+        { "id": "company_name", "type": "string", "title": "公司名（脏：大小写/空白，待清洗）" },
+        { "id": "contact_person", "type": "string", "title": "联系人" },
+        { "id": "email", "type": "email", "title": "邮箱（ER 匹配键）" },
+        { "id": "phone", "type": "string", "title": "电话" },
+        { "id": "country", "type": "string", "title": "国家" },
+        { "id": "created_date", "type": "date", "title": "创建日期（混合格式，待统一 ISO）" },
+        { "id": "segment", "type": "string", "title": "客户分层" }
+      ],
+      "proposedBy": "paip-infer",
+      "status": "staged"
+    },
+    {
+      "id": "SaasAccount",
+      "displayName": "SaaS 订阅账户",
+      "description": "SaaS 订阅系统账户实体（400 条，account_id=SAAS-*）。account_id 被 saas_subscriptions.account_id 引用（3000 条订阅），主键不得物理改写（历史教训 A2）；跨源消解映射见 staging/merges.json。",
+      "backingSource": "saas_accounts.csv",
+      "properties": [
+        { "id": "account_id", "type": "string", "title": "账户 ID（主键，被订阅表引用）", "primaryKey": true },
+        { "id": "account_name", "type": "string", "title": "账户名（脏，待清洗）" },
+        { "id": "account_email", "type": "email", "title": "账户邮箱（ER 匹配键）" },
+        { "id": "billing_country", "type": "string", "title": "账单国家" },
+        { "id": "signup_date", "type": "date", "title": "注册日期（混合格式）" },
+        { "id": "plan", "type": "string", "title": "订阅套餐" }
+      ],
+      "proposedBy": "paip-infer",
+      "status": "staged"
+    },
+    {
+      "id": "Subscription",
+      "displayName": "订阅",
+      "description": "SaaS 订阅事实（3000 条，subscription_id=SUB-*）。quantity 含负数量（退款差错业务信号 168 行，清洗必须保留，历史教训 B6）；unit_price 含 $/逗号小数脏格式。",
+      "backingSource": "saas_subscriptions.csv",
+      "properties": [
+        { "id": "subscription_id", "type": "string", "title": "订阅 ID（主键）", "primaryKey": true },
+        { "id": "account_id", "type": "string", "title": "账户 ID（外键 → SaasAccount.account_id）" },
+        { "id": "product", "type": "string", "title": "产品" },
+        { "id": "quantity", "type": "integer", "title": "数量（负数=退款差错信号，保留）" },
+        { "id": "unit_price", "type": "number", "title": "单价（脏格式）" },
+        { "id": "start_date", "type": "date", "title": "开始日期（混合格式）" },
+        { "id": "end_date", "type": "date", "title": "结束日期（混合格式）" },
+        { "id": "status", "type": "string", "title": "状态" }
+      ],
+      "proposedBy": "paip-infer",
+      "status": "staged"
+    },
+    {
+      "id": "Supplier",
+      "displayName": "制造供应商",
+      "description": "制造 ERP 供应商实体（200 条，supplier_id=MFG-*）。supplier_id 被 mfg_shipments.supplier_id 引用（2000 条发货），主键不得物理改写（历史教训 A2）；与 CRM 客户 40 对跨源同一实体见 staging/merges.json。",
+      "backingSource": "mfg_suppliers.csv",
+      "properties": [
+        { "id": "supplier_id", "type": "string", "title": "供应商 ID（主键，被发货表引用）", "primaryKey": true },
+        { "id": "supplier_name", "type": "string", "title": "供应商名（脏，待清洗）" },
+        { "id": "supplier_email", "type": "email", "title": "供应商邮箱（ER 匹配键）" },
+        { "id": "location", "type": "string", "title": "所在地" },
+        { "id": "since_date", "type": "date", "title": "合作起始日期（混合格式）" },
+        { "id": "rating", "type": "integer", "title": "评分" }
+      ],
+      "proposedBy": "paip-infer",
+      "status": "staged"
+    },
+    {
+      "id": "Shipment",
+      "displayName": "发货",
+      "description": "制造发货事实（2000 条，shipment_id=SHIP-*）。lead_time_days 含 >30 天延迟信号（206 行，清洗保留）；unit_cost 含 $/逗号小数脏格式。",
+      "backingSource": "mfg_shipments.csv",
+      "properties": [
+        { "id": "shipment_id", "type": "string", "title": "发货 ID（主键）", "primaryKey": true },
+        { "id": "supplier_id", "type": "string", "title": "供应商 ID（外键 → Supplier.supplier_id）" },
+        { "id": "part_number", "type": "string", "title": "零件号" },
+        { "id": "quantity", "type": "integer", "title": "数量" },
+        { "id": "unit_cost", "type": "number", "title": "单位成本（脏格式）" },
+        { "id": "order_date", "type": "date", "title": "下单日期（混合格式）" },
+        { "id": "arrival_date", "type": "date", "title": "到达日期（混合格式）" },
+        { "id": "lead_time_days", "type": "integer", "title": "提前期天数（>30 天延迟信号，保留）" }
+      ],
+      "proposedBy": "paip-infer",
+      "status": "staged"
+    }
+  ]
+}

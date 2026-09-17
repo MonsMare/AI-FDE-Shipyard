@@ -1,0 +1,40 @@
+{
+  "links": [
+    {
+      "id": "Subscription_belongs_to_SaasAccount",
+      "source": "SaasAccount",
+      "target": "Subscription",
+      "cardinality": "1:N",
+      "description": "账户拥有订阅：subscription.account_id → saas_account.account_id（引用保持原键，禁止物理改写）",
+      "proposedBy": "paip-infer",
+      "status": "staged"
+    },
+    {
+      "id": "Shipment_belongs_to_Supplier",
+      "source": "Supplier",
+      "target": "Shipment",
+      "cardinality": "1:N",
+      "description": "供应商发货：shipment.supplier_id → mfg_supplier.supplier_id（引用保持原键，禁止物理改写）",
+      "proposedBy": "paip-infer",
+      "status": "staged"
+    },
+    {
+      "id": "SaasAccount_same_entity_as_Customer",
+      "source": "SaasAccount",
+      "target": "Customer",
+      "cardinality": "1:1",
+      "description": "跨源同一实体（ER，120 对）：account_email 与 customer.email 规范化后精确一致；canonical 键为 customer_id，映射见 staging/merges.json",
+      "proposedBy": "paip-infer",
+      "status": "staged"
+    },
+    {
+      "id": "Supplier_same_entity_as_Customer",
+      "source": "Supplier",
+      "target": "Customer",
+      "cardinality": "1:1",
+      "description": "跨源同一实体（ER，40 对）：supplier_email 与 customer.email 规范化后精确一致；canonical 键为 customer_id，映射见 staging/merges.json",
+      "proposedBy": "paip-infer",
+      "status": "staged"
+    }
+  ]
+}

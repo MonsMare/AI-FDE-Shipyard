@@ -1,0 +1,27 @@
+{
+  "currentStep": "exec",
+  "steps": {
+    "init": "done",
+    "source": "in_progress",
+    "infer": "in_progress",
+    "model": "in_progress",
+    "entity": "in_progress",
+    "review": "in_progress",
+    "exec": "in_progress"
+  },
+  "sources": [],
+  "objects": [],
+  "links": [],
+  "transforms": [],
+  "entityMerges": [],
+  "lastEventId": 63,
+  "stats": {
+    "sourcesRegistered": 5,
+    "objectsProposed": 5,
+    "objectsApproved": 5,
+    "transformsProposed": 45,
+    "transformsApproved": 45,
+    "mergesProposed": 160,
+    "mergesApproved": 0
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "project": "ai-fde-pilot-ontology",
+  "version": "0.1.0",
+  "created": "2026-08-08",
+  "note": "对齐 Palantir Data Expectations：pre-condition 为声明，post-exec 核对由 tools/verify.js 执行（宿主代跑），结果回填到 delivery-report.md §4。merge 物化期望因引擎 v2.1 语义缺陷（A1）标注 fail-with-disposition。",
+  "expectations": [
+    {
+      "id": "exp-pk-unique-source",
+      "category": "主键唯一",
+      "scope": "所有 transform 产物 output/<id>.csv",
+      "condition": "每张产物的主键列无重复值",
+      "expected": "customer_id/account_id/subscription_id/supplier_id/shipment_id 各自唯一",
+      "expectedValue": "0 重复",
+      "postExec": "待核对（verify.js exp-pk-unique-source）"
+    },
+    {
+      "id": "exp-pk-unique-merge",
+      "category": "主键唯一",
+      "scope": "合并产物（未物化）",
+      "condition": "合并产物主键不重复（历史教训 A1）",
+      "expected": "合并产物主键唯一",
+      "expectedValue": "0 重复",
+      "postExec": "FAIL-WITH-DISPOSITION：v2.1 引擎 merge 语义为『右表匹配行追加』，合并产物必然主键重复（A1 根因，16/16 历史教训）；本交付有意不物化 merge（ER 以声明交付，消费路径=键映射 join），待引擎 v2.2 修复合并行语义后启用"
+    },
+    {
+      "id": "exp-pk-notnull",
+      "category": "非空",
+      "scope": "所有产物",
+      "condition": "主键列与引用列非空",
+      "expected": "customer_id/account_id/subscription_id/supplier_id/shipment_id/account_id(SUB)/supplier_id(SHIP) 无空值",
+      "expectedValue": "0 空值",
+      "postExec": "待核对（verify.js）"
+    },
+    {
+      "id": "exp-rowcount-conserved",
+      "category": "行数守恒",
+      "scope": "所有 transform 产物",
+      "condition": "清洗规则不改变行数（无 filter 规则）",
+      "expected": "crm 1200 / saas 400 / subs 3000 / mfg 200 / ship 2000",
+      "expectedValue": "1200/400/3000/200/200",
+      "postExec": "待核对（verify.js）"
+    },
+    {
+      "id": "exp-neg-qty-preserved",
+      "category": "业务信号保留",
+      "scope": "subs 清洗产物 quantity 列",
+      "condition": "负数量（退款差错信号）行数保留，禁止转正/过滤（历史教训 B6）",
+      "expected": "quantity < 0 恰 168 行（ground truth 校准，独立 grep 已验证）",
+      "expectedValue": "168",
+      "postExec": "待核对（verify.js exp-neg-qty）"
+    },
+    {
+      "id": "exp-lead-lag-preserved",
+      "category": "业务信号保留",
+      "scope": "ship 清洗产物 lead_time_days 列",
+      "condition": ">30 天延迟信号行数保留，禁止过滤/截断",
+      "expected": "lead_time_days > 30 恰 206 行（独立分段 grep 已验证）",
+      "expectedValue": "206",
+      "postExec": "待核对（verify.js）"
+    },
+    {
+      "id": "exp-dirty-date-zero",
+      "category": "脏格式残留=0",
+      "scope": "7 个日期列（created_date/signup_date/start_date/end_date/since_date/order_date/arrival_date）",
+      "condition": "cast 后全部为 ISO YYYY-MM-DD，无 MM/DD/YYYY 与 DD-MM-YYYY 残留",
+      "expected": "残留 0 行；空值 0 行（若 cast 置空则暴露未覆盖变体）",
+      "expectedValue": "0 残留 / 0 空值",
+      "postExec": "待核对（verify.js）"
+    },
+    {
+      "id": "exp-dirty-money-zero",
+      "category": "脏格式残留=0",
+      "scope": "2 个金额列（unit_price/unit_cost）",
+      "condition": "cast 后为数字，无 $ 前缀/千分位/逗号小数残留",
+      "expected": "残留 0 行；空值 0 行",
+      "expectedValue": "0 残留 / 0 空值",
+      "postExec": "待核对（verify.js）"
+    },
+    {
+      "id": "exp-fk-account-hit",
+      "category": "关联一致性",
+      "scope": "subs 产物 account_id",
+      "condition": "account_id 引用全部命中原始 SAAS 键集（引用保持原键，历史教训 A2）",
+      "expected": "3000/3000 = 100%",
+      "expectedValue": "100%",
+      "postExec": "待核对（verify.js + 评估器）"
+    },
+    {
+      "id": "exp-fk-supplier-hit",
+      "category": "关联一致性",
+      "scope": "ship 产物 supplier_id",
+      "condition": "supplier_id 引用全部命中原始 MFG 键集",
+      "expected": "2000/2000 = 100%",
+      "expectedValue": "100%",
+      "postExec": "待核对（verify.js）"
+    },
+    {
+      "id": "exp-er-coverage",
+      "category": "实体消解覆盖率",
+      "scope": "staging/merges.json 声明",
+      "condition": "跨源重复对声明完整（阈值 ≥144 对，实际 160 对）",
+      "expected": "160 对 = CRM↔SAAS 120 + CRM↔MFG 40，确定性 email 精确匹配",
+      "expectedValue": "160/160",
+      "postExec": "声明已落盘；物化待引擎 v2.2（见 exp-pk-unique-merge）"
+    },
+    {
+      "id": "exp-name-normalized",
+      "category": "名称归一",
+      "scope": "company_name/account_name/supplier_name/email 列",
+      "condition": "trim+lower 后无首尾空白、无大小写变体",
+      "expected": "首尾空白 0 行",
+      "expectedValue": "0 残留",
+      "postExec": "待核对（verify.js）"
+    }
+  ]
+}

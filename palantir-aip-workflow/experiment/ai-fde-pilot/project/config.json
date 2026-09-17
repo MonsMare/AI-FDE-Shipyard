@@ -1,0 +1,34 @@
+{
+  "project": {
+    "name": "ai-fde-pilot-ontology",
+    "description": "集团三系统（零售 CRM / SaaS 订阅 / 制造 ERP）客户与供应商主数据 Ontology：清洗、实体消解、期望与物化（AI-FDE 实验交付）",
+    "created": "2026-08-08",
+    "version": "0.1.0"
+  },
+  "state": {
+    "currentStep": "init",
+    "steps": {
+      "init": "done",
+      "source": "pending",
+      "infer": "pending",
+      "model": "pending",
+      "entity": "pending",
+      "review": "pending",
+      "exec": "pending"
+    }
+  },
+  "llm": {
+    "preferredModel": "claude-sonnet-5",
+    "fallbackModel": "deepseek-v4-flash",
+    "batch": false,
+    "batchBaseUrl": "",
+    "batchApiKeyEnv": ""
+  },
+  "sources": [],
+  "defaults": {
+    "auditDir": "audit",
+    "stagingDir": "staging",
+    "approvedDir": "approved",
+    "sourcesDir": "sources"
+  }
+}

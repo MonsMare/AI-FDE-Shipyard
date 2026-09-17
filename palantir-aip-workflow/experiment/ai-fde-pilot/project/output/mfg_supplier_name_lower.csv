@@ -1,0 +1,201 @@
+supplier_id,supplier_name,supplier_email,location,since_date,rating
+MFG-1,王洋tyrell,tyrell0@corp.com,US,13-03-2022,3
+MFG-2,胡磊vandelay,vandelay1@163.com,US,2021-03-04,4
+MFG-3,mfg aperture 胡平,aperture2@qq.com,CN,2024-10-03,3
+MFG-4,hooli张涛,hooli3@qq.com,SG,2023-01-17,3
+MFG-5,吴艳hooli,hooli4@163.com,US,2022-11-16,1
+MFG-6,mfg 刘勇 vandelay,vandelay5@gmail.com,US,06/20/2020,4
+MFG-7,何丽wayne,wayne6@outlook.com,DE,2024-04-09,1
+MFG-8,umbrella郑平,umbrella7@corp.com,DE,2023-04-11,3
+MFG-9,mfg 李芳 acme,acme8@outlook.com,DE,09/26/2020,4
+MFG-10,prestige朱霞,prestige9@qq.com,DE,2021-02-06,1
+MFG-11,mfg 何霞 umbrella,umbrella10@corp.com,CN,2023-03-03,3
+MFG-12,mfg oscorp 吴超,oscorp11@company.cn,CN,2024-01-10,1
+MFG-13,mfg prestige 林霞,prestige12@qq.com,SG,19-06-2020,5
+MFG-14,mfg 陈伟 globex,globex13@company.cn,US,09/19/2024,2
+MFG-15,杨秀英acme,acme14@company.cn,SG,09/17/2024,3
+MFG-16,mfg aperture 吴静,aperture15@company.cn,SG,2022-12-02,4
+MFG-17,赵娜aperture,aperture16@gmail.com,JP,2024-05-03,3
+MFG-18,mfg 何超 cyberdyne,cyberdyne17@qq.com,JP,2020-10-21,1
+MFG-19,vandelay马超,vandelay18@gmail.com,CN,02/25/2021,4
+MFG-20,黄霞hooli,hooli19@outlook.com,US,03/06/2021,5
+MFG-21,mfg weyland 何娟,weyland20@qq.com,JP,12/07/2024,2
+MFG-22,vandelay陈伟,vandelay21@outlook.com,JP,11/25/2021,5
+MFG-23,aperture刘敏,aperture22@corp.com,CN,09/24/2024,2
+MFG-24,tyrell徐涛,tyrell23@qq.com,CN,01/07/2021,5
+MFG-25,陈丽hooli,hooli24@company.cn,JP,2023-04-06,1
+MFG-26,cyberdyne李军,cyberdyne25@outlook.com,CN,07/22/2022,2
+MFG-27,hooli黄超,hooli26@outlook.com,CN,2021-04-03,2
+MFG-28,吴洋aperture,aperture27@outlook.com,JP,2023-10-27,2
+MFG-29,dundermifflin赵明,dundermifflin28@163.com,US,14-08-2022,4
+MFG-30,wayne郭强,wayne29@gmail.com,JP,2023-11-10,4
+MFG-31,mfg wayne 罗霞,wayne30@company.cn,SG,2020-12-28,5
+MFG-32,王娜vandelay,vandelay31@gmail.com,US,08/01/2020,4
+MFG-33,mfg wayne 朱涛,wayne32@company.cn,US,01-12-2022,2
+MFG-34,吴涛hooli,hooli33@gmail.com,DE,2020-05-06,4
+MFG-35,acme孙强,acme34@163.com,CN,12-03-2023,2
+MFG-36,黄伟prestige,prestige35@corp.com,JP,2023-11-11,4
+MFG-37,赵磊piedpiper,piedpiper36@corp.com,US,2020-11-06,4
+MFG-38,mfg hooli 马强,hooli37@163.com,US,2021-06-18,4
+MFG-39,何敏weyland,weyland38@corp.com,SG,06/27/2021,2
+MFG-40,mfg 刘涛 dunder mifflin,dundermifflin39@corp.com,DE,05/15/2024,2
+MFG-41,piedpiper industries,mfg40@163.com,CN,2023-05-09,4
+MFG-42,dunder mifflin industries,mfg41@corp.com,CN,2021-04-28,5
+MFG-43,globex industries,mfg42@outlook.com,CN,19-05-2022,4
+MFG-44,yutani industries,mfg43@163.com,CN,2020-02-09,5
+MFG-45,dunder mifflin industries,mfg44@company.cn,CN,2020-03-08,5
+MFG-46,dunder mifflin industries,mfg45@163.com,CN,06/08/2024,1
+MFG-47,hooli industries,mfg46@gmail.com,CN,20-10-2021,2
+MFG-48,dunder mifflin industries,mfg47@corp.com,CN,17-03-2020,2
+MFG-49,dunder mifflin industries,mfg48@qq.com,CN,04/09/2023,3
+MFG-50,stark industries,mfg49@163.com,CN,06-06-2020,5
+MFG-51,hooli industries,mfg50@company.cn,CN,2022-09-11,3
+MFG-52,wayne industries,mfg51@gmail.com,CN,2023-03-15,5
+MFG-53,blackmesa industries,mfg52@163.com,CN,2023-01-05,1
+MFG-54,weyland industries,mfg53@qq.com,CN,2023-06-06,3
+MFG-55,globex industries,mfg54@gmail.com,CN,2023-12-06,3
+MFG-56,hooli industries,mfg55@163.com,CN,24-07-2020,3
+MFG-57,vandelay industries,mfg56@company.cn,CN,2021-07-16,3
+MFG-58,hooli industries,mfg57@corp.com,CN,2024-01-20,4
+MFG-59,vandelay industries,mfg58@corp.com,CN,2024-06-23,4
+MFG-60,yutani industries,mfg59@qq.com,CN,2021-01-27,1
+MFG-61,bluth industries,mfg60@corp.com,CN,2024-02-23,2
+MFG-62,piedpiper industries,mfg61@corp.com,CN,28-02-2022,1
+MFG-63,wayne industries,mfg62@outlook.com,CN,2022-12-24,4
+MFG-64,vandelay industries,mfg63@qq.com,CN,2024-12-08,3
+MFG-65,acme industries,mfg64@company.cn,CN,07/02/2023,3
+MFG-66,vandelay industries,mfg65@corp.com,CN,08/25/2024,1
+MFG-67,vandelay industries,mfg66@outlook.com,CN,20-06-2022,4
+MFG-68,bluth industries,mfg67@company.cn,CN,2021-04-27,4
+MFG-69,cyberdyne industries,mfg68@corp.com,CN,05/15/2022,2
+MFG-70,bluth industries,mfg69@corp.com,CN,2020-04-21,1
+MFG-71,cyberdyne industries,mfg70@qq.com,CN,02/12/2024,3
+MFG-72,globex industries,mfg71@163.com,CN,2021-11-07,1
+MFG-73,piedpiper industries,mfg72@gmail.com,CN,09-10-2024,2
+MFG-74,piedpiper industries,mfg73@outlook.com,CN,2022-01-12,3
+MFG-75,acme industries,mfg74@163.com,CN,12/27/2020,5
+MFG-76,blackmesa industries,mfg75@163.com,CN,07/19/2023,2
+MFG-77,umbrella industries,mfg76@gmail.com,CN,21-05-2021,1
+MFG-78,dunder mifflin industries,mfg77@qq.com,CN,2024-05-22,1
+MFG-79,wayne industries,mfg78@corp.com,CN,2020-02-08,1
+MFG-80,cyberdyne industries,mfg79@qq.com,CN,01/25/2022,1
+MFG-81,hooli industries,mfg80@company.cn,CN,2022-04-03,2
+MFG-82,tyrell industries,mfg81@corp.com,CN,10-12-2024,2
+MFG-83,globex industries,mfg82@company.cn,CN,17-04-2021,4
+MFG-84,yutani industries,mfg83@outlook.com,CN,2024-04-16,1
+MFG-85,vandelay industries,mfg84@company.cn,CN,2023-09-07,4
+MFG-86,stark industries,mfg85@corp.com,CN,02/24/2023,2
+MFG-87,hooli industries,mfg86@outlook.com,CN,04-01-2021,4
+MFG-88,aperture industries,mfg87@163.com,CN,2021-05-10,4
+MFG-89,hooli industries,mfg88@gmail.com,CN,2022-07-04,1
+MFG-90,stark industries,mfg89@company.cn,CN,2024-01-02,5
+MFG-91,piedpiper industries,mfg90@qq.com,CN,07/02/2024,5
+MFG-92,prestige industries,mfg91@corp.com,CN,12-02-2020,1
+MFG-93,prestige industries,mfg92@qq.com,CN,2020-09-14,4
+MFG-94,tyrell industries,mfg93@outlook.com,CN,23-03-2024,5
+MFG-95,umbrella industries,mfg94@company.cn,CN,2024-07-21,5
+MFG-96,tyrell industries,mfg95@163.com,CN,2023-07-08,1
+MFG-97,weyland industries,mfg96@corp.com,CN,2022-06-17,5
+MFG-98,aperture industries,mfg97@163.com,CN,10-04-2020,3
+MFG-99,prestige industries,mfg98@qq.com,CN,2021-01-27,4
+MFG-100,hooli industries,mfg99@company.cn,CN,2023-07-02,2
+MFG-101,oscorp industries,mfg100@corp.com,CN,2022-09-12,4
+MFG-102,wayne industries,mfg101@gmail.com,CN,2023-06-21,3
+MFG-103,aperture industries,mfg102@outlook.com,CN,15-07-2021,1
+MFG-104,vandelay industries,mfg103@qq.com,CN,20-02-2021,1
+MFG-105,hooli industries,mfg104@corp.com,CN,2023-06-09,4
+MFG-106,piedpiper industries,mfg105@163.com,CN,2022-01-17,1
+MFG-107,oscorp industries,mfg106@gmail.com,CN,01-12-2021,2
+MFG-108,stark industries,mfg107@corp.com,CN,06/10/2022,5
+MFG-109,aperture industries,mfg108@outlook.com,CN,28-07-2020,5
+MFG-110,weyland industries,mfg109@outlook.com,CN,18-09-2022,3
+MFG-111,umbrella industries,mfg110@corp.com,CN,11/21/2020,4
+MFG-112,yutani industries,mfg111@outlook.com,CN,2021-05-19,2
+MFG-113,oscorp industries,mfg112@corp.com,CN,09/14/2023,1
+MFG-114,piedpiper industries,mfg113@gmail.com,CN,2022-02-08,2
+MFG-115,tyrell industries,mfg114@corp.com,CN,09/05/2023,4
+MFG-116,cyberdyne industries,mfg115@corp.com,CN,2020-07-15,2
+MFG-117,weyland industries,mfg116@163.com,CN,2020-08-01,5
+MFG-118,prestige industries,mfg117@company.cn,CN,2020-08-24,3
+MFG-119,yutani industries,mfg118@outlook.com,CN,04/05/2020,2
+MFG-120,aperture industries,mfg119@company.cn,CN,2021-09-24,4
+MFG-121,tyrell industries,mfg120@qq.com,CN,2024-07-17,3
+MFG-122,initech industries,mfg121@company.cn,CN,02/20/2022,5
+MFG-123,vandelay industries,mfg122@company.cn,CN,08/21/2022,3
+MFG-124,initech industries,mfg123@outlook.com,CN,06/28/2024,3
+MFG-125,acme industries,mfg124@gmail.com,CN,2024-05-15,4
+MFG-126,oscorp industries,mfg125@qq.com,CN,25-02-2023,2
+MFG-127,cyberdyne industries,mfg126@company.cn,CN,05/05/2023,3
+MFG-128,stark industries,mfg127@company.cn,CN,2021-11-28,1
+MFG-129,tyrell industries,mfg128@corp.com,CN,2021-10-23,5
+MFG-130,bluth industries,mfg129@gmail.com,CN,04/10/2024,5
+MFG-131,vandelay industries,mfg130@gmail.com,CN,2021-02-14,4
+MFG-132,oscorp industries,mfg131@qq.com,CN,2023-12-08,1
+MFG-133,globex industries,mfg132@company.cn,CN,2021-10-02,1
+MFG-134,acme industries,mfg133@corp.com,CN,09-11-2023,5
+MFG-135,wayne industries,mfg134@qq.com,CN,02-06-2024,1
+MFG-136,hooli industries,mfg135@corp.com,CN,08-06-2024,2
+MFG-137,hooli industries,mfg136@qq.com,CN,09/24/2023,1
+MFG-138,yutani industries,mfg137@outlook.com,CN,2024-01-05,1
+MFG-139,wayne industries,mfg138@163.com,CN,2021-12-17,1
+MFG-140,dunder mifflin industries,mfg139@outlook.com,CN,2024-01-22,5
+MFG-141,initech industries,mfg140@outlook.com,CN,07/06/2021,1
+MFG-142,blackmesa industries,mfg141@company.cn,CN,2020-03-13,3
+MFG-143,wayne industries,mfg142@qq.com,CN,08-10-2024,5
+MFG-144,vandelay industries,mfg143@gmail.com,CN,03-04-2024,1
+MFG-145,blackmesa industries,mfg144@gmail.com,CN,24-12-2024,5
+MFG-146,bluth industries,mfg145@outlook.com,CN,09/18/2022,4
+MFG-147,vandelay industries,mfg146@qq.com,CN,2021-01-05,2
+MFG-148,dunder mifflin industries,mfg147@gmail.com,CN,2023-12-02,1
+MFG-149,stark industries,mfg148@company.cn,CN,10/22/2021,5
+MFG-150,wayne industries,mfg149@qq.com,CN,21-04-2022,1
+MFG-151,bluth industries,mfg150@qq.com,CN,07/12/2022,5
+MFG-152,stark industries,mfg151@gmail.com,CN,2020-11-06,3
+MFG-153,piedpiper industries,mfg152@gmail.com,CN,2024-10-03,2
+MFG-154,hooli industries,mfg153@gmail.com,CN,07/02/2020,1
+MFG-155,vandelay industries,mfg154@corp.com,CN,2024-02-24,5
+MFG-156,prestige industries,mfg155@gmail.com,CN,03/16/2020,5
+MFG-157,acme industries,mfg156@corp.com,CN,2020-10-16,2
+MFG-158,dunder mifflin industries,mfg157@company.cn,CN,2024-02-07,2
+MFG-159,acme industries,mfg158@corp.com,CN,2024-05-10,4
+MFG-160,blackmesa industries,mfg159@corp.com,CN,2020-01-18,4
+MFG-161,wayne industries,mfg160@163.com,CN,2021-11-15,3
+MFG-162,yutani industries,mfg161@corp.com,CN,11-12-2020,4
+MFG-163,piedpiper industries,mfg162@163.com,CN,11/17/2024,3
+MFG-164,hooli industries,mfg163@163.com,CN,25-11-2023,2
+MFG-165,dunder mifflin industries,mfg164@company.cn,CN,2023-04-20,5
+MFG-166,wayne industries,mfg165@company.cn,CN,17-08-2024,5
+MFG-167,cyberdyne industries,mfg166@qq.com,CN,2020-04-04,4
+MFG-168,oscorp industries,mfg167@gmail.com,CN,13-05-2024,4
+MFG-169,aperture industries,mfg168@163.com,CN,2021-04-24,3
+MFG-170,bluth industries,mfg169@company.cn,CN,2024-12-20,1
+MFG-171,blackmesa industries,mfg170@outlook.com,CN,11/15/2023,1
+MFG-172,yutani industries,mfg171@outlook.com,CN,2024-03-03,4
+MFG-173,hooli industries,mfg172@163.com,CN,2022-12-16,4
+MFG-174,hooli industries,mfg173@outlook.com,CN,2023-12-17,3
+MFG-175,weyland industries,mfg174@company.cn,CN,2024-10-13,3
+MFG-176,bluth industries,mfg175@qq.com,CN,2022-06-13,1
+MFG-177,prestige industries,mfg176@163.com,CN,2022-02-06,5
+MFG-178,piedpiper industries,mfg177@163.com,CN,2021-05-26,5
+MFG-179,aperture industries,mfg178@qq.com,CN,2021-11-10,4
+MFG-180,hooli industries,mfg179@163.com,CN,2024-03-22,3
+MFG-181,stark industries,mfg180@163.com,CN,2021-07-21,5
+MFG-182,bluth industries,mfg181@company.cn,CN,2024-09-07,4
+MFG-183,dunder mifflin industries,mfg182@qq.com,CN,2022-08-01,1
+MFG-184,acme industries,mfg183@qq.com,CN,2020-05-25,4
+MFG-185,cyberdyne industries,mfg184@gmail.com,CN,04/03/2021,3
+MFG-186,cyberdyne industries,mfg185@163.com,CN,05/26/2024,1
+MFG-187,oscorp industries,mfg186@corp.com,CN,22-04-2020,3
+MFG-188,stark industries,mfg187@outlook.com,CN,2022-12-12,5
+MFG-189,aperture industries,mfg188@corp.com,CN,04/05/2022,1
+MFG-190,stark industries,mfg189@gmail.com,CN,12-11-2024,2
+MFG-191,vandelay industries,mfg190@corp.com,CN,2024-08-26,3
+MFG-192,acme industries,mfg191@gmail.com,CN,2024-08-02,3
+MFG-193,piedpiper industries,mfg192@163.com,CN,2024-09-10,3
+MFG-194,piedpiper industries,mfg193@outlook.com,CN,02/25/2022,2
+MFG-195,initech industries,mfg194@company.cn,CN,2024-01-19,5
+MFG-196,weyland industries,mfg195@company.cn,CN,25-10-2024,1
+MFG-197,initech industries,mfg196@163.com,CN,2020-11-08,2
+MFG-198,piedpiper industries,mfg197@corp.com,CN,2021-07-18,3
+MFG-199,tyrell industries,mfg198@gmail.com,CN,11/19/2024,2
+MFG-200,acme industries,mfg199@gmail.com,CN,08-11-2021,4
